@@ -1,5 +1,38 @@
 # Changelog
 
+## [12.15.0] — 2026-05-21
+
+**motionlang — motion becomes a first-class extractable + shippable artefact.**
+
+The motion extractor already captured durations, easings and keyframes,
+but they only landed as a flat `motion-tokens.json` nobody opened. This
+release turns extracted motion into something you can see, ship and
+hand to a framework.
+
+- **Motion Lab (`<host>-motion.html`)** — a self-contained, dependency-free
+  interactive page. Every extracted easing curve is drawn as a real
+  cubic-Bezier path with a dot riding it at that exact timing function;
+  every duration shown as a pulsing bar timed to its real `ms`; every
+  `@keyframes` block replayed. Open it in any browser.
+
+- **Framer Motion presets (`<host>-motion.framer.js`)** — ready-to-import
+  `easings` (cubic-bezier arrays ranked by on-page frequency), `durations`
+  (seconds), `transitions` (`base` / `fast` / `slow` / `spring`) and
+  `variants` (`fade` / `slideUp` / `scaleIn` / `stagger`) — all wired to
+  the extracted timing. Framer Motion is the dominant React animation
+  library, so this is the highest-leverage motion emitter.
+
+- **Website Motion Lab** — every `/gallery/[slug]` brand page now renders
+  an interactive Motion Lab section: easing curves drawn in the extracted
+  brand colour, dots riding tracks, play/pause, and a link to the full
+  standalone page.
+
+- **Mobile navbar fix** — the hamburger and Install CTA no longer squish
+  together below 640px.
+
+Both emitters are exposed through the public `designlang/api` as the
+`motion-lab` and `framer-motion` renderer ids (plus `agent-prompt`).
+
 ## [12.14.0] — 2026-05-17
 
 **Real downloadable PDFs everywhere + a one-shot agent prompt every AI can paste.**
