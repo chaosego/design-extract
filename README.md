@@ -276,9 +276,6 @@ npx skills add Manavarya09/design-extract
 
 In Cursor / Codex / etc., use `/extract-design <url>`.
 
-## Website
-
-**[https://designlang.manavaryasingh.com](https://designlang.manavaryasingh.com/)** — the brutalist product page.
 
 ## Contributing
 
