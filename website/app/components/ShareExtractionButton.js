@@ -17,7 +17,12 @@ export default function ShareExtractionButton({ url, hash, summary, files }) {
 
   // Find the AGENT.md content if it's in the streamed files map.
   const agentBody = files ? Object.entries(files).find(([n]) => n.endsWith('-AGENT.md'))?.[1] : null;
+  // The brand book HTML is in the streamed files — POST it straight to the
+  // renderer so the PDF works without a Blob cache hit. Fall back to the
+  // permalink GET (cache-backed) only when we don't have the HTML on hand.
+  const brandHtml = files ? Object.entries(files).find(([n]) => n.endsWith('.brand.html'))?.[1] : null;
   const pdfUrl = hash ? `/api/pdf/${hash}` : null;
+  const canPdf = Boolean(brandHtml || pdfUrl);
 
   function tweet() {
     const intent = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(permalink)}`;
@@ -38,10 +43,16 @@ export default function ShareExtractionButton({ url, hash, summary, files }) {
   // A bare <a download> saves whatever comes back — including a JSON/HTML
   // error body — as host-brand.pdf, which then "won't open". Validate first.
   async function downloadPdf() {
-    if (!pdfUrl || pdfBusy) return;
+    if (!canPdf || pdfBusy) return;
     setPdfBusy(true); setPdfError(null);
     try {
-      const res = await fetch(pdfUrl);
+      const res = brandHtml
+        ? await fetch('/api/pdf', {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({ html: brandHtml, host }),
+          })
+        : await fetch(pdfUrl);
       const type = res.headers.get('content-type') || '';
       if (!res.ok || !type.includes('application/pdf')) {
         let msg = `PDF unavailable (${res.status})`;
@@ -67,7 +78,7 @@ export default function ShareExtractionButton({ url, hash, summary, files }) {
 
   return (
     <div className="share-row">
-      {pdfUrl && (
+      {canPdf && (
         <button type="button" onClick={downloadPdf} disabled={pdfBusy} className="btn btn-primary btn-sm">
           {pdfBusy ? 'Rendering PDF…' : pdfError ? pdfError : 'Download brand PDF'}
         </button>

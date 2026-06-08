@@ -2,6 +2,7 @@
 
 import { useCallback, useState } from 'react';
 import ResultViewer from '../../components/ResultViewer';
+import ShareExtractionButton from '../../components/ShareExtractionButton';
 
 export default function PermalinkViewer({ hash, url, title, summary, files }) {
   const [zipBusy, setZipBusy] = useState(false);
@@ -108,6 +109,12 @@ export default function PermalinkViewer({ hash, url, title, summary, files }) {
       </section>
 
       <ResultViewer files={files} onDownloadZip={handleDownloadZip} downloadBusy={zipBusy} />
+
+      {/* Download brand PDF posts the rebuilt brand HTML straight to the
+          renderer, so it works without a second Blob round-trip. */}
+      <div style={{ marginTop: 18, paddingTop: 14, borderTop: '1px solid var(--hairline)' }}>
+        <ShareExtractionButton url={url} hash={hash} summary={summary} files={files} />
+      </div>
     </main>
   );
 }

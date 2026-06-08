@@ -7,7 +7,10 @@ import { useCallback, useMemo, useState } from 'react';
 const TAB_PRIORITY = [
   { match: /-DESIGN\.md$/,            label: 'DESIGN.md',      lang: 'markdown' },
   { match: /-design-language\.md$/,   label: 'Markdown',       lang: 'markdown' },
+  { match: /\.brand\.html$/,          label: 'Brand book',     lang: 'html', render: 'iframe' },
   { match: /-design-tokens\.json$/,   label: 'Design Tokens',  lang: 'json' },
+  { match: /-motion\.html$/,          label: 'Motion',         lang: 'html', render: 'iframe' },
+  { match: /-motion\.framer\.js$/,    label: 'Framer Motion',  lang: 'javascript' },
   { match: /-tailwind\.config\.js$/,  label: 'Tailwind',       lang: 'javascript' },
   { match: /-variables\.css$/,        label: 'CSS Variables',  lang: 'css' },
   { match: /-figma-variables\.json$/, label: 'Figma',          lang: 'json' },
@@ -198,6 +201,8 @@ export default function ResultViewer({ files, onDownloadZip, downloadBusy }) {
   const activeTab = tabs.find((t) => t.key === active) || tabs[0];
   const content = activeTab ? files[activeTab.key] : '';
   const isMarkdown = activeTab?.lang === 'markdown';
+  const isIframe = activeTab?.render === 'iframe';
+  const hasPreview = isMarkdown || isIframe;
 
   const copy = useCallback(async () => {
     if (!content) return;
@@ -239,7 +244,7 @@ export default function ResultViewer({ files, onDownloadZip, downloadBusy }) {
       <div className="rv-toolbar">
         <div className="rv-filename mono">{activeTab.key}</div>
         <div className="rv-toolbar-actions">
-          {isMarkdown && (
+          {hasPreview && (
             <div className="rv-toggle mono">
               <button
                 type="button"
@@ -269,6 +274,14 @@ export default function ResultViewer({ files, onDownloadZip, downloadBusy }) {
       <div className="rv-content">
         {isMarkdown && mode === 'preview' ? (
           <article className="md-doc">{renderMarkdown(content)}</article>
+        ) : isIframe && mode === 'preview' ? (
+          <iframe
+            className="rv-frame"
+            srcDoc={content}
+            sandbox="allow-scripts"
+            title={activeTab.label}
+            loading="lazy"
+          />
         ) : (
           <pre className="rv-pre mono">{content}</pre>
         )}
@@ -387,6 +400,13 @@ export default function ResultViewer({ files, onDownloadZip, downloadBusy }) {
           color: var(--paper);
           white-space: pre;
           tab-size: 2;
+        }
+        .rv-frame {
+          display: block;
+          width: 100%;
+          height: 600px;
+          border: 0;
+          background: #fff;
         }
         .rv-footer {
           display: flex;
