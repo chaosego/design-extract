@@ -17,6 +17,7 @@ export default function sitemap() {
     { path: '',                       priority: 1.0,  freq: 'daily'   },
     { path: '/features',              priority: 0.9,  freq: 'weekly'  },
     { path: '/gallery',               priority: 0.9,  freq: 'hourly'  },
+    { path: '/studio',                priority: 0.9,  freq: 'weekly'  },
     { path: '/motion',                priority: 0.85, freq: 'weekly'  },
     { path: '/spec',                  priority: 0.9,  freq: 'monthly' },
     { path: '/vs/design-extractor',   priority: 0.9,  freq: 'weekly'  },

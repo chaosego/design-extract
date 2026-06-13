@@ -112,6 +112,7 @@ async function Nav() {
         <nav className="nav-pillnav" aria-label="primary">
           <a href="/features"><span>Features</span></a>
           <a href="/gallery"><span>Gallery</span></a>
+          <a href="/studio"><span>Studio</span></a>
           <a href="/motion"><span>Motion</span></a>
           <a href="/spec"><span>Spec</span></a>
           <a href="/vs/design-extractor"><span>vs</span></a>

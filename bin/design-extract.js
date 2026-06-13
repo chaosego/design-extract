@@ -2061,7 +2061,7 @@ program
 // ── Studio — local web studio over the latest extraction ──
 program
   .command('studio')
-  .description('Launch a local web studio over the latest extraction (editorial token browser, voice, motion, DNA).')
+  .description('Launch a live design studio over the latest extraction — edit tokens, watch components restyle, export DTCG/CSS/Tailwind, share via URL.')
   .option('-d, --dir <path>', 'extraction directory', './design-extract-output')
   .option('-p, --port <n>', 'port', parseInt, 4837)
   .option('--prefix <name>', 'extraction prefix (default: newest *-design-tokens.json)')

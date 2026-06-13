@@ -43,6 +43,7 @@ export default function MobileMenu({ stars }) {
             <nav className="nav-sheet-links" aria-label="primary">
               <a href="/features"  onClick={() => setOpen(false)}>Features</a>
               <a href="/gallery"   onClick={() => setOpen(false)}>Gallery</a>
+              <a href="/studio"    onClick={() => setOpen(false)}>Studio — live editor</a>
               <a href="/motion"    onClick={() => setOpen(false)}>Motion analyzer</a>
               <a href="/spec"      onClick={() => setOpen(false)}>DESIGN.md spec</a>
               <a href="/vs/design-extractor" onClick={() => setOpen(false)}>vs design-extractor</a>
