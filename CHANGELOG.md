@@ -1,5 +1,41 @@
 # Changelog
 
+## [12.19.0] — 2026-06-14
+
+**`studio` becomes a living design-system editor — and ships on the website.**
+
+Until now `designlang studio` was a read-only viewer: editorial swatches you
+could copy, static type specimens. This release turns it into a real
+playground — and brings the exact same experience to the web.
+
+- **`designlang studio`** — a local, interactive studio over the latest
+  extraction. An **inspector** (color pickers + the extracted palette, type,
+  shape, spacing, motion) writes a small set of `--p-*` CSS variables; a
+  **tabbed live preview** — a wall of real components (nav, buttons, form,
+  cards, badges, alert, type specimen) and a **rebuilt page** assembled from the
+  extraction's reading order — restyles instantly because everything renders off
+  those variables. Edit a token, watch the whole system move.
+
+  - **Live WCAG contrast grading** under every color (text-on-surface,
+    accent-on-surface, label-on-accent) updates as you edit — AAA / AA / AA-large
+    / fail, in real time.
+  - **Paper / white / dark backdrops** to judge components on any canvas, an
+    **edit counter**, and smooth token-driven transitions.
+  - **Export** the edited system as DTCG tokens, CSS variables, or a Tailwind
+    theme (zero-dependency client-side downloads), and **share via URL** — edits
+    are encoded as deltas in the location hash, so a tweaked variant is just a
+    link.
+
+- **`/studio` on the website** — paste any URL and the same studio opens right
+  in the browser: it extracts the live design language and embeds the editable
+  studio in a framed viewport. Shareable via `?url=`; counts against the same
+  free 2/day demo budget as the extractor.
+
+- **Internals** — the token-derivation engine is now a pure, dependency-free
+  module (`src/studio-tokens.js`) shared by the CLI and the website route, so
+  both surfaces stay in lock-step. New unit tests cover derivation, the WCAG
+  contrast math, and the rendered studio document.
+
 ## [12.18.0] — 2026-06-12
 
 **`verify` closes the loop — designlang now *proves* its extraction with a fidelity score.**
