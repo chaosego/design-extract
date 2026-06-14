@@ -92,17 +92,39 @@ export function deriveTokens(data) {
   const byLum = colors.slice().sort((a, b) => luminance(a.hex) - luminance(b.hex));
   const lightest = byLum.length ? byLum[byLum.length - 1].hex : '#ffffff';
   const darkest = byLum.length ? byLum[0].hex : '#0a0908';
-  const mostSaturated = colors.slice().sort((a, b) => saturation(b.hex) - saturation(a.hex))[0];
 
-  const bg = pickColor(colors, /background|surface|\bbg\b|paper|canvas/, () => lightest);
-  const fg = pickColor(colors, /text|ink|foreground|\bfg\b|body|heading/, () => darkest);
-  const accent = pickColor(colors, /brand|primary|accent|action|cta|link/, () =>
-    (mostSaturated && mostSaturated.hex) || darkest);
+  // Surface + text: prefer semantically-named tokens, then *guarantee* the pair
+  // is actually legible — real extractions sometimes mislabel near-equal colors,
+  // which is what made the preview look arbitrary.
+  let bg = pickColor(colors, /background|surface|\bbg\b|paper|canvas/, () => lightest);
+  let fg = pickColor(colors, /text|ink|foreground|\bfg\b|body|heading/, () => darkest);
+  if (contrastRatio(bg, fg) < 3.5) {
+    fg = luminance(bg) > 140 ? '#16161a' : '#f6f5f3';
+  }
 
+  // Accent: a *saturated* brand color that isn't the surface or text. Filtering
+  // out greys means we never promote a neutral to "accent" (a common source of
+  // the washed-out, random feel).
+  const isVivid = (h) => saturation(h) > 0.18 && h !== bg && h !== fg;
+  let accent =
+    (colors.find(c => /brand|primary|accent|action|cta|link/.test(c.path) && isVivid(c.hex)) || {}).hex ||
+    (colors.filter(c => isVivid(c.hex)).sort((a, b) => saturation(b.hex) - saturation(a.hex))[0] || {}).hex ||
+    pickColor(colors, /brand|primary|accent|action/, () => fg);
+  // If the accent would barely register on the surface, deepen it toward the
+  // text color until buttons read clearly — without throwing away its hue.
+  let guard = 0;
+  while (contrastRatio(accent, bg) < 2.4 && guard++ < 6) accent = blend(accent, fg, 0.12);
+
+  // White on the accent unless the accent is genuinely light — matches how
+  // designers actually treat saturated brand colors (white on orange, etc.),
+  // not raw WCAG-max which would flip warm accents to black text.
   const accentFg = luminance(accent) > 150 ? '#0a0908' : '#ffffff';
-  const muted = blend(fg, bg, 0.55);
-  const border = blend(fg, bg, 0.82);
-  const card = blend(bg, fg, 0.03);
+
+  // Secondary text that stays legible; a quiet border; a faint card tint.
+  let muted = blend(fg, bg, 0.42);
+  if (contrastRatio(muted, bg) < 3) muted = blend(fg, bg, 0.26);
+  const border = blend(fg, bg, 0.86);
+  const card = blend(bg, fg, 0.04);
 
   const family = (families.find(Boolean) || '').replace(/['"]/g, '').split(',')[0].trim();
   const fontSans = family || 'Instrument Sans';
@@ -134,4 +156,27 @@ export function deriveTokens(data) {
   const fonts = Array.from(new Set([fontSans, displayFamily,
     'Inter', 'Instrument Sans', 'Fraunces', 'Georgia', 'system-ui', 'JetBrains Mono'].filter(Boolean)));
   return { vars, palette, fonts };
+}
+
+// Generate a tasteful dark variant from a light token set. Surface goes to a
+// near-black tinted slightly toward the accent hue; text to near-white; the
+// brand accent is preserved (lightened only if it would vanish on dark), and
+// muted/border/card are recomputed so the system stays coherent. Type, shape,
+// spacing and motion carry over unchanged.
+export function deriveDark(vars) {
+  const accent0 = vars['--p-accent'] || '#ff4800';
+  const accent = luminance(accent0) < 64 ? blend(accent0, '#ffffff', 0.34) : accent0;
+  const bg = blend('#0b0b0d', accent, 0.05);
+  const fg = blend('#ffffff', accent, 0.04);
+  return {
+    ...vars,
+    '--p-bg': bg,
+    '--p-fg': fg,
+    '--p-accent': accent,
+    '--p-accent-fg': luminance(accent) > 150 ? '#0a0908' : '#ffffff',
+    '--p-muted': blend(fg, bg, 0.5),
+    '--p-border': blend(fg, bg, 0.82),
+    '--p-card': blend(bg, fg, 0.06),
+    '--p-shadow': '0 1px 2px rgba(0,0,0,0.5), 0 12px 32px rgba(0,0,0,0.55)',
+  };
 }

@@ -1,5 +1,41 @@
 # Changelog
 
+## [12.21.0] — 2026-06-14
+
+**Studio craft pass — the preview is now an intentional specimen, not a scatter of placeholders.**
+
+- **Composed preview.** The component wall is rebuilt as a real design-system
+  specimen with deliberate rhythm: a masthead, a centered hero using the site's
+  *own* strongest heading + top CTA verbs, labeled **Color** and **Type**
+  foundations, then Buttons, Inputs, Status, In-context cards, and a metrics
+  strip — each under a clear section eyebrow. The rebuilt-Page tab uses the same
+  crafted components. Copy is honest product language, never lorem.
+- **Harmonised color derivation.** `deriveTokens` now guarantees a legible
+  surface/text pair (mislabeled near-equal colors no longer slip through),
+  filters greys out of accent selection so a neutral is never promoted to the
+  brand color, deepens a near-invisible accent just enough to read on the
+  surface, and keeps secondary text above a legibility floor.
+- **Calmer chrome.** Quieter hairlines, consistent 30px rounded controls,
+  pill tab group and segmented light/dark — the editor frame recedes so the
+  extracted system is the focus.
+
+All of this lives in the shared studio engine, so the CLI and the website
+`/studio` get it identically.
+
+## [12.20.0] — 2026-06-14
+
+**Studio gains one-click dark mode.**
+
+- **Light / Dark toggle** in the studio — generates a tasteful dark variant
+  from the extracted light tokens: surface drops to a near-black tinted toward
+  the brand hue, text lifts to near-white, and muted / border / card are
+  recomputed so the system stays coherent. The **brand accent is preserved**
+  (lightened only if it would vanish on dark), and type, shape, spacing and
+  motion carry over unchanged. Contrast grading recomputes live, your inspector
+  edits layer on top of either theme, and the chosen theme is encoded in the
+  shareable URL. Pure, shared `deriveDark()` in `src/studio-tokens.js` (new
+  unit tests included), so the CLI and website studios stay in lock-step.
+
 ## [12.19.0] — 2026-06-14
 
 **`studio` becomes a living design-system editor — and ships on the website.**

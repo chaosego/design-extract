@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { deriveTokens, studioHtml } from '../src/studio.js';
-import { contrastRatio } from '../src/studio-tokens.js';
+import { contrastRatio, deriveDark, deriveTokens as derive } from '../src/studio-tokens.js';
 
 const fixture = {
   prefix: 'example-com',
@@ -61,12 +61,48 @@ test('studioHtml escapes the prefix into the title and never breaks the data isl
   assert.match(html, /&lt;script&gt;/);
 });
 
-test('studioHtml includes the polish: contrast readouts, edit count, backdrop, specimen', () => {
+test('studioHtml includes the polish: contrast readouts, edit count, backdrop, type scale', () => {
   const html = studioHtml(fixture);
   assert.match(html, /id="contrast"/);
   assert.match(html, /id="editcount"/);
   assert.match(html, /class="bd"/);
-  assert.match(html, /pv-specimen/);
+  assert.match(html, /pv-scale/);
+});
+
+test('studioHtml composes an intentional specimen from the extraction context', () => {
+  const html = studioHtml(fixture);
+  // brand derived from prefix, real heading + CTA from voice, honest eyebrows
+  assert.match(html, /pv-brand/);
+  assert.match(html, /Payments for the internet/); // fixture sampleHeading
+  assert.match(html, /Start now/);                  // fixture ctaVerb
+  assert.match(html, /pv-eyebrow/);
+  assert.match(html, /pv-stats/);
+});
+
+test('deriveDark flips surface to dark and keeps the brand accent legible', () => {
+  const { vars } = derive(fixture);
+  const dark = deriveDark(vars);
+  // surface must become dark, text light
+  assert.ok(contrastRatio(dark['--p-bg'], '#000000') < contrastRatio(vars['--p-bg'], '#000000'));
+  assert.ok(contrastRatio(dark['--p-fg'], '#ffffff') < contrastRatio(vars['--p-fg'], '#ffffff'));
+  // text/surface contrast stays readable in dark
+  assert.ok(contrastRatio(dark['--p-fg'], dark['--p-bg']) >= 4.5);
+  // non-color tokens carry over untouched
+  assert.equal(dark['--p-radius'], vars['--p-radius']);
+  assert.equal(dark['--p-font'], vars['--p-font']);
+});
+
+test('deriveDark lightens an accent that would vanish on dark', () => {
+  const dark = deriveDark({ '--p-accent': '#101015', '--p-bg': '#ffffff', '--p-fg': '#101010' });
+  // a near-black accent must be lifted so it is visible against the dark surface
+  assert.ok(contrastRatio(dark['--p-accent'], dark['--p-bg']) > contrastRatio('#101015', dark['--p-bg']));
+});
+
+test('studioHtml includes the theme (light/dark) control and ships a dark base', () => {
+  const html = studioHtml(fixture);
+  assert.match(html, /class="seg"/);
+  assert.match(html, /data-theme="dark"/);
+  assert.match(html, /"dark":\{/); // boot payload carries the generated dark vars
 });
 
 test('contrastRatio matches known WCAG values', () => {
