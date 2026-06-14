@@ -61,12 +61,22 @@ test('studioHtml escapes the prefix into the title and never breaks the data isl
   assert.match(html, /&lt;script&gt;/);
 });
 
-test('studioHtml includes the polish: contrast readouts, edit count, backdrop, specimen', () => {
+test('studioHtml includes the polish: contrast readouts, edit count, backdrop, type scale', () => {
   const html = studioHtml(fixture);
   assert.match(html, /id="contrast"/);
   assert.match(html, /id="editcount"/);
   assert.match(html, /class="bd"/);
-  assert.match(html, /pv-specimen/);
+  assert.match(html, /pv-scale/);
+});
+
+test('studioHtml composes an intentional specimen from the extraction context', () => {
+  const html = studioHtml(fixture);
+  // brand derived from prefix, real heading + CTA from voice, honest eyebrows
+  assert.match(html, /pv-brand/);
+  assert.match(html, /Payments for the internet/); // fixture sampleHeading
+  assert.match(html, /Start now/);                  // fixture ctaVerb
+  assert.match(html, /pv-eyebrow/);
+  assert.match(html, /pv-stats/);
 });
 
 test('deriveDark flips surface to dark and keeps the brand accent legible', () => {

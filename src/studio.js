@@ -69,111 +69,168 @@ function esc(v) {
 function styleBlock() {
   return `<style>
   :root {
-    --paper: #f3f1ea; --paper-2: #ece8dd; --paper-3: #d8d3c5;
-    --ink: #0a0908; --ink-2: #403c34; --ink-3: #8b8778;
+    --paper: #f5f3ec; --paper-2: #eceadf; --paper-3: #ddd9cb; --line: #cfcab9;
+    --ink: #14120e; --ink-2: #524d42; --ink-3: #918b7c;
     --hi: #ff4800;
     --mono: 'JetBrains Mono', ui-monospace, monospace;
     --display: 'Fraunces', Georgia, serif;
     --body: 'Instrument Sans', -apple-system, system-ui, sans-serif;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  html, body { height: 100%; background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 14px; line-height: 1.5; }
-  .app { display: grid; grid-template-columns: 320px 1fr; grid-template-rows: auto 1fr; height: 100vh; }
-  .topbar { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 20px; border-bottom: 1px solid var(--ink); background: var(--paper); }
-  .mark { font-family: var(--mono); font-size: 13px; letter-spacing: 0.02em; white-space: nowrap; }
+  html, body { height: 100%; background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 14px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+  .app { display: grid; grid-template-columns: 304px 1fr; grid-template-rows: auto 1fr; height: 100vh; }
+
+  /* ── editor chrome — quiet, consistent 30px controls, hairline rules ── */
+  .topbar { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 0 18px; height: 52px; border-bottom: 1px solid var(--line); background: var(--paper); }
+  .mark { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.01em; white-space: nowrap; color: var(--ink-2); }
+  .mark b { color: var(--ink); font-weight: 500; }
   .mark em { color: var(--hi); font-style: italic; font-family: var(--display); }
-  .tabs { display: flex; gap: 4px; }
-  .tab { font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 12px; border: 1px solid var(--ink); background: transparent; color: var(--ink); cursor: pointer; }
+  .tabs { display: flex; gap: 2px; background: var(--paper-2); border: 1px solid var(--line); border-radius: 8px; padding: 2px; }
+  .tab { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 13px; border: 0; border-radius: 6px; background: transparent; color: var(--ink-3); cursor: pointer; transition: all .15s ease; }
+  .tab:hover { color: var(--ink); }
   .tab[aria-selected="true"] { background: var(--ink); color: var(--paper); }
   .actions { display: flex; gap: 8px; align-items: center; }
-  .btn { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; padding: 7px 12px; border: 1px solid var(--ink); background: var(--paper); color: var(--ink); cursor: pointer; }
-  .btn:hover { background: var(--ink); color: var(--paper); }
+  .btn { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; height: 30px; padding: 0 12px; border: 1px solid var(--line); border-radius: 7px; background: var(--paper); color: var(--ink-2); cursor: pointer; transition: all .15s ease; }
+  .btn:hover { color: var(--ink); border-color: var(--ink-3); }
   .btn.hi { background: var(--hi); border-color: var(--hi); color: #fff; }
-  .btn.hi:hover { filter: brightness(1.08); }
+  .btn.hi:hover { filter: brightness(1.07); color: #fff; }
   .menu { position: relative; }
-  .menu-list { position: absolute; right: 0; top: calc(100% + 6px); background: var(--paper); border: 1px solid var(--ink); min-width: 200px; z-index: 20; display: none; }
+  .menu-list { position: absolute; right: 0; top: calc(100% + 6px); background: var(--paper); border: 1px solid var(--line); border-radius: 9px; min-width: 210px; z-index: 20; display: none; overflow: hidden; box-shadow: 0 12px 32px -12px rgba(0,0,0,0.28); }
   .menu-list.open { display: block; }
-  .menu-list button { display: block; width: 100%; text-align: left; padding: 9px 14px; border: 0; border-bottom: 1px solid var(--paper-3); background: transparent; font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em; cursor: pointer; color: var(--ink); }
+  .menu-list button { display: block; width: 100%; text-align: left; padding: 10px 14px; border: 0; border-bottom: 1px solid var(--paper-2); background: transparent; font-family: var(--mono); font-size: 11px; letter-spacing: 0.02em; cursor: pointer; color: var(--ink-2); }
   .menu-list button:last-child { border-bottom: 0; }
-  .menu-list button:hover { background: var(--paper-2); }
+  .menu-list button:hover { background: var(--paper-2); color: var(--ink); }
 
-  .inspector { border-right: 1px solid var(--ink); overflow-y: auto; padding: 8px 0 40px; }
-  .grp { border-bottom: 1px solid var(--paper-3); padding: 16px 20px; }
-  .grp h3 { font-family: var(--mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 14px; }
-  .field { display: grid; grid-template-columns: 70px 1fr; align-items: center; gap: 12px; margin-bottom: 12px; }
+  .inspector { border-right: 1px solid var(--line); overflow-y: auto; padding: 4px 0 48px; }
+  .grp { border-bottom: 1px solid var(--paper-2); padding: 18px 18px; }
+  .grp h3 { font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 14px; }
+  .field { display: grid; grid-template-columns: 60px 1fr auto; align-items: center; gap: 10px; margin-bottom: 11px; }
   .field:last-child { margin-bottom: 0; }
-  .field label { font-family: var(--mono); font-size: 11px; color: var(--ink-2); letter-spacing: 0.02em; }
-  .field input[type="color"] { width: 100%; height: 28px; border: 1px solid var(--ink); background: none; padding: 2px; cursor: pointer; }
-  .field input[type="range"] { width: 100%; accent-color: var(--hi); }
-  .field select { width: 100%; font-family: var(--mono); font-size: 11px; padding: 5px; border: 1px solid var(--ink); background: var(--paper); }
-  .field .val { font-family: var(--mono); font-size: 10px; color: var(--ink-3); text-align: right; }
-  .swatches { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; grid-column: 1 / -1; }
-  .swatches button { width: 18px; height: 18px; border: 1px solid var(--ink-3); cursor: pointer; padding: 0; }
+  .field label { font-family: var(--mono); font-size: 11px; color: var(--ink-2); letter-spacing: 0.01em; }
+  .field input[type="color"] { grid-column: 2 / -1; width: 100%; height: 30px; border: 1px solid var(--line); border-radius: 7px; background: none; padding: 3px; cursor: pointer; }
+  .field input[type="color"]::-webkit-color-swatch { border: 0; border-radius: 4px; }
+  .field input[type="color"]::-webkit-color-swatch-wrapper { padding: 0; }
+  .field input[type="range"] { width: 100%; accent-color: var(--ink); height: 4px; }
+  .field select { grid-column: 2 / -1; width: 100%; font-family: var(--mono); font-size: 11px; height: 30px; padding: 0 8px; border: 1px solid var(--line); border-radius: 7px; background: var(--paper); color: var(--ink); }
+  .field .val { font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); text-align: right; min-width: 38px; }
+  .swatches { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 12px; grid-column: 1 / -1; }
+  .swatches button { width: 20px; height: 20px; border: 1px solid var(--line); border-radius: 5px; cursor: pointer; padding: 0; transition: transform .12s ease; }
+  .swatches button:hover { transform: scale(1.12); }
 
-  .stage-wrap { overflow: auto; background: repeating-conic-gradient(var(--paper-2) 0% 25%, var(--paper) 0% 50%) 50% / 22px 22px; }
-  #stage { min-height: 100%; padding: 40px clamp(20px, 4vw, 64px); }
-  .panel { display: none; max-width: 1080px; margin: 0 auto; }
+  .stage-wrap { overflow: auto; background: var(--paper-2); }
+  #stage { min-height: 100%; padding: clamp(28px, 4vw, 56px) clamp(20px, 5vw, 72px) 80px; }
+  .panel { display: none; max-width: 960px; margin: 0 auto; }
   .panel.show { display: block; }
 
-  /* ── live preview surface (driven entirely by --p-* vars) ── */
+  /* ── live preview — an editorial design-system specimen, all --p-* driven ── */
   .preview { color: var(--p-fg); font-family: var(--p-font); }
-  .pv-section { background: var(--p-bg); border: 1px solid var(--p-border); border-radius: var(--p-radius); padding: calc(var(--p-space) * 2); margin-bottom: var(--p-space); box-shadow: var(--p-shadow); }
-  .pv-h { font-family: var(--p-font-display); font-size: calc(var(--p-fs) * 2.4); line-height: 1.05; letter-spacing: -0.02em; margin-bottom: calc(var(--p-space) * 0.75); }
-  .pv-h2 { font-family: var(--p-font-display); font-size: calc(var(--p-fs) * 1.5); letter-spacing: -0.01em; margin-bottom: var(--p-space); }
-  .pv-p { font-size: var(--p-fs); color: var(--p-muted); max-width: 56ch; margin-bottom: var(--p-space); }
-  .pv-row { display: flex; flex-wrap: wrap; gap: var(--p-space); align-items: center; }
-  .pv-btn { font-family: var(--p-font); font-size: var(--p-fs); padding: calc(var(--p-space) * 0.6) calc(var(--p-space) * 1.1); border-radius: var(--p-radius); border: 1px solid var(--p-accent); background: var(--p-accent); color: var(--p-accent-fg); cursor: pointer; transition: transform var(--p-dur) var(--p-ease), filter var(--p-dur) var(--p-ease); }
-  .pv-btn:hover { filter: brightness(1.06); transform: translateY(-1px); }
-  .pv-btn.ghost { background: transparent; color: var(--p-fg); border-color: var(--p-border); }
-  .pv-input { font-family: var(--p-font); font-size: var(--p-fs); padding: calc(var(--p-space) * 0.55) calc(var(--p-space) * 0.8); border-radius: var(--p-radius); border: 1px solid var(--p-border); background: var(--p-card); color: var(--p-fg); width: 240px; }
-  .pv-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--p-space); }
-  .pv-card { background: var(--p-card); border: 1px solid var(--p-border); border-radius: var(--p-radius); padding: calc(var(--p-space) * 1.2); box-shadow: var(--p-shadow); }
-  .pv-card h4 { font-family: var(--p-font-display); font-size: calc(var(--p-fs) * 1.15); margin-bottom: calc(var(--p-space) * 0.5); }
-  .pv-card p { font-size: calc(var(--p-fs) * 0.92); color: var(--p-muted); }
-  .pv-badge { display: inline-block; font-size: calc(var(--p-fs) * 0.75); font-family: var(--p-font); letter-spacing: 0.04em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; background: var(--p-accent); color: var(--p-accent-fg); }
-  .pv-badge.soft { background: transparent; color: var(--p-accent); border: 1px solid var(--p-accent); }
-  .pv-alert { display: flex; gap: var(--p-space); align-items: flex-start; border-left: 3px solid var(--p-accent); background: var(--p-card); padding: var(--p-space); border-radius: var(--p-radius); }
-  .pv-nav { display: flex; align-items: center; justify-content: space-between; padding: calc(var(--p-space) * 0.8) var(--p-space); border: 1px solid var(--p-border); border-radius: var(--p-radius); background: var(--p-card); margin-bottom: var(--p-space); }
-  .pv-nav .links { display: flex; gap: var(--p-space); font-size: calc(var(--p-fs) * 0.9); color: var(--p-muted); }
-  .pv-swatch-row { display: flex; gap: 0; border-radius: var(--p-radius); overflow: hidden; border: 1px solid var(--p-border); }
-  .pv-swatch-row > div { flex: 1; height: 44px; }
-  .lab { font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); margin: 28px 0 12px; }
-  .lab:first-child { margin-top: 0; }
+  .pv { display: flex; flex-direction: column; gap: calc(var(--p-space) * 3); }
+  .pv-block { display: flex; flex-direction: column; gap: calc(var(--p-space) * 1.1); }
+  .pv-eyebrow { font-family: var(--p-font); font-size: calc(var(--p-fs) * 0.7); font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--p-muted); display: flex; align-items: center; gap: 12px; }
+  .pv-eyebrow::after { content: ''; flex: 1; height: 1px; background: var(--p-border); }
 
-  .info { max-width: 760px; margin: 0 auto; font-family: var(--mono); }
-  .info dl { display: grid; grid-template-columns: 160px 1fr; gap: 8px 20px; font-size: 12px; line-height: 1.7; }
+  .pv-nav { display: flex; align-items: center; gap: calc(var(--p-space) * 1.5); padding: calc(var(--p-space) * 0.9) calc(var(--p-space) * 1.3); border: 1px solid var(--p-border); border-radius: var(--p-radius); background: var(--p-card); }
+  .pv-brand { font-family: var(--p-font-display); font-weight: 600; font-size: calc(var(--p-fs) * 1.15); letter-spacing: -0.01em; }
+  .pv-nav .links { display: flex; gap: calc(var(--p-space) * 1.2); margin-left: auto; font-size: calc(var(--p-fs) * 0.92); color: var(--p-muted); }
+  .pv-nav .links span:hover { color: var(--p-fg); cursor: default; }
+
+  .pv-hero { text-align: center; padding: calc(var(--p-space) * 2) 0 calc(var(--p-space) * 1); display: flex; flex-direction: column; align-items: center; gap: calc(var(--p-space) * 1.1); }
+  .pv-kicker { font-size: calc(var(--p-fs) * 0.8); letter-spacing: 0.12em; text-transform: uppercase; color: var(--p-accent); font-weight: 600; }
+  .pv-h { font-family: var(--p-font-display); font-size: clamp(28px, calc(var(--p-fs) * 3.2), 64px); line-height: 1.04; letter-spacing: -0.025em; max-width: 18ch; font-weight: 600; }
+  .pv-h em { font-style: italic; color: var(--p-accent); }
+  .pv-lede { font-size: calc(var(--p-fs) * 1.1); color: var(--p-muted); max-width: 52ch; line-height: 1.55; }
+  .pv-cta-row { display: flex; flex-wrap: wrap; gap: calc(var(--p-space) * 0.7); justify-content: center; margin-top: calc(var(--p-space) * 0.4); }
+
+  .pv-btn { font-family: var(--p-font); font-size: var(--p-fs); font-weight: 500; padding: calc(var(--p-space) * 0.66) calc(var(--p-space) * 1.25); border-radius: var(--p-radius); border: 1px solid var(--p-accent); background: var(--p-accent); color: var(--p-accent-fg); cursor: pointer; transition: transform var(--p-dur) var(--p-ease), filter var(--p-dur) var(--p-ease); }
+  .pv-btn:hover { filter: brightness(1.06); transform: translateY(-1px); }
+  .pv-btn.secondary { background: var(--p-card); color: var(--p-fg); border-color: var(--p-border); }
+  .pv-btn.ghost { background: transparent; color: var(--p-fg); border-color: transparent; }
+  .pv-btn.ghost:hover { background: var(--p-card); transform: none; filter: none; }
+  .pv-btn[disabled] { opacity: 0.45; cursor: not-allowed; }
+  .pv-btn.sm { font-size: calc(var(--p-fs) * 0.85); padding: calc(var(--p-space) * 0.45) calc(var(--p-space) * 0.9); }
+
+  .pv-2col { display: grid; grid-template-columns: 1fr 1fr; gap: calc(var(--p-space) * 2); }
+  .pv-swatches { display: flex; flex-direction: column; gap: 8px; }
+  .pv-sw { display: flex; align-items: center; gap: calc(var(--p-space) * 0.9); }
+  .pv-sw .chip { width: 40px; height: 40px; border-radius: calc(var(--p-radius) * 0.7); border: 1px solid var(--p-border); flex: none; }
+  .pv-sw .meta { display: flex; flex-direction: column; }
+  .pv-sw .meta b { font-weight: 500; font-size: calc(var(--p-fs) * 0.95); }
+  .pv-sw .meta code { font-family: var(--mono); font-size: calc(var(--p-fs) * 0.78); color: var(--p-muted); }
+
+  .pv-scale { display: flex; flex-direction: column; gap: calc(var(--p-space) * 0.9); }
+  .pv-scale-row { display: flex; align-items: baseline; gap: calc(var(--p-space) * 1.2); }
+  .pv-scale-row .tag { font-family: var(--mono); font-size: calc(var(--p-fs) * 0.72); color: var(--p-muted); letter-spacing: 0.08em; text-transform: uppercase; min-width: 64px; }
+  .pv-scale-row .sample { font-family: var(--p-font-display); line-height: 1.1; letter-spacing: -0.02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  .pv-field { display: flex; flex-direction: column; gap: 6px; }
+  .pv-field label { font-size: calc(var(--p-fs) * 0.82); color: var(--p-muted); font-weight: 500; }
+  .pv-input, .pv-select { font-family: var(--p-font); font-size: var(--p-fs); padding: calc(var(--p-space) * 0.6) calc(var(--p-space) * 0.85); border-radius: var(--p-radius); border: 1px solid var(--p-border); background: var(--p-bg); color: var(--p-fg); width: 100%; }
+  .pv-input::placeholder { color: var(--p-muted); }
+
+  .pv-pills { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .pv-badge { display: inline-flex; align-items: center; gap: 5px; font-size: calc(var(--p-fs) * 0.76); font-family: var(--p-font); font-weight: 500; letter-spacing: 0.02em; padding: 4px 11px; border-radius: 999px; background: var(--p-accent); color: var(--p-accent-fg); }
+  .pv-badge.soft { background: transparent; color: var(--p-accent); border: 1px solid var(--p-accent); }
+  .pv-badge.neutral { background: var(--p-card); color: var(--p-muted); border: 1px solid var(--p-border); }
+  .pv-dot { width: 6px; height: 6px; border-radius: 999px; background: currentColor; }
+
+  .pv-alert { display: flex; gap: calc(var(--p-space) * 0.9); align-items: flex-start; border: 1px solid var(--p-border); border-left: 3px solid var(--p-accent); background: var(--p-card); padding: calc(var(--p-space) * 1.1) calc(var(--p-space) * 1.2); border-radius: var(--p-radius); }
+  .pv-alert b { font-weight: 600; }
+  .pv-alert p { font-size: calc(var(--p-fs) * 0.92); color: var(--p-muted); margin-top: 3px; }
+
+  .pv-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--p-space); }
+  .pv-card { display: flex; flex-direction: column; gap: calc(var(--p-space) * 0.6); background: var(--p-card); border: 1px solid var(--p-border); border-radius: var(--p-radius); padding: calc(var(--p-space) * 1.3); box-shadow: var(--p-shadow); }
+  .pv-card .ic { width: 34px; height: 34px; border-radius: calc(var(--p-radius) * 0.7); background: var(--p-accent); color: var(--p-accent-fg); display: grid; place-items: center; font-family: var(--p-font-display); font-weight: 600; }
+  .pv-card h4 { font-family: var(--p-font-display); font-size: calc(var(--p-fs) * 1.12); font-weight: 600; }
+  .pv-card p { font-size: calc(var(--p-fs) * 0.9); color: var(--p-muted); line-height: 1.5; }
+  .pv-card .lnk { font-size: calc(var(--p-fs) * 0.88); color: var(--p-accent); font-weight: 500; margin-top: auto; }
+
+  .pv-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--p-space); border: 1px solid var(--p-border); border-radius: var(--p-radius); overflow: hidden; }
+  .pv-stat { padding: calc(var(--p-space) * 1.2); border-left: 1px solid var(--p-border); }
+  .pv-stat:first-child { border-left: 0; }
+  .pv-stat .n { font-family: var(--p-font-display); font-size: calc(var(--p-fs) * 2); font-weight: 600; letter-spacing: -0.02em; }
+  .pv-stat .l { font-size: calc(var(--p-fs) * 0.82); color: var(--p-muted); margin-top: 2px; }
+
+  .pv-foot { display: flex; align-items: center; gap: var(--p-space); padding-top: calc(var(--p-space) * 1.2); border-top: 1px solid var(--p-border); color: var(--p-muted); font-size: calc(var(--p-fs) * 0.85); }
+  .pv-foot .links { display: flex; gap: var(--p-space); margin-left: auto; }
+
+  /* rebuilt-page tab keeps a lighter sectioned rhythm */
+  .pv-section { background: var(--p-card); border: 1px solid var(--p-border); border-radius: var(--p-radius); padding: calc(var(--p-space) * 1.8); box-shadow: var(--p-shadow); }
+  .pv-h2 { font-family: var(--p-font-display); font-size: calc(var(--p-fs) * 1.6); font-weight: 600; letter-spacing: -0.015em; margin-bottom: var(--p-space); }
+  .pv-p { font-size: var(--p-fs); color: var(--p-muted); max-width: 56ch; line-height: 1.55; }
+  .pv-row { display: flex; flex-wrap: wrap; gap: calc(var(--p-space) * 0.7); align-items: center; }
+
+  .info { max-width: 720px; margin: 0 auto; font-family: var(--mono); }
+  .info dl { display: grid; grid-template-columns: 150px 1fr; gap: 9px 22px; font-size: 12px; line-height: 1.7; }
   .info dt { color: var(--ink-3); letter-spacing: 0.04em; }
   .info dd em { color: var(--hi); font-style: normal; }
-  .info pre { margin-top: 24px; font-size: 11px; background: var(--ink); color: var(--paper); padding: 16px; overflow-x: auto; }
-  .toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%) translateY(20px); background: var(--ink); color: var(--paper); font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em; padding: 10px 18px; opacity: 0; transition: all .25s ease; pointer-events: none; z-index: 50; }
+  .info pre { margin-top: 26px; font-size: 11px; background: var(--ink); color: var(--paper); padding: 18px; border-radius: 10px; overflow-x: auto; }
+  .toast { position: fixed; bottom: 22px; left: 50%; transform: translateX(-50%) translateY(20px); background: var(--ink); color: var(--paper); font-family: var(--mono); font-size: 12px; letter-spacing: 0.03em; padding: 10px 18px; border-radius: 8px; opacity: 0; transition: all .25s ease; pointer-events: none; z-index: 50; }
   .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
-  /* polish — smooth restyle, contrast readouts, edited counter, backdrops */
+  /* smooth restyle as tokens change */
   .preview, .preview * { transition: background-color var(--p-dur, .2s) var(--p-ease, ease), border-color var(--p-dur, .2s) var(--p-ease, ease), color var(--p-dur, .2s) var(--p-ease, ease), border-radius .2s ease; }
-  .contrast { grid-column: 1 / -1; display: flex; flex-direction: column; gap: 5px; margin-top: 12px; }
+
+  /* contrast readouts */
+  .contrast { grid-column: 1 / -1; display: flex; flex-direction: column; gap: 7px; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--paper-2); }
   .contrast .c-row { display: flex; align-items: center; justify-content: space-between; font-family: var(--mono); font-size: 10px; letter-spacing: 0.02em; color: var(--ink-2); }
-  .contrast .c-row b { font-weight: 500; }
-  .grade { font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; padding: 2px 6px; border: 1px solid currentColor; border-radius: 3px; }
-  .grade.aaa { color: #2e7d32; } .grade.aa { color: #2e7d32; } .grade.large { color: #b26a00; } .grade.fail { color: #c0341d; }
-  .count { display: none; margin-left: 6px; min-width: 16px; height: 16px; padding: 0 4px; border-radius: 999px; background: var(--hi); color: #fff; font-size: 10px; line-height: 16px; text-align: center; }
+  .contrast .c-row b { font-weight: 500; color: var(--ink); }
+  .grade { font-size: 8.5px; letter-spacing: 0.08em; text-transform: uppercase; padding: 2px 6px; border: 1px solid currentColor; border-radius: 4px; margin-left: 8px; }
+  .grade.aaa, .grade.aa { color: #2e7d32; } .grade.large { color: #b26a00; } .grade.fail { color: #c0341d; }
+  .count { display: none; margin-left: 7px; min-width: 16px; height: 16px; padding: 0 4px; border-radius: 999px; background: var(--hi); color: #fff; font-size: 9.5px; line-height: 16px; text-align: center; }
   .count.show { display: inline-block; }
   #reset { display: inline-flex; align-items: center; }
+
   .stage-wrap[data-bd="white"] { background: #ffffff; }
-  .stage-wrap[data-bd="dark"] { background: #14110e; }
-  .seg { display: flex; border: 1px solid var(--ink); }
-  .seg button { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; padding: 7px 11px; border: 0; border-left: 1px solid var(--ink); background: var(--paper); color: var(--ink); cursor: pointer; }
-  .seg button:first-child { border-left: 0; }
+  .stage-wrap[data-bd="dark"] { background: #15120f; }
+  .seg { display: flex; background: var(--paper-2); border: 1px solid var(--line); border-radius: 7px; padding: 2px; }
+  .seg button { font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; padding: 5px 10px; border: 0; border-radius: 5px; background: transparent; color: var(--ink-3); cursor: pointer; transition: all .15s ease; }
   .seg button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
-  .bd { display: flex; gap: 0; border: 1px solid var(--ink); }
-  .bd button { width: 26px; height: 28px; border: 0; border-left: 1px solid var(--ink); background: var(--paper); cursor: pointer; padding: 0; }
+  .bd { display: flex; border: 1px solid var(--line); border-radius: 7px; overflow: hidden; }
+  .bd button { width: 28px; height: 30px; border: 0; border-left: 1px solid var(--line); cursor: pointer; padding: 0; }
   .bd button:first-child { border-left: 0; }
-  .bd button[aria-pressed="true"] { outline: 2px solid var(--hi); outline-offset: -2px; }
-  .bd .b-paper { background: repeating-conic-gradient(#ece8dd 0% 25%, #f3f1ea 0% 50%) 50% / 10px 10px; }
-  .bd .b-white { background: #fff; } .bd .b-dark { background: #14110e; }
-  .pv-specimen { padding: calc(var(--p-space) * 1.2) 0; border-top: 1px solid var(--p-border); border-bottom: 1px solid var(--p-border); }
-  .pv-specimen .aa { font-family: var(--p-font-display); font-size: calc(var(--p-fs) * 4); line-height: 1; letter-spacing: -0.03em; }
-  .pv-specimen .ln { font-family: var(--p-font); font-size: var(--p-fs); color: var(--p-muted); margin-top: calc(var(--p-space) * 0.5); }
-  @media (max-width: 860px) { .app { grid-template-columns: 1fr; grid-template-rows: auto auto 1fr; } .inspector { border-right: 0; border-bottom: 1px solid var(--ink); max-height: 38vh; } }
+  .bd button[aria-pressed="true"] { outline: 2px solid var(--ink); outline-offset: -2px; }
+  .bd .b-paper { background: var(--paper-2); } .bd .b-white { background: #fff; } .bd .b-dark { background: #15120f; }
+  @media (max-width: 880px) { .app { grid-template-columns: 1fr; grid-template-rows: auto auto 1fr; } .inspector { border-right: 0; border-bottom: 1px solid var(--line); max-height: 40vh; } .pv-2col, .pv-grid, .pv-stats { grid-template-columns: 1fr; } }
 </style>`;
 }
 
@@ -228,50 +285,137 @@ function inspectorHtml() {
   </aside>`;
 }
 
-function wallHtml(voice) {
-  const cta = (voice && voice.ctaVerbs && voice.ctaVerbs[0] && voice.ctaVerbs[0].value) || 'Get started';
-  const heading = (voice && voice.sampleHeadings && voice.sampleHeadings[0]) || 'Components, restyled live.';
+// A small, considered set of "in context" cards — honest product labels that
+// read as real UI rather than lorem, so the specimen never feels arbitrary.
+const CONTEXT_CARDS = [
+  { ic: 'O', h: 'Overview', p: 'One calm place for your team to see where things stand.', lnk: 'Open dashboard' },
+  { ic: 'I', h: 'Insights', p: 'Numbers that update the moment something changes.', lnk: 'View report' },
+  { ic: 'S', h: 'Settings', p: 'Fine-grained control, sensible defaults out of the box.', lnk: 'Configure' },
+];
+
+function navBar(ctx) {
+  return `<nav class="pv-nav">
+      <span class="pv-brand">${esc(ctx.brand)}</span>
+      <span class="links"><span>Product</span><span>Pricing</span><span>Docs</span><span>Changelog</span></span>
+      <button class="pv-btn sm">${esc(ctx.cta)}</button>
+    </nav>`;
+}
+
+function wallHtml(ctx) {
+  const sw = (role, v) => `<div class="pv-sw"><span class="chip" style="background:var(${v})"></span><span class="meta"><b>${esc(role)}</b><code>${esc(v)}</code></span></div>`;
+  const scale = (tag, mult, text) => `<div class="pv-scale-row"><span class="tag">${esc(tag)}</span><span class="sample" style="font-size:calc(var(--p-fs) * ${mult})">${esc(text)}</span></div>`;
   return `<div class="panel preview" id="panel-wall" data-panel="wall">
-    <div class="pv-nav"><strong>brand</strong><div class="links"><span>Product</span><span>Pricing</span><span>Docs</span></div><button class="pv-btn">${esc(cta)}</button></div>
-    <div class="lab">Type</div>
-    <div class="pv-specimen"><div class="aa">Ag</div><div class="ln">${esc(heading)} — the quick brown fox jumps over the lazy dog.</div></div>
-    <div class="lab">Buttons</div>
-    <div class="pv-row"><button class="pv-btn">${esc(cta)}</button><button class="pv-btn ghost">Learn more</button><span class="pv-badge">New</span><span class="pv-badge soft">Beta</span></div>
-    <div class="lab">Form</div>
-    <div class="pv-row"><input class="pv-input" placeholder="you@company.com" /><button class="pv-btn">Subscribe</button></div>
-    <div class="lab">Cards</div>
-    <div class="pv-grid">
-      <div class="pv-card"><span class="pv-badge soft">Plan</span><h4>${esc(heading)}</h4><p>Tweak a token on the left and watch every element here restyle in real time.</p></div>
-      <div class="pv-card"><h4>Tokens, not screenshots</h4><p>Everything renders off CSS variables derived from the live extraction.</p></div>
-      <div class="pv-card"><h4>Export anywhere</h4><p>Ship your edits as DTCG tokens, CSS variables, or a Tailwind theme.</p></div>
+    <div class="pv">
+      ${navBar(ctx)}
+
+      <header class="pv-hero">
+        <span class="pv-kicker">${esc(ctx.kicker)}</span>
+        <h1 class="pv-h">${esc(ctx.heading)}</h1>
+        <p class="pv-lede">${esc(ctx.lede)}</p>
+        <div class="pv-cta-row">
+          <button class="pv-btn">${esc(ctx.cta)}</button>
+          <button class="pv-btn secondary">${esc(ctx.cta2)}</button>
+        </div>
+      </header>
+
+      <div class="pv-2col">
+        <section class="pv-block">
+          <div class="pv-eyebrow">Color</div>
+          <div class="pv-swatches">
+            ${sw('Surface', '--p-bg')}
+            ${sw('Card', '--p-card')}
+            ${sw('Text', '--p-fg')}
+            ${sw('Muted', '--p-muted')}
+            ${sw('Border', '--p-border')}
+            ${sw('Accent', '--p-accent')}
+          </div>
+        </section>
+        <section class="pv-block">
+          <div class="pv-eyebrow">Type · ${esc(ctx.fontName)}</div>
+          <div class="pv-scale">
+            ${scale('Display', 2.6, ctx.brand)}
+            ${scale('Title', 1.6, 'The quick brown fox')}
+            ${scale('Body', 1.0, 'Jumps over the lazy dog, twice over.')}
+            ${scale('Caption', 0.82, 'Small print and supporting metadata.')}
+          </div>
+        </section>
+      </div>
+
+      <section class="pv-block">
+        <div class="pv-eyebrow">Buttons</div>
+        <div class="pv-pills">
+          <button class="pv-btn">${esc(ctx.cta)}</button>
+          <button class="pv-btn secondary">Secondary</button>
+          <button class="pv-btn ghost">Ghost</button>
+          <button class="pv-btn" disabled>Disabled</button>
+          <button class="pv-btn sm">Small</button>
+        </div>
+      </section>
+
+      <div class="pv-2col">
+        <section class="pv-block">
+          <div class="pv-eyebrow">Inputs</div>
+          <div class="pv-field"><label>Email</label><input class="pv-input" placeholder="you@${esc(ctx.domain)}" /></div>
+          <div class="pv-field"><label>Plan</label><select class="pv-select"><option>Starter</option><option>Growth</option><option>Enterprise</option></select></div>
+        </section>
+        <section class="pv-block">
+          <div class="pv-eyebrow">Status</div>
+          <div class="pv-pills">
+            <span class="pv-badge"><span class="pv-dot"></span>Live</span>
+            <span class="pv-badge soft">Beta</span>
+            <span class="pv-badge neutral">Draft</span>
+          </div>
+          <div class="pv-alert"><div><b>Heads up.</b><p>Inline notices inherit the accent and surface — no extra styling.</p></div></div>
+        </section>
+      </div>
+
+      <section class="pv-block">
+        <div class="pv-eyebrow">In context</div>
+        <div class="pv-grid">
+          ${CONTEXT_CARDS.map(c => `<article class="pv-card"><span class="ic">${esc(c.ic)}</span><h4>${esc(c.h)}</h4><p>${esc(c.p)}</p><span class="lnk">${esc(c.lnk)} →</span></article>`).join('\n          ')}
+        </div>
+      </section>
+
+      <section class="pv-block">
+        <div class="pv-eyebrow">Metrics</div>
+        <div class="pv-stats">
+          <div class="pv-stat"><div class="n">99.9%</div><div class="l">Uptime</div></div>
+          <div class="pv-stat"><div class="n">12k</div><div class="l">Teams onboard</div></div>
+          <div class="pv-stat"><div class="n">4.9</div><div class="l">Avg. rating</div></div>
+        </div>
+      </section>
+
+      <footer class="pv-foot">
+        <span>© ${esc(ctx.brand)}</span>
+        <span class="links"><span>Privacy</span><span>Terms</span><span>Status</span></span>
+      </footer>
     </div>
-    <div class="lab">Alert</div>
-    <div class="pv-alert"><span class="pv-badge">!</span><div><strong>Heads up.</strong><div class="pv-p" style="margin:4px 0 0">This is what an inline notice looks like in this system.</div></div></div>
-    <div class="lab">Palette</div>
-    <div class="pv-swatch-row"><div style="background:var(--p-accent)"></div><div style="background:var(--p-fg)"></div><div style="background:var(--p-muted)"></div><div style="background:var(--p-border)"></div><div style="background:var(--p-card)"></div></div>
   </div>`;
 }
 
-function pageHtml(intent, voice) {
+function pageHtml(ctx, intent) {
   const order = (intent && intent.sectionRoles && intent.sectionRoles.readingOrder) || ['hero', 'features', 'cta'];
-  const heading = (voice && voice.sampleHeadings && voice.sampleHeadings[0]) || 'The design language, rebuilt from its own tokens.';
-  const cta = (voice && voice.ctaVerbs && voice.ctaVerbs[0] && voice.ctaVerbs[0].value) || 'Start now';
   const sectionFor = (role) => {
     const r = String(role).toLowerCase();
-    if (/hero|header|intro/.test(r)) {
-      return `<section class="pv-section"><span class="pv-badge soft">${esc(role)}</span><h1 class="pv-h">${esc(heading)}</h1><p class="pv-p">An approximate rebuild of the scraped page's reading order, restyled entirely by the tokens on the left.</p><div class="pv-row"><button class="pv-btn">${esc(cta)}</button><button class="pv-btn ghost">Docs</button></div></section>`;
+    if (/hero|header|intro|masthead/.test(r)) {
+      return `<section class="pv-section" style="text-align:center"><span class="pv-kicker">${esc(role)}</span><h1 class="pv-h" style="margin:calc(var(--p-space) * 0.6) auto">${esc(ctx.heading)}</h1><p class="pv-p" style="margin:0 auto">${esc(ctx.lede)}</p><div class="pv-row" style="justify-content:center;margin-top:var(--p-space)"><button class="pv-btn">${esc(ctx.cta)}</button><button class="pv-btn ghost">${esc(ctx.cta2)}</button></div></section>`;
     }
-    if (/feature|grid|card|benefit/.test(r)) {
-      return `<section class="pv-section"><h2 class="pv-h2">${esc(role)}</h2><div class="pv-grid"><div class="pv-card"><h4>One</h4><p>Driven by the extracted system.</p></div><div class="pv-card"><h4>Two</h4><p>Driven by the extracted system.</p></div><div class="pv-card"><h4>Three</h4><p>Driven by the extracted system.</p></div></div></section>`;
+    if (/feature|grid|card|benefit|product/.test(r)) {
+      return `<section class="pv-section"><div class="pv-eyebrow" style="margin-bottom:var(--p-space)">${esc(role)}</div><div class="pv-grid">${CONTEXT_CARDS.map(c => `<article class="pv-card"><span class="ic">${esc(c.ic)}</span><h4>${esc(c.h)}</h4><p>${esc(c.p)}</p></article>`).join('')}</div></section>`;
     }
-    if (/cta|footer|sign|contact/.test(r)) {
-      return `<section class="pv-section" style="text-align:center"><h2 class="pv-h2">${esc(heading)}</h2><div class="pv-row" style="justify-content:center"><button class="pv-btn">${esc(cta)}</button></div></section>`;
+    if (/stat|metric|number|proof|logo/.test(r)) {
+      return `<section class="pv-section"><div class="pv-stats" style="border:0"><div class="pv-stat" style="border:0"><div class="n">99.9%</div><div class="l">Uptime</div></div><div class="pv-stat"><div class="n">12k</div><div class="l">Teams</div></div><div class="pv-stat"><div class="n">4.9</div><div class="l">Rating</div></div></div></section>`;
     }
-    return `<section class="pv-section"><h2 class="pv-h2">${esc(role)}</h2><p class="pv-p">Section content placeholder, styled by the live token set.</p></section>`;
+    if (/cta|footer|sign|contact|subscribe/.test(r)) {
+      return `<section class="pv-section" style="text-align:center"><h2 class="pv-h2">${esc(ctx.heading)}</h2><div class="pv-row" style="justify-content:center"><input class="pv-input" style="max-width:260px" placeholder="you@${esc(ctx.domain)}" /><button class="pv-btn">${esc(ctx.cta)}</button></div></section>`;
+    }
+    return `<section class="pv-section"><h2 class="pv-h2">${esc(role)}</h2><p class="pv-p">${esc(ctx.lede)}</p></section>`;
   };
   return `<div class="panel preview" id="panel-page" data-panel="page">
-    <div class="pv-nav"><strong>brand</strong><div class="links"><span>Product</span><span>Pricing</span><span>Docs</span></div><button class="pv-btn">${esc(cta)}</button></div>
-    ${order.slice(0, 8).map(sectionFor).join('\n    ')}
+    <div class="pv">
+      ${navBar(ctx)}
+      ${order.slice(0, 7).map(sectionFor).join('\n      ')}
+    </div>
   </div>`;
 }
 
@@ -298,8 +442,31 @@ function infoHtml(data) {
   </div>`;
 }
 
+// Build the human-facing context for the specimen from the extraction: a brand
+// name from the prefix, the site's own strongest heading, its top CTA verbs,
+// and a single honest supporting line — so the preview reads as intentional.
+function buildContext(data, derived) {
+  const voice = data.voice || {};
+  const intent = data.intent || {};
+  const prefix = String(data.prefix || 'site');
+  const firstSeg = prefix.replace(/^https?-?/, '').split(/[-.]/)[0] || 'Brand';
+  const brand = firstSeg.charAt(0).toUpperCase() + firstSeg.slice(1);
+  const domain = prefix.replace(/-/g, '.');
+  const heading = (voice.sampleHeadings && voice.sampleHeadings.find(h => h && h.length > 6))
+    || 'A design system, extracted and editable.';
+  const ctas = (voice.ctaVerbs || []).map(c => c && c.value).filter(Boolean);
+  const cta = ctas[0] || 'Get started';
+  const cta2 = ctas.find(c => c !== cta) || 'Learn more';
+  const intentType = intent.pageIntent && intent.pageIntent.type;
+  const kicker = intentType && intentType !== 'unknown' ? `${brand} · ${intentType}` : `${brand} design system`;
+  const fontName = String(derived.vars['--p-font'] || '').replace(/['"]/g, '').split(',')[0].trim() || 'System';
+  const lede = `Every element here is rendered live from ${brand}'s own tokens. Edit a value on the left and the whole system moves with it.`;
+  return { brand, domain, heading, cta, cta2, kicker, fontName, lede };
+}
+
 export function studioHtml(data) {
   const derived = deriveTokens(data);
+  const ctx = buildContext(data, derived);
   const meta = (data.tokens && data.tokens.$metadata) || {};
   const boot = {
     prefix: data.prefix,
@@ -326,7 +493,7 @@ ${styleBlock()}
 <body>
   <div class="app">
     <div class="topbar">
-      <div class="mark">designlang <em>studio</em> · ${esc(data.prefix)}</div>
+      <div class="mark"><b>designlang</b> <em>studio</em> · ${esc(ctx.brand)}</div>
       <div class="tabs" role="tablist">
         <button class="tab" role="tab" data-tab="wall" aria-selected="true">Components</button>
         <button class="tab" role="tab" data-tab="page" aria-selected="false">Page</button>
@@ -357,8 +524,8 @@ ${styleBlock()}
     ${inspectorHtml()}
     <div class="stage-wrap" data-bd="paper">
       <div id="stage">
-        ${wallHtml(data.voice || {})}
-        ${pageHtml(data.intent || {}, data.voice || {})}
+        ${wallHtml(ctx)}
+        ${pageHtml(ctx, data.intent || {})}
         ${infoHtml(data)}
       </div>
     </div>

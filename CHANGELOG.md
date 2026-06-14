@@ -1,5 +1,27 @@
 # Changelog
 
+## [12.21.0] — 2026-06-14
+
+**Studio craft pass — the preview is now an intentional specimen, not a scatter of placeholders.**
+
+- **Composed preview.** The component wall is rebuilt as a real design-system
+  specimen with deliberate rhythm: a masthead, a centered hero using the site's
+  *own* strongest heading + top CTA verbs, labeled **Color** and **Type**
+  foundations, then Buttons, Inputs, Status, In-context cards, and a metrics
+  strip — each under a clear section eyebrow. The rebuilt-Page tab uses the same
+  crafted components. Copy is honest product language, never lorem.
+- **Harmonised color derivation.** `deriveTokens` now guarantees a legible
+  surface/text pair (mislabeled near-equal colors no longer slip through),
+  filters greys out of accent selection so a neutral is never promoted to the
+  brand color, deepens a near-invisible accent just enough to read on the
+  surface, and keeps secondary text above a legibility floor.
+- **Calmer chrome.** Quieter hairlines, consistent 30px rounded controls,
+  pill tab group and segmented light/dark — the editor frame recedes so the
+  extracted system is the focus.
+
+All of this lives in the shared studio engine, so the CLI and the website
+`/studio` get it identically.
+
 ## [12.20.0] — 2026-06-14
 
 **Studio gains one-click dark mode.**
