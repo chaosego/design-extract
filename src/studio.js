@@ -442,6 +442,105 @@ function infoHtml(data) {
   </div>`;
 }
 
+// Motion panel — renders the extracted motion language as something you can
+// SEE and PLAY: easing curves drawn as SVG, duration chips, and (when
+// --motion-runtime captured them) choreography + scroll recipes with live demos.
+function bezierSvgPath(raw) {
+  const m = String(raw || '').match(/cubic-bezier\(\s*([-\d.]+)\s*,\s*([-\d.]+)\s*,\s*([-\d.]+)\s*,\s*([-\d.]+)\s*\)/i);
+  const named = { linear: [0, 0, 1, 1], ease: [0.25, 0.1, 0.25, 1], 'ease-in': [0.42, 0, 1, 1], 'ease-out': [0, 0, 0.58, 1], 'ease-in-out': [0.42, 0, 0.58, 1] };
+  const pts = m ? [+m[1], +m[2], +m[3], +m[4]] : (named[String(raw).trim()] || [0.25, 0.1, 0.25, 1]);
+  const [x1, y1, x2, y2] = pts;
+  // 0..100 box, y flipped (CSS y grows down, curves read up). Overshoot shows
+  // outside the 0..100 band — the viewBox has headroom for springs.
+  const Y = v => 100 - v * 100;
+  return { d: `M0,${Y(0)} C${x1 * 100},${Y(y1)} ${x2 * 100},${Y(y2)} 100,${Y(1)}`, raw: m ? raw : `cubic-bezier(${pts.join(',')})` };
+}
+
+function motionHtml(data) {
+  const m = data.motion || {};
+  const easings = Object.entries(m.easing || {});
+  const durations = Object.entries(m.duration || {}).sort((a, b) => (a[1].ms || 0) - (b[1].ms || 0));
+  const springs = Object.entries(m.spring || {});
+  const choreo = Object.entries(m.choreography || {});
+  const scroll = Object.entries(m.scroll || {});
+  const feel = m.$meta?.feel || 'unknown';
+  const runtime = m.$meta?.runtime;
+
+  const curveCard = ([name, def], isSpring) => {
+    const { d, raw } = bezierSvgPath(def.$value);
+    const dur = durations[Math.min(2, durations.length - 1)]?.[1]?.ms || 320;
+    return `<figure class="mo-curve" data-ease="${esc(def.$value)}" data-dur="${dur}">
+      <svg viewBox="-12 -28 124 156" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <line class="mo-grid" x1="0" y1="100" x2="100" y2="100" /><line class="mo-grid" x1="0" y1="0" x2="0" y2="100" />
+        <line class="mo-diag" x1="0" y1="100" x2="100" y2="0" />
+        <path class="mo-path${isSpring ? ' spring' : ''}" d="${d}" />
+      </svg>
+      <figcaption><b>${esc(name)}</b><code>${esc(raw)}</code></figcaption>
+      <div class="mo-demo"><span class="mo-dot"></span></div>
+    </figure>`;
+  };
+
+  const choreoCard = ([name, c]) => `<article class="mo-recipe" data-stagger="${c.staggerMs}" data-dur="${c.durationMs}" data-count="${c.count}">
+    <header><b>${esc(name)}</b><span class="mo-pill">${esc(c.trigger)}</span></header>
+    <dl><dt>stagger</dt><dd>${c.staggerMs}ms</dd><dt>elements</dt><dd>${c.count}</dd><dt>duration</dt><dd>${c.durationMs}ms</dd></dl>
+    <div class="mo-stage">${Array.from({ length: Math.min(c.count, 6) }, () => '<i></i>').join('')}</div>
+    <button class="mo-play" type="button">▶ play sequence</button>
+  </article>`;
+
+  const scrollRow = ([name, r]) => `<tr><td><code>${esc(name)}</code></td><td><span class="mo-pill">${esc(r.kind)}</span></td><td>${esc((r.properties || []).join(', '))}</td><td>${r.durationMs || 0}ms</td></tr>`;
+
+  const empty = !easings.length && !durations.length && !choreo.length;
+
+  return `<div class="panel motion" id="panel-motion" data-panel="motion">
+    <style>
+      .panel.motion { font-family: var(--mono); color: var(--ink); }
+      .mo-head { display:flex; align-items:baseline; gap:14px; margin-bottom:18px; }
+      .mo-head h2 { font-family: var(--mono); font-size:12px; letter-spacing:.12em; text-transform:uppercase; margin:0; }
+      .mo-feel { font-size:11px; color:var(--ink-3); } .mo-feel b { color:var(--ink); }
+      .mo-sec { margin: 26px 0; }
+      .mo-sec > h3 { font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3); margin:0 0 12px; }
+      .mo-grid-wrap { display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:14px; }
+      .mo-curve { margin:0; border:1px solid var(--line); border-radius:10px; padding:12px; background:var(--paper-2); cursor:pointer; transition:border-color .15s ease; }
+      .mo-curve:hover { border-color:var(--ink-3); }
+      .mo-curve svg { width:100%; height:78px; display:block; }
+      .mo-grid { stroke:var(--line); stroke-width:1; } .mo-diag { stroke:var(--line); stroke-width:1; stroke-dasharray:3 3; }
+      .mo-path { fill:none; stroke:var(--ink); stroke-width:3; vector-effect:non-scaling-stroke; } .mo-path.spring { stroke:#c2410c; }
+      .mo-curve figcaption { display:flex; flex-direction:column; gap:2px; margin-top:8px; }
+      .mo-curve figcaption b { font-size:11px; } .mo-curve figcaption code { font-size:9.5px; color:var(--ink-3); word-break:break-all; }
+      .mo-demo { margin-top:9px; height:6px; border-radius:3px; background:var(--line); position:relative; }
+      .mo-dot { position:absolute; top:-3px; left:0; width:12px; height:12px; border-radius:50%; background:var(--ink); }
+      .mo-curve.run .mo-dot { left:calc(100% - 12px); }
+      .mo-chips { display:flex; flex-wrap:wrap; gap:8px; }
+      .mo-chip { border:1px solid var(--line); border-radius:999px; padding:4px 11px; font-size:11px; background:var(--paper-2); }
+      .mo-chip b { color:var(--ink); } .mo-chip span { color:var(--ink-3); }
+      .mo-recipes { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:14px; }
+      .mo-recipe { border:1px solid var(--line); border-radius:10px; padding:14px; background:var(--paper-2); }
+      .mo-recipe header { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }
+      .mo-recipe header b { font-size:11.5px; }
+      .mo-pill { font-size:9px; letter-spacing:.1em; text-transform:uppercase; padding:2px 7px; border-radius:4px; background:var(--ink); color:var(--paper); }
+      .mo-recipe dl { display:grid; grid-template-columns:auto 1fr; gap:3px 10px; margin:0 0 12px; font-size:10.5px; }
+      .mo-recipe dt { color:var(--ink-3); } .mo-recipe dd { margin:0; text-align:right; }
+      .mo-stage { display:flex; gap:6px; height:34px; align-items:flex-end; margin-bottom:11px; }
+      .mo-stage i { flex:1; height:100%; border-radius:4px 4px 0 0; background:var(--ink); opacity:0; transform:translateY(10px); }
+      .mo-recipe.run .mo-stage i { opacity:1; transform:none; }
+      .mo-play { font-family:var(--mono); font-size:10px; letter-spacing:.08em; text-transform:uppercase; border:1px solid var(--line); background:transparent; color:var(--ink); border-radius:6px; padding:6px 11px; cursor:pointer; width:100%; }
+      .mo-play:hover { background:var(--ink); color:var(--paper); }
+      .mo-table { width:100%; border-collapse:collapse; font-size:10.5px; }
+      .mo-table th { text-align:left; color:var(--ink-3); font-weight:500; padding:6px 8px; border-bottom:1px solid var(--line); text-transform:uppercase; letter-spacing:.1em; font-size:9px; }
+      .mo-table td { padding:7px 8px; border-bottom:1px solid var(--line); }
+      .mo-empty { color:var(--ink-3); font-size:12px; padding:40px 0; text-align:center; }
+      .mo-note { font-size:10px; color:var(--ink-3); margin-top:6px; }
+    </style>
+    <div class="mo-head"><h2>Motion language</h2><span class="mo-feel">feel · <b>${esc(feel)}</b>${runtime ? ` · runtime: ${runtime.observed} observed` : ''}</span></div>
+    ${empty ? '<div class="mo-empty">No motion tokens in this extraction. Re-run with <code>--motion-runtime</code> for live capture.</div>' : ''}
+    ${easings.length ? `<section class="mo-sec"><h3>Easing curves · click to preview</h3><div class="mo-grid-wrap">${easings.map(e => curveCard(e, false)).join('')}${springs.map(s => curveCard(s, true)).join('')}</div></section>` : ''}
+    ${durations.length ? `<section class="mo-sec"><h3>Durations</h3><div class="mo-chips">${durations.map(([n, d]) => `<span class="mo-chip"><b>${esc(n)}</b> <span>${d.ms}ms${d.$extensions?.['designlang.observed'] ? ' · observed' : ''}</span></span>`).join('')}</div></section>` : ''}
+    ${choreo.length ? `<section class="mo-sec"><h3>Choreography · runtime stagger</h3><div class="mo-recipes">${choreo.map(choreoCard).join('')}</div></section>` : ''}
+    ${scroll.length ? `<section class="mo-sec"><h3>Scroll recipes</h3><table class="mo-table"><thead><tr><th>name</th><th>kind</th><th>properties</th><th>duration</th></tr></thead><tbody>${scroll.map(scrollRow).join('')}</tbody></table></section>` : ''}
+    ${!choreo.length && !scroll.length && !empty ? '<p class="mo-note">Tip: re-run with <code>--motion-runtime</code> to capture choreography &amp; scroll recipes from the live page.</p>' : ''}
+  </div>`;
+}
+
 // Build the human-facing context for the specimen from the extraction: a brand
 // name from the prefix, the site's own strongest heading, its top CTA verbs,
 // and a single honest supporting line — so the preview reads as intentional.
@@ -497,6 +596,7 @@ ${styleBlock()}
       <div class="tabs" role="tablist">
         <button class="tab" role="tab" data-tab="wall" aria-selected="true">Components</button>
         <button class="tab" role="tab" data-tab="page" aria-selected="false">Page</button>
+        <button class="tab" role="tab" data-tab="motion" aria-selected="false">Motion</button>
         <button class="tab" role="tab" data-tab="info" aria-selected="false">Info</button>
       </div>
       <div class="actions">
@@ -526,6 +626,7 @@ ${styleBlock()}
       <div id="stage">
         ${wallHtml(ctx)}
         ${pageHtml(ctx, data.intent || {})}
+        ${motionHtml(data)}
         ${infoHtml(data)}
       </div>
     </div>
@@ -715,6 +816,38 @@ ${styleBlock()}
     document.querySelectorAll('.panel').forEach(function (p) { p.classList.toggle('show', p.getAttribute('data-panel') === name); });
   });
   document.getElementById('panel-wall').classList.add('show');
+
+  // ── Motion panel: play easing curves + choreography sequences ──
+  (function () {
+    var panel = document.getElementById('panel-motion');
+    if (!panel) return;
+    panel.addEventListener('click', function (e) {
+      var curve = e.target.closest('.mo-curve');
+      if (curve) {
+        var dot = curve.querySelector('.mo-dot');
+        var dur = +curve.getAttribute('data-dur') || 320;
+        var ease = curve.getAttribute('data-ease') || 'ease';
+        curve.classList.remove('run');
+        dot.style.transition = 'none'; dot.style.left = '0';
+        void dot.offsetWidth; // reflow so the reset takes
+        dot.style.transition = 'left ' + dur + 'ms ' + ease;
+        requestAnimationFrame(function () { curve.classList.add('run'); });
+        return;
+      }
+      var play = e.target.closest('.mo-play');
+      if (play) {
+        var recipe = play.closest('.mo-recipe');
+        var stagger = +recipe.getAttribute('data-stagger') || 80;
+        var rdur = +recipe.getAttribute('data-dur') || 400;
+        var bars = recipe.querySelectorAll('.mo-stage i');
+        recipe.classList.remove('run');
+        bars.forEach(function (b) { b.style.transition = 'none'; b.style.opacity = '0'; b.style.transform = 'translateY(10px)'; });
+        void recipe.offsetWidth;
+        bars.forEach(function (b, i) { b.style.transition = 'opacity ' + rdur + 'ms ease, transform ' + rdur + 'ms cubic-bezier(0.16,1,0.3,1)'; b.style.transitionDelay = (i * stagger) + 'ms'; });
+        requestAnimationFrame(function () { recipe.classList.add('run'); });
+      }
+    });
+  })();
 
   // ── Theme (light / generated dark) ──
   document.querySelector('.seg').addEventListener('click', function (e) {

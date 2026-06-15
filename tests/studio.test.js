@@ -113,3 +113,30 @@ test('contrastRatio matches known WCAG values', () => {
   // symmetric
   assert.equal(contrastRatio('#101010', '#ffffff'), contrastRatio('#ffffff', '#101010'));
 });
+
+test('studioHtml renders a Motion tab with easing curves and runtime choreography', () => {
+  const html = studioHtml({
+    ...fixture,
+    motion: {
+      $meta: { feel: 'springy', runtime: { triggers: ['load'], observed: 8 } },
+      duration: { md: { $value: '300ms', ms: 300, $extensions: { 'designlang.observed': true } } },
+      easing: { 'ease-out': { $value: 'cubic-bezier(0.16, 1, 0.3, 1)', family: 'ease-out' } },
+      spring: { 'spring-1': { $value: 'cubic-bezier(0.34, 1.56, 0.64, 1)' } },
+      choreography: { 'stagger-1': { trigger: 'load', staggerMs: 120, count: 4, durationMs: 400, easing: 'ease-out', properties: ['opacity'], selectorPattern: '.item' } },
+      scroll: { 'reveal-1': { kind: 'reveal', properties: ['opacity', 'transform'], durationMs: 500 } },
+    },
+  });
+  assert.match(html, />Motion<\/button>/);
+  assert.match(html, /id="panel-motion"/);
+  assert.match(html, /class="mo-path/);          // easing curve drawn as SVG
+  assert.match(html, /mo-path spring/);            // overshoot spring styled distinctly
+  assert.match(html, /data-stagger="120"/);        // choreography wired for playback
+  assert.match(html, /play sequence/);
+  assert.match(html, /· observed/);                // runtime-observed duration flagged
+});
+
+test('studioHtml Motion tab degrades to a prompt when no motion tokens', () => {
+  const html = studioHtml({ ...fixture, motion: {} });
+  assert.match(html, /id="panel-motion"/);
+  assert.match(html, /--motion-runtime/);          // nudge toward live capture
+});
