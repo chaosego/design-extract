@@ -43,6 +43,11 @@ export function formatMotionGsap(design) {
   const durSec = (d) => ((d.ms || parseInt(d.css || d.value || d, 10) || 300) / 1000);
   const defaultDur = durations.length ? durSec(durations[Math.min(2, durations.length - 1)]) : 0.3;
 
+  // Motion v3: real, runtime-observed stagger step when --motion-runtime captured one.
+  const choreo = Array.isArray(design?.motion?.runtime?.choreography) ? design.motion.runtime.choreography : [];
+  const observedStagger = choreo.length ? Math.max(0.02, choreo[0].staggerMs / 1000) : null;
+  const staggerSec = (observedStagger != null ? observedStagger : 0.08).toFixed(3);
+
   // Eases: dedupe by family, most-used first, fall back to a standard curve.
   const sortedEase = [...easings].sort((a, b) => (b.count || 0) - (a.count || 0));
   const easeEntries = [];
@@ -109,6 +114,7 @@ export function formatMotionGsap(design) {
   lines.push(`  slideDown: (target, vars = {}) => gsap.from(target, { opacity: 0, y: -24, duration: ${defaultDur}, ease: '${primaryEaseKey}', ...vars }),`);
   lines.push(`  scaleIn: (target, vars = {}) => gsap.from(target, { opacity: 0, scale: 0.96, duration: ${defaultDur}, ease: '${primaryEaseKey}', ...vars }),`);
   lines.push(`  pop: (target, vars = {}) => gsap.from(target, { scale: 0.9, duration: ${defaultDur}, ease: '${easeEntries.find((e) => e.key === 'spring') ? 'spring' : primaryEaseKey}', ...vars }),`);
+  lines.push(`  stagger: (targets, vars = {}) => gsap.from(targets, { opacity: 0, y: 24, duration: ${defaultDur}, ease: '${primaryEaseKey}', stagger: ${staggerSec}, ...vars }),${observedStagger != null ? ' // stagger observed at runtime' : ''}`);
   lines.push('};', '');
 
   if (scroll.present) {

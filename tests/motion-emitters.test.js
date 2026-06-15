@@ -7,6 +7,7 @@ import { formatMotionCss } from '../src/formatters/motion-css.js';
 import { formatMotionTailwind } from '../src/formatters/motion-tailwind.js';
 import { formatMotionGsap } from '../src/formatters/motion-gsap.js';
 import { formatMotionWaapi } from '../src/formatters/motion-waapi.js';
+import { formatMotionTokens } from '../src/formatters/motion-tokens.js';
 
 const designWithSpringAndScroll = {
   meta: { url: 'https://example.com/' },
@@ -192,5 +193,50 @@ describe('motionlang emitters', () => {
     const out = formatMotionGsap(minimalDesign);
     assert.doesNotMatch(out, /revealOnScroll/);
     assert.match(out, /standard: 'M0,0 C0\.25,0\.1 0\.25,1 1,1'/);
+  });
+});
+
+// Motion v3 — emitters consume runtime choreography for real stagger values.
+const designWithRuntime = {
+  meta: { url: 'https://runtime.test/' },
+  motion: {
+    durations: [{ name: 'md', ms: 300, css: '300ms' }],
+    easings: [{ family: 'ease-out', raw: 'cubic-bezier(0.16, 1, 0.3, 1)', count: 10 }],
+    springs: [], keyframes: [], scrollLinked: { present: false, signals: [] },
+    runtime: {
+      triggers: ['load'],
+      durations: [{ name: 'md', ms: 300, css: '300ms' }],
+      scrollRecipes: [{ selector: '.card', kind: 'reveal', properties: ['opacity', 'transform'], durationMs: 500, easing: 'ease-out' }],
+      choreography: [{ trigger: 'load', count: 4, staggerMs: 120, baseDelayMs: 0, durationMs: 400, easing: 'ease-out', properties: ['opacity', 'transform'], selectorPattern: '.grid .item:nth-of-type(*)' }],
+      stats: { observed: 8 },
+    },
+  },
+};
+
+describe('motionlang v3 runtime fidelity', () => {
+  it('framer-motion: stagger uses the observed staggerMs (120ms -> 0.120s)', () => {
+    const out = formatFramerMotion(designWithRuntime);
+    assert.match(out, /staggerChildren: 0\.120 \} \}, \/\/ observed at runtime/);
+  });
+
+  it('motion-gsap: emits a stagger reveal helper with the observed step', () => {
+    const out = formatMotionGsap(designWithRuntime);
+    assert.match(out, /stagger: \(targets, vars = \{\}\) => gsap\.from\(targets,/);
+    assert.match(out, /stagger: 0\.120, \.\.\.vars \}\), \/\/ stagger observed at runtime/);
+  });
+
+  it('motion-tokens: emits choreography + scroll recipes and observed durations', () => {
+    const json = JSON.parse(formatMotionTokens(designWithRuntime.motion));
+    assert.equal(json.choreography['stagger-1'].staggerMs, 120);
+    assert.equal(json.choreography['stagger-1'].selectorPattern, '.grid .item:nth-of-type(*)');
+    assert.equal(json.scroll['reveal-1'].kind, 'reveal');
+    assert.equal(json.duration.md.$extensions['designlang.observed'], true);
+    assert.deepEqual(json.$meta.runtime.triggers, ['load']);
+  });
+
+  it('motion-tokens: omits runtime blocks when no runtime data', () => {
+    const json = JSON.parse(formatMotionTokens(designWithSpringAndScroll.motion));
+    assert.equal(json.choreography, undefined);
+    assert.equal(json.$meta.runtime, undefined);
   });
 });
