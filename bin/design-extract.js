@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
-import { mkdirSync, writeFileSync, readFileSync } from 'fs';
+import { mkdirSync, writeFileSync, readFileSync, statSync } from 'fs';
 import { resolve, join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -603,7 +603,15 @@ program
         console.log('');
         console.log(chalk.bold('  Output files:'));
         for (const file of files) {
-          const size = Buffer.byteLength(file.content);
+          // Some entries (brand.html / brand.pdf) are written straight to disk
+          // and pushed without `content`; read their size off disk instead of
+          // calling Buffer.byteLength(undefined), which crashed the run (#131).
+          let size = 0;
+          if (file.content != null) {
+            size = Buffer.byteLength(file.content);
+          } else {
+            try { size = statSync(join(outDir, file.name)).size; } catch { size = 0; }
+          }
           const sizeStr = size > 1024 ? `${(size / 1024).toFixed(1)}KB` : `${size}B`;
           console.log(`  ${chalk.green('✓')} ${chalk.cyan(file.name)} ${chalk.gray(`(${sizeStr})`)} — ${file.label}`);
         }

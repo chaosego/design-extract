@@ -168,15 +168,32 @@ export function formatMarkdown(design) {
   }
 
   // ── CSS Variables ──
-  const varCategories = Object.entries(variables).filter(([, v]) => Object.keys(v).length > 0);
+  // Flatten each category to [name, value] leaves. Some categories (e.g.
+  // `semantic`) nest one level deeper — { success: { '--x': '#0a0' } } — so we
+  // render the inner vars, not the group objects (which stringified to
+  // `[object Object]`, #135).
+  const flattenVars = (vars) => {
+    const out = [];
+    for (const [name, value] of Object.entries(vars)) {
+      if (value && typeof value === 'object') {
+        for (const [sub, subVal] of Object.entries(value)) out.push([sub, subVal]);
+      } else {
+        out.push([name, value]);
+      }
+    }
+    return out;
+  };
+  const varCategories = Object.entries(variables)
+    .map(([category, vars]) => [category, flattenVars(vars)])
+    .filter(([, pairs]) => pairs.length > 0);
   if (varCategories.length > 0) {
     lines.push('## CSS Custom Properties');
     lines.push('');
-    for (const [category, vars] of varCategories) {
+    for (const [category, pairs] of varCategories) {
       lines.push(`### ${category.charAt(0).toUpperCase() + category.slice(1)}`);
       lines.push('');
       lines.push('```css');
-      for (const [name, value] of Object.entries(vars)) {
+      for (const [name, value] of pairs) {
         lines.push(`${name}: ${value};`);
       }
       lines.push('```');
@@ -202,7 +219,7 @@ export function formatMarkdown(design) {
     lines.push('');
 
     if (animations.easings.length > 0) {
-      lines.push(`**Easing functions:** ${animations.easings.map(e => `\`${e}\``).join(', ')}`);
+      lines.push(`**Easing functions:** ${animations.easings.map(e => `\`${typeof e === 'string' ? e : e.value}\``).join(', ')}`);
       lines.push('');
     }
     if (animations.durations.length > 0) {
@@ -249,7 +266,7 @@ export function formatMarkdown(design) {
       lines.push(`### ${name.charAt(0).toUpperCase() + name.slice(1)} (${comp.count} instances)`);
       lines.push('');
       lines.push('```css');
-      lines.push(`.${name.slice(0, -1)} {`);
+      lines.push(`.${name} {`);
       for (const [prop, val] of Object.entries(comp.baseStyle)) {
         const cssProp = prop.replace(/([A-Z])/g, '-$1').toLowerCase();
         lines.push(`  ${cssProp}: ${val};`);
@@ -563,7 +580,7 @@ export function formatMarkdown(design) {
     if (design.zIndex.issues.length > 0) {
       lines.push('**Issues:**');
       for (const issue of design.zIndex.issues) {
-        lines.push(`- ${issue}`);
+        lines.push(`- ${typeof issue === 'string' ? issue : issue.message}`);
       }
       lines.push('');
     }

@@ -191,6 +191,55 @@ describe('formatMarkdown', () => {
     const result = formatMarkdown(mockDesign);
     assert.ok(result.includes('## Layout System'));
   });
+
+  // ── #135: narrative serialization bugs ──
+  describe('issue #135: object stringification + class truncation', () => {
+    const design = {
+      ...mockDesign,
+      components: { navigation: { count: 754, baseStyle: { backgroundColor: 'rgba(29,29,31,0.8)' } } },
+      variables: {
+        colors: { '--brand': '#0066cc' },
+        semantic: {
+          success: { '--color-success': '#0a0' },
+          warning: {}, error: {}, info: {},
+        },
+      },
+      animations: {
+        transitions: ['all 0.2s ease'],
+        keyframes: [],
+        easings: [{ value: 'cubic-bezier(0.4, 0, 0.2, 1)', pattern: 'ease-in-out' }],
+        durations: ['0.2s'],
+      },
+      zIndex: {
+        allValues: [10, 9999],
+        layers: [],
+        issues: [{ type: 'excessive', message: 'Very high z-index values: 9999' }],
+      },
+    };
+
+    it('never emits literal [object Object]', () => {
+      assert.ok(!formatMarkdown(design).includes('[object Object]'));
+    });
+
+    it('renders nested semantic vars as their inner values (1a)', () => {
+      const r = formatMarkdown(design);
+      assert.ok(r.includes('--color-success: #0a0;'), 'semantic leaf rendered');
+    });
+
+    it('renders easing function values, not objects (1b)', () => {
+      assert.ok(formatMarkdown(design).includes('cubic-bezier(0.4, 0, 0.2, 1)'));
+    });
+
+    it('renders z-index issue messages, not objects (1c)', () => {
+      assert.ok(formatMarkdown(design).includes('Very high z-index values: 9999'));
+    });
+
+    it('keeps full component class names (bug 2)', () => {
+      const r = formatMarkdown(design);
+      assert.ok(r.includes('.navigation {'), 'class name not truncated');
+      assert.ok(!r.includes('.navigatio '), 'no off-by-one truncation');
+    });
+  });
 });
 
 // ── formatTokens ────────────────────────────────────────────────
