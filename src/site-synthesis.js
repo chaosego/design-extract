@@ -171,3 +171,181 @@ function canonicalColors(rows, totalPages, threshold) {
     })
     .sort((a, b) => b.coverage - a.coverage || b.count - a.count);
 }
+
+// ── drift + grade ──────────────────────────────────────────────────────────
+
+function letterGrade(score) {
+  if (score >= 90) return 'A';
+  if (score >= 80) return 'B';
+  if (score >= 70) return 'C';
+  if (score >= 60) return 'D';
+  return 'F';
+}
+
+// A category is "consistent" when most of its token *usage* lands on site-wide
+// tokens. Returns 0..1 (1 = every use is on a shared token).
+function categoryConsistency(rows) {
+  const total = rows.reduce((s, r) => s + r.count, 0);
+  if (!total) return 1;
+  const shared = rows
+    .filter((r) => r.scope === 'site-wide')
+    .reduce((s, r) => s + r.count, 0);
+  return shared / total;
+}
+
+// Page-introduced tokens worth surfacing: anything not site-wide that still
+// saw real use. These are the off-system choices a design lead would flag.
+function collectOutliers(coverage) {
+  const out = [];
+  for (const [category, rows] of Object.entries(coverage)) {
+    for (const r of rows) {
+      if (r.scope !== 'site-wide' && r.pageCount === 1 && r.count >= 2) {
+        out.push({
+          category,
+          token: r.key,
+          pages: r.pages,
+          count: r.count,
+          coverage: r.coverage,
+        });
+      }
+    }
+  }
+  return out.sort((a, b) => b.count - a.count).slice(0, 25);
+}
+
+// ── main ───────────────────────────────────────────────────────────────────
+
+// synthesizeSite(pages) — pages: [{ url, type, design }]. The first page is
+// treated as the base (homepage) for non-token fields so every emitter works
+// on the returned `canonical`. Pages without a `design` are ignored.
+export function synthesizeSite(pages, options = {}) {
+  const colorThreshold = options.colorThreshold ?? 0.04;
+  const valid = (pages || []).filter((p) => p && p.design);
+  const totalPages = valid.length;
+
+  const colorTally = makeTally();
+  const primaryVote = makeTally();
+  const bgTally = makeTally();
+  const textTally = makeTally();
+  const familyTally = makeTally();
+  const typeScaleTally = makeTally();
+  const spacingTally = makeTally();
+  const radiiTally = makeTally();
+  const shadowTally = makeTally();
+
+  valid.forEach((page, idx) => {
+    const pid = pageId(page, idx);
+    const d = page.design || {};
+    const c = d.colors || {};
+    for (const sw of c.all || []) {
+      const hex = normalizeHex(sw.hex);
+      if (hex) record(colorTally, hex, { hex, count: sw.count || 1 }, pid, sw.count || 1);
+    }
+    if (c.primary?.hex) {
+      const hex = normalizeHex(c.primary.hex);
+      record(primaryVote, hex, { ...c.primary, hex }, pid, c.primary.count || 1);
+    }
+    for (const bg of c.backgrounds || []) {
+      const hex = normalizeHex(bg);
+      if (hex) record(bgTally, hex, hex, pid);
+    }
+    for (const t of c.text || []) {
+      const hex = normalizeHex(t);
+      if (hex) record(textTally, hex, hex, pid);
+    }
+    for (const fam of d.typography?.families || []) {
+      if (fam?.name) record(familyTally, fam.name.toLowerCase(), fam, pid, fam.count || 1);
+    }
+    for (const s of d.typography?.scale || []) {
+      if (s?.size != null) record(typeScaleTally, s.size, s, pid, s.count || 1);
+    }
+    for (const v of d.spacing?.scale || []) {
+      if (v != null) record(spacingTally, v, v, pid);
+    }
+    for (const r of d.borders?.radii || []) {
+      if (r?.value != null) record(radiiTally, r.value, r, pid, r.count || 1);
+    }
+    for (const sh of d.shadows?.values || []) {
+      const key = sh?.label || sh?.raw;
+      if (key) record(shadowTally, key, sh, pid);
+    }
+  });
+
+  const coverage = {
+    colors: canonicalColors(coverageRows(colorTally, totalPages), totalPages, colorThreshold),
+    backgrounds: canonicalColors(coverageRows(bgTally, totalPages), totalPages, colorThreshold),
+    text: canonicalColors(coverageRows(textTally, totalPages), totalPages, colorThreshold),
+    typography: coverageRows(familyTally, totalPages),
+    typeScale: coverageRows(typeScaleTally, totalPages),
+    spacing: coverageRows(spacingTally, totalPages),
+    borders: coverageRows(radiiTally, totalPages),
+    shadows: coverageRows(shadowTally, totalPages),
+  };
+
+  // Build a canonical design object from the base page, overriding token fields
+  // with the elected set so emitters produce a whole-site system.
+  const base = valid[0]?.design || {};
+  const primaryRows = canonicalColors(coverageRows(primaryVote, totalPages), totalPages, colorThreshold);
+  const canonical = structuredClone(base);
+  canonical.meta = { ...(base.meta || {}), pagesAnalyzed: totalPages, whoseSystem: 'site-wide-canonical' };
+  canonical.colors = {
+    ...(base.colors || {}),
+    primary: primaryRows[0]?.value || base.colors?.primary || null,
+    backgrounds: coverage.backgrounds.slice(0, 6).map((r) => r.key),
+    text: coverage.text.slice(0, 10).map((r) => r.key),
+    all: coverage.colors.map((r) => r.value),
+  };
+  canonical.typography = {
+    ...(base.typography || {}),
+    families: coverage.typography.map((r) => r.value),
+    scale: coverage.typeScale.map((r) => r.value).sort((a, b) => (b.size || 0) - (a.size || 0)),
+  };
+  canonical.spacing = {
+    ...(base.spacing || {}),
+    scale: coverage.spacing.map((r) => r.value).sort((a, b) => a - b),
+  };
+  canonical.borders = {
+    ...(base.borders || {}),
+    radii: coverage.borders.map((r) => r.value).sort((a, b) => (a.value || 0) - (b.value || 0)),
+  };
+  canonical.shadows = {
+    ...(base.shadows || {}),
+    values: coverage.shadows.map((r) => r.value),
+  };
+
+  // Grade: weighted blend of per-category consistency.
+  const weights = { colors: 0.35, typography: 0.25, spacing: 0.2, borders: 0.2 };
+  let scoreAcc = 0;
+  let weightAcc = 0;
+  const categoryScores = {};
+  for (const [cat, w] of Object.entries(weights)) {
+    const cons = categoryConsistency(coverage[cat] || []);
+    categoryScores[cat] = Math.round(cons * 100);
+    scoreAcc += cons * w;
+    weightAcc += w;
+  }
+  const grade = totalPages < 2 ? null : Math.round((scoreAcc / weightAcc) * 100);
+  const outliers = collectOutliers({
+    colors: coverage.colors,
+    typography: coverage.typography,
+    spacing: coverage.spacing,
+    borders: coverage.borders,
+  });
+
+  return {
+    pagesAnalyzed: totalPages,
+    pages: valid.map((p, i) => ({ url: p.url, type: p.type || `page-${i}` })),
+    canonical,
+    coverage,
+    drift: {
+      grade,
+      letter: grade == null ? null : letterGrade(grade),
+      categoryScores,
+      outliers,
+      summary:
+        grade == null
+          ? 'Need at least 2 pages to assess site consistency.'
+          : `${grade}/100 (${letterGrade(grade)}) — ${outliers.length} off-system token${outliers.length === 1 ? '' : 's'} across ${totalPages} pages.`,
+    },
+  };
+}
