@@ -1,5 +1,36 @@
 # Changelog
 
+## [12.23.0] — 2026-06-18
+
+**Whole-site design system — synthesize one canonical system across every page, not just the homepage.**
+
+- **`designlang site <url>`.** Crawls a site's canonical pages (home, pricing,
+  docs, blog, about, product…) and synthesizes a single de-duplicated design
+  system. Tokens are elected by *coverage* — the share of pages that use them —
+  so a colour on every page is canonical/site-wide while a one-off is flagged
+  page-local. Deterministic and free; no API key. `--max-pages` (default 6)
+  bounds the crawl. New modules `src/site.js` (orchestrator) and
+  `src/site-synthesis.js` (pure, unit-tested engine).
+- **OKLab colour clustering.** Perceptually-identical swatches (`#ffffff` vs
+  `#fefefe`) merge into one canonical representative, unioning their coverage.
+- **Coverage map + consistency grade.** Two new reports:
+  `*-site-coverage.md` tags every token 🟢 site-wide / 🟡 section /
+  🔴 page-local with the pages that use it; `*-site-consistency.md` scores a
+  0–100 consistency grade (weighted per-category, usage-on-shared-tokens) with
+  a letter and an off-system outlier table. `*-site-system.json` carries the
+  canonical tokens + coverage + drift.
+- **Whole-site pack.** The standard emitters (DTCG, Tailwind, shadcn, CSS
+  variables, `*-design-language.md`) now run on the **canonical** system for the
+  `site` command — so the tokens you ship represent the whole site.
+
+**Claude plugin fixed.**
+
+- Manifests were frozen 12 releases behind (`12.10.1`). Synced to current and
+  added a version-sync guard (`npm run check-plugin` + a test) so it can't drift
+  again.
+- Exposed three commands that existed in the CLI but were never wired into the
+  plugin: **`/site`**, **`/studio`**, **`/verify`** (eight → eleven).
+
 ## [12.22.0] — 2026-06-15
 
 **Motion Lang v3 — capture what actually moves, not just what the CSS declares.**
