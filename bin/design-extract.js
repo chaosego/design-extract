@@ -12,6 +12,8 @@ import ora from 'ora';
 import { extractDesignLanguage } from '../src/index.js';
 import { refineWithSmart } from '../src/classifiers/smart.js';
 import { crawlCanonicalPages } from '../src/multipage.js';
+import { crawlSite } from '../src/site.js';
+import { formatSiteCoverage, formatSiteConsistency } from '../src/formatters/site-system.js';
 import { extractLogo } from '../src/extractors/logo.js';
 import { captureComponentScreenshotsV10 } from '../src/extractors/component-screenshots.js';
 import { pairDarkMode } from '../src/extractors/dark-mode-pair.js';
@@ -907,6 +909,87 @@ program
 
     } catch (err) {
       spinner.fail('Clone failed');
+      console.error(chalk.red(`\n  ${err.message}\n`));
+      process.exit(1);
+    }
+  });
+
+// ── Site command (whole-site design system) ─────────────────
+program
+  .command('site <url>')
+  .description('Crawl a whole site and synthesize one canonical design system across all pages')
+  .option('-o, --out <dir>', 'output directory', './design-extract-output')
+  .option('--max-pages <n>', 'max pages to crawl, including the homepage', parseInt, 6)
+  .option('--name <name>', 'output filename prefix')
+  .action(async (url, opts) => {
+    if (!url.startsWith('http')) url = `https://${url}`;
+    validateUrl(url);
+    const maxPages = Math.max(1, opts.maxPages || 6);
+
+    console.log('');
+    console.log(chalk.bold('  designlang site'));
+    console.log(chalk.gray(`  ${url}  ·  up to ${maxPages} pages`));
+    console.log('');
+
+    const spinner = ora('Extracting homepage...').start();
+    try {
+      const homepageDesign = await extractDesignLanguage(url);
+      spinner.text = 'Discovering site pages...';
+      const result = await crawlSite({
+        homepageUrl: url,
+        homepageDesign,
+        maxPages,
+        extract: (u, o) => extractDesignLanguage(u, o),
+        onProgress: (u) => { spinner.text = `Extracting ${u}...`; },
+      });
+
+      spinner.text = 'Writing files...';
+      const outDir = resolve(opts.out);
+      mkdirSync(outDir, { recursive: true });
+      const prefix = opts.name || nameFromUrl(url);
+      const files = [];
+      const write = (name, content) => {
+        writeFileSync(join(outDir, name), content, 'utf-8');
+        files.push(name);
+      };
+
+      // Canonical system + reports.
+      write(`${prefix}-site-system.json`, JSON.stringify({
+        pagesAnalyzed: result.pagesAnalyzed,
+        pages: result.pages,
+        crawled: result.crawled,
+        drift: result.drift,
+        coverage: result.coverage,
+        canonical: {
+          colors: result.canonical.colors,
+          typography: result.canonical.typography,
+          spacing: result.canonical.spacing,
+          borders: result.canonical.borders,
+          shadows: result.canonical.shadows,
+        },
+      }, null, 2));
+      write(`${prefix}-site-coverage.md`, formatSiteCoverage(result));
+      write(`${prefix}-site-consistency.md`, formatSiteConsistency(result));
+
+      // Standard pack, emitted from the canonical (whole-site) system.
+      write(`${prefix}-design-tokens.json`, JSON.stringify(formatDtcgTokens(result.canonical), null, 2));
+      write(`${prefix}-tailwind.config.js`, formatTailwind(result.canonical));
+      write(`${prefix}-shadcn-theme.css`, formatShadcnTheme(result.canonical));
+      write(`${prefix}-variables.css`, formatCssVars(result.canonical));
+      write(`${prefix}-design-language.md`, formatMarkdown(result.canonical));
+
+      spinner.succeed(`Synthesized a ${result.pagesAnalyzed}-page design system`);
+      console.log('');
+      if (result.drift.grade != null) {
+        const g = result.drift.grade;
+        const colour = g >= 80 ? chalk.green : g >= 60 ? chalk.yellow : chalk.red;
+        console.log('  ' + chalk.bold('Consistency: ') + colour(`${g}/100 (${result.drift.letter})`) + chalk.gray(`  ·  ${result.drift.outliers.length} off-system tokens`));
+        console.log('');
+      }
+      for (const f of files) console.log(`  ${chalk.green('✓')} ${chalk.cyan(join(opts.out, f))}`);
+      console.log('');
+    } catch (err) {
+      spinner.fail('Site synthesis failed');
       console.error(chalk.red(`\n  ${err.message}\n`));
       process.exit(1);
     }
