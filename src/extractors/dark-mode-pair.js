@@ -22,24 +22,29 @@ import { extractColors } from './colors.js';
 export async function extractMediaDarkColors(page) {
   if (!page || typeof page.emulateMedia !== 'function') return null;
   await page.emulateMedia({ colorScheme: 'dark' });
-  const styles = await page.evaluate(() =>
-    Array.from(document.querySelectorAll('*')).slice(0, 5000).map(el => {
-      const cs = getComputedStyle(el);
-      const r = el.getBoundingClientRect();
-      return {
-        tag: el.tagName.toLowerCase(),
-        classList: Array.from(el.classList).join(' '),
-        role: el.getAttribute('role') || '',
-        area: r.width * r.height,
-        color: cs.color,
-        backgroundColor: cs.backgroundColor,
-        backgroundImage: cs.backgroundImage,
-        borderColor: cs.borderColor,
-      };
-    }),
-  );
-  // Restore the original scheme so any later pass on this page sees light.
-  try { await page.emulateMedia({ colorScheme: 'light' }); } catch { /* ignore */ }
+  let styles;
+  try {
+    styles = await page.evaluate(() =>
+      Array.from(document.querySelectorAll('*')).slice(0, 5000).map(el => {
+        const cs = getComputedStyle(el);
+        const r = el.getBoundingClientRect();
+        return {
+          tag: el.tagName.toLowerCase(),
+          classList: Array.from(el.classList).join(' '),
+          role: el.getAttribute('role') || '',
+          area: r.width * r.height,
+          color: cs.color,
+          backgroundColor: cs.backgroundColor,
+          backgroundImage: cs.backgroundImage,
+          borderColor: cs.borderColor,
+        };
+      }),
+    );
+  } finally {
+    // Restore the original scheme so the depth crawl and any later pass on this
+    // page see light, even if the evaluate above throws.
+    try { await page.emulateMedia({ colorScheme: 'light' }); } catch { /* ignore */ }
+  }
   if (!Array.isArray(styles) || styles.length === 0) return null;
   return extractColors(styles);
 }

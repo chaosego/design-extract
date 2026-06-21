@@ -142,6 +142,40 @@ describe('issue #110: prefers-color-scheme dark detection', () => {
     assert.equal(mergeDarkColors({ all: [] }, mediaColors).all.length, 1);
     assert.equal(mergeDarkColors(classOnly(), null).primary.hex, '#111111');
   });
+
+  // Regression for #157: the media-dark capture runs on the shared `page`
+  // before the --depth crawl navigates it elsewhere. It MUST restore the
+  // scheme to light afterwards, or the subsequent crawl reads dark colours
+  // off internal pages. These guard the restore invariant the fix relies on.
+  it('restores prefers-color-scheme to light after a successful capture', async () => {
+    const media = [];
+    const fakePage = {
+      async emulateMedia(opts) { media.push(opts); },
+      async evaluate() {
+        return [
+          { tag: 'body', classList: '', role: '', area: 800000, color: 'rgb(243, 241, 234)', backgroundColor: 'rgb(10, 9, 8)', backgroundImage: 'none', borderColor: 'rgb(10, 9, 8)' },
+        ];
+      },
+    };
+    await extractMediaDarkColors(fakePage);
+    assert.equal(media.at(-1)?.colorScheme, 'light', 'page left in light after capture');
+  });
+
+  it('restores prefers-color-scheme to light even if the page evaluate throws', async () => {
+    const media = [];
+    const fakePage = {
+      async emulateMedia(opts) { media.push(opts); },
+      async evaluate() { throw new Error('navigation interrupted the evaluate'); },
+    };
+    let threw = false;
+    try {
+      await extractMediaDarkColors(fakePage);
+    } catch {
+      threw = true;
+    }
+    assert.equal(threw, true, 'the evaluate error propagates');
+    assert.equal(media.at(-1)?.colorScheme, 'light', 'finally still restored light');
+  });
 });
 
 function classOnly() {
