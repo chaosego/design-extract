@@ -2068,11 +2068,11 @@ program
   .command('fidelity <original>')
   .description('Measure how faithfully a clone reproduces a site — pixel-diff + motion-fidelity → one 0-100 score, letter grade, ranked correction plan, and a shareable card.')
   .requiredOption('--clone <url>', 'URL of the clone to score against the original (e.g. http://localhost:3000)')
-  .option('-o, --out <dir>', 'output directory', './design-extract-output')
+  .option('-o, --out <dir>', 'output directory')
   .option('--min <score>', 'exit non-zero if overall fidelity is below this (CI gate)', parseInt)
   .option('--motion-runtime', 'capture runtime motion (real durations + choreography) on both sides')
   .option('--system-chrome', 'use the system Chrome install instead of bundled Chromium')
-  .action(async (original, opts) => {
+  .action(async (original, opts, command) => {
     if (!original.startsWith('http')) original = `https://${original}`;
     let clone = opts.clone;
     if (!clone.startsWith('http')) clone = `https://${clone}`;
@@ -2088,7 +2088,9 @@ program
         opts: { channel, extract: { motionRuntime: !!opts.motionRuntime } },
       });
 
-      const outDir = resolve(opts.out);
+      // The root command also owns -o/--out and consumes it before the
+      // subcommand sees it, so fall back to the parent-parsed value.
+      const outDir = resolve(opts.out || command.parent?.opts().out || './design-extract-output');
       mkdirSync(outDir, { recursive: true });
       writeFileSync(join(outDir, 'fidelity.json'), formatFidelityJson(report), 'utf8');
       writeFileSync(join(outDir, 'fidelity.md'), formatFidelityMarkdown(report), 'utf8');
