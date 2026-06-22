@@ -20,8 +20,11 @@ function motionFix(aspect, detail) {
       return detail.original?.length
         ? `Add transitions/animations near ${detail.original.slice(0, 4).join(', ')}ms — the clone is ${detail.clone?.length ? 'mistimed' : 'frozen'} where the original moves.`
         : `Remove invented motion — the original animates less than the clone.`;
-    case 'easings':
-      return `Apply the original's easing families (${(detail.original || []).join(', ') || 'n/a'}) via transition-timing-function instead of ${(detail.clone || []).join(', ') || 'defaults'}.`;
+    case 'easings': {
+      const want = uniqShort(detail.original);
+      const have = uniqShort(detail.clone);
+      return `Apply the original's easing families (${want || 'n/a'}) via transition-timing-function instead of ${have || 'defaults'}.`;
+    }
     case 'springs':
       return `Use a spring/overshoot curve (e.g. cubic-bezier(.2,1.4,.4,1)) on the primary interactions — the original overshoots, the clone eases flat.`;
     case 'keyframes':
@@ -33,6 +36,14 @@ function motionFix(aspect, detail) {
     default:
       return `Improve motion aspect "${aspect.aspect}".`;
   }
+}
+
+// De-dupe and cap a value list so fix copy stays readable (raw extractions can
+// repeat the same easing family dozens of times).
+function uniqShort(list, max = 4) {
+  if (!Array.isArray(list)) return list == null ? '' : String(list);
+  const uniq = [...new Set(list.map(String))];
+  return uniq.slice(0, max).join(', ') + (uniq.length > max ? ', …' : '');
 }
 
 function priorityLabel(gain) {
