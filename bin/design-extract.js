@@ -2114,6 +2114,41 @@ program
     }
   });
 
+// ── Gallery — static shareable site of measured clones (v12) ──
+program
+  .command('gallery [dir]')
+  .description('Build a static, shareable gallery from fidelity reports — an index of score cards plus a permalink page (with OG card) per clone.')
+  .option('-o, --out <dir>', 'output directory for the generated site')
+  .option('--title <title>', 'gallery title', 'Fidelity Gallery')
+  .option('--base-url <url>', 'absolute base URL for OG image links (e.g. https://gallery.example.com)')
+  .action(async (dir, opts, command) => {
+    const scanDir = resolve(dir || './design-extract-output');
+    const outDir = resolve(opts.out || command.parent?.opts().out || './gallery');
+    const spinner = ora(`Scanning ${scanDir} for fidelity reports`).start();
+    try {
+      const { loadReportsFromDir } = await import('../src/gallery/load.js');
+      const { buildGallery } = await import('../src/gallery/index.js');
+      const { renderGallerySite } = await import('../src/formatters/gallery.js');
+
+      const reports = loadReportsFromDir(scanDir);
+      if (!reports.length) {
+        spinner.fail(`No fidelity reports found under ${scanDir}. Run \`designlang fidelity\` first.`);
+        process.exit(1);
+      }
+      const gallery = buildGallery(reports);
+      const files = renderGallerySite(gallery, { title: opts.title, baseUrl: opts.baseUrl });
+      for (const f of files) {
+        const dest = join(outDir, f.path);
+        mkdirSync(dirname(dest), { recursive: true });
+        writeFileSync(dest, f.content, 'utf8');
+      }
+      spinner.succeed(`Gallery: ${gallery.stats.count} clone(s), avg ${gallery.stats.avg ?? 'n/a'}% → ${join(outDir, 'index.html')}`);
+    } catch (err) {
+      spinner.fail(err.message);
+      process.exit(1);
+    }
+  });
+
 // ── Chat — REPL over a live extraction (v12) ──────────────
 program
   .command('chat <target>')
