@@ -1,0 +1,309 @@
+{
+  "$metadata": {
+    "generator": "designlang",
+    "version": "7.0.0",
+    "spec": "https://design-tokens.github.io/community-group/format/",
+    "source": "https://discord.com",
+    "generatedAt": "2026-06-25T08:27:03.141Z"
+  },
+  "primitive": {
+    "color": {
+      "brand": {
+        "primary": {
+          "$value": "#5865f2",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "#35ed7e",
+          "$type": "color"
+        }
+      },
+      "neutral": {
+        "n100": {
+          "$value": "#000000",
+          "$type": "color"
+        },
+        "n200": {
+          "$value": "#ffffff",
+          "$type": "color"
+        },
+        "n300": {
+          "$value": "#333333",
+          "$type": "color"
+        },
+        "n400": {
+          "$value": "#23272a",
+          "$type": "color"
+        }
+      },
+      "background": {
+        "bg0": {
+          "$value": "#1a2081",
+          "$type": "color"
+        },
+        "bg1": {
+          "$value": "#000000",
+          "$type": "color"
+        }
+      },
+      "text": {
+        "text0": {
+          "$value": "#000000",
+          "$type": "color"
+        },
+        "text1": {
+          "$value": "#333333",
+          "$type": "color"
+        },
+        "text2": {
+          "$value": "#ffffff",
+          "$type": "color"
+        },
+        "text3": {
+          "$value": "#23272a",
+          "$type": "color"
+        },
+        "text4": {
+          "$value": "#5865f2",
+          "$type": "color"
+        }
+      }
+    },
+    "spacing": {
+      "s0": {
+        "$value": "1px",
+        "$type": "dimension"
+      },
+      "s1": {
+        "$value": "24px",
+        "$type": "dimension"
+      },
+      "s2": {
+        "$value": "29px",
+        "$type": "dimension"
+      },
+      "s3": {
+        "$value": "35px",
+        "$type": "dimension"
+      },
+      "s4": {
+        "$value": "48px",
+        "$type": "dimension"
+      },
+      "s5": {
+        "$value": "52px",
+        "$type": "dimension"
+      },
+      "s6": {
+        "$value": "56px",
+        "$type": "dimension"
+      },
+      "s7": {
+        "$value": "60px",
+        "$type": "dimension"
+      },
+      "s8": {
+        "$value": "64px",
+        "$type": "dimension"
+      },
+      "s9": {
+        "$value": "73px",
+        "$type": "dimension"
+      },
+      "s10": {
+        "$value": "76px",
+        "$type": "dimension"
+      },
+      "s11": {
+        "$value": "80px",
+        "$type": "dimension"
+      },
+      "s12": {
+        "$value": "96px",
+        "$type": "dimension"
+      },
+      "s13": {
+        "$value": "106px",
+        "$type": "dimension"
+      },
+      "s14": {
+        "$value": "125px",
+        "$type": "dimension"
+      },
+      "s15": {
+        "$value": "128px",
+        "$type": "dimension"
+      },
+      "s16": {
+        "$value": "134px",
+        "$type": "dimension"
+      },
+      "s17": {
+        "$value": "143px",
+        "$type": "dimension"
+      },
+      "s18": {
+        "$value": "154px",
+        "$type": "dimension"
+      },
+      "s19": {
+        "$value": "157px",
+        "$type": "dimension"
+      },
+      "s20": {
+        "$value": "160px",
+        "$type": "dimension"
+      },
+      "s21": {
+        "$value": "174px",
+        "$type": "dimension"
+      },
+      "s22": {
+        "$value": "185px",
+        "$type": "dimension"
+      },
+      "s23": {
+        "$value": "194px",
+        "$type": "dimension"
+      },
+      "s24": {
+        "$value": "197px",
+        "$type": "dimension"
+      },
+      "s25": {
+        "$value": "221px",
+        "$type": "dimension"
+      },
+      "s26": {
+        "$value": "235px",
+        "$type": "dimension"
+      },
+      "s27": {
+        "$value": "256px",
+        "$type": "dimension"
+      },
+      "s28": {
+        "$value": "293px",
+        "$type": "dimension"
+      },
+      "s29": {
+        "$value": "413px",
+        "$type": "dimension"
+      },
+      "s30": {
+        "$value": "426px",
+        "$type": "dimension"
+      },
+      "s31": {
+        "$value": "432px",
+        "$type": "dimension"
+      },
+      "s32": {
+        "$value": "445px",
+        "$type": "dimension"
+      }
+    },
+    "radius": {
+      "r0": {
+        "$value": "12px",
+        "$type": "dimension"
+      },
+      "r1": {
+        "$value": "16px",
+        "$type": "dimension"
+      },
+      "r2": {
+        "$value": "40px",
+        "$type": "dimension"
+      },
+      "r3": {
+        "$value": "50px",
+        "$type": "dimension"
+      },
+      "r4": {
+        "$value": "60px",
+        "$type": "dimension"
+      },
+      "r5": {
+        "$value": "72px",
+        "$type": "dimension"
+      },
+      "r6": {
+        "$value": "88px",
+        "$type": "dimension"
+      }
+    },
+    "shadow": {},
+    "fontFamily": {
+      "f0": {
+        "$value": "Ggsans",
+        "$type": "fontFamily"
+      },
+      "f1": {
+        "$value": "Abcgintodiscord",
+        "$type": "fontFamily"
+      },
+      "f2": {
+        "$value": "ABC Ginto Normal",
+        "$type": "fontFamily"
+      },
+      "f3": {
+        "$value": "Times",
+        "$type": "fontFamily"
+      },
+      "f4": {
+        "$value": "Abcgintodiscordnord",
+        "$type": "fontFamily"
+      }
+    }
+  },
+  "semantic": {
+    "color": {
+      "action": {
+        "primary": {
+          "$value": "{primitive.color.brand.primary}",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "{primitive.color.brand.secondary}",
+          "$type": "color"
+        }
+      },
+      "surface": {
+        "default": {
+          "$value": "{primitive.color.background.bg0}",
+          "$type": "color"
+        }
+      },
+      "text": {
+        "body": {
+          "$value": "{primitive.color.text.text0}",
+          "$type": "color"
+        }
+      }
+    },
+    "typography": {
+      "body": {
+        "$value": {
+          "fontFamily": "Ggsans",
+          "fontSize": "61px",
+          "fontWeight": "700",
+          "lineHeight": "25px"
+        },
+        "$type": "typography"
+      }
+    },
+    "radius": {
+      "control": {
+        "$value": "{primitive.radius.r0}",
+        "$type": "dimension"
+      }
+    },
+    "shadow": {
+      "elevated": {
+        "$value": "{primitive.shadow.sh0}",
+        "$type": "shadow"
+      }
+    }
+  }
+}

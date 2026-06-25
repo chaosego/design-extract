@@ -1,0 +1,286 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "action-primary",
+          "color": "#5865f2",
+          "name": "Action Primary"
+        },
+        {
+          "slug": "action-secondary",
+          "color": "#35ed7e",
+          "name": "Action Secondary"
+        },
+        {
+          "slug": "surface-default",
+          "color": "#1a2081",
+          "name": "Surface Default"
+        },
+        {
+          "slug": "text-body",
+          "color": "#000000",
+          "name": "Text Body"
+        }
+      ]
+    },
+    "typography": {
+      "fontSizes": [
+        {
+          "slug": "div",
+          "size": "61px",
+          "name": "div"
+        },
+        {
+          "slug": "h2",
+          "size": "48px",
+          "name": "h2"
+        },
+        {
+          "slug": "h1",
+          "size": "44px",
+          "name": "h1"
+        },
+        {
+          "slug": "h2",
+          "size": "36px",
+          "name": "h2"
+        },
+        {
+          "slug": "h2",
+          "size": "22px",
+          "name": "h2"
+        },
+        {
+          "slug": "p",
+          "size": "20px",
+          "name": "p"
+        },
+        {
+          "slug": "a",
+          "size": "18px",
+          "name": "a"
+        },
+        {
+          "slug": "div",
+          "size": "17.6px",
+          "name": "div"
+        },
+        {
+          "slug": "html",
+          "size": "16px",
+          "name": "html"
+        },
+        {
+          "slug": "a",
+          "size": "14px",
+          "name": "a"
+        }
+      ],
+      "fontFamilies": [
+        {
+          "slug": "ggsans",
+          "fontFamily": "Ggsans, sans-serif",
+          "name": "Ggsans"
+        },
+        {
+          "slug": "abcgintodiscord",
+          "fontFamily": "Abcgintodiscord, sans-serif",
+          "name": "Abcgintodiscord"
+        },
+        {
+          "slug": "abc-ginto-normal",
+          "fontFamily": "ABC Ginto Normal, sans-serif",
+          "name": "ABC Ginto Normal"
+        },
+        {
+          "slug": "times",
+          "fontFamily": "Times, sans-serif",
+          "name": "Times"
+        },
+        {
+          "slug": "abcgintodiscordnord",
+          "fontFamily": "Abcgintodiscordnord, sans-serif",
+          "name": "Abcgintodiscordnord"
+        }
+      ]
+    },
+    "spacing": {
+      "spacingSizes": [
+        {
+          "slug": "s0",
+          "size": "1px",
+          "name": "S0"
+        },
+        {
+          "slug": "s1",
+          "size": "24px",
+          "name": "S1"
+        },
+        {
+          "slug": "s2",
+          "size": "29px",
+          "name": "S2"
+        },
+        {
+          "slug": "s3",
+          "size": "35px",
+          "name": "S3"
+        },
+        {
+          "slug": "s4",
+          "size": "48px",
+          "name": "S4"
+        },
+        {
+          "slug": "s5",
+          "size": "52px",
+          "name": "S5"
+        },
+        {
+          "slug": "s6",
+          "size": "56px",
+          "name": "S6"
+        },
+        {
+          "slug": "s7",
+          "size": "60px",
+          "name": "S7"
+        },
+        {
+          "slug": "s8",
+          "size": "64px",
+          "name": "S8"
+        },
+        {
+          "slug": "s9",
+          "size": "73px",
+          "name": "S9"
+        },
+        {
+          "slug": "s10",
+          "size": "76px",
+          "name": "S10"
+        },
+        {
+          "slug": "s11",
+          "size": "80px",
+          "name": "S11"
+        },
+        {
+          "slug": "s12",
+          "size": "96px",
+          "name": "S12"
+        },
+        {
+          "slug": "s13",
+          "size": "106px",
+          "name": "S13"
+        },
+        {
+          "slug": "s14",
+          "size": "125px",
+          "name": "S14"
+        },
+        {
+          "slug": "s15",
+          "size": "128px",
+          "name": "S15"
+        },
+        {
+          "slug": "s16",
+          "size": "134px",
+          "name": "S16"
+        },
+        {
+          "slug": "s17",
+          "size": "143px",
+          "name": "S17"
+        },
+        {
+          "slug": "s18",
+          "size": "154px",
+          "name": "S18"
+        },
+        {
+          "slug": "s19",
+          "size": "157px",
+          "name": "S19"
+        },
+        {
+          "slug": "s20",
+          "size": "160px",
+          "name": "S20"
+        },
+        {
+          "slug": "s21",
+          "size": "174px",
+          "name": "S21"
+        },
+        {
+          "slug": "s22",
+          "size": "185px",
+          "name": "S22"
+        },
+        {
+          "slug": "s23",
+          "size": "194px",
+          "name": "S23"
+        },
+        {
+          "slug": "s24",
+          "size": "197px",
+          "name": "S24"
+        },
+        {
+          "slug": "s25",
+          "size": "221px",
+          "name": "S25"
+        },
+        {
+          "slug": "s26",
+          "size": "235px",
+          "name": "S26"
+        },
+        {
+          "slug": "s27",
+          "size": "256px",
+          "name": "S27"
+        },
+        {
+          "slug": "s28",
+          "size": "293px",
+          "name": "S28"
+        },
+        {
+          "slug": "s29",
+          "size": "413px",
+          "name": "S29"
+        },
+        {
+          "slug": "s30",
+          "size": "426px",
+          "name": "S30"
+        },
+        {
+          "slug": "s31",
+          "size": "432px",
+          "name": "S31"
+        },
+        {
+          "slug": "s32",
+          "size": "445px",
+          "name": "S32"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--surface-default, #1a2081)",
+      "text": "var(--wp--preset--color--text-body, #000000)"
+    }
+  }
+}
