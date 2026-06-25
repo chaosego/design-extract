@@ -1,0 +1,19 @@
+/* shadcn/ui Theme — extracted from https://railway.app */
+/* Paste into your globals.css */
+
+@layer base {
+  :root {
+    --background: 251 24% 9%;
+    --foreground: 0 0% 100%;
+    --primary: 260 25% 38%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 271 41% 16%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 271 38% 12%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 0 0% 0%;
+    --muted-foreground: 245 11% 22%;
+    --border: 159 25% 50%;
+    --radius: 8px;
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://designlang.app/schemas/gradients.json",
+  "source": "https://railway.app",
+  "generated": "2026-06-25T08:29:38.257Z",
+  "count": 3,
+  "gradients": [
+    {
+      "raw": "linear-gradient(rgb(24, 13, 67) 40px, rgba(24, 13, 67, 0) 100%)",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "rgb(24, 13, 67)",
+          "position": "40px"
+        },
+        {
+          "color": "rgba(24, 13, 67, 0)",
+          "position": "100%"
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.05))",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "rgba(0, 0, 0, 0.3)",
+          "position": null
+        },
+        {
+          "color": "rgba(0, 0, 0, 0.05)",
+          "position": null
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(to top, rgb(49, 60, 60), rgba(40, 52, 52, 0))",
+      "type": "linear",
+      "direction": "to top",
+      "stops": [
+        {
+          "color": "rgb(49, 60, 60)",
+          "position": null
+        },
+        {
+          "color": "rgba(40, 52, 52, 0)",
+          "position": null
+        }
+      ],
+      "classification": "brand"
+    }
+  ]
+}

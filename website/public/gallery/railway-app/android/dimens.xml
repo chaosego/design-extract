@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_s0">4dp</dimen>
+    <dimen name="spacing_s1">60dp</dimen>
+    <dimen name="spacing_s2">80dp</dimen>
+    <dimen name="spacing_s3">96dp</dimen>
+    <dimen name="spacing_s4">128dp</dimen>
+    <dimen name="spacing_s5">159dp</dimen>
+    <dimen name="spacing_s6">235dp</dimen>
+    <dimen name="spacing_s7">262dp</dimen>
+    <dimen name="radius_r0">4dp</dimen>
+    <dimen name="radius_r1">8dp</dimen>
+    <dimen name="radius_r2">16dp</dimen>
+    <dimen name="radius_r3">50dp</dimen>
+    <dimen name="radius_r4">9999dp</dimen>
+</resources>
