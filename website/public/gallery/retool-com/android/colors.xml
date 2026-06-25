@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="action_primary">#FFE9EBDF</color>
+    <color name="action_secondary">#FF518DD2</color>
+    <color name="surface_default">#FF151515</color>
+    <color name="text_body">#FFFFFFFF</color>
+    <color name="brand_primary">#FFE9EBDF</color>
+    <color name="brand_secondary">#FF518DD2</color>
+    <color name="neutral_n100">#FF151515</color>
+    <color name="neutral_n200">#FFFFFFFF</color>
+    <color name="neutral_n300">#FFCBCCC4</color>
+    <color name="neutral_n400">#FF242424</color>
+    <color name="neutral_n500">#FF8B867F</color>
+    <color name="neutral_n600">#FFB6B8AF</color>
+    <color name="neutral_n700">#FF000000</color>
+    <color name="neutral_n800">#FFD9D9D9</color>
+    <color name="neutral_n900">#FF433E38</color>
+    <color name="background_bg0">#FF151515</color>
+    <color name="background_bg1">#FF000000</color>
+    <color name="background_bg2">#FFE9EBDF</color>
+    <color name="background_bg3">#FF242424</color>
+    <color name="text_text0">#FFFFFFFF</color>
+    <color name="text_text1">#FFE9EBDF</color>
+    <color name="text_text2">#FF151515</color>
+    <color name="text_text3">#FFF7F8F4</color>
+    <color name="text_text4">#FFCBCCC4</color>
+    <color name="text_text5">#FF242424</color>
+    <color name="text_text6">#FF8B867F</color>
+    <color name="text_text7">#FFB6B8AF</color>
+</resources>

@@ -1,0 +1,788 @@
+{
+  "colors": {
+    "all": [
+      {
+        "hex": "#e9ebdf",
+        "rgb": {
+          "r": 233,
+          "g": 235,
+          "b": 223,
+          "a": 1
+        },
+        "hsl": {
+          "h": 70,
+          "s": 23,
+          "l": 90
+        },
+        "count": 3154,
+        "contexts": [
+          "text",
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#151515",
+        "rgb": {
+          "r": 21,
+          "g": 21,
+          "b": 21,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 8
+        },
+        "count": 355,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#ffffff",
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 100
+        },
+        "count": 348,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#cbccc4",
+        "rgb": {
+          "r": 203,
+          "g": 204,
+          "b": 196,
+          "a": 1
+        },
+        "hsl": {
+          "h": 68,
+          "s": 7,
+          "l": 78
+        },
+        "count": 158,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#242424",
+        "rgb": {
+          "r": 36,
+          "g": 36,
+          "b": 36,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 14
+        },
+        "count": 45,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#8b867f",
+        "rgb": {
+          "r": 139,
+          "g": 134,
+          "b": 127,
+          "a": 1
+        },
+        "hsl": {
+          "h": 35,
+          "s": 5,
+          "l": 52
+        },
+        "count": 32,
+        "contexts": [
+          "border",
+          "background",
+          "text"
+        ]
+      },
+      {
+        "hex": "#f7f8f4",
+        "rgb": {
+          "r": 247,
+          "g": 248,
+          "b": 244,
+          "a": 1
+        },
+        "hsl": {
+          "h": 75,
+          "s": 22,
+          "l": 96
+        },
+        "count": 13,
+        "contexts": [
+          "text",
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#b6b8af",
+        "rgb": {
+          "r": 182,
+          "g": 184,
+          "b": 175,
+          "a": 1
+        },
+        "hsl": {
+          "h": 73,
+          "s": 6,
+          "l": 70
+        },
+        "count": 12,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#000000",
+        "rgb": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.8
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 0
+        },
+        "count": 6,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#d9d9d9",
+        "rgb": {
+          "r": 217,
+          "g": 217,
+          "b": 217,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 85
+        },
+        "count": 4,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#433e38",
+        "rgb": {
+          "r": 67,
+          "g": 62,
+          "b": 56,
+          "a": 1
+        },
+        "hsl": {
+          "h": 33,
+          "s": 9,
+          "l": 24
+        },
+        "count": 3,
+        "contexts": [
+          "border"
+        ]
+      },
+      {
+        "hex": "#518dd2",
+        "rgb": {
+          "r": 81,
+          "g": 141,
+          "b": 210,
+          "a": 1
+        },
+        "hsl": {
+          "h": 212,
+          "s": 59,
+          "l": 57
+        },
+        "count": 2,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#0e352c",
+        "rgb": {
+          "r": 14,
+          "g": 53,
+          "b": 44,
+          "a": 1
+        },
+        "hsl": {
+          "h": 166,
+          "s": 58,
+          "l": 13
+        },
+        "count": 1,
+        "contexts": [
+          "background"
+        ]
+      }
+    ]
+  },
+  "regions": [
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 120
+      },
+      "heading": null,
+      "buttonCount": 11,
+      "cardCount": 75,
+      "className": "GlobalNavigationContentDefault-module__VJd2Lq__globalNavigationContent fixed top-0 z-nav lg:block"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 167.828125,
+        "y": 60,
+        "w": 485.65625,
+        "h": 40
+      },
+      "heading": null,
+      "buttonCount": 4,
+      "cardCount": 9,
+      "className": "group hidden flex-row items-center h-fit gap-6 transition-opacity duration-400 lg:flex opacity-100"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 4,
+      "cardCount": 6,
+      "className": "relative flex flex-col w-full items-start grid-span-start-inner-to-end-inner gap-y-4 mt-6 duration-400 transition-transform-opacity opacity-0 -translate-y-8"
+    },
+    {
+      "role": "pricing",
+      "tag": "main",
+      "bounds": {
+        "x": 0,
+        "y": 40,
+        "w": 1280,
+        "h": 8067
+      },
+      "heading": "Secure your vibe-coded apps",
+      "buttonCount": 27,
+      "cardCount": 148,
+      "className": "relative overflow-x-clip"
+    },
+    {
+      "role": "hero",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 40,
+        "w": 1280,
+        "h": 976
+      },
+      "heading": "Secure your vibe-coded apps",
+      "buttonCount": 6,
+      "cardCount": 37,
+      "className": "slice-section hero-homepage-m4 relative z-auto"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 1032,
+        "w": 1280,
+        "h": 584.65625
+      },
+      "heading": "Apps that mean business",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "slice-section z-0 flex flex-col gap-y-10 py-10"
+    },
+    {
+      "role": "features",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 1696.65625,
+        "w": 1280,
+        "h": 3631.34375
+      },
+      "heading": null,
+      "buttonCount": 16,
+      "cardCount": 18,
+      "className": "slice-section z-0 story-scroll grid-wrapper mt-10 lg:mt-20 StoryScrollSection-module__DPRTNG__sectionSpacing"
+    },
+    {
+      "role": "testimonials",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 5169.609375,
+        "w": 1280,
+        "h": 513.0625
+      },
+      "heading": "Why enterprises choose Retool",
+      "buttonCount": 0,
+      "cardCount": 1,
+      "className": "slice-section z-0 feature-column-list bg-surface-background-base lg:pb-30 pt-10 pb-20 md:pt-20 md:pb-15"
+    },
+    {
+      "role": "features",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 5682.671875,
+        "w": 1280,
+        "h": 918.546875
+      },
+      "heading": "Trusted by 10,000+ teams to generate production-ready AI applications",
+      "buttonCount": 0,
+      "cardCount": 63,
+      "className": "slice-section z-0 results-homepage grid-wrapper items-start py-10 lg:py-0"
+    },
+    {
+      "role": "pricing",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 6601.21875,
+        "w": 1280,
+        "h": 884.15625
+      },
+      "heading": "Start today",
+      "buttonCount": 5,
+      "cardCount": 27,
+      "className": "slice-section relative z-auto"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 7485.375,
+        "w": 1280,
+        "h": 621.625
+      },
+      "heading": "Get the latest from Retool",
+      "buttonCount": 0,
+      "cardCount": 1,
+      "className": "slice-section z-0 resources-grid grid-wrapper gap-y-10 py-10 lg:py-10"
+    },
+    {
+      "role": "footer",
+      "tag": "footer",
+      "bounds": {
+        "x": 0,
+        "y": 8107,
+        "w": 1280,
+        "h": 902.28125
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 47,
+      "className": "dark"
+    }
+  ],
+  "componentClusters": [
+    {
+      "kind": "button",
+      "structuralHash": "button>span",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(233, 235, 223)",
+            "color": "rgb(21, 21, 21)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "9999px",
+            "border": "0px solid rgb(21, 21, 21)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>svg>span",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(233, 235, 223)",
+            "padding": "8px 0px 8px 0px",
+            "borderRadius": "0px",
+            "border": "0px solid rgb(233, 235, 223)",
+            "fontSize": "12px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>summary>figure",
+      "instanceCount": 3,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(233, 235, 223)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "0px solid rgb(233, 235, 223)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 3
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>svg>span>kbd",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(233, 235, 223)",
+            "padding": "4px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "0px solid rgb(233, 235, 223)",
+            "fontSize": "13.2308px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "structuralHash": "div>a>div",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(233, 235, 223)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "1px solid rgba(233, 235, 223, 0.12)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "link",
+      "structuralHash": "a>span>p",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(233, 235, 223)",
+            "padding": "28px 0px 28px 12px",
+            "borderRadius": "0px",
+            "border": "0px solid rgb(233, 235, 223)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "structuralHash": "span>svg",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(233, 235, 223)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "0px solid rgb(233, 235, 223)",
+            "fontSize": "22.4615px",
+            "fontWeight": "380"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "structuralHash": "div>span>span>p",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(21, 21, 21)",
+            "color": "rgb(233, 235, 223)",
+            "padding": "24px 0px 24px 12px",
+            "borderRadius": "0px",
+            "border": "0px solid rgb(233, 235, 223)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>svg",
+      "instanceCount": 4,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(233, 235, 223)",
+            "padding": "2px 2px 2px 2px",
+            "borderRadius": "9999px",
+            "border": "1px solid rgba(233, 235, 223, 0.12)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 4
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>span>svg",
+      "instanceCount": 2,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(21, 21, 21, 0.063)",
+            "color": "rgb(36, 36, 36)",
+            "padding": "4px 4px 4px 8px",
+            "borderRadius": "8px",
+            "border": "1px solid rgba(21, 21, 21, 0.12)",
+            "fontSize": "13.2308px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 2
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>span>span",
+      "instanceCount": 4,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(217, 217, 217)",
+            "color": "rgba(21, 21, 21, 0.6)",
+            "padding": "8px 12px 8px 12px",
+            "borderRadius": "12px",
+            "border": "1px solid rgba(21, 21, 21, 0.12)",
+            "fontSize": "13.2308px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 4
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>div>div",
+      "instanceCount": 6,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0.8)",
+            "color": "rgb(233, 235, 223)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "9999px",
+            "border": "1px solid rgba(233, 235, 223, 0.12)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        },
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(233, 235, 223)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "16px",
+            "border": "0px solid rgb(233, 235, 223)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 5
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>span>h6>div",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(233, 235, 223)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "0px solid rgb(233, 235, 223)",
+            "fontSize": "22.4615px",
+            "fontWeight": "380"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>span>h6",
+      "instanceCount": 2,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(233, 235, 223)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "0px solid rgb(233, 235, 223)",
+            "fontSize": "22.4615px",
+            "fontWeight": "380"
+          },
+          "instanceCount": 2
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>span>div",
+      "instanceCount": 8,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(233, 235, 223)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "0px solid rgb(233, 235, 223)",
+            "fontSize": "22.4615px",
+            "fontWeight": "380"
+          },
+          "instanceCount": 8
+        }
+      ]
+    }
+  ],
+  "accessibility": {
+    "remediation": []
+  },
+  "cssHealth": {
+    "sheets": [
+      {
+        "url": "https://retool.com/_next/static/chunks/3hspgkw-7q0xg.css?dpl=dpl_FDiyuUechS3CnNsdB3CiZB3JehKx",
+        "totalBytes": 3421,
+        "usedBytes": 0,
+        "unusedBytes": 3421,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://retool.com/_next/static/chunks/0d251bgbc5u1s.css?dpl=dpl_FDiyuUechS3CnNsdB3CiZB3JehKx",
+        "totalBytes": 216372,
+        "usedBytes": 58604,
+        "unusedBytes": 157768,
+        "unusedPercent": 73
+      },
+      {
+        "url": "https://retool.com/_next/static/chunks/1gpag0v62vbuu.css?dpl=dpl_FDiyuUechS3CnNsdB3CiZB3JehKx",
+        "totalBytes": 100111,
+        "usedBytes": 8566,
+        "unusedBytes": 91545,
+        "unusedPercent": 91
+      },
+      {
+        "url": "https://retool.com/_next/static/chunks/3aqs8qc2r-1t2.css?dpl=dpl_FDiyuUechS3CnNsdB3CiZB3JehKx",
+        "totalBytes": 5924,
+        "usedBytes": 736,
+        "unusedBytes": 5188,
+        "unusedPercent": 88
+      }
+    ],
+    "totalBytes": 325828,
+    "usedBytes": 67906,
+    "unusedBytes": 257922,
+    "unusedPercent": 79,
+    "importantCount": 106,
+    "duplicates": 3292,
+    "vendorPrefixes": {
+      "webkit": 98,
+      "moz": 29,
+      "ms": 0,
+      "o": 27
+    },
+    "keyframes": [],
+    "specificity": {
+      "max": [
+        2,
+        7,
+        4
+      ],
+      "average": [
+        0.01,
+        1.63,
+        0.1
+      ],
+      "count": 3762
+    },
+    "issues": [
+      "106 !important rules",
+      "3292 duplicate declarations",
+      "79% unused CSS"
+    ]
+  }
+}
