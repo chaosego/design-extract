@@ -37,7 +37,7 @@ export default async function WatchPage({ searchParams }) {
 
       <section className="section" style={{ paddingTop: 8 }}>
         <div className="wrap">
-          <Theatre autoStart={initial || null} live />
+          <Theatre autoStart={initial || null} live big />
         </div>
       </section>
     </main>
