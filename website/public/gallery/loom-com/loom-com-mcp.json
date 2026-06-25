@@ -1,0 +1,2292 @@
+{
+  "colors": {
+    "all": [
+      {
+        "hex": "#292a2e",
+        "rgb": {
+          "r": 41,
+          "g": 42,
+          "b": 46,
+          "a": 1
+        },
+        "hsl": {
+          "h": 228,
+          "s": 6,
+          "l": 17
+        },
+        "count": 1119,
+        "contexts": [
+          "text",
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#101214",
+        "rgb": {
+          "r": 16,
+          "g": 18,
+          "b": 20,
+          "a": 1
+        },
+        "hsl": {
+          "h": 210,
+          "s": 11,
+          "l": 7
+        },
+        "count": 616,
+        "contexts": [
+          "text",
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#000000",
+        "rgb": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 0
+        },
+        "count": 407,
+        "contexts": [
+          "text",
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#ffffff",
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 100
+        },
+        "count": 161,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#1868db",
+        "rgb": {
+          "r": 24,
+          "g": 104,
+          "b": 219,
+          "a": 1
+        },
+        "hsl": {
+          "h": 215,
+          "s": 80,
+          "l": 48
+        },
+        "count": 125,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#696969",
+        "rgb": {
+          "r": 105,
+          "g": 105,
+          "b": 105,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 41
+        },
+        "count": 63,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#e9f2fe",
+        "rgb": {
+          "r": 233,
+          "g": 242,
+          "b": 254,
+          "a": 1
+        },
+        "hsl": {
+          "h": 214,
+          "s": 91,
+          "l": 95
+        },
+        "count": 43,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#555555",
+        "rgb": {
+          "r": 85,
+          "g": 85,
+          "b": 85,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 33
+        },
+        "count": 29,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#bf63f3",
+        "rgb": {
+          "r": 191,
+          "g": 99,
+          "b": 243,
+          "a": 1
+        },
+        "hsl": {
+          "h": 278,
+          "s": 86,
+          "l": 67
+        },
+        "count": 10,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#3860be",
+        "rgb": {
+          "r": 56,
+          "g": 96,
+          "b": 190,
+          "a": 1
+        },
+        "hsl": {
+          "h": 222,
+          "s": 54,
+          "l": 48
+        },
+        "count": 10,
+        "contexts": [
+          "text",
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#ff613d",
+        "rgb": {
+          "r": 255,
+          "g": 97,
+          "b": 61,
+          "a": 0.125
+        },
+        "hsl": {
+          "h": 11,
+          "s": 100,
+          "l": 62
+        },
+        "count": 9,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#ffab00",
+        "rgb": {
+          "r": 255,
+          "g": 171,
+          "b": 0,
+          "a": 1
+        },
+        "hsl": {
+          "h": 40,
+          "s": 100,
+          "l": 50
+        },
+        "count": 9,
+        "contexts": [
+          "background",
+          "border"
+        ]
+      },
+      {
+        "hex": "#27455c",
+        "rgb": {
+          "r": 39,
+          "g": 69,
+          "b": 92,
+          "a": 1
+        },
+        "hsl": {
+          "h": 206,
+          "s": 40,
+          "l": 26
+        },
+        "count": 8,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#f8f8f8",
+        "rgb": {
+          "r": 248,
+          "g": 248,
+          "b": 248,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 97
+        },
+        "count": 7,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#48245d",
+        "rgb": {
+          "r": 72,
+          "g": 36,
+          "b": 93,
+          "a": 1
+        },
+        "hsl": {
+          "h": 278,
+          "s": 44,
+          "l": 25
+        },
+        "count": 5,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#172b4d",
+        "rgb": {
+          "r": 23,
+          "g": 43,
+          "b": 77,
+          "a": 1
+        },
+        "hsl": {
+          "h": 218,
+          "s": 54,
+          "l": 20
+        },
+        "count": 5,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#82b536",
+        "rgb": {
+          "r": 130,
+          "g": 181,
+          "b": 54,
+          "a": 1
+        },
+        "hsl": {
+          "h": 84,
+          "s": 54,
+          "l": 46
+        },
+        "count": 3,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#7d818a",
+        "rgb": {
+          "r": 125,
+          "g": 129,
+          "b": 138,
+          "a": 1
+        },
+        "hsl": {
+          "h": 222,
+          "s": 5,
+          "l": 52
+        },
+        "count": 2,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#c97cf4",
+        "rgb": {
+          "r": 201,
+          "g": 124,
+          "b": 244,
+          "a": 1
+        },
+        "hsl": {
+          "h": 279,
+          "s": 85,
+          "l": 72
+        },
+        "count": 2,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#123263",
+        "rgb": {
+          "r": 18,
+          "g": 50,
+          "b": 99,
+          "a": 1
+        },
+        "hsl": {
+          "h": 216,
+          "s": 69,
+          "l": 23
+        },
+        "count": 2,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#1558bc",
+        "rgb": {
+          "r": 21,
+          "g": 88,
+          "b": 188,
+          "a": 1
+        },
+        "hsl": {
+          "h": 216,
+          "s": 80,
+          "l": 41
+        },
+        "count": 2,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#0052cc",
+        "rgb": {
+          "r": 0,
+          "g": 82,
+          "b": 204,
+          "a": 1
+        },
+        "hsl": {
+          "h": 216,
+          "s": 100,
+          "l": 40
+        },
+        "count": 2,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#d8d8d8",
+        "rgb": {
+          "r": 216,
+          "g": 216,
+          "b": 216,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 85
+        },
+        "count": 2,
+        "contexts": [
+          "border"
+        ]
+      },
+      {
+        "hex": "#eed7fc",
+        "rgb": {
+          "r": 238,
+          "g": 215,
+          "b": 252,
+          "a": 1
+        },
+        "hsl": {
+          "h": 277,
+          "s": 86,
+          "l": 92
+        },
+        "count": 1,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#efffd6",
+        "rgb": {
+          "r": 239,
+          "g": 255,
+          "b": 214,
+          "a": 1
+        },
+        "hsl": {
+          "h": 83,
+          "s": 100,
+          "l": 92
+        },
+        "count": 1,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#fff5d4",
+        "rgb": {
+          "r": 255,
+          "g": 245,
+          "b": 212,
+          "a": 1
+        },
+        "hsl": {
+          "h": 46,
+          "s": 100,
+          "l": 92
+        },
+        "count": 1,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#32ae88",
+        "rgb": {
+          "r": 50,
+          "g": 174,
+          "b": 136,
+          "a": 1
+        },
+        "hsl": {
+          "h": 162,
+          "s": 55,
+          "l": 44
+        },
+        "count": 1,
+        "contexts": [
+          "border"
+        ]
+      },
+      {
+        "hex": "#bbbbbb",
+        "rgb": {
+          "r": 187,
+          "g": 187,
+          "b": 187,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 73
+        },
+        "count": 1,
+        "contexts": [
+          "border"
+        ]
+      }
+    ]
+  },
+  "regions": [
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 90
+      },
+      "heading": null,
+      "buttonCount": 4,
+      "cardCount": 5,
+      "className": "NewHeader_header__F2I_f"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 90
+      },
+      "heading": null,
+      "buttonCount": 4,
+      "cardCount": 5,
+      "className": "px-fluid-base 4xl:px-0 my-auto relative z-10 h-[var(--thd-nav-h)]"
+    },
+    {
+      "role": "pricing",
+      "tag": "main",
+      "bounds": {
+        "x": 0,
+        "y": 90,
+        "w": 1280,
+        "h": 12301.609375
+      },
+      "heading": "One video is worth a thousand words",
+      "buttonCount": 14,
+      "cardCount": 231,
+      "className": null
+    },
+    {
+      "role": "pricing",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 90,
+        "w": 1280,
+        "h": 1216.25
+      },
+      "heading": "One video is worth a thousand words",
+      "buttonCount": 2,
+      "cardCount": 6,
+      "className": "relative pb-fluid-lg bg-thd-color-white relative pt-fluid-lg"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 34.546875,
+        "y": 193.03125,
+        "w": 1210.90625,
+        "h": 151.28125
+      },
+      "heading": "One video is worth a thousand words",
+      "buttonCount": 0,
+      "cardCount": 1,
+      "className": "mb-xl w-full whitespace-pre-line flex flex-col md:text-center md:items-center mx-auto flex flex-col justify-center"
+    },
+    {
+      "role": "pricing",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 1306.25,
+        "w": 1280,
+        "h": 742.765625
+      },
+      "heading": "Millions of people across 400,000 companies choose Loom",
+      "buttonCount": 1,
+      "cardCount": 60,
+      "className": "mb-fluid-xs py-fluid-lg overflow-hidden"
+    },
+    {
+      "role": "hero",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 2083.5625,
+        "w": 1280,
+        "h": 806.78125
+      },
+      "heading": "Ship faster with AI bug reports",
+      "buttonCount": 1,
+      "cardCount": 3,
+      "className": "lg:px-fluid-base mb-fluid-md scroll-my-fluid-lg"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 668,
+        "y": 2186.59375,
+        "w": 474.421875,
+        "h": 488.171875
+      },
+      "heading": "Ship faster with AI bug reports",
+      "buttonCount": 0,
+      "cardCount": 1,
+      "className": "flex flex-col justify-center max-w-screen-sm"
+    },
+    {
+      "role": "testimonials",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 2974.8125,
+        "w": 1280,
+        "h": 862.15625
+      },
+      "heading": "The easiest screen recorder you’ll ever use",
+      "buttonCount": 3,
+      "cardCount": 6,
+      "className": "max-w-screen-3xl mx-auto mb-fluid-lg md:px-fluid-base 3xl:p-0"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 34.546875,
+        "y": 2974.8125,
+        "w": 1210.90625,
+        "h": 120.71875
+      },
+      "heading": "The easiest screen recorder you’ll ever use",
+      "buttonCount": 0,
+      "cardCount": 1,
+      "className": "px-fluid-base flex flex-col md:text-center md:items-center mx-auto flex flex-col justify-center mb-fluid-sm"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 137.578125,
+        "y": 3357.25,
+        "w": 469.46875,
+        "h": 283.890625
+      },
+      "heading": "Lightning fast screen recording",
+      "buttonCount": 1,
+      "cardCount": 3,
+      "className": "w-full mx-auto flex flex flex-col justify-center"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 3940,
+        "w": 1280,
+        "h": 2213.671875
+      },
+      "heading": "So much more than a screen recorder",
+      "buttonCount": 0,
+      "cardCount": 21,
+      "className": " mx-auto px-fluid-base 3xl:p-0 max-w-screen-3xl"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 34.546875,
+        "y": 3940,
+        "w": 1210.90625,
+        "h": 116.3125
+      },
+      "heading": "So much more than a screen recorder",
+      "buttonCount": 0,
+      "cardCount": 1,
+      "className": "flex flex-col md:text-center md:items-center mx-auto flex flex-col justify-center mb-fluid-sm"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 270.046875,
+        "y": 4315.6875,
+        "w": 263.453125,
+        "h": 302.703125
+      },
+      "heading": "Edit your videos like a pro",
+      "buttonCount": 0,
+      "cardCount": 1,
+      "className": "w-full mx-auto text-left flex flex-col justify-center"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 746.5,
+        "y": 5019.671875,
+        "w": 263.453125,
+        "h": 280.796875
+      },
+      "heading": "Share or embed video anywhere you work",
+      "buttonCount": 0,
+      "cardCount": 1,
+      "className": "w-full mx-auto text-left flex flex-col justify-center"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 270.046875,
+        "y": 5608.078125,
+        "w": 263.453125,
+        "h": 394.796875
+      },
+      "heading": "Engage and connect with video",
+      "buttonCount": 0,
+      "cardCount": 1,
+      "className": "w-full mx-auto text-left flex flex-col justify-center"
+    },
+    {
+      "role": "testimonials",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 6153.671875,
+        "w": 1280,
+        "h": 553.234375
+      },
+      "heading": "Keep your content safe",
+      "buttonCount": 1,
+      "cardCount": 4,
+      "className": "md:px-fluid-base pb-fluid-lg"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 223.1875,
+        "y": 6219.578125,
+        "w": 833.625,
+        "h": 213.84375
+      },
+      "heading": "Keep your content safe",
+      "buttonCount": 0,
+      "cardCount": 1,
+      "className": "mx-auto mb-2xl flex flex-col text-center items-center mx-auto flex flex-col justify-center mb-fluid-sm"
+    },
+    {
+      "role": "testimonials",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 6706.90625,
+        "w": 1280,
+        "h": 666.140625
+      },
+      "heading": "Video messaging for all use cases",
+      "buttonCount": 1,
+      "cardCount": 16,
+      "className": "mb-fluid-md"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 0,
+        "y": 6706.90625,
+        "w": 1280,
+        "h": 58.15625
+      },
+      "heading": "Video messaging for all use cases",
+      "buttonCount": 0,
+      "cardCount": 1,
+      "className": "px-fluid-base flex flex-col text-center items-center mx-auto flex flex-col justify-center mb-fluid-sm"
+    },
+    {
+      "role": "testimonials",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 6830.96875,
+        "w": 1280,
+        "h": 468.75
+      },
+      "heading": "Sales",
+      "buttonCount": 0,
+      "cardCount": 12,
+      "className": "thd-container-max flex flex-col items-center"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 69.09375,
+        "y": 7057.953125,
+        "w": 184.203125,
+        "h": 109.6875
+      },
+      "heading": "Sales",
+      "buttonCount": 0,
+      "cardCount": 1,
+      "className": null
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 388.296875,
+        "y": 7057.953125,
+        "w": 184.203125,
+        "h": 109.6875
+      },
+      "heading": "Engineering",
+      "buttonCount": 0,
+      "cardCount": 1,
+      "className": null
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 707.5,
+        "y": 7058.21875,
+        "w": 184.203125,
+        "h": 141.046875
+      },
+      "heading": "Customer support",
+      "buttonCount": 0,
+      "cardCount": 1,
+      "className": null
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 1026.703125,
+        "y": 7057.953125,
+        "w": 184.203125,
+        "h": 109.6875
+      },
+      "heading": "Design",
+      "buttonCount": 0,
+      "cardCount": 1,
+      "className": null
+    },
+    {
+      "role": "features",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 7476.078125,
+        "w": 1280,
+        "h": 565
+      },
+      "heading": "Powerful features for easy, custom recordings",
+      "buttonCount": 0,
+      "cardCount": 19,
+      "className": "md:px-fluid-base pb-fluid-lg thd-container"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 34.546875,
+        "y": 7476.078125,
+        "w": 1210.90625,
+        "h": 58.15625
+      },
+      "heading": "Powerful features for easy, custom recordings",
+      "buttonCount": 0,
+      "cardCount": 1,
+      "className": "px-fluid-base flex flex-col text-center items-center mx-auto flex flex-col justify-center mb-fluid-sm"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 8041.078125,
+        "w": 1280,
+        "h": 1104.953125
+      },
+      "heading": "How to use async video messaging to improve communication",
+      "buttonCount": 1,
+      "cardCount": 12,
+      "className": "md:px-fluid-base pb-fluid-lg"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 135,
+        "y": 8141.53125,
+        "w": 1010,
+        "h": 142.109375
+      },
+      "heading": "How to use async video messaging to improve communication",
+      "buttonCount": 0,
+      "cardCount": 1,
+      "className": "px-fluid-base mx-auto flex flex-col text-center items-center mx-auto flex flex-col justify-center mb-fluid-sm"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 135,
+        "y": 8373.546875,
+        "w": 1010,
+        "h": 569
+      },
+      "heading": "When to Choose Synchronous Vs. Asynchronous Communication",
+      "buttonCount": 1,
+      "cardCount": 9,
+      "className": "thd-container-max flex flex-col items-center"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 225.546875,
+        "y": 8439.453125,
+        "w": 325.5,
+        "h": 266.734375
+      },
+      "heading": "When to Choose Synchronous Vs. Asynchronous Communication",
+      "buttonCount": 0,
+      "cardCount": 1,
+      "className": "flex flex-col gap-fixed-md"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 728.953125,
+        "y": 8439.453125,
+        "w": 325.5,
+        "h": 188.40625
+      },
+      "heading": "Let Loom AI Do the Work: Say Goodbye to Manual Documentation",
+      "buttonCount": 0,
+      "cardCount": 1,
+      "className": "flex flex-col gap-fixed-md"
+    },
+    {
+      "role": "hero",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 9146.03125,
+        "w": 1280,
+        "h": 1130.78125
+      },
+      "heading": "Loom for Enterprise",
+      "buttonCount": 1,
+      "cardCount": 5,
+      "className": "md:px-fluid-base pb-fluid-lg"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 69.09375,
+        "y": 9249.0625,
+        "w": 1141.8125,
+        "h": 143.28125
+      },
+      "heading": "Loom for Enterprise",
+      "buttonCount": 0,
+      "cardCount": 1,
+      "className": "md:px-0 w-full mx-auto mb-2xl flex flex-col text-center items-center mx-auto flex flex-col justify-center"
+    },
+    {
+      "role": "testimonials",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 10276.8125,
+        "w": 1280,
+        "h": 477.5
+      },
+      "heading": null,
+      "buttonCount": 2,
+      "cardCount": 16,
+      "className": "ThreadTestimonialCarousel_container__3hu57 mb-fluid-lg sm:gap-fluid-sm pb-fluid-lg lg:pb-0 lg:mb-fluid-lg overflow-x-hidden"
+    },
+    {
+      "role": "sidebar",
+      "tag": "aside",
+      "bounds": {
+        "x": 0,
+        "y": 10857.34375,
+        "w": 1280,
+        "h": 309.1875
+      },
+      "heading": null,
+      "buttonCount": 1,
+      "cardCount": 2,
+      "className": "thd-gradient px-fluid-base md:px-fluid-sm lg:relative pb-fluid-lg"
+    },
+    {
+      "role": "footer",
+      "tag": "footer",
+      "bounds": {
+        "x": 0,
+        "y": 11166.53125,
+        "w": 1280,
+        "h": 1225.078125
+      },
+      "heading": "Loom Footer Menu",
+      "buttonCount": 0,
+      "cardCount": 61,
+      "className": "bg-thd-color-blue-10 overflow-hidden max-w-100vw"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 4,
+      "cardCount": 4,
+      "className": "ot-sdk-row ot-cat-grp"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "heading": "Cookie List",
+      "buttonCount": 5,
+      "cardCount": 1,
+      "className": "ot-hide ot-hosts-ui ot-pc-scrollbar"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 3,
+      "cardCount": 1,
+      "className": null
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "ot-host-cnt ot-pc-scrollbar"
+    }
+  ],
+  "componentClusters": [
+    {
+      "kind": "button",
+      "structuralHash": "a",
+      "instanceCount": 8,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(41, 42, 46)",
+            "padding": "8px 16px 8px 16px",
+            "borderRadius": "9999px",
+            "border": "0px solid rgb(41, 42, 46)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 8
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>span>div",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(41, 42, 46)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "0px solid rgb(41, 42, 46)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "a>span>span",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(233, 242, 254)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "15.2308px 22.8462px 15.2308px 22.8462px",
+            "borderRadius": "9999px",
+            "border": "0px solid rgb(0, 0, 0)",
+            "fontSize": "15.2308px",
+            "fontWeight": "700"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "a>span",
+      "instanceCount": 4,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(16, 18, 20)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "15.2308px 22.8462px 15.2308px 22.8462px",
+            "borderRadius": "9999px",
+            "border": "0px solid rgb(255, 255, 255)",
+            "fontSize": "15.2308px",
+            "fontWeight": "700"
+          },
+          "instanceCount": 4
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>span",
+      "instanceCount": 4,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(41, 42, 46)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "6px",
+            "border": "0px solid rgb(41, 42, 46)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 2
+        },
+        {
+          "css": {
+            "background": "rgb(255, 255, 255)",
+            "color": "rgb(41, 42, 46)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "9999px",
+            "border": "0px solid rgb(41, 42, 46)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 2
+        }
+      ]
+    }
+  ],
+  "accessibility": {
+    "remediation": [
+      {
+        "fg": "#7d818a",
+        "bg": "#f8eefe",
+        "ratio": 3.47,
+        "rule": "AA-normal",
+        "suggestion": {
+          "replace": "fg",
+          "color": "#000000",
+          "newRatio": 18.65
+        }
+      }
+    ]
+  },
+  "cssHealth": {
+    "sheets": [
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 299,
+        "usedBytes": 0,
+        "unusedBytes": 299,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 305,
+        "usedBytes": 0,
+        "unusedBytes": 305,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 316,
+        "usedBytes": 0,
+        "unusedBytes": 316,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 391,
+        "usedBytes": 0,
+        "unusedBytes": 391,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 305,
+        "usedBytes": 0,
+        "unusedBytes": 305,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 316,
+        "usedBytes": 0,
+        "unusedBytes": 316,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 305,
+        "usedBytes": 0,
+        "unusedBytes": 305,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 723,
+        "usedBytes": 0,
+        "unusedBytes": 723,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/_next/static/css/a9e6d2e702436221.css",
+        "totalBytes": 1574,
+        "usedBytes": 1431,
+        "unusedBytes": 143,
+        "unusedPercent": 9
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 725,
+        "usedBytes": 0,
+        "unusedBytes": 725,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 720,
+        "usedBytes": 0,
+        "unusedBytes": 720,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 162,
+        "usedBytes": 0,
+        "unusedBytes": 162,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 305,
+        "usedBytes": 0,
+        "unusedBytes": 305,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/_next/static/css/defb8593f82c0f83.css",
+        "totalBytes": 16987,
+        "usedBytes": 9646,
+        "unusedBytes": 7341,
+        "unusedPercent": 43
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 305,
+        "usedBytes": 0,
+        "unusedBytes": 305,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 79,
+        "usedBytes": 0,
+        "unusedBytes": 79,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 391,
+        "usedBytes": 0,
+        "unusedBytes": 391,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 305,
+        "usedBytes": 0,
+        "unusedBytes": 305,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/_next/static/css/0277abb3dec0e4a4.css",
+        "totalBytes": 16741,
+        "usedBytes": 300,
+        "unusedBytes": 16441,
+        "unusedPercent": 98
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 304,
+        "usedBytes": 0,
+        "unusedBytes": 304,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 711,
+        "usedBytes": 0,
+        "unusedBytes": 711,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 77,
+        "usedBytes": 0,
+        "unusedBytes": 77,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 162,
+        "usedBytes": 0,
+        "unusedBytes": 162,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 305,
+        "usedBytes": 0,
+        "unusedBytes": 305,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 722,
+        "usedBytes": 0,
+        "unusedBytes": 722,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 299,
+        "usedBytes": 0,
+        "unusedBytes": 299,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 725,
+        "usedBytes": 0,
+        "unusedBytes": 725,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 394,
+        "usedBytes": 0,
+        "unusedBytes": 394,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 723,
+        "usedBytes": 0,
+        "unusedBytes": 723,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/_next/static/css/41b9fb474d14cb65.css",
+        "totalBytes": 158598,
+        "usedBytes": 36599,
+        "unusedBytes": 121999,
+        "unusedPercent": 77
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 304,
+        "usedBytes": 0,
+        "unusedBytes": 304,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 391,
+        "usedBytes": 0,
+        "unusedBytes": 391,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 721,
+        "usedBytes": 0,
+        "unusedBytes": 721,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 305,
+        "usedBytes": 0,
+        "unusedBytes": 305,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 723,
+        "usedBytes": 509,
+        "unusedBytes": 214,
+        "unusedPercent": 30
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 391,
+        "usedBytes": 0,
+        "unusedBytes": 391,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 391,
+        "usedBytes": 267,
+        "unusedBytes": 124,
+        "unusedPercent": 32
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 77,
+        "usedBytes": 77,
+        "unusedBytes": 0,
+        "unusedPercent": 0
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 316,
+        "usedBytes": 0,
+        "unusedBytes": 316,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 394,
+        "usedBytes": 270,
+        "unusedBytes": 124,
+        "unusedPercent": 31
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 305,
+        "usedBytes": 229,
+        "unusedBytes": 76,
+        "unusedPercent": 25
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 384,
+        "unusedBytes": 121,
+        "unusedPercent": 24
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 720,
+        "usedBytes": 506,
+        "unusedBytes": 214,
+        "unusedPercent": 30
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 721,
+        "usedBytes": 507,
+        "unusedBytes": 214,
+        "unusedPercent": 30
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 305,
+        "usedBytes": 0,
+        "unusedBytes": 305,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 299,
+        "usedBytes": 0,
+        "unusedBytes": 299,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 305,
+        "usedBytes": 0,
+        "unusedBytes": 305,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 304,
+        "usedBytes": 0,
+        "unusedBytes": 304,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 162,
+        "usedBytes": 56,
+        "unusedBytes": 106,
+        "unusedPercent": 65
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 723,
+        "usedBytes": 509,
+        "unusedBytes": 214,
+        "unusedPercent": 30
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 156,
+        "unusedBytes": 43,
+        "unusedPercent": 22
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 722,
+        "usedBytes": 508,
+        "unusedBytes": 214,
+        "unusedPercent": 30
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 316,
+        "usedBytes": 236,
+        "unusedBytes": 80,
+        "unusedPercent": 25
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 305,
+        "usedBytes": 0,
+        "unusedBytes": 305,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 162,
+        "usedBytes": 0,
+        "unusedBytes": 162,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 305,
+        "usedBytes": 0,
+        "unusedBytes": 305,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 725,
+        "usedBytes": 511,
+        "unusedBytes": 214,
+        "unusedPercent": 30
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 711,
+        "usedBytes": 497,
+        "unusedBytes": 214,
+        "unusedPercent": 30
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 299,
+        "usedBytes": 221,
+        "unusedBytes": 78,
+        "unusedPercent": 26
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 305,
+        "usedBytes": 0,
+        "unusedBytes": 305,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 305,
+        "usedBytes": 0,
+        "unusedBytes": 305,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 305,
+        "usedBytes": 0,
+        "unusedBytes": 305,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 199,
+        "usedBytes": 0,
+        "unusedBytes": 199,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 391,
+        "usedBytes": 0,
+        "unusedBytes": 391,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 79,
+        "usedBytes": 79,
+        "unusedBytes": 0,
+        "unusedPercent": 0
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 725,
+        "usedBytes": 511,
+        "unusedBytes": 214,
+        "unusedPercent": 30
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 304,
+        "usedBytes": 131,
+        "unusedBytes": 173,
+        "unusedPercent": 57
+      },
+      {
+        "url": "https://www.loom.com/",
+        "totalBytes": 505,
+        "usedBytes": 0,
+        "unusedBytes": 505,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://cdn.loom.com/assets/css/vendor-19-0f1d7b401f5c64a3.css",
+        "totalBytes": 222561,
+        "usedBytes": 498,
+        "unusedBytes": 222063,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://ds-cdn.prod-east.frontend.public.atl-paas.net/assets/font-rules/v5/atlassian-fonts.css",
+        "totalBytes": 10649,
+        "usedBytes": 0,
+        "unusedBytes": 10649,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://ds-cdn.prod-east.frontend.public.atl-paas.net/assets/font-rules/v5/atlassian-fonts.css",
+        "totalBytes": 10649,
+        "usedBytes": 0,
+        "unusedBytes": 10649,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://cdn.loom.com/assets/css/embed-video-30372250e70d88fd.css",
+        "totalBytes": 165777,
+        "usedBytes": 5294,
+        "unusedBytes": 160483,
+        "unusedPercent": 97
+      },
+      {
+        "url": "https://cdn.loom.com/assets/css/vendor-214-71ddd1a45b53fee2.css",
+        "totalBytes": 75774,
+        "usedBytes": 0,
+        "unusedBytes": 75774,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://accounts.google.com/gsi/style",
+        "totalBytes": 696,
+        "usedBytes": 0,
+        "unusedBytes": 696,
+        "unusedPercent": 100
+      }
+    ],
+    "totalBytes": 730948,
+    "usedBytes": 59932,
+    "unusedBytes": 671016,
+    "unusedPercent": 92,
+    "importantCount": 228,
+    "duplicates": 8167,
+    "vendorPrefixes": {
+      "webkit": 403,
+      "moz": 84,
+      "ms": 128,
+      "o": 0
+    },
+    "keyframes": [],
+    "specificity": {
+      "max": [
+        1,
+        32,
+        12
+      ],
+      "average": [
+        0,
+        1.58,
+        0.21
+      ],
+      "count": 8549
+    },
+    "issues": [
+      "228 !important rules",
+      "8167 duplicate declarations",
+      "92% unused CSS"
+    ]
+  }
+}
