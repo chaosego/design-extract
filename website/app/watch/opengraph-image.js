@@ -42,8 +42,10 @@ export default function WatchOg() {
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
-          <div style={{ fontSize: 76, lineHeight: 1.02, fontWeight: 600, maxWidth: 900 }}>
-            Watch the browser <span style={{ color: RED }}>read</span> a site.
+          <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'baseline', fontSize: 76, lineHeight: 1.02, fontWeight: 600, maxWidth: 900 }}>
+            <span>Watch the browser&nbsp;</span>
+            <span style={{ color: RED }}>read</span>
+            <span>&nbsp;a site.</span>
           </div>
           <div style={{ fontSize: 28, color: FG2, fontFamily: 'ui-monospace, Menlo, monospace' }}>
             real Chromium · palette · type · spacing · motion → a design system, live
