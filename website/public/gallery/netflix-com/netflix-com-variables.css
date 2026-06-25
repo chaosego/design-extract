@@ -1,0 +1,85 @@
+:root {
+  /* Colors — Primary */
+  --color-primary: #e50914;
+  --color-secondary: #3860be;
+  --color-accent: #468254;
+
+  /* Colors — Neutrals */
+  --color-neutral-50: #ffffff;
+  --color-neutral-100: #000000;
+  --color-neutral-200: #333333;
+  --color-neutral-300: #232323;
+  --color-neutral-400: #414141;
+  --color-neutral-500: #555555;
+  --color-neutral-600: #f4f4f4;
+  --color-neutral-700: #161616;
+  --color-neutral-800: #808080;
+  --color-neutral-900: #c1c1c1;
+
+  /* Colors — Backgrounds */
+  --color-bg: #000000;
+  --color-bg-1: #2d2d2d;
+
+  /* Colors — Text */
+  --color-text: #000000;
+  --color-text-1: #ffffff;
+  --color-text-2: #e50914;
+  --color-text-3: #414141;
+  --color-text-4: #333333;
+
+  /* Typography — Families */
+  --font-sans: 'Netflix Sans', sans-serif;
+
+  /* Typography — Scale */
+  --font-size-100: 100px;
+  --font-size-56: 56px;
+  --font-size-24: 24px;
+  --font-size-21.92: 21.92px;
+  --font-size-20: 20px;
+  --font-size-16: 16px;
+  --font-size-14.4: 14.4px;
+  --font-size-14: 14px;
+  --font-size-13.6: 13.6px;
+  --font-size-13.008: 13.008px;
+  --font-size-13: 13px;
+  --font-size-12.8: 12.8px;
+
+  /* Spacing */
+  --spacing-1: 1px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-24: 24px;
+  --spacing-27: 27px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-34: 34px;
+  --spacing-64: 64px;
+  --spacing-96: 96px;
+  --spacing-100: 100px;
+  --spacing-128: 128px;
+  --spacing-148: 148px;
+  --spacing-314: 314px;
+
+  /* Border Radius */
+  --radius-xs: 2px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 50px;
+
+  /* Box Shadows */
+  --shadow-sm: rgb(128, 128, 128) 0px 0px 5px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 2px 4px 0px, rgba(50, 50, 93, 0.1) 0px 7px 14px 0px;
+  --shadow-md: rgb(199, 197, 199) -3px -3px 5px -2px;
+  --shadow-md: rgb(199, 197, 199) 0px 0px 12px 2px;
+
+  /* Original Site Variables */
+  /* — semantic — */
+  success: [object Object];
+  warning: [object Object];
+  error: [object Object];
+  info: [object Object];
+
+}

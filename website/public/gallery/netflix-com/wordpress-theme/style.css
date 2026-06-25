@@ -1,0 +1,32 @@
+/*
+Theme Name: designlang extracted theme
+Theme URI: https://github.com/Manavarya09/design-extract
+Description: Block theme generated from https://netflix.com by designlang v7.0.0
+Version: 1.0.0
+Author: designlang
+License: MIT
+Text Domain: designlang-theme
+*/
+
+:root {
+  --action-primary: #e50914;
+  --action-secondary: #3860be;
+  --surface-default: #000000;
+  --text-body: #000000;
+  --spacing-s0: 1px;
+  --spacing-s1: 10px;
+  --spacing-s2: 12px;
+  --spacing-s3: 20px;
+  --spacing-s4: 22px;
+  --spacing-s5: 24px;
+  --spacing-s6: 27px;
+  --spacing-s7: 30px;
+  --spacing-s8: 32px;
+  --spacing-s9: 34px;
+  --spacing-s10: 64px;
+  --spacing-s11: 96px;
+  --spacing-s12: 100px;
+  --spacing-s13: 128px;
+  --spacing-s14: 148px;
+  --spacing-s15: 314px;
+}
