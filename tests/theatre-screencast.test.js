@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { startScreencast, SCREENCAST_DEFAULTS } from './screencast.js';
+import { startScreencast, SCREENCAST_DEFAULTS } from '../src/screencast.js';
 
 // A fake CDP session: records sent methods, lets the test emit frames, and can
 // be told to fail on startScreencast.
