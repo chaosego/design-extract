@@ -1,7 +1,7 @@
 {
   "name": "designlang",
-  "description": "Extract any website's design language and ship it. Thirteen slash commands \u2014 /extract, /site, /grade, /battle, /remix, /pack, /theme-swap, /brand, /pair, /studio, /verify, /fidelity, /gallery \u2014 wrap the designlang CLI to pull DTCG tokens, Tailwind/shadcn/Figma vars, motion + voice, synthesize a whole-site canonical design system with a consistency grade, generate shareable graded report cards, head-to-head battle pages, six-vocabulary remixes, downloadable design-system bundles, OKLCH-correct theme recolouring, full editorial brand-guidelines books, design crossovers between two sites, a live token-editor studio, a rebuild-and-pixel-diff fidelity check, a measured clone-vs-original fidelity score (visual + motion) with a ranked correction plan via /fidelity, and a shareable static gallery of scored clones via /gallery.",
-  "version": "12.24.0",
+  "description": "Extract any website's design language and ship it. Thirteen slash commands — /extract, /site, /grade, /battle, /remix, /pack, /theme-swap, /brand, /pair, /studio, /verify, /fidelity, /gallery — wrap the designlang CLI to pull DTCG tokens, Tailwind/shadcn/Figma vars, motion + voice, synthesize a whole-site canonical design system with a consistency grade, generate shareable graded report cards, head-to-head battle pages, six-vocabulary remixes, downloadable design-system bundles, OKLCH-correct theme recolouring, full editorial brand-guidelines books, design crossovers between two sites, a live token-editor studio, a rebuild-and-pixel-diff fidelity check, a measured clone-vs-original fidelity score (visual + motion) with a ranked correction plan via /fidelity, and a shareable static gallery of scored clones via /gallery.",
+  "version": "13.0.0",
   "author": {
     "name": "Manavarya Singh",
     "url": "https://github.com/Manavarya09"
