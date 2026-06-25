@@ -21,7 +21,7 @@ const STAGE_LABEL = {
 
 const SUGGESTIONS = ['stripe.com', 'linear.app', 'vercel.com', 'notion.so', 'figma.com'];
 
-export default function Theatre({ autoStart = null, compact = false }) {
+export default function Theatre({ autoStart = null, live = false, compact = false }) {
   const [state, dispatch] = useReducer(theatreReducer, initialTheatreState);
   const [activeUrl, setActiveUrl] = useState(autoStart || '');
   const [rateLimitMsg, setRateLimitMsg] = useState(null);
@@ -89,12 +89,12 @@ export default function Theatre({ autoStart = null, compact = false }) {
     }
   }, []);
 
-  // Autoplay a flagship reel on mount (homepage hero) — replay-only, so it
-  // never launches a browser; if no reel exists yet it just stays idle.
+  // Autoplay on mount. The homepage hero is replay-only (never launches a
+  // browser); /watch passes `live` so a shared ?u= link runs a real extraction.
   useEffect(() => {
-    if (autoStart) run(autoStart, { replayOnly: true });
+    if (autoStart) run(autoStart, { replayOnly: !live });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [autoStart]);
+  }, [autoStart, live]);
 
   const onSubmit = useCallback((e) => {
     e.preventDefault();
