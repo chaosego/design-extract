@@ -14,6 +14,7 @@ import { checkRate, checkRateBlob } from '../../../../website/lib/rate-limit.js'
 import { cacheKey, getCached, putCached } from '../../../../website/lib/cache.js';
 import { buildFiles, buildSummary } from '../../../../website/lib/build-files.js';
 import { wantsTheatre, frameEvent, THEATRE_SCREENCAST_OPTS } from '../../../../website/lib/theatre.js';
+import { recordReel, loadReel, buildReplayTimeline } from '../../../../website/lib/reel.js';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -98,23 +99,41 @@ function extractIp(request) {
 }
 
 // Emit cached payload as a simulated stream so the hero paints consistently.
-async function streamCached(controller, cached, targetUrl, hash) {
+// With `theatre` on and a recorded reel present, replays the real screencast
+// (frames merged with the token paint) so a cache hit still looks live.
+async function streamCached(controller, cached, targetUrl, hash, theatre = false) {
   controller.enqueue(ndjson({ type: 'cache', cached: true }));
   // Permalink up front — the client can rewrite the URL bar to /x/<hash>
   // before any heavy paint, so refresh-and-share works during the stream.
   controller.enqueue(ndjson({ type: 'permalink', hash }));
+
+  // Re-derive DTCG tokens from the cached design so the token-by-token paint
+  // still happens on a cache hit.
+  const { files, dtcg } = buildFiles(cached.design, targetUrl);
+  const tokens = [];
+  for (const { path, value, $type } of walkDtcgTokens(dtcg)) {
+    tokens.push({ category: path.split('.')[1] || 'misc', path, value, $type });
+  }
+  const summary = buildSummary(cached.design);
+
+  if (theatre) {
+    const reel = await loadReel(hash);
+    if (reel) {
+      const { steps } = buildReplayTimeline({ frames: reel.frames, tokens, stages: STAGES, summary, files });
+      for (const { delayMs, event } of steps) {
+        if (delayMs) await new Promise((r) => setTimeout(r, delayMs));
+        controller.enqueue(ndjson(event));
+      }
+      return;
+    }
+  }
+
   for (const stage of STAGES) {
     controller.enqueue(ndjson({ type: 'stage', name: stage }));
     await new Promise((r) => setTimeout(r, 40));
   }
-  // Re-derive DTCG tokens from the cached design so the token-by-token paint
-  // still happens on a cache hit.
-  const { files, dtcg } = buildFiles(cached.design, targetUrl);
-  for (const { path, value, $type } of walkDtcgTokens(dtcg)) {
-    const category = path.split('.')[1] || 'misc';
-    controller.enqueue(ndjson({ type: 'token', category, path, value, $type }));
-  }
-  controller.enqueue(ndjson({ type: 'summary', summary: buildSummary(cached.design) }));
+  for (const tok of tokens) controller.enqueue(ndjson({ type: 'token', ...tok }));
+  controller.enqueue(ndjson({ type: 'summary', summary }));
   controller.enqueue(ndjson({ type: 'files', files }));
 }
 
@@ -168,7 +187,7 @@ export async function POST(request) {
     async start(controller) {
       try {
         if (cached) {
-          await streamCached(controller, cached, targetUrl, key);
+          await streamCached(controller, cached, targetUrl, key, theatre);
           controller.close();
           return;
         }
@@ -184,8 +203,10 @@ export async function POST(request) {
         // Theatre: a frame sink that streams what Chromium paints, live, into
         // the same NDJSON response. Opt-in only — undefined otherwise, so the
         // crawler skips the screencast entirely.
+        const reelFrames = [];
         const onScreencastFrame = theatre
           ? (frame) => {
+              reelFrames.push(frame); // captured once, replayed on cache hits
               try { controller.enqueue(ndjson(frameEvent(frame))); } catch { /* stream closed */ }
             }
           : undefined;
@@ -230,6 +251,11 @@ export async function POST(request) {
         // killed mid-flight — leaving /x/<hash> and /api/pdf/<hash> with no
         // cached design to render (the source of "downloaded PDF won't open").
         await putCached(key, { design });
+
+        // Record the screencast reel so cache hits can replay this exact run.
+        if (theatre && reelFrames.length) {
+          await recordReel(key, reelFrames);
+        }
       } catch (err) {
         console.error('[extract] failed', { url: targetUrl, ip, message: err?.message });
         controller.enqueue(ndjson({ type: 'error', error: err?.message || 'Extraction failed' }));
