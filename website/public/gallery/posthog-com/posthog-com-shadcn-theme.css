@@ -1,0 +1,19 @@
+/* shadcn/ui Theme — extracted from https://posthog.com */
+/* Paste into your globals.css */
+
+@layer base {
+  :root {
+    --background: 77 13% 89%;
+    --foreground: 0 0% 0%;
+    --primary: 41 34% 82%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 36 83% 54%;
+    --secondary-foreground: 0 0% 0%;
+    --accent: 70 16% 93%;
+    --accent-foreground: 0 0% 0%;
+    --muted: 72 4% 44%;
+    --muted-foreground: 0 0% 0%;
+    --border: 72 5% 61%;
+    --radius: 8px;
+  }
+}

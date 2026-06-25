@@ -1,0 +1,24 @@
+/*
+Theme Name: designlang extracted theme
+Theme URI: https://github.com/Manavarya09/design-extract
+Description: Block theme generated from https://posthog.com by designlang v7.0.0
+Version: 1.0.0
+Author: designlang
+License: MIT
+Text Domain: designlang-theme
+*/
+
+:root {
+  --action-primary: #e1d7c2;
+  --action-secondary: #eb9d2a;
+  --surface-default: #e5e7e0;
+  --text-body: #000000;
+  --spacing-s0: 1px;
+  --spacing-s1: 20px;
+  --spacing-s2: 32px;
+  --spacing-s3: 48px;
+  --spacing-s4: 64px;
+  --spacing-s5: 120px;
+  --spacing-s6: 144px;
+  --spacing-s7: 220px;
+}

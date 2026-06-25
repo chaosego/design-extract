@@ -1,0 +1,156 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "action-primary",
+          "color": "#e1d7c2",
+          "name": "Action Primary"
+        },
+        {
+          "slug": "action-secondary",
+          "color": "#eb9d2a",
+          "name": "Action Secondary"
+        },
+        {
+          "slug": "surface-default",
+          "color": "#e5e7e0",
+          "name": "Surface Default"
+        },
+        {
+          "slug": "text-body",
+          "color": "#000000",
+          "name": "Text Body"
+        }
+      ]
+    },
+    "typography": {
+      "fontSizes": [
+        {
+          "slug": "p",
+          "size": "36px",
+          "name": "p"
+        },
+        {
+          "slug": "h1",
+          "size": "24px",
+          "name": "h1"
+        },
+        {
+          "slug": "h2",
+          "size": "21.4286px",
+          "name": "h2"
+        },
+        {
+          "slug": "s",
+          "size": "20px",
+          "name": "s"
+        },
+        {
+          "slug": "h3",
+          "size": "19.2857px",
+          "name": "h3"
+        },
+        {
+          "slug": "p",
+          "size": "18px",
+          "name": "p"
+        },
+        {
+          "slug": "html",
+          "size": "16px",
+          "name": "html"
+        },
+        {
+          "slug": "article",
+          "size": "15px",
+          "name": "article"
+        },
+        {
+          "slug": "button",
+          "size": "14px",
+          "name": "button"
+        },
+        {
+          "slug": "button",
+          "size": "13px",
+          "name": "button"
+        },
+        {
+          "slug": "button",
+          "size": "12px",
+          "name": "button"
+        }
+      ],
+      "fontFamilies": [
+        {
+          "slug": "ibm-plex-sans-variable",
+          "fontFamily": "IBM Plex Sans Variable, sans-serif",
+          "name": "IBM Plex Sans Variable"
+        },
+        {
+          "slug": "open-runde",
+          "fontFamily": "Open Runde, sans-serif",
+          "name": "Open Runde"
+        },
+        {
+          "slug": "source-code-pro",
+          "fontFamily": "Source Code Pro, sans-serif",
+          "name": "Source Code Pro"
+        }
+      ]
+    },
+    "spacing": {
+      "spacingSizes": [
+        {
+          "slug": "s0",
+          "size": "1px",
+          "name": "S0"
+        },
+        {
+          "slug": "s1",
+          "size": "20px",
+          "name": "S1"
+        },
+        {
+          "slug": "s2",
+          "size": "32px",
+          "name": "S2"
+        },
+        {
+          "slug": "s3",
+          "size": "48px",
+          "name": "S3"
+        },
+        {
+          "slug": "s4",
+          "size": "64px",
+          "name": "S4"
+        },
+        {
+          "slug": "s5",
+          "size": "120px",
+          "name": "S5"
+        },
+        {
+          "slug": "s6",
+          "size": "144px",
+          "name": "S6"
+        },
+        {
+          "slug": "s7",
+          "size": "220px",
+          "name": "S7"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--surface-default, #e5e7e0)",
+      "text": "var(--wp--preset--color--text-body, #000000)"
+    }
+  }
+}
