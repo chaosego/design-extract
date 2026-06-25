@@ -1,4 +1,4 @@
-import HeroExtractor from './components/HeroExtractor';
+import Theatre from './components/theatre/Theatre';
 import Grainient from './components/Grainient';
 import RedditMarquee from './components/RedditMarquee';
 import CopyCmd from './components/CopyCmd';
@@ -82,7 +82,7 @@ function Hero() {
               WordPress, plus a stdio MCP for Claude Code and Cursor — back in seconds.
             </p>
             <div className="hero-cta">
-              <a href="#extract" className="btn btn-primary">Run extraction</a>
+              <a href="#extract" className="btn btn-primary">Watch it read a site</a>
               <a href="https://github.com/Manavarya09/design-extract" className="btn btn-ghost" target="_blank" rel="noreferrer">View source</a>
             </div>
             <div style={{ marginTop: 26 }}>
@@ -120,11 +120,11 @@ function ExtractSection() {
       <div className="wrap dx-section-wrap">
         <header className="dx-section-head">
           <p className="eyebrow" style={{ marginBottom: 14 }}>try it now</p>
-          <h2 className="dx-section-title">See it work.</h2>
-          <p className="dx-section-tag">Paste a URL. Watch the system land.</p>
+          <h2 className="dx-section-title">Watch it read a site.</h2>
+          <p className="dx-section-tag">Paste a URL. The real browser opens and reads the design system, live.</p>
         </header>
         <div className="dx-stage">
-          <HeroExtractor />
+          <Theatre autoStart="stripe.com" />
         </div>
       </div>
     </section>
