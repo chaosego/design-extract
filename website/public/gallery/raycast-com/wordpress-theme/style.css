@@ -1,0 +1,38 @@
+/*
+Theme Name: designlang extracted theme
+Theme URI: https://github.com/Manavarya09/design-extract
+Description: Block theme generated from https://raycast.com by designlang v7.0.0
+Version: 1.0.0
+Author: designlang
+License: MIT
+Text Domain: designlang-theme
+*/
+
+:root {
+  --action-primary: #ff6363;
+  --action-secondary: #8cd6ff;
+  --surface-default: #07080a;
+  --text-body: #ffffff;
+  --spacing-s0: 1px;
+  --spacing-s1: 45px;
+  --spacing-s2: 56px;
+  --spacing-s3: 64px;
+  --spacing-s4: 72px;
+  --spacing-s5: 80px;
+  --spacing-s6: 96px;
+  --spacing-s7: 102px;
+  --spacing-s8: 120px;
+  --spacing-s9: 128px;
+  --spacing-s10: 137px;
+  --spacing-s11: 148px;
+  --spacing-s12: 169px;
+  --spacing-s13: 200px;
+  --spacing-s14: 212px;
+  --spacing-s15: 217px;
+  --spacing-s16: 224px;
+  --spacing-s17: 325px;
+  --spacing-s18: 370px;
+  --spacing-s19: 400px;
+  --spacing-s20: 409px;
+  --spacing-s21: 416px;
+}

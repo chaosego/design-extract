@@ -1,0 +1,19 @@
+/* shadcn/ui Theme — extracted from https://postman.com */
+/* Paste into your globals.css */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --primary: 16 76% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 211 100% 50%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 16 100% 61%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 0 0% 81%;
+    --muted-foreground: 0 0% 13%;
+    --border: 0 0% 36%;
+    --radius: 10px;
+  }
+}

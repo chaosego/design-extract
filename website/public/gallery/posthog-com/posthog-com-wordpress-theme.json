@@ -1,0 +1,198 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#e1d7c2",
+          "name": "Primary"
+        },
+        {
+          "slug": "secondary",
+          "color": "#eb9d2a",
+          "name": "Secondary"
+        },
+        {
+          "slug": "accent",
+          "color": "#eeefe9",
+          "name": "Accent"
+        },
+        {
+          "slug": "neutral-1",
+          "color": "#000000",
+          "name": "Neutral 1"
+        },
+        {
+          "slug": "neutral-2",
+          "color": "#4d4f46",
+          "name": "Neutral 2"
+        },
+        {
+          "slug": "neutral-3",
+          "color": "#374151",
+          "name": "Neutral 3"
+        },
+        {
+          "slug": "neutral-4",
+          "color": "#23251d",
+          "name": "Neutral 4"
+        },
+        {
+          "slug": "neutral-5",
+          "color": "#9ea096",
+          "name": "Neutral 5"
+        },
+        {
+          "slug": "bg-e5e7e0",
+          "color": "#e5e7e0",
+          "name": "Background #e5e7e0"
+        },
+        {
+          "slug": "bg-e1d7c2",
+          "color": "#e1d7c2",
+          "name": "Background #e1d7c2"
+        },
+        {
+          "slug": "bg-ffffff",
+          "color": "#ffffff",
+          "name": "Background #ffffff"
+        }
+      ],
+      "gradients": [
+        {
+          "slug": "gradient-1",
+          "gradient": "linear-gradient(rgb(255, 241, 213), rgb(218, 224, 235))",
+          "name": "Gradient 1"
+        },
+        {
+          "slug": "gradient-2",
+          "gradient": "linear-gradient(90deg, rgb(1, 67, 203), rgb(43, 111, 244) 24.04%, rgb(210, 52, 1) 46.63%, rgb(255, 101, 31) 65.87%, rgb(251, 160, 0) 83.17%, rgb(1, 67, 203))",
+          "name": "Gradient 2"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "IBM Plex Sans Variable",
+          "slug": "ibm-plex-sans-variable",
+          "name": "IBM Plex Sans Variable"
+        },
+        {
+          "fontFamily": "Open Runde",
+          "slug": "open-runde",
+          "name": "Open Runde"
+        },
+        {
+          "fontFamily": "Source Code Pro",
+          "slug": "source-code-pro",
+          "name": "Source Code Pro"
+        }
+      ],
+      "fontSizes": [
+        {
+          "size": "36px",
+          "slug": "size-36",
+          "name": "36px"
+        },
+        {
+          "size": "24px",
+          "slug": "size-24",
+          "name": "24px"
+        },
+        {
+          "size": "21.4286px",
+          "slug": "size-21.4286",
+          "name": "21.4286px"
+        },
+        {
+          "size": "20px",
+          "slug": "size-20",
+          "name": "20px"
+        },
+        {
+          "size": "19.2857px",
+          "slug": "size-19.2857",
+          "name": "19.2857px"
+        },
+        {
+          "size": "18px",
+          "slug": "size-18",
+          "name": "18px"
+        },
+        {
+          "size": "16px",
+          "slug": "size-16",
+          "name": "16px"
+        },
+        {
+          "size": "15px",
+          "slug": "size-15",
+          "name": "15px"
+        }
+      ]
+    },
+    "spacing": {
+      "spacingSizes": [
+        {
+          "size": "1px",
+          "slug": "spacing-1",
+          "name": "1px"
+        },
+        {
+          "size": "20px",
+          "slug": "spacing-20",
+          "name": "20px"
+        },
+        {
+          "size": "32px",
+          "slug": "spacing-32",
+          "name": "32px"
+        },
+        {
+          "size": "48px",
+          "slug": "spacing-48",
+          "name": "48px"
+        },
+        {
+          "size": "64px",
+          "slug": "spacing-64",
+          "name": "64px"
+        },
+        {
+          "size": "120px",
+          "slug": "spacing-120",
+          "name": "120px"
+        },
+        {
+          "size": "144px",
+          "slug": "spacing-144",
+          "name": "144px"
+        },
+        {
+          "size": "220px",
+          "slug": "spacing-220",
+          "name": "220px"
+        }
+      ]
+    },
+    "layout": {
+      "contentSize": "100%",
+      "wideSize": "1400px"
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#e5e7e0",
+      "text": "#000000"
+    },
+    "typography": {
+      "fontSize": "15px",
+      "lineHeight": "25.7143px",
+      "fontFamily": "IBM Plex Sans Variable"
+    },
+    "spacing": {}
+  }
+}

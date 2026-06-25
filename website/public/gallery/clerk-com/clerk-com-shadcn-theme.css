@@ -1,0 +1,19 @@
+/* shadcn/ui Theme — extracted from https://clerk.com */
+/* Paste into your globals.css */
+
+@layer base {
+  :root {
+    --background: 240 7% 97%;
+    --foreground: 0 0% 0%;
+    --primary: 252 100% 64%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 196 100% 55%;
+    --secondary-foreground: 0 0% 0%;
+    --accent: 190 100% 68%;
+    --accent-foreground: 0 0% 0%;
+    --muted: 233 10% 32%;
+    --muted-foreground: 240 7% 86%;
+    --border: 233 7% 49%;
+    --radius: 8px;
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "action-primary",
+          "color": "#6c47ff",
+          "name": "Action Primary"
+        },
+        {
+          "slug": "action-secondary",
+          "color": "#1cc4ff",
+          "name": "Action Secondary"
+        },
+        {
+          "slug": "surface-default",
+          "color": "#f7f7f8",
+          "name": "Surface Default"
+        },
+        {
+          "slug": "text-body",
+          "color": "#000000",
+          "name": "Text Body"
+        }
+      ]
+    },
+    "typography": {
+      "fontSizes": [
+        {
+          "slug": "h1",
+          "size": "64px",
+          "name": "h1"
+        },
+        {
+          "slug": "p",
+          "size": "32px",
+          "name": "p"
+        },
+        {
+          "slug": "span",
+          "size": "24px",
+          "name": "span"
+        },
+        {
+          "slug": "p",
+          "size": "18px",
+          "name": "p"
+        },
+        {
+          "slug": "h2",
+          "size": "17px",
+          "name": "h2"
+        },
+        {
+          "slug": "html",
+          "size": "16px",
+          "name": "html"
+        },
+        {
+          "slug": "p",
+          "size": "15px",
+          "name": "p"
+        },
+        {
+          "slug": "h2",
+          "size": "14px",
+          "name": "h2"
+        },
+        {
+          "slug": "a",
+          "size": "13px",
+          "name": "a"
+        },
+        {
+          "slug": "button",
+          "size": "12px",
+          "name": "button"
+        },
+        {
+          "slug": "div",
+          "size": "11px",
+          "name": "div"
+        },
+        {
+          "slug": "p",
+          "size": "10px",
+          "name": "p"
+        },
+        {
+          "slug": "p",
+          "size": "9px",
+          "name": "p"
+        }
+      ],
+      "fontFamilies": [
+        {
+          "slug": "geistnumbers",
+          "fontFamily": "geistNumbers, sans-serif",
+          "name": "geistNumbers"
+        },
+        {
+          "slug": "soehnemono",
+          "fontFamily": "soehneMono, sans-serif",
+          "name": "soehneMono"
+        }
+      ]
+    },
+    "spacing": {
+      "spacingSizes": [
+        {
+          "slug": "s0",
+          "size": "1px",
+          "name": "S0"
+        },
+        {
+          "slug": "s1",
+          "size": "46px",
+          "name": "S1"
+        },
+        {
+          "slug": "s2",
+          "size": "56px",
+          "name": "S2"
+        },
+        {
+          "slug": "s3",
+          "size": "76px",
+          "name": "S3"
+        },
+        {
+          "slug": "s4",
+          "size": "94px",
+          "name": "S4"
+        },
+        {
+          "slug": "s5",
+          "size": "128px",
+          "name": "S5"
+        },
+        {
+          "slug": "s6",
+          "size": "140px",
+          "name": "S6"
+        },
+        {
+          "slug": "s7",
+          "size": "151px",
+          "name": "S7"
+        },
+        {
+          "slug": "s8",
+          "size": "158px",
+          "name": "S8"
+        },
+        {
+          "slug": "s9",
+          "size": "167px",
+          "name": "S9"
+        },
+        {
+          "slug": "s10",
+          "size": "172px",
+          "name": "S10"
+        },
+        {
+          "slug": "s11",
+          "size": "192px",
+          "name": "S11"
+        },
+        {
+          "slug": "s12",
+          "size": "220px",
+          "name": "S12"
+        },
+        {
+          "slug": "s13",
+          "size": "259px",
+          "name": "S13"
+        },
+        {
+          "slug": "s14",
+          "size": "272px",
+          "name": "S14"
+        },
+        {
+          "slug": "s15",
+          "size": "302px",
+          "name": "S15"
+        },
+        {
+          "slug": "s16",
+          "size": "320px",
+          "name": "S16"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--surface-default, #f7f7f8)",
+      "text": "var(--wp--preset--color--text-body, #000000)"
+    }
+  }
+}

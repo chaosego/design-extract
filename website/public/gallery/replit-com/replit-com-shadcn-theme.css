@@ -1,0 +1,19 @@
+/* shadcn/ui Theme — extracted from https://replit.com */
+/* Paste into your globals.css */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --primary: 215 100% 38%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 359 68% 59%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 0 67% 19%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 0 0% 92%;
+    --muted-foreground: 0 0% 25%;
+    --border: 0 0% 92%;
+    --radius: 2px;
+  }
+}

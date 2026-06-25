@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="action_primary">#FFE50914</color>
+    <color name="action_secondary">#FF3860BE</color>
+    <color name="surface_default">#FF000000</color>
+    <color name="text_body">#FF000000</color>
+    <color name="brand_primary">#FFE50914</color>
+    <color name="brand_secondary">#FF3860BE</color>
+    <color name="neutral_n100">#FFFFFFFF</color>
+    <color name="neutral_n200">#FF000000</color>
+    <color name="neutral_n300">#FF333333</color>
+    <color name="neutral_n400">#FF232323</color>
+    <color name="neutral_n500">#FF414141</color>
+    <color name="neutral_n600">#FF555555</color>
+    <color name="neutral_n700">#FFF4F4F4</color>
+    <color name="neutral_n800">#FF161616</color>
+    <color name="neutral_n900">#FF808080</color>
+    <color name="neutral_n1000">#FFC1C1C1</color>
+    <color name="neutral_n1100">#FF707070</color>
+    <color name="neutral_n1200">#FFD8D8D8</color>
+    <color name="background_bg0">#FF000000</color>
+    <color name="background_bg1">#FF2D2D2D</color>
+    <color name="text_text0">#FF000000</color>
+    <color name="text_text1">#FFFFFFFF</color>
+    <color name="text_text2">#FFE50914</color>
+    <color name="text_text3">#FF414141</color>
+    <color name="text_text4">#FF333333</color>
+    <color name="text_text5">#FF555555</color>
+    <color name="text_text6">#FF3860BE</color>
+</resources>

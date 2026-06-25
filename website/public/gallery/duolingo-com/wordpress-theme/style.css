@@ -1,0 +1,26 @@
+/*
+Theme Name: designlang extracted theme
+Theme URI: https://github.com/Manavarya09/design-extract
+Description: Block theme generated from https://duolingo.com by designlang v7.0.0
+Version: 1.0.0
+Author: designlang
+License: MIT
+Text Domain: designlang-theme
+*/
+
+:root {
+  --action-primary: #d7ffb8;
+  --action-secondary: #0000ee;
+  --surface-default: #ffffff;
+  --text-body: #000000;
+  --spacing-s0: 1px;
+  --spacing-s1: 8px;
+  --spacing-s2: 23px;
+  --spacing-s3: 40px;
+  --spacing-s4: 48px;
+  --spacing-s5: 64px;
+  --spacing-s6: 80px;
+  --spacing-s7: 96px;
+  --spacing-s8: 140px;
+  --spacing-s9: 185px;
+}

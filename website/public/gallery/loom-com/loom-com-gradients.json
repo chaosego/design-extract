@@ -1,0 +1,64 @@
+{
+  "$schema": "https://designlang.app/schemas/gradients.json",
+  "source": "https://loom.com",
+  "generated": "2026-06-25T08:28:20.984Z",
+  "count": 3,
+  "gradients": [
+    {
+      "raw": "linear-gradient(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0))",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "rgba(0, 0, 0, 0.07)",
+          "position": null
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": null
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(to top, rgb(179, 223, 114), rgba(255, 255, 255, 0))",
+      "type": "linear",
+      "direction": "to top",
+      "stops": [
+        {
+          "color": "rgb(179, 223, 114)",
+          "position": null
+        },
+        {
+          "color": "rgba(255, 255, 255, 0)",
+          "position": null
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(rgb(255, 255, 255) 0px, rgb(255, 255, 255) 55%, rgb(233, 242, 254) 55%, rgb(233, 242, 254) 100%)",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "rgb(255, 255, 255)",
+          "position": "0px"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "position": "55%"
+        },
+        {
+          "color": "rgb(233, 242, 254)",
+          "position": "55%"
+        },
+        {
+          "color": "rgb(233, 242, 254)",
+          "position": "100%"
+        }
+      ],
+      "classification": "bold"
+    }
+  ]
+}

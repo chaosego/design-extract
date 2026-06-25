@@ -1,0 +1,60 @@
+{
+  "colors": {
+    "all": [
+      {
+        "hex": "#000000",
+        "rgb": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 0
+        },
+        "count": 10,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      }
+    ]
+  },
+  "regions": [],
+  "componentClusters": [],
+  "accessibility": {
+    "remediation": []
+  },
+  "cssHealth": {
+    "sheets": [],
+    "totalBytes": 0,
+    "usedBytes": 0,
+    "unusedBytes": 0,
+    "unusedPercent": 0,
+    "importantCount": 0,
+    "duplicates": 0,
+    "vendorPrefixes": {
+      "webkit": 0,
+      "moz": 0,
+      "ms": 0,
+      "o": 0
+    },
+    "keyframes": [],
+    "specificity": {
+      "max": [
+        0,
+        0,
+        0
+      ],
+      "average": [
+        0,
+        0,
+        0
+      ],
+      "count": 0
+    },
+    "issues": []
+  }
+}

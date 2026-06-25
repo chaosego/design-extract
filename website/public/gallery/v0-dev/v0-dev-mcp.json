@@ -1,0 +1,550 @@
+{
+  "colors": {
+    "all": [
+      {
+        "hex": "#d2d2d2",
+        "rgb": {
+          "r": 210,
+          "g": 210,
+          "b": 210,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 82
+        },
+        "count": 2468,
+        "contexts": [
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#020202",
+        "rgb": {
+          "r": 2,
+          "g": 2,
+          "b": 2,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 1
+        },
+        "count": 1695,
+        "contexts": [
+          "text",
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#222222",
+        "rgb": {
+          "r": 34,
+          "g": 34,
+          "b": 34,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 13
+        },
+        "count": 839,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#ffffff",
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 100
+        },
+        "count": 160,
+        "contexts": [
+          "background",
+          "text"
+        ]
+      },
+      {
+        "hex": "#f4f4f4",
+        "rgb": {
+          "r": 244,
+          "g": 244,
+          "b": 244,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 96
+        },
+        "count": 78,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#343434",
+        "rgb": {
+          "r": 52,
+          "g": 52,
+          "b": 52,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 20
+        },
+        "count": 62,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#646464",
+        "rgb": {
+          "r": 100,
+          "g": 100,
+          "b": 100,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 39
+        },
+        "count": 6,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#e2e2e2",
+        "rgb": {
+          "r": 226,
+          "g": 226,
+          "b": 226,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 89
+        },
+        "count": 3,
+        "contexts": [
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#959595",
+        "rgb": {
+          "r": 149,
+          "g": 149,
+          "b": 149,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 58
+        },
+        "count": 2,
+        "contexts": [
+          "border"
+        ]
+      }
+    ]
+  },
+  "regions": [
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": null
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 50
+      },
+      "heading": null,
+      "buttonCount": 3,
+      "cardCount": 18,
+      "className": "@container/chat-header relative z-20 flex w-full shrink-0 items-center justify-between px-3 h-[50px] sm:px-2 hairline-b"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 0,
+        "y": 10.5,
+        "w": 1280,
+        "h": 28
+      },
+      "heading": null,
+      "buttonCount": 2,
+      "cardCount": 10,
+      "className": "group/navigation-menu absolute pointer-events-none [&>*]:pointer-events-auto inset-x-0 flex justify-center"
+    },
+    {
+      "role": "testimonials",
+      "tag": "main",
+      "bounds": {
+        "x": 0,
+        "y": 50,
+        "w": 1280,
+        "h": 4675.5
+      },
+      "heading": "What do you want to create?",
+      "buttonCount": 72,
+      "cardCount": 604,
+      "className": "z-0 flex w-full flex-col sm:px-6 px-3 gap-16 lg:gap-32"
+    },
+    {
+      "role": "hero",
+      "tag": "section",
+      "bounds": {
+        "x": 24,
+        "y": 543,
+        "w": 1232,
+        "h": 730
+      },
+      "heading": "Start with a template",
+      "buttonCount": 51,
+      "cardCount": 471,
+      "className": "w-full"
+    },
+    {
+      "role": "testimonials",
+      "tag": "section",
+      "bounds": {
+        "x": 24,
+        "y": 1345,
+        "w": 1232,
+        "h": 1312
+      },
+      "heading": "Prompt.\nBuild. Publish.",
+      "buttonCount": 0,
+      "cardCount": 29,
+      "className": "w-full pb-12 md:pb-20"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 24,
+        "y": 2729,
+        "w": 1232,
+        "h": 200
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 12,
+      "className": "relative w-full overflow-hidden py-12 md:py-20 px-2"
+    },
+    {
+      "role": "hero",
+      "tag": "section",
+      "bounds": {
+        "x": 24,
+        "y": 3001,
+        "w": 1232,
+        "h": 1032.5
+      },
+      "heading": "Ship mobile sites",
+      "buttonCount": 11,
+      "cardCount": 68,
+      "className": "w-full py-12 md:py-20 max-w-[1440px] mx-auto"
+    },
+    {
+      "role": "cta",
+      "tag": "section",
+      "bounds": {
+        "x": 24,
+        "y": 4105.5,
+        "w": 1232,
+        "h": 492
+      },
+      "heading": "Start building with v0",
+      "buttonCount": 1,
+      "cardCount": 1,
+      "className": "w-full py-16 md:py-24 mb-16"
+    },
+    {
+      "role": "footer",
+      "tag": "footer",
+      "bounds": {
+        "x": 0,
+        "y": 4725.5,
+        "w": 1280,
+        "h": 388
+      },
+      "heading": "Product",
+      "buttonCount": 0,
+      "cardCount": 30,
+      "className": "py-4 px-6"
+    },
+    {
+      "role": "footer",
+      "tag": "footer",
+      "bounds": {
+        "x": 24,
+        "y": 4789.5,
+        "w": 1232,
+        "h": 260
+      },
+      "heading": "Product",
+      "buttonCount": 0,
+      "cardCount": 30,
+      "className": "relative z-50 "
+    }
+  ],
+  "componentClusters": [
+    {
+      "kind": "button",
+      "structuralHash": "button>svg",
+      "instanceCount": 7,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "oklch(0.51 0 0)",
+            "padding": "4px 8px 4px 8px",
+            "borderRadius": "6px",
+            "border": "0px solid oklch(0.937 0 0)",
+            "fontSize": "14px",
+            "fontWeight": "500"
+          },
+          "instanceCount": 2
+        },
+        {
+          "css": {
+            "background": "oklch(1 0 0)",
+            "color": "oklch(0.51 0 0)",
+            "padding": "0px 12px 0px 12px",
+            "borderRadius": "3.35544e+07px",
+            "border": "1px solid oklch(0 0 0 / 0.078)",
+            "fontSize": "14px",
+            "fontWeight": "500"
+          },
+          "instanceCount": 5
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>div",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "oklch(1 0 0)",
+            "color": "oklch(0.205 0 0)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "3.35544e+07px",
+            "border": "1px solid oklch(0 0 0 / 0.078)",
+            "fontSize": "13px",
+            "fontWeight": "500"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>span>svg",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "oklch(0.51 0 0)",
+            "padding": "0px 4px 0px 6px",
+            "borderRadius": "6px",
+            "border": "1px solid rgba(0, 0, 0, 0)",
+            "fontSize": "13px",
+            "fontWeight": "500"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>span>span",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "oklch(0.205 0 0)",
+            "color": "oklch(1 0 0)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "6px",
+            "border": "1px solid oklch(0.205 0 0)",
+            "fontSize": "14px",
+            "fontWeight": "500"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>svg>div",
+      "instanceCount": 17,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "oklch(0.51 0 0)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "0px solid oklch(0.937 0 0)",
+            "fontSize": "13px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 17
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "oklch(0.205 0 0)",
+            "color": "oklch(1 0 0)",
+            "padding": "0px 20px 0px 20px",
+            "borderRadius": "3.35544e+07px",
+            "border": "1px solid oklch(0.205 0 0)",
+            "fontSize": "16px",
+            "fontWeight": "500"
+          },
+          "instanceCount": 1
+        }
+      ]
+    }
+  ],
+  "accessibility": {
+    "remediation": []
+  },
+  "cssHealth": {
+    "sheets": [
+      {
+        "url": "https://v0.app/chat-static/_next/static/chunks/10ew4j8ic07uo.css?dpl=dpl_6mvGaWpkJ6u491JfpivKWYJBRXWD",
+        "totalBytes": 12250,
+        "usedBytes": 522,
+        "unusedBytes": 11728,
+        "unusedPercent": 96
+      },
+      {
+        "url": "https://v0.app/chat-static/_next/static/chunks/2-s77r219e81f.css?dpl=dpl_6mvGaWpkJ6u491JfpivKWYJBRXWD",
+        "totalBytes": 474522,
+        "usedBytes": 452422,
+        "unusedBytes": 22100,
+        "unusedPercent": 5
+      },
+      {
+        "url": "https://v0.app/",
+        "totalBytes": 179,
+        "usedBytes": 0,
+        "unusedBytes": 179,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://v0.app/chat-static/_next/static/chunks/1crow9loge65x.css?dpl=dpl_6mvGaWpkJ6u491JfpivKWYJBRXWD",
+        "totalBytes": 71468,
+        "usedBytes": 287,
+        "unusedBytes": 71181,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://v0.app/chat-static/_next/static/chunks/0z4_syjekyuol.css?dpl=dpl_6mvGaWpkJ6u491JfpivKWYJBRXWD",
+        "totalBytes": 31519,
+        "usedBytes": 39,
+        "unusedBytes": 31480,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://v0.app/",
+        "totalBytes": 40,
+        "usedBytes": 0,
+        "unusedBytes": 40,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://v0.app/",
+        "totalBytes": 179,
+        "usedBytes": 0,
+        "unusedBytes": 179,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://v0.app/",
+        "totalBytes": 179,
+        "usedBytes": 113,
+        "unusedBytes": 66,
+        "unusedPercent": 37
+      }
+    ],
+    "totalBytes": 590336,
+    "usedBytes": 453383,
+    "unusedBytes": 136953,
+    "unusedPercent": 23,
+    "importantCount": 300,
+    "duplicates": 5442,
+    "vendorPrefixes": {
+      "webkit": 175,
+      "moz": 26,
+      "ms": 9,
+      "o": 0
+    },
+    "keyframes": [],
+    "specificity": {
+      "max": [
+        2,
+        10,
+        4
+      ],
+      "average": [
+        0.01,
+        2.01,
+        0.16
+      ],
+      "count": 7072
+    },
+    "issues": [
+      "300 !important rules",
+      "5442 duplicate declarations"
+    ]
+  }
+}

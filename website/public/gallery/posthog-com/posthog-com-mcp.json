@@ -1,0 +1,1049 @@
+{
+  "colors": {
+    "all": [
+      {
+        "hex": "#000000",
+        "rgb": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 0
+        },
+        "count": 7110,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#4d4f46",
+        "rgb": {
+          "r": 77,
+          "g": 79,
+          "b": 70,
+          "a": 1
+        },
+        "hsl": {
+          "h": 73,
+          "s": 6,
+          "l": 29
+        },
+        "count": 1332,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#374151",
+        "rgb": {
+          "r": 55,
+          "g": 65,
+          "b": 81,
+          "a": 1
+        },
+        "hsl": {
+          "h": 217,
+          "s": 19,
+          "l": 27
+        },
+        "count": 617,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#23251d",
+        "rgb": {
+          "r": 35,
+          "g": 37,
+          "b": 29,
+          "a": 1
+        },
+        "hsl": {
+          "h": 75,
+          "s": 12,
+          "l": 13
+        },
+        "count": 166,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#111827",
+        "rgb": {
+          "r": 17,
+          "g": 24,
+          "b": 39,
+          "a": 1
+        },
+        "hsl": {
+          "h": 221,
+          "s": 39,
+          "l": 11
+        },
+        "count": 156,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#9ea096",
+        "rgb": {
+          "r": 158,
+          "g": 160,
+          "b": 150,
+          "a": 1
+        },
+        "hsl": {
+          "h": 72,
+          "s": 5,
+          "l": 61
+        },
+        "count": 111,
+        "contexts": [
+          "border",
+          "text"
+        ]
+      },
+      {
+        "hex": "#f7a501",
+        "rgb": {
+          "r": 247,
+          "g": 165,
+          "b": 1,
+          "a": 1
+        },
+        "hsl": {
+          "h": 40,
+          "s": 99,
+          "l": 49
+        },
+        "count": 92,
+        "contexts": [
+          "text",
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#2f80fa",
+        "rgb": {
+          "r": 47,
+          "g": 128,
+          "b": 250,
+          "a": 1
+        },
+        "hsl": {
+          "h": 216,
+          "s": 95,
+          "l": 58
+        },
+        "count": 74,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#65675e",
+        "rgb": {
+          "r": 101,
+          "g": 103,
+          "b": 94,
+          "a": 1
+        },
+        "hsl": {
+          "h": 73,
+          "s": 5,
+          "l": 39
+        },
+        "count": 62,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#30abc6",
+        "rgb": {
+          "r": 48,
+          "g": 171,
+          "b": 198,
+          "a": 1
+        },
+        "hsl": {
+          "h": 191,
+          "s": 61,
+          "l": 48
+        },
+        "count": 48,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#bfc1b7",
+        "rgb": {
+          "r": 191,
+          "g": 193,
+          "b": 183,
+          "a": 1
+        },
+        "hsl": {
+          "h": 72,
+          "s": 7,
+          "l": 74
+        },
+        "count": 37,
+        "contexts": [
+          "border"
+        ]
+      },
+      {
+        "hex": "#b62ad9",
+        "rgb": {
+          "r": 182,
+          "g": 42,
+          "b": 217,
+          "a": 1
+        },
+        "hsl": {
+          "h": 288,
+          "s": 70,
+          "l": 51
+        },
+        "count": 36,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#ffffff",
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 0.6
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 100
+        },
+        "count": 31,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#36c46f",
+        "rgb": {
+          "r": 54,
+          "g": 196,
+          "b": 111,
+          "a": 1
+        },
+        "hsl": {
+          "h": 144,
+          "s": 57,
+          "l": 49
+        },
+        "count": 24,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#6aa84f",
+        "rgb": {
+          "r": 106,
+          "g": 168,
+          "b": 79,
+          "a": 1
+        },
+        "hsl": {
+          "h": 102,
+          "s": 36,
+          "l": 48
+        },
+        "count": 20,
+        "contexts": [
+          "text",
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#eeefe9",
+        "rgb": {
+          "r": 238,
+          "g": 239,
+          "b": 233,
+          "a": 1
+        },
+        "hsl": {
+          "h": 70,
+          "s": 16,
+          "l": 93
+        },
+        "count": 18,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#e1d7c2",
+        "rgb": {
+          "r": 225,
+          "g": 215,
+          "b": 194,
+          "a": 1
+        },
+        "hsl": {
+          "h": 41,
+          "s": 34,
+          "l": 82
+        },
+        "count": 17,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#29dbbb",
+        "rgb": {
+          "r": 41,
+          "g": 219,
+          "b": 187,
+          "a": 1
+        },
+        "hsl": {
+          "h": 169,
+          "s": 71,
+          "l": 51
+        },
+        "count": 16,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#b17816",
+        "rgb": {
+          "r": 177,
+          "g": 120,
+          "b": 22,
+          "a": 1
+        },
+        "hsl": {
+          "h": 38,
+          "s": 78,
+          "l": 39
+        },
+        "count": 14,
+        "contexts": [
+          "border"
+        ]
+      },
+      {
+        "hex": "#b6b7af",
+        "rgb": {
+          "r": 182,
+          "g": 183,
+          "b": 175,
+          "a": 1
+        },
+        "hsl": {
+          "h": 67,
+          "s": 5,
+          "l": 70
+        },
+        "count": 14,
+        "contexts": [
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#131316",
+        "rgb": {
+          "r": 19,
+          "g": 19,
+          "b": 22,
+          "a": 1
+        },
+        "hsl": {
+          "h": 240,
+          "s": 7,
+          "l": 8
+        },
+        "count": 14,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#f54e00",
+        "rgb": {
+          "r": 245,
+          "g": 78,
+          "b": 0,
+          "a": 1
+        },
+        "hsl": {
+          "h": 19,
+          "s": 100,
+          "l": 48
+        },
+        "count": 12,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#d0d1c9",
+        "rgb": {
+          "r": 208,
+          "g": 209,
+          "b": 201,
+          "a": 1
+        },
+        "hsl": {
+          "h": 67,
+          "s": 8,
+          "l": 80
+        },
+        "count": 11,
+        "contexts": [
+          "background",
+          "border"
+        ]
+      },
+      {
+        "hex": "#73756b",
+        "rgb": {
+          "r": 115,
+          "g": 117,
+          "b": 107,
+          "a": 1
+        },
+        "hsl": {
+          "h": 72,
+          "s": 4,
+          "l": 44
+        },
+        "count": 8,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#eb9d2a",
+        "rgb": {
+          "r": 235,
+          "g": 157,
+          "b": 42,
+          "a": 1
+        },
+        "hsl": {
+          "h": 36,
+          "s": 83,
+          "l": 54
+        },
+        "count": 7,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#e5e7e0",
+        "rgb": {
+          "r": 229,
+          "g": 231,
+          "b": 224,
+          "a": 0.75
+        },
+        "hsl": {
+          "h": 77,
+          "s": 13,
+          "l": 89
+        },
+        "count": 5,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#cd8407",
+        "rgb": {
+          "r": 205,
+          "g": 132,
+          "b": 7,
+          "a": 1
+        },
+        "hsl": {
+          "h": 38,
+          "s": 93,
+          "l": 42
+        },
+        "count": 4,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#6c47ff",
+        "rgb": {
+          "r": 108,
+          "g": 71,
+          "b": 255,
+          "a": 1
+        },
+        "hsl": {
+          "h": 252,
+          "s": 100,
+          "l": 64
+        },
+        "count": 4,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#bab1ff",
+        "rgb": {
+          "r": 186,
+          "g": 177,
+          "b": 255,
+          "a": 1
+        },
+        "hsl": {
+          "h": 247,
+          "s": 100,
+          "l": 85
+        },
+        "count": 2,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      }
+    ]
+  },
+  "regions": [
+    {
+      "role": "sidebar",
+      "tag": "aside",
+      "bounds": {
+        "x": 1003.75,
+        "y": 0,
+        "w": 268.25,
+        "h": 40
+      },
+      "heading": null,
+      "buttonCount": 7,
+      "cardCount": 6,
+      "className": "flex items-center gap-0.5 py-1"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 0,
+        "y": 41,
+        "w": 1280,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 2,
+      "cardCount": 32,
+      "className": null
+    },
+    {
+      "role": "sidebar",
+      "tag": "aside",
+      "bounds": {
+        "x": 146,
+        "y": 100,
+        "w": 958,
+        "h": 57
+      },
+      "heading": null,
+      "buttonCount": 16,
+      "cardCount": 19,
+      "className": "bg-primary p-2 border-b border-primary"
+    },
+    {
+      "role": "pricing",
+      "tag": "main",
+      "bounds": {
+        "x": 146,
+        "y": 157,
+        "w": 958,
+        "h": 624
+      },
+      "heading": null,
+      "buttonCount": 19,
+      "cardCount": 112,
+      "className": "@container/editor flex-1 bg-primary relative h-full flex flex-col"
+    },
+    {
+      "role": "pricing",
+      "tag": "section",
+      "bounds": {
+        "x": 209,
+        "y": 3250.3125,
+        "w": 832,
+        "h": 528.09375
+      },
+      "heading": null,
+      "buttonCount": 5,
+      "cardCount": 9,
+      "className": "pt-8 @xl:pt-0 px-5 lg:px-0"
+    },
+    {
+      "role": "footer",
+      "tag": "footer",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 4,
+      "className": "@container z-40 hidden"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "flex flex-wrap items-center gap-x-4 gap-y-2"
+    }
+  ],
+  "componentClusters": [
+    {
+      "kind": "button",
+      "structuralHash": "div>button>button>button>button>button",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "2px 0px 2px 0px",
+            "borderRadius": "0px",
+            "border": "0px solid rgb(0, 0, 0)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>div",
+      "instanceCount": 5,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(35, 37, 29)",
+            "padding": "2px 8px 2px 8px",
+            "borderRadius": "4px",
+            "border": "0px solid rgb(35, 37, 29)",
+            "fontSize": "13px",
+            "fontWeight": "500"
+          },
+          "instanceCount": 4
+        },
+        {
+          "css": {
+            "background": "rgb(47, 128, 250)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "10px 12px 10px 12px",
+            "borderRadius": "6px",
+            "border": "0px solid rgb(255, 255, 255)",
+            "fontSize": "14px",
+            "fontWeight": "600"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button",
+      "instanceCount": 8,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(35, 37, 29)",
+            "padding": "2px 8px 2px 8px",
+            "borderRadius": "4px",
+            "border": "0px solid rgb(35, 37, 29)",
+            "fontSize": "13px",
+            "fontWeight": "500"
+          },
+          "instanceCount": 8
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>span",
+      "instanceCount": 18,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(35, 37, 29)",
+            "padding": "2px 8px 2px 8px",
+            "borderRadius": "4px",
+            "border": "0px solid rgb(35, 37, 29)",
+            "fontSize": "13px",
+            "fontWeight": "500"
+          },
+          "instanceCount": 5
+        },
+        {
+          "css": {
+            "background": "rgb(229, 231, 224)",
+            "color": "rgb(101, 103, 94)",
+            "padding": "4px 6px 4px 6px",
+            "borderRadius": "4px",
+            "border": "4px 1px 1px solid rgb(191, 193, 183)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 2
+        },
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(158, 160, 150)",
+            "padding": "4px 5px 4px 5px",
+            "borderRadius": "4px",
+            "border": "1px solid rgba(0, 0, 0, 0)",
+            "fontSize": "14px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 10
+        },
+        {
+          "css": {
+            "background": "rgb(235, 157, 42)",
+            "color": "rgb(77, 79, 70)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "5px",
+            "border": "1px solid rgb(177, 120, 22)",
+            "fontSize": "15px",
+            "fontWeight": "600"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "a>span",
+      "instanceCount": 5,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(205, 132, 7)",
+            "color": "rgb(35, 37, 29)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "6px",
+            "border": "1px solid rgb(177, 120, 22)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 5
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "span",
+      "instanceCount": 6,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(235, 157, 42)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "4px 10px 4px 10px",
+            "borderRadius": "6px",
+            "border": "1px solid rgb(177, 120, 22)",
+            "fontSize": "13px",
+            "fontWeight": "700"
+          },
+          "instanceCount": 6
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>svg",
+      "instanceCount": 7,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(35, 37, 29)",
+            "padding": "2px 4px 2px 4px",
+            "borderRadius": "4px",
+            "border": "1px solid rgba(0, 0, 0, 0)",
+            "fontSize": "13px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 6
+        },
+        {
+          "css": {
+            "background": "rgba(255, 255, 255, 0.25)",
+            "color": "rgb(101, 103, 94)",
+            "padding": "8px 8px 8px 8px",
+            "borderRadius": "4px",
+            "border": "1px solid rgb(210, 211, 204)",
+            "fontSize": "15px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "div>button",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "2px 0px 2px 0px",
+            "borderRadius": "0px",
+            "border": "0px solid rgb(0, 0, 0)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>span>figcaption",
+      "instanceCount": 2,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(77, 79, 70)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "0px solid rgb(77, 79, 70)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 2
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>svg>svg",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(35, 37, 29)",
+            "padding": "2px 6px 2px 6px",
+            "borderRadius": "4px",
+            "border": "0px solid rgb(35, 37, 29)",
+            "fontSize": "13px",
+            "fontWeight": "500"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>span>span",
+      "instanceCount": 2,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(238, 239, 233)",
+            "color": "rgb(158, 160, 150)",
+            "padding": "2px 0px 2px 8px",
+            "borderRadius": "4px",
+            "border": "1px solid rgb(182, 183, 175)",
+            "fontSize": "13px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 2
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>svg>span>svg",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(255, 255, 255)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "6px 8px 6px 8px",
+            "borderRadius": "6px",
+            "border": "0px solid rgb(0, 0, 0)",
+            "fontSize": "14px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "span>svg",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(255, 255, 255)",
+            "color": "rgb(77, 79, 70)",
+            "padding": "2px 8px 2px 8px",
+            "borderRadius": "5px",
+            "border": "1px solid rgb(177, 120, 22)",
+            "fontSize": "12px",
+            "fontWeight": "700"
+          },
+          "instanceCount": 1
+        }
+      ]
+    }
+  ],
+  "accessibility": {
+    "remediation": [
+      {
+        "fg": "#ffffff",
+        "bg": "#2f80fa",
+        "ratio": 3.76,
+        "rule": "AA-normal",
+        "suggestion": {
+          "replace": "fg",
+          "color": "#000000",
+          "newRatio": 5.59
+        }
+      }
+    ]
+  },
+  "cssHealth": {
+    "sheets": [
+      {
+        "url": "https://posthog.com/",
+        "totalBytes": 179,
+        "usedBytes": 0,
+        "unusedBytes": 179,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://posthog.com/",
+        "totalBytes": 584601,
+        "usedBytes": 37472,
+        "unusedBytes": 547129,
+        "unusedPercent": 94
+      },
+      {
+        "url": "https://posthog.com/",
+        "totalBytes": 479,
+        "usedBytes": 0,
+        "unusedBytes": 479,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://posthog.com/",
+        "totalBytes": 179,
+        "usedBytes": 0,
+        "unusedBytes": 179,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://posthog.com/",
+        "totalBytes": 179,
+        "usedBytes": 0,
+        "unusedBytes": 179,
+        "unusedPercent": 100
+      }
+    ],
+    "totalBytes": 585617,
+    "usedBytes": 37472,
+    "unusedBytes": 548145,
+    "unusedPercent": 94,
+    "importantCount": 541,
+    "duplicates": 7683,
+    "vendorPrefixes": {
+      "webkit": 145,
+      "moz": 110,
+      "ms": 20,
+      "o": 15
+    },
+    "keyframes": [],
+    "specificity": {
+      "max": [
+        4,
+        8,
+        5
+      ],
+      "average": [
+        0.03,
+        1.97,
+        0.16
+      ],
+      "count": 7910
+    },
+    "issues": [
+      "541 !important rules",
+      "7683 duplicate declarations",
+      "94% unused CSS"
+    ]
+  }
+}

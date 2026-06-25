@@ -1,0 +1,88 @@
+{
+  "$schema": "https://designlang.app/schemas/gradients.json",
+  "source": "https://supabase.com",
+  "generated": "2026-06-25T08:25:31.987Z",
+  "count": 4,
+  "gradients": [
+    {
+      "raw": "linear-gradient(rgb(223, 223, 223) 0px, oklab(0.904028 0.0000411272 0.0000180602 / 0.5) 100%)",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "rgb(223, 223, 223)",
+          "position": "0px"
+        },
+        {
+          "color": "oklab(0.904028 0.0000411272 0.0000180602 / 0.5)",
+          "position": "100%"
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(to top, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0) 50%, rgb(255, 255, 255) 85%)",
+      "type": "linear",
+      "direction": "to top",
+      "stops": [
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": "0px"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": "50%"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "position": "85%"
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "radial-gradient(50% 100% at 50% 0px, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0) 50%, rgb(252, 252, 252) 100%)",
+      "type": "radial",
+      "direction": null,
+      "stops": [
+        {
+          "color": "50% 100% at 50%",
+          "position": "0px"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": "0px"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": "50%"
+        },
+        {
+          "color": "rgb(252, 252, 252)",
+          "position": "100%"
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "linear-gradient(to right in oklab, rgba(0, 0, 0, 0) 0px, rgb(223, 223, 223) 50%, rgba(0, 0, 0, 0) 100%)",
+      "type": "linear",
+      "direction": "to right in oklab",
+      "stops": [
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": "0px"
+        },
+        {
+          "color": "rgb(223, 223, 223)",
+          "position": "50%"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": "100%"
+        }
+      ],
+      "classification": "bold"
+    }
+  ]
+}

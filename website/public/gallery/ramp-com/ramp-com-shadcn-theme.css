@@ -1,0 +1,11 @@
+/* shadcn/ui Theme — extracted from https://ramp.com */
+/* Paste into your globals.css */
+
+@layer base {
+  :root {
+    --foreground: 0 0% 0%;
+    --muted: 0 0% 0%;
+    --muted-foreground: 0 0% 0%;
+    --border: 0 0% 0%;
+  }
+}

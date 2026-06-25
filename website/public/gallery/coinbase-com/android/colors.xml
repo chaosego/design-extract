@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="action_primary">#FF0000EE</color>
+    <color name="text_body">#FF313131</color>
+    <color name="brand_primary">#FF0000EE</color>
+    <color name="neutral_n100">#FF313131</color>
+    <color name="neutral_n200">#FF000000</color>
+    <color name="neutral_n300">#FFD9D9D9</color>
+    <color name="text_text0">#FF313131</color>
+    <color name="text_text1">#FF000000</color>
+    <color name="text_text2">#FF0000EE</color>
+</resources>

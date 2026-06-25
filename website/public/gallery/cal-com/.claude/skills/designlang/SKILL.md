@@ -1,0 +1,26 @@
+---
+name: designlang-tokens
+description: Use when styling UI for cal.com — references the extracted design system tokens instead of inventing colors, spacing, or typography.
+---
+
+# designlang tokens
+Source: https://cal.com
+Extracted by designlang v7.0.0 on 2026-06-25T08:26:30.283Z
+
+## Semantic tokens (use these)
+- color.action.primary: #0000ee
+- color.surface.default: #f4f4f4
+- color.text.body: #000000
+- radius.control: 2px
+- typography.body.fontFamily: Inter
+
+## Regions
+- content
+- testimonials
+- content
+
+## How to use
+- Prefer `semantic.*` tokens over `primitive.*`.
+- Never invent new tokens or hex values; reuse the ones above.
+- When a value is missing, pick the closest existing semantic token and flag the gap.
+- Reference tokens by their dotted path (e.g. `semantic.color.action.primary`).

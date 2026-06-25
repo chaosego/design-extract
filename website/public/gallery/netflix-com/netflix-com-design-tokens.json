@@ -1,0 +1,274 @@
+{
+  "$metadata": {
+    "generator": "designlang",
+    "version": "7.0.0",
+    "spec": "https://design-tokens.github.io/community-group/format/",
+    "source": "https://netflix.com",
+    "generatedAt": "2026-06-25T08:24:57.347Z"
+  },
+  "primitive": {
+    "color": {
+      "brand": {
+        "primary": {
+          "$value": "#e50914",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "#3860be",
+          "$type": "color"
+        }
+      },
+      "neutral": {
+        "n100": {
+          "$value": "#ffffff",
+          "$type": "color"
+        },
+        "n200": {
+          "$value": "#000000",
+          "$type": "color"
+        },
+        "n300": {
+          "$value": "#333333",
+          "$type": "color"
+        },
+        "n400": {
+          "$value": "#232323",
+          "$type": "color"
+        },
+        "n500": {
+          "$value": "#414141",
+          "$type": "color"
+        },
+        "n600": {
+          "$value": "#555555",
+          "$type": "color"
+        },
+        "n700": {
+          "$value": "#f4f4f4",
+          "$type": "color"
+        },
+        "n800": {
+          "$value": "#161616",
+          "$type": "color"
+        },
+        "n900": {
+          "$value": "#808080",
+          "$type": "color"
+        },
+        "n1000": {
+          "$value": "#c1c1c1",
+          "$type": "color"
+        },
+        "n1100": {
+          "$value": "#707070",
+          "$type": "color"
+        },
+        "n1200": {
+          "$value": "#d8d8d8",
+          "$type": "color"
+        }
+      },
+      "background": {
+        "bg0": {
+          "$value": "#000000",
+          "$type": "color"
+        },
+        "bg1": {
+          "$value": "#2d2d2d",
+          "$type": "color"
+        }
+      },
+      "text": {
+        "text0": {
+          "$value": "#000000",
+          "$type": "color"
+        },
+        "text1": {
+          "$value": "#ffffff",
+          "$type": "color"
+        },
+        "text2": {
+          "$value": "#e50914",
+          "$type": "color"
+        },
+        "text3": {
+          "$value": "#414141",
+          "$type": "color"
+        },
+        "text4": {
+          "$value": "#333333",
+          "$type": "color"
+        },
+        "text5": {
+          "$value": "#555555",
+          "$type": "color"
+        },
+        "text6": {
+          "$value": "#3860be",
+          "$type": "color"
+        }
+      }
+    },
+    "spacing": {
+      "s0": {
+        "$value": "1px",
+        "$type": "dimension"
+      },
+      "s1": {
+        "$value": "10px",
+        "$type": "dimension"
+      },
+      "s2": {
+        "$value": "12px",
+        "$type": "dimension"
+      },
+      "s3": {
+        "$value": "20px",
+        "$type": "dimension"
+      },
+      "s4": {
+        "$value": "22px",
+        "$type": "dimension"
+      },
+      "s5": {
+        "$value": "24px",
+        "$type": "dimension"
+      },
+      "s6": {
+        "$value": "27px",
+        "$type": "dimension"
+      },
+      "s7": {
+        "$value": "30px",
+        "$type": "dimension"
+      },
+      "s8": {
+        "$value": "32px",
+        "$type": "dimension"
+      },
+      "s9": {
+        "$value": "34px",
+        "$type": "dimension"
+      },
+      "s10": {
+        "$value": "64px",
+        "$type": "dimension"
+      },
+      "s11": {
+        "$value": "96px",
+        "$type": "dimension"
+      },
+      "s12": {
+        "$value": "100px",
+        "$type": "dimension"
+      },
+      "s13": {
+        "$value": "128px",
+        "$type": "dimension"
+      },
+      "s14": {
+        "$value": "148px",
+        "$type": "dimension"
+      },
+      "s15": {
+        "$value": "314px",
+        "$type": "dimension"
+      }
+    },
+    "radius": {
+      "r0": {
+        "$value": "2px",
+        "$type": "dimension"
+      },
+      "r1": {
+        "$value": "8px",
+        "$type": "dimension"
+      },
+      "r2": {
+        "$value": "16px",
+        "$type": "dimension"
+      },
+      "r3": {
+        "$value": "20px",
+        "$type": "dimension"
+      },
+      "r4": {
+        "$value": "50px",
+        "$type": "dimension"
+      }
+    },
+    "shadow": {
+      "sh0": {
+        "$value": "rgb(128, 128, 128) 0px 0px 5px 0px",
+        "$type": "shadow"
+      },
+      "sh1": {
+        "$value": "rgba(0, 0, 0, 0) 0px 2px 4px 0px, rgba(50, 50, 93, 0.1) 0px 7px 14px 0px",
+        "$type": "shadow"
+      },
+      "sh2": {
+        "$value": "rgb(199, 197, 199) -3px -3px 5px -2px",
+        "$type": "shadow"
+      },
+      "sh3": {
+        "$value": "rgb(199, 197, 199) 0px 0px 12px 2px",
+        "$type": "shadow"
+      }
+    },
+    "fontFamily": {
+      "f0": {
+        "$value": "Netflix Sans",
+        "$type": "fontFamily"
+      }
+    }
+  },
+  "semantic": {
+    "color": {
+      "action": {
+        "primary": {
+          "$value": "{primitive.color.brand.primary}",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "{primitive.color.brand.secondary}",
+          "$type": "color"
+        }
+      },
+      "surface": {
+        "default": {
+          "$value": "{primitive.color.background.bg0}",
+          "$type": "color"
+        }
+      },
+      "text": {
+        "body": {
+          "$value": "{primitive.color.text.text0}",
+          "$type": "color"
+        }
+      }
+    },
+    "typography": {
+      "body": {
+        "$value": {
+          "fontFamily": "Netflix Sans",
+          "fontSize": "100px",
+          "fontWeight": "400",
+          "lineHeight": "normal"
+        },
+        "$type": "typography"
+      }
+    },
+    "radius": {
+      "control": {
+        "$value": "{primitive.radius.r0}",
+        "$type": "dimension"
+      }
+    },
+    "shadow": {
+      "elevated": {
+        "$value": "{primitive.shadow.sh0}",
+        "$type": "shadow"
+      }
+    }
+  }
+}

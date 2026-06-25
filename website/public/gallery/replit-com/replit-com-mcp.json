@@ -1,0 +1,230 @@
+{
+  "colors": {
+    "all": [
+      {
+        "hex": "#404040",
+        "rgb": {
+          "r": 64,
+          "g": 64,
+          "b": 64,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 25
+        },
+        "count": 53,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#000000",
+        "rgb": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 0
+        },
+        "count": 30,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#595959",
+        "rgb": {
+          "r": 89,
+          "g": 89,
+          "b": 89,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 35
+        },
+        "count": 4,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#0051c3",
+        "rgb": {
+          "r": 0,
+          "g": 81,
+          "b": 195,
+          "a": 1
+        },
+        "hsl": {
+          "h": 215,
+          "s": 100,
+          "l": 38
+        },
+        "count": 4,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#ffffff",
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 100
+        },
+        "count": 3,
+        "contexts": [
+          "text",
+          "background"
+        ]
+      },
+      {
+        "hex": "#ebebeb",
+        "rgb": {
+          "r": 235,
+          "g": 235,
+          "b": 235,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 92
+        },
+        "count": 2,
+        "contexts": [
+          "background",
+          "border"
+        ]
+      },
+      {
+        "hex": "#de5052",
+        "rgb": {
+          "r": 222,
+          "g": 80,
+          "b": 82,
+          "a": 1
+        },
+        "hsl": {
+          "h": 359,
+          "s": 68,
+          "l": 59
+        },
+        "count": 1,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#521010",
+        "rgb": {
+          "r": 82,
+          "g": 16,
+          "b": 16,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 67,
+          "l": 19
+        },
+        "count": 1,
+        "contexts": [
+          "border"
+        ]
+      }
+    ]
+  },
+  "regions": [],
+  "componentClusters": [
+    {
+      "kind": "button",
+      "structuralHash": "button",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 81, 195)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "0px none rgb(0, 81, 195)",
+            "fontSize": "13px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    }
+  ],
+  "accessibility": {
+    "remediation": []
+  },
+  "cssHealth": {
+    "sheets": [
+      {
+        "url": "https://replit.com/cdn-cgi/styles/cf.errors.css",
+        "totalBytes": 24051,
+        "usedBytes": 7470,
+        "unusedBytes": 16581,
+        "unusedPercent": 69
+      },
+      {
+        "url": "https://replit.com/",
+        "totalBytes": 24,
+        "usedBytes": 24,
+        "unusedBytes": 0,
+        "unusedPercent": 0
+      }
+    ],
+    "totalBytes": 24075,
+    "usedBytes": 7494,
+    "unusedBytes": 16581,
+    "unusedPercent": 69,
+    "importantCount": 16,
+    "duplicates": 241,
+    "vendorPrefixes": {
+      "webkit": 9,
+      "moz": 11,
+      "ms": 1,
+      "o": 0
+    },
+    "keyframes": [],
+    "specificity": {
+      "max": [
+        2,
+        4,
+        2
+      ],
+      "average": [
+        1.22,
+        1.11,
+        0.62
+      ],
+      "count": 404
+    },
+    "issues": [
+      "16 !important rules",
+      "241 duplicate declarations",
+      "69% unused CSS"
+    ]
+  }
+}

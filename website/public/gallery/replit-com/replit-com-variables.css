@@ -1,0 +1,52 @@
+:root {
+  /* Colors — Primary */
+  --color-primary: #0051c3;
+  --color-secondary: #de5052;
+  --color-accent: #521010;
+
+  /* Colors — Neutrals */
+  --color-neutral-50: #404040;
+  --color-neutral-100: #000000;
+  --color-neutral-200: #595959;
+  --color-neutral-300: #ffffff;
+  --color-neutral-400: #ebebeb;
+
+  /* Colors — Backgrounds */
+  --color-bg: #ffffff;
+  --color-bg-1: #ebebeb;
+
+  /* Colors — Text */
+  --color-text: #000000;
+  --color-text-1: #404040;
+  --color-text-2: #ffffff;
+  --color-text-3: #595959;
+  --color-text-4: #0051c3;
+
+  /* Typography — Families */
+  --font-body: 'Times', sans-serif;
+
+  /* Typography — Scale */
+  --font-size-60: 60px;
+  --font-size-30: 30px;
+  --font-size-16: 16px;
+  --font-size-15: 15px;
+  --font-size-13: 13px;
+
+  /* Spacing */
+  --spacing-3: 3px;
+  --spacing-23: 23px;
+  --spacing-53: 53px;
+  --spacing-160: 160px;
+
+  /* Border Radius */
+  --radius-xs: 2px;
+  --radius-sm: 5px;
+
+  /* Original Site Variables */
+  /* — semantic — */
+  success: [object Object];
+  warning: [object Object];
+  error: [object Object];
+  info: [object Object];
+
+}

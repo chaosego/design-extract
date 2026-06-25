@@ -5,6 +5,8 @@ import { theatreReducer, initialTheatreState } from '../../../lib/theatre-reduce
 import BrowserStage from './BrowserStage.js';
 import SystemRail from './SystemRail.js';
 import StageTicker from './StageTicker.js';
+import ResultViewer from '../ResultViewer.js';
+import ShareExtractionButton from '../ShareExtractionButton.js';
 
 const STAGE_LABEL = {
   crawl: 'walking the DOM',
@@ -21,12 +23,51 @@ const STAGE_LABEL = {
 
 const SUGGESTIONS = ['stripe.com', 'linear.app', 'vercel.com', 'notion.so', 'figma.com'];
 
-export default function Theatre({ autoStart = null, live = false, compact = false }) {
+export default function Theatre({
+  autoStart = null,
+  live = false,
+  compact = false,
+  big = false,
+  redirectOnSubmit = false,
+}) {
   const [state, dispatch] = useReducer(theatreReducer, initialTheatreState);
   const [activeUrl, setActiveUrl] = useState(autoStart || '');
   const [rateLimitMsg, setRateLimitMsg] = useState(null);
+  const [downloadBusy, setDownloadBusy] = useState(false);
   const inputRef = useRef(null);
   const runningRef = useRef(false);
+
+  // When embedded on the homepage we don't run inline — submitting opens the
+  // dedicated big /watch page. Elsewhere (the /watch page itself) we run here.
+  const go = useCallback((rawUrl) => {
+    const url = (rawUrl || '').trim();
+    if (!url) return;
+    if (redirectOnSubmit) {
+      const full = url.startsWith('http') ? url : `https://${url}`;
+      window.location.href = `/watch?u=${encodeURIComponent(full)}`;
+      return;
+    }
+    run(url);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [redirectOnSubmit]);
+
+  const handleDownload = useCallback(async () => {
+    if (!state.files || downloadBusy) return;
+    setDownloadBusy(true);
+    try {
+      const { zipFilesToUrl } = await import('../../../lib/zip-files.js');
+      const { url, filename } = await zipFilesToUrl(state.files, {
+        name: `designlang-${new Date().toISOString().slice(0, 10)}`,
+      });
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    } finally {
+      setDownloadBusy(false);
+    }
+  }, [state.files, downloadBusy]);
 
   const run = useCallback(async (rawUrl, { replayOnly = false } = {}) => {
     const url = (rawUrl || '').trim();
@@ -98,14 +139,14 @@ export default function Theatre({ autoStart = null, live = false, compact = fals
 
   const onSubmit = useCallback((e) => {
     e.preventDefault();
-    run(inputRef.current?.value || '');
-  }, [run]);
+    go(inputRef.current?.value || '');
+  }, [go]);
 
   const streaming = state.status === 'streaming';
   const stageLabel = state.stage ? STAGE_LABEL[state.stage] || state.stage : null;
 
   return (
-    <div className={`thtr ${compact ? 'is-compact' : ''}`}>
+    <div className={`thtr ${compact ? 'is-compact' : ''} ${big ? 'is-big' : ''}`}>
       <form className="thtr-form" onSubmit={onSubmit}>
         <span className="thtr-form-prefix">https://</span>
         <input
@@ -125,7 +166,7 @@ export default function Theatre({ autoStart = null, live = false, compact = fals
 
       <div className="thtr-suggest">
         {SUGGESTIONS.map((h) => (
-          <button key={h} type="button" className="thtr-chip" disabled={streaming} onClick={() => run(h)}>
+          <button key={h} type="button" className="thtr-chip" disabled={streaming} onClick={() => go(h)}>
             {h}
           </button>
         ))}
@@ -152,28 +193,25 @@ export default function Theatre({ autoStart = null, live = false, compact = fals
 
       <StageTicker stage={state.stage} stagesSeen={state.stagesSeen} />
 
-      {state.status === 'done' && state.hash && (
-        <div className="thtr-actions">
-          <a className="thtr-action" href={`/x/${state.hash}`}>open the full brand book →</a>
-          <ShareLink hash={state.hash} url={activeUrl} />
+      {(live || big) && state.status === 'done' && state.files && (
+        <div className="thtr-output">
+          <div className="thtr-output-head">
+            <h3 className="thtr-output-title">Everything it extracted from {hostOf(activeUrl)}</h3>
+            <div className="thtr-actions">
+              {state.hash && <ShareExtractionButton url={activeUrl} hash={state.hash} summary={state.summary} files={state.files} />}
+            </div>
+          </div>
+          <ResultViewer files={state.files} onDownloadZip={handleDownload} downloadBusy={downloadBusy} />
         </div>
       )}
     </div>
   );
 }
 
-function ShareLink({ hash, url }) {
-  const [copied, setCopied] = useState(false);
-  const onCopy = useCallback(() => {
-    const link = `${window.location.origin}/x/${hash}`;
-    navigator.clipboard?.writeText(link).then(() => {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 1600);
-    });
-  }, [hash]);
-  return (
-    <button type="button" className="thtr-action thtr-action-ghost" onClick={onCopy}>
-      {copied ? 'link copied ✓' : 'copy share link'}
-    </button>
-  );
+function hostOf(url) {
+  try {
+    return new URL(url.startsWith('http') ? url : `https://${url}`).hostname.replace(/^www\./, '');
+  } catch {
+    return 'the site';
+  }
 }

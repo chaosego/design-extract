@@ -1,0 +1,28 @@
+/*
+Theme Name: designlang extracted theme
+Theme URI: https://github.com/Manavarya09/design-extract
+Description: Block theme generated from https://mintlify.com by designlang v7.0.0
+Version: 1.0.0
+Author: designlang
+License: MIT
+Text Domain: designlang-theme
+*/
+
+:root {
+  --action-primary: #faf8f5;
+  --action-secondary: #004cff;
+  --surface-default: #f9f6f3;
+  --text-body: #000000;
+  --spacing-s0: 4px;
+  --spacing-s1: 40px;
+  --spacing-s2: 48px;
+  --spacing-s3: 64px;
+  --spacing-s4: 80px;
+  --spacing-s5: 93px;
+  --spacing-s6: 104px;
+  --spacing-s7: 128px;
+  --spacing-s8: 160px;
+  --spacing-s9: 266px;
+  --spacing-s10: 290px;
+  --spacing-s11: 298px;
+}

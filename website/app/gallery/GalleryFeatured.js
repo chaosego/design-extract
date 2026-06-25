@@ -56,41 +56,33 @@ export default function GalleryFeatured({ items }) {
       </div>
 
       <div className="gallery-grid">
-        {shown.map((g) => {
-          const watchHref = `/watch?u=${encodeURIComponent('https://' + g.host)}`;
-          const cardHref = g.live ? watchHref : `/gallery/${g.slug}`;
-          return (
-            <a key={g.host} href={cardHref} className="gal-card gal-real">
-              <span className={`gal-grade-pill ${gradeClass(g.grade)}`}>{g.grade}</span>
-              <div
-                className="gal-swatch"
-                style={{
-                  background: `linear-gradient(135deg, ${g.primary} 0%, ${g.accent} 65%, ${g.bg === '#ffffff' ? '#1a1a1a' : g.bg} 100%)`,
+        {shown.map((g) => (
+          <a key={g.host} href={`/gallery/${g.slug}`} className="gal-card gal-real">
+            <span className={`gal-grade-pill ${gradeClass(g.grade)}`}>{g.grade}</span>
+            <div
+              className="gal-swatch"
+              style={{
+                background: `linear-gradient(135deg, ${g.primary} 0%, ${g.accent} 65%, ${g.bg === '#ffffff' ? '#1a1a1a' : g.bg} 100%)`,
+              }}
+            />
+            <div className="gal-logo">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={`https://icon.horse/icon/${g.host}`} alt="" loading="lazy" width={64} height={64} />
+            </div>
+            <div className="gal-meta">
+              <span className="gal-host">{g.host}</span>
+              <span
+                className="gal-watch"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = `/watch?u=${encodeURIComponent('https://' + g.host)}`;
                 }}
-              />
-              <div className="gal-logo">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={`https://icon.horse/icon/${g.host}`} alt="" loading="lazy" width={64} height={64} />
-              </div>
-              <div className="gal-meta">
-                <span className="gal-host">{g.host}</span>
-                {g.live ? (
-                  <span className="gal-watch">▶ watch live</span>
-                ) : (
-                  <span
-                    className="gal-watch"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      window.location.href = watchHref;
-                    }}
-                  >
-                    ▶ watch
-                  </span>
-                )}
-              </div>
-            </a>
-          );
-        })}
+              >
+                ▶ watch
+              </span>
+            </div>
+          </a>
+        ))}
       </div>
     </>
   );

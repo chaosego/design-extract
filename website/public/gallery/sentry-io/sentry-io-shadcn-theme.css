@@ -1,0 +1,19 @@
+/* shadcn/ui Theme — extracted from https://sentry.io */
+/* Paste into your globals.css */
+
+@layer base {
+  :root {
+    --background: 259 40% 14%;
+    --foreground: 0 0% 0%;
+    --primary: 258 40% 10%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 212 100% 81%;
+    --secondary-foreground: 0 0% 0%;
+    --accent: 261 29% 19%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 0 0% 76%;
+    --muted-foreground: 0 0% 100%;
+    --border: 0 0% 0%;
+    --radius: 6px;
+  }
+}

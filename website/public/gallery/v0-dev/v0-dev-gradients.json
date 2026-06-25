@@ -1,0 +1,100 @@
+{
+  "$schema": "https://designlang.app/schemas/gradients.json",
+  "source": "https://v0.dev",
+  "generated": "2026-06-25T08:31:41.027Z",
+  "count": 5,
+  "gradients": [
+    {
+      "raw": "linear-gradient(to right, oklch(1 0 0) 0%, rgba(0, 0, 0, 0) 100%)",
+      "type": "linear",
+      "direction": "to right",
+      "stops": [
+        {
+          "color": "oklch(1 0 0)",
+          "position": "0%"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": "100%"
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(to left, oklch(1 0 0) 0%, rgba(0, 0, 0, 0) 100%)",
+      "type": "linear",
+      "direction": "to left",
+      "stops": [
+        {
+          "color": "oklch(1 0 0)",
+          "position": "0%"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": "100%"
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(in oklab, rgba(255, 255, 255, 0.3) 0%, rgba(102, 102, 102, 0.3) 100%)",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "in oklab",
+          "position": null
+        },
+        {
+          "color": "rgba(255, 255, 255, 0.3)",
+          "position": "0%"
+        },
+        {
+          "color": "rgba(102, 102, 102, 0.3)",
+          "position": "100%"
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "linear-gradient(to right, oklab(1 0 0 / 0.8) 0%, rgba(0, 0, 0, 0) 50%, oklab(1 0 0 / 0.8) 100%)",
+      "type": "linear",
+      "direction": "to right",
+      "stops": [
+        {
+          "color": "oklab(1 0 0 / 0.8)",
+          "position": "0%"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": "50%"
+        },
+        {
+          "color": "oklab(1 0 0 / 0.8)",
+          "position": "100%"
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "linear-gradient(oklab(1 0 0 / 0.8) 0%, rgba(0, 0, 0, 0) 50%, oklab(1 0 0 / 0.8) 100%)",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "oklab(1 0 0 / 0.8)",
+          "position": "0%"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": "50%"
+        },
+        {
+          "color": "oklab(1 0 0 / 0.8)",
+          "position": "100%"
+        }
+      ],
+      "classification": "bold"
+    }
+  ]
+}

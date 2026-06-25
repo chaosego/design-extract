@@ -1,0 +1,203 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#1868db",
+          "name": "Primary"
+        },
+        {
+          "slug": "secondary",
+          "color": "#ffab00",
+          "name": "Secondary"
+        },
+        {
+          "slug": "accent",
+          "color": "#e9f2fe",
+          "name": "Accent"
+        },
+        {
+          "slug": "neutral-1",
+          "color": "#292a2e",
+          "name": "Neutral 1"
+        },
+        {
+          "slug": "neutral-2",
+          "color": "#000000",
+          "name": "Neutral 2"
+        },
+        {
+          "slug": "neutral-3",
+          "color": "#ffffff",
+          "name": "Neutral 3"
+        },
+        {
+          "slug": "neutral-4",
+          "color": "#696969",
+          "name": "Neutral 4"
+        },
+        {
+          "slug": "neutral-5",
+          "color": "#555555",
+          "name": "Neutral 5"
+        },
+        {
+          "slug": "bg-ffffff",
+          "color": "#ffffff",
+          "name": "Background #ffffff"
+        },
+        {
+          "slug": "bg-101214",
+          "color": "#101214",
+          "name": "Background #101214"
+        },
+        {
+          "slug": "bg-1868db",
+          "color": "#1868db",
+          "name": "Background #1868db"
+        }
+      ],
+      "gradients": [
+        {
+          "slug": "gradient-1",
+          "gradient": "linear-gradient(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0))",
+          "name": "Gradient 1"
+        },
+        {
+          "slug": "gradient-2",
+          "gradient": "linear-gradient(to top, rgb(179, 223, 114), rgba(255, 255, 255, 0))",
+          "name": "Gradient 2"
+        },
+        {
+          "slug": "gradient-3",
+          "gradient": "linear-gradient(rgb(255, 255, 255) 0px, rgb(255, 255, 255) 55%, rgb(233, 242, 254) 55%, rgb(233, 242, 254) 100%)",
+          "name": "Gradient 3"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "Charlie Text",
+          "slug": "charlie-text",
+          "name": "Charlie Text"
+        },
+        {
+          "fontFamily": "Charlie Display",
+          "slug": "charlie-display",
+          "name": "Charlie Display"
+        },
+        {
+          "fontFamily": "Times",
+          "slug": "times",
+          "name": "Times"
+        }
+      ],
+      "fontSizes": [
+        {
+          "size": "56.5385px",
+          "slug": "size-56.5385",
+          "name": "56.5385px"
+        },
+        {
+          "size": "40.3077px",
+          "slug": "size-40.3077",
+          "name": "40.3077px"
+        },
+        {
+          "size": "30px",
+          "slug": "size-30",
+          "name": "30px"
+        },
+        {
+          "size": "25.3077px",
+          "slug": "size-25.3077",
+          "name": "25.3077px"
+        },
+        {
+          "size": "24px",
+          "slug": "size-24",
+          "name": "24px"
+        },
+        {
+          "size": "23.5385px",
+          "slug": "size-23.5385",
+          "name": "23.5385px"
+        },
+        {
+          "size": "18.4px",
+          "slug": "size-18.4",
+          "name": "18.4px"
+        },
+        {
+          "size": "18.2462px",
+          "slug": "size-18.2462",
+          "name": "18.2462px"
+        }
+      ]
+    },
+    "spacing": {
+      "spacingSizes": [
+        {
+          "size": "1px",
+          "slug": "spacing-1",
+          "name": "1px"
+        },
+        {
+          "size": "15px",
+          "slug": "spacing-15",
+          "name": "15px"
+        },
+        {
+          "size": "23px",
+          "slug": "spacing-23",
+          "name": "23px"
+        },
+        {
+          "size": "30px",
+          "slug": "spacing-30",
+          "name": "30px"
+        },
+        {
+          "size": "35px",
+          "slug": "spacing-35",
+          "name": "35px"
+        },
+        {
+          "size": "40px",
+          "slug": "spacing-40",
+          "name": "40px"
+        },
+        {
+          "size": "48px",
+          "slug": "spacing-48",
+          "name": "48px"
+        },
+        {
+          "size": "56px",
+          "slug": "spacing-56",
+          "name": "56px"
+        }
+      ]
+    },
+    "layout": {
+      "contentSize": "1280px",
+      "wideSize": "1400px"
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#ffffff",
+      "text": "#000000"
+    },
+    "typography": {
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontFamily": "Charlie Text"
+    },
+    "spacing": {}
+  }
+}

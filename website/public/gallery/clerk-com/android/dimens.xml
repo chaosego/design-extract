@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_s0">1dp</dimen>
+    <dimen name="spacing_s1">46dp</dimen>
+    <dimen name="spacing_s2">56dp</dimen>
+    <dimen name="spacing_s3">76dp</dimen>
+    <dimen name="spacing_s4">94dp</dimen>
+    <dimen name="spacing_s5">128dp</dimen>
+    <dimen name="spacing_s6">140dp</dimen>
+    <dimen name="spacing_s7">151dp</dimen>
+    <dimen name="spacing_s8">158dp</dimen>
+    <dimen name="spacing_s9">167dp</dimen>
+    <dimen name="spacing_s10">172dp</dimen>
+    <dimen name="spacing_s11">192dp</dimen>
+    <dimen name="spacing_s12">220dp</dimen>
+    <dimen name="spacing_s13">259dp</dimen>
+    <dimen name="spacing_s14">272dp</dimen>
+    <dimen name="spacing_s15">302dp</dimen>
+    <dimen name="spacing_s16">320dp</dimen>
+    <dimen name="radius_r0">2dp</dimen>
+    <dimen name="radius_r1">5dp</dimen>
+    <dimen name="radius_r2">8dp</dimen>
+    <dimen name="radius_r3">12dp</dimen>
+    <dimen name="radius_r4">16dp</dimen>
+    <dimen name="radius_r5">38dp</dimen>
+    <dimen name="radius_r6">44dp</dimen>
+    <dimen name="radius_r7">50dp</dimen>
+</resources>

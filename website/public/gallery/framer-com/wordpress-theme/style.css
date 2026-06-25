@@ -1,0 +1,30 @@
+/*
+Theme Name: designlang extracted theme
+Theme URI: https://github.com/Manavarya09/design-extract
+Description: Block theme generated from https://framer.com by designlang v7.0.0
+Version: 1.0.0
+Author: designlang
+License: MIT
+Text Domain: designlang-theme
+*/
+
+:root {
+  --action-primary: #0066ff;
+  --action-secondary: #0000ee;
+  --surface-default: #000000;
+  --text-body: #000000;
+  --spacing-s0: 1px;
+  --spacing-s1: 20px;
+  --spacing-s2: 25px;
+  --spacing-s3: 30px;
+  --spacing-s4: 40px;
+  --spacing-s5: 45px;
+  --spacing-s6: 50px;
+  --spacing-s7: 55px;
+  --spacing-s8: 60px;
+  --spacing-s9: 64px;
+  --spacing-s10: 100px;
+  --spacing-s11: 120px;
+  --spacing-s12: 160px;
+  --spacing-s13: 200px;
+}

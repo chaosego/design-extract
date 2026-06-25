@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_s0">4dp</dimen>
+    <dimen name="spacing_s1">80dp</dimen>
+    <dimen name="spacing_s2">96dp</dimen>
+    <dimen name="radius_r0">9999dp</dimen>
+</resources>

@@ -1,0 +1,31 @@
+/*
+Theme Name: designlang extracted theme
+Theme URI: https://github.com/Manavarya09/design-extract
+Description: Block theme generated from https://loom.com by designlang v7.0.0
+Version: 1.0.0
+Author: designlang
+License: MIT
+Text Domain: designlang-theme
+*/
+
+:root {
+  --action-primary: #1868db;
+  --action-secondary: #ffab00;
+  --surface-default: #ffffff;
+  --text-body: #000000;
+  --spacing-s0: 1px;
+  --spacing-s1: 15px;
+  --spacing-s2: 23px;
+  --spacing-s3: 30px;
+  --spacing-s4: 35px;
+  --spacing-s5: 40px;
+  --spacing-s6: 48px;
+  --spacing-s7: 56px;
+  --spacing-s8: 64px;
+  --spacing-s9: 80px;
+  --spacing-s10: 84px;
+  --spacing-s11: 103px;
+  --spacing-s12: 154px;
+  --spacing-s13: 192px;
+  --spacing-s14: 269px;
+}

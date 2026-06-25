@@ -1,0 +1,44 @@
+{
+  "$schema": "https://designlang.app/schemas/gradients.json",
+  "source": "https://replit.com",
+  "generated": "2026-06-25T08:29:30.219Z",
+  "count": 1,
+  "gradients": [
+    {
+      "raw": "gradient(linear, 0% 0%, 0% 100%, from(rgb(222, 222, 222)), color-stop(0.03, rgb(235, 235, 235)), color-stop(0.97, rgb(235, 235, 235)), to(rgb(222, 222, 222)))",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "linear",
+          "position": null
+        },
+        {
+          "color": "",
+          "position": "0%"
+        },
+        {
+          "color": "0%",
+          "position": "100%"
+        },
+        {
+          "color": "from(rgb(222, 222, 222))",
+          "position": null
+        },
+        {
+          "color": "color-stop(0.03, rgb(235, 235, 235))",
+          "position": null
+        },
+        {
+          "color": "color-stop(0.97, rgb(235, 235, 235))",
+          "position": null
+        },
+        {
+          "color": "to(rgb(222, 222, 222))",
+          "position": null
+        }
+      ],
+      "classification": "complex"
+    }
+  ]
+}

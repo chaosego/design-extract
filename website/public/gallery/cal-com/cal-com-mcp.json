@@ -1,0 +1,678 @@
+{
+  "colors": {
+    "all": [
+      {
+        "hex": "#000000",
+        "rgb": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 0
+        },
+        "count": 5450,
+        "contexts": [
+          "text",
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#0000ee",
+        "rgb": {
+          "r": 0,
+          "g": 0,
+          "b": 238,
+          "a": 1
+        },
+        "hsl": {
+          "h": 240,
+          "s": 100,
+          "l": 47
+        },
+        "count": 448,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#242424",
+        "rgb": {
+          "r": 36,
+          "g": 36,
+          "b": 36,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 14
+        },
+        "count": 384,
+        "contexts": [
+          "text",
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#898989",
+        "rgb": {
+          "r": 137,
+          "g": 137,
+          "b": 137,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 54
+        },
+        "count": 356,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#e5e7eb",
+        "rgb": {
+          "r": 229,
+          "g": 231,
+          "b": 235,
+          "a": 1
+        },
+        "hsl": {
+          "h": 220,
+          "s": 13,
+          "l": 91
+        },
+        "count": 313,
+        "contexts": [
+          "background",
+          "border"
+        ]
+      },
+      {
+        "hex": "#ffffff",
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 100
+        },
+        "count": 195,
+        "contexts": [
+          "text",
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#111111",
+        "rgb": {
+          "r": 17,
+          "g": 17,
+          "b": 17,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 7
+        },
+        "count": 190,
+        "contexts": [
+          "text",
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#f4f4f4",
+        "rgb": {
+          "r": 244,
+          "g": 244,
+          "b": 244,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 96
+        },
+        "count": 65,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#374151",
+        "rgb": {
+          "r": 55,
+          "g": 65,
+          "b": 81,
+          "a": 1
+        },
+        "hsl": {
+          "h": 217,
+          "s": 19,
+          "l": 27
+        },
+        "count": 58,
+        "contexts": [
+          "text",
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#d3d3d3",
+        "rgb": {
+          "r": 211,
+          "g": 211,
+          "b": 211,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 83
+        },
+        "count": 48,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#808080",
+        "rgb": {
+          "r": 128,
+          "g": 128,
+          "b": 128,
+          "a": 0.14
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 50
+        },
+        "count": 10,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#4c5a70",
+        "rgb": {
+          "r": 76,
+          "g": 90,
+          "b": 112,
+          "a": 1
+        },
+        "hsl": {
+          "h": 217,
+          "s": 19,
+          "l": 37
+        },
+        "count": 9,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#0ea5e9",
+        "rgb": {
+          "r": 14,
+          "g": 165,
+          "b": 233,
+          "a": 1
+        },
+        "hsl": {
+          "h": 199,
+          "s": 89,
+          "l": 48
+        },
+        "count": 8,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#6701e6",
+        "rgb": {
+          "r": 103,
+          "g": 1,
+          "b": 230,
+          "a": 1
+        },
+        "hsl": {
+          "h": 267,
+          "s": 99,
+          "l": 45
+        },
+        "count": 8,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#6b7280",
+        "rgb": {
+          "r": 107,
+          "g": 114,
+          "b": 128,
+          "a": 1
+        },
+        "hsl": {
+          "h": 220,
+          "s": 9,
+          "l": 46
+        },
+        "count": 6,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#9ca3af",
+        "rgb": {
+          "r": 156,
+          "g": 163,
+          "b": 175,
+          "a": 1
+        },
+        "hsl": {
+          "h": 218,
+          "s": 11,
+          "l": 65
+        },
+        "count": 6,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#0099ff",
+        "rgb": {
+          "r": 0,
+          "g": 153,
+          "b": 255,
+          "a": 1
+        },
+        "hsl": {
+          "h": 204,
+          "s": 100,
+          "l": 50
+        },
+        "count": 6,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#7826b1",
+        "rgb": {
+          "r": 120,
+          "g": 38,
+          "b": 177,
+          "a": 1
+        },
+        "hsl": {
+          "h": 275,
+          "s": 65,
+          "l": 42
+        },
+        "count": 4,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#aa61f1",
+        "rgb": {
+          "r": 170,
+          "g": 97,
+          "b": 241,
+          "a": 1
+        },
+        "hsl": {
+          "h": 270,
+          "s": 84,
+          "l": 66
+        },
+        "count": 4,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#e9ddfd",
+        "rgb": {
+          "r": 233,
+          "g": 221,
+          "b": 253,
+          "a": 1
+        },
+        "hsl": {
+          "h": 263,
+          "s": 89,
+          "l": 93
+        },
+        "count": 2,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#882c2f",
+        "rgb": {
+          "r": 136,
+          "g": 44,
+          "b": 47,
+          "a": 1
+        },
+        "hsl": {
+          "h": 358,
+          "s": 51,
+          "l": 35
+        },
+        "count": 2,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#d85b5f",
+        "rgb": {
+          "r": 216,
+          "g": 91,
+          "b": 95,
+          "a": 1
+        },
+        "hsl": {
+          "h": 358,
+          "s": 62,
+          "l": 60
+        },
+        "count": 2,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#0261a2",
+        "rgb": {
+          "r": 2,
+          "g": 97,
+          "b": 162,
+          "a": 1
+        },
+        "hsl": {
+          "h": 204,
+          "s": 98,
+          "l": 32
+        },
+        "count": 2,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#f8d7d8",
+        "rgb": {
+          "r": 248,
+          "g": 215,
+          "b": 216,
+          "a": 1
+        },
+        "hsl": {
+          "h": 358,
+          "s": 70,
+          "l": 91
+        },
+        "count": 1,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#d6ecfe",
+        "rgb": {
+          "r": 214,
+          "g": 236,
+          "b": 254,
+          "a": 1
+        },
+        "hsl": {
+          "h": 207,
+          "s": 95,
+          "l": 92
+        },
+        "count": 1,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#767676",
+        "rgb": {
+          "r": 118,
+          "g": 118,
+          "b": 118,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 46
+        },
+        "count": 1,
+        "contexts": [
+          "border"
+        ]
+      }
+    ]
+  },
+  "regions": [
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 384,
+        "y": 853,
+        "w": 780,
+        "h": 24
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 36,
+      "className": null
+    },
+    {
+      "role": "testimonials",
+      "tag": "section",
+      "bounds": {
+        "x": 378,
+        "y": 3970,
+        "w": 524,
+        "h": 298
+      },
+      "heading": null,
+      "buttonCount": 2,
+      "cardCount": 24,
+      "className": null
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 384,
+        "y": 7170.1875,
+        "w": 780,
+        "h": 24
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 36,
+      "className": null
+    }
+  ],
+  "componentClusters": [],
+  "accessibility": {
+    "remediation": []
+  },
+  "cssHealth": {
+    "sheets": [
+      {
+        "url": "https://cal.com/",
+        "totalBytes": 86222,
+        "usedBytes": 0,
+        "unusedBytes": 86222,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://cal.com/",
+        "totalBytes": 369065,
+        "usedBytes": 125472,
+        "unusedBytes": 243593,
+        "unusedPercent": 66
+      },
+      {
+        "url": "https://cal.com/",
+        "totalBytes": 96,
+        "usedBytes": 96,
+        "unusedBytes": 0,
+        "unusedPercent": 0
+      },
+      {
+        "url": "https://cal.com/",
+        "totalBytes": 225,
+        "usedBytes": 0,
+        "unusedBytes": 225,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://fonts.googleapis.com/css?family=Inter:400,700&display=swap",
+        "totalBytes": 5014,
+        "usedBytes": 0,
+        "unusedBytes": 5014,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://fonts.googleapis.com/css?family=Inter:400,700&display=swap",
+        "totalBytes": 5014,
+        "usedBytes": 0,
+        "unusedBytes": 5014,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://fonts.googleapis.com/css?family=Inter:400,700&display=swap",
+        "totalBytes": 5014,
+        "usedBytes": 0,
+        "unusedBytes": 5014,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://fonts.googleapis.com/css?family=Inter:400,700&display=swap",
+        "totalBytes": 5014,
+        "usedBytes": 0,
+        "unusedBytes": 5014,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://fonts.googleapis.com/css?family=Inter:400,700&display=swap",
+        "totalBytes": 5014,
+        "usedBytes": 0,
+        "unusedBytes": 5014,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://fonts.googleapis.com/css?family=Inter:400,700&display=swap",
+        "totalBytes": 5014,
+        "usedBytes": 0,
+        "unusedBytes": 5014,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://fonts.googleapis.com/css?family=Inter:400,700&display=swap",
+        "totalBytes": 5014,
+        "usedBytes": 0,
+        "unusedBytes": 5014,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://fonts.googleapis.com/css?family=Inter:400,700&display=swap",
+        "totalBytes": 5014,
+        "usedBytes": 0,
+        "unusedBytes": 5014,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://fonts.googleapis.com/css?family=Inter:400,700&display=swap",
+        "totalBytes": 5014,
+        "usedBytes": 0,
+        "unusedBytes": 5014,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://fonts.googleapis.com/css?family=Inter:400,700&display=swap",
+        "totalBytes": 5014,
+        "usedBytes": 0,
+        "unusedBytes": 5014,
+        "unusedPercent": 100
+      }
+    ],
+    "totalBytes": 505748,
+    "usedBytes": 125568,
+    "unusedBytes": 380180,
+    "unusedPercent": 75,
+    "importantCount": 13,
+    "duplicates": 7947,
+    "vendorPrefixes": {
+      "webkit": 122,
+      "moz": 2,
+      "ms": 0,
+      "o": 0
+    },
+    "keyframes": [],
+    "specificity": {
+      "max": [
+        1,
+        5,
+        4
+      ],
+      "average": [
+        0,
+        2.02,
+        0.28
+      ],
+      "count": 2442
+    },
+    "issues": [
+      "13 !important rules",
+      "7947 duplicate declarations",
+      "75% unused CSS"
+    ]
+  }
+}

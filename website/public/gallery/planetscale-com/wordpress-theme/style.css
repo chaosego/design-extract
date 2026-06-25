@@ -1,0 +1,19 @@
+/*
+Theme Name: designlang extracted theme
+Theme URI: https://github.com/Manavarya09/design-extract
+Description: Block theme generated from https://planetscale.com by designlang v7.0.0
+Version: 1.0.0
+Author: designlang
+License: MIT
+Text Domain: designlang-theme
+*/
+
+:root {
+  --action-primary: #f2b600;
+  --action-secondary: #f35815;
+  --surface-default: #fafafa;
+  --text-body: #414141;
+  --spacing-s0: 4px;
+  --spacing-s1: 80px;
+  --spacing-s2: 96px;
+}

@@ -1,0 +1,203 @@
+:root {
+  /* Colors — Primary */
+  --color-primary: #f2b600;
+  --color-secondary: #f35815;
+  --color-accent: #0b6ec5;
+
+  /* Colors — Neutrals */
+  --color-neutral-50: #414141;
+  --color-neutral-100: #c1c1c1;
+  --color-neutral-200: #737373;
+  --color-neutral-300: #ffffff;
+  --color-neutral-400: #000000;
+  --color-neutral-500: #111111;
+  --color-neutral-600: #ebebeb;
+
+  /* Colors — Backgrounds */
+  --color-bg: #fafafa;
+  --color-bg-1: #111111;
+
+  /* Colors — Text */
+  --color-text: #414141;
+  --color-text-1: #ffffff;
+  --color-text-2: #111111;
+  --color-text-3: #c1c1c1;
+  --color-text-4: #000000;
+
+  /* Typography — Scale */
+  --font-size-16: 16px;
+  --font-size-12: 12px;
+
+  /* Spacing */
+  --spacing-4: 4px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+
+  /* Border Radius */
+  --radius-full: 9999px;
+
+  /* Original Site Variables */
+  /* — colors — */
+  --bg-primary: #fafafa;
+  --tw-ring-shadow: 0 0 #0000;
+  --bg-focus: 235 235 235;
+  --tw-border-spacing-x: 0;
+  --tw-ring-color: rgb(30 157 231 / .5);
+  --bg-secondary: #ebebeb;
+  --bg-purple-secondary: #b7a5fb;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-offset-width: 0px;
+  --tw-shadow-colored: 0 0 #0000;
+  --bg-inverted: #111111;
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --text-secondary: #737373;
+  --border-primary: #414141;
+  --tw-ring-inset: ;
+  --bg-green-light: #effff3;
+  --bg-purple-tertiary: #d4c9fe;
+  --text-primary: #414141;
+  --tw-border-spacing-y: 0;
+  --bg-purple: #a18bf5;
+  --bg-green: #13862e;
+  /* — spacing — */
+  --tw-numeric-spacing: ;
+  --tw-contain-size: ;
+  /* — typography — */
+  --text-disabled: #a1a1a1;
+  --text-postgres: #336791;
+  --text-blue: #0b6ec5;
+  --text-red: #d92038;
+  --text-purple: #5e49af;
+  --text-green: #13862e;
+  --text-orange: #f35815;
+  --text-contrast: rgba(0, 0, 0, 1);
+  --text-decoration: #c1c1c1;
+  /* — shadows — */
+  --tw-drop-shadow: ;
+  --tw-shadow: 0 0 #0000;
+  /* — other — */
+  --green-900: #0a2b13;
+  --tw-backdrop-sepia: ;
+  --blue-400: #47b7f8;
+  --purple-200: #d4c9fe;
+  --orange-600: #b83a05;
+  --yellow-900: #281e03;
+  --tw-sepia: ;
+  --tw-ordinal: ;
+  --blue-500: #1e9de7;
+  --tw-contain-style: ;
+  --tw-backdrop-invert: ;
+  --orange-700: #962d00;
+  --blue-800: #0e3682;
+  --blue-100: #ddf2ff;
+  --orange-800: #672002;
+  --tw-backdrop-grayscale: ;
+  --tw-hue-rotate: ;
+  --yellow-950: #171101;
+  --tw-pan-y: ;
+  --blue-600: #0b6ec5;
+  --purple-50: #f9f8ff;
+  --orange-200: #ffc59b;
+  --gray-600: #616161;
+  --blue-900: #08204e;
+  --blue-200: #a9dffe;
+  --gray-700: #414141;
+  --yellow-200: #fed54a;
+  --purple-500: #8467f3;
+  --tw-rotate: 0;
+  --orange-100: #ffe8d8;
+  --purple-700: #4b3990;
+  --purple-400: #a18bf5;
+  --yellow-700: #5c4716;
+  --orange-400: #fd812d;
+  --orange-50: #fff8f3;
+  --orange-500: #f35815;
+  --black: rgba(0, 0, 0, 1);
+  --yellow-50: #fffbe4;
+  --yellow-300: #f2b600;
+  --yellow-100: #fff1a8;
+  --blue-50: #f3fbff;
+  --gray-100: #ebebeb;
+  --tw-gradient-via-position: ;
+  --tw-saturate: ;
+  --tw-scroll-snap-strictness: proximity;
+  --red-100: #ffe5e9;
+  --tw-grayscale: ;
+  --green-100: #d7fbdf;
+  --gray-550: #737373;
+  --red-400: #ff7082;
+  --tw-backdrop-hue-rotate: ;
+  --yellow-600: #7d5903;
+  --gray-50: #fafafa;
+  --tw-gradient-to-position: ;
+  --tw-numeric-fraction: ;
+  --red-950: #200A0D;
+  --tw-skew-y: 0;
+  --tw-slashed-zero: ;
+  --tw-backdrop-opacity: ;
+  --tw-gradient-from-position: ;
+  --tw-pinch-zoom: ;
+  --tw-contain-paint: ;
+  --purple-300: #b7a5fb;
+  --blue-700: #144eb6;
+  --green-300: #75db8c;
+  --gray-900: #111111;
+  --yellow-800: #41320c;
+  --tw-backdrop-saturate: ;
+  --white: rgba(255, 255, 255, 1);
+  --green-800: #10481d;
+  --red-800: #8f0718;
+  --green-950: #041A0A;
+  --purple-950: #180636;
+  --tw-brightness: ;
+  --green-50: #effff3;
+  --green-200: #a9ecb8;
+  --blue-950: #04122E;
+  --tw-scale-y: 1;
+  --green-400: #40d763;
+  --tw-backdrop-contrast: ;
+  --green-700: #19652a;
+  --tw-backdrop-brightness: ;
+  --red-900: #341418;
+  --red-500: #ff455d;
+  --tw-pan-x: ;
+  --tw-translate-y: 0;
+  --gray-300: #c1c1c1;
+  --purple-800: #3e1f75;
+  --gray-500: #818181;
+  --tw-contrast: ;
+  --red-50: #fffafa;
+  --blue-300: #73c7f9;
+  --tw-skew-x: 0;
+  --red-300: #ff909f;
+  --red-600: #d92038;
+  --green-600: #13862e;
+  --tw-backdrop-blur: ;
+  --tw-translate-x: 0;
+  --green-500: #27b648;
+  --orange-950: #240B00;
+  --gray-400: #a1a1a1;
+  --purple-100: #eeeaff;
+  --purple-900: #27124a;
+  --yellow-500: #a78103;
+  --gray-800: #2b2b2b;
+  --red-700: #c11027;
+  --gray-200: #e1e1e1;
+  --tw-scale-x: 1;
+  --orange-900: #3c1403;
+  --gray-850: #1a1a1a;
+  --yellow-400: #d19f03;
+  --purple-600: #5e49af;
+  --tw-blur: ;
+  --tw-invert: ;
+  --red-200: #fbbfc7;
+  --orange-300: #fc9c66;
+  --tw-numeric-figure: ;
+  --tw-contain-layout: ;
+  /* — semantic — */
+  success: [object Object];
+  warning: [object Object];
+  error: [object Object];
+  info: [object Object];
+
+}

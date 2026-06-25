@@ -1,0 +1,19 @@
+/* shadcn/ui Theme — extracted from https://discord.com */
+/* Paste into your globals.css */
+
+@layer base {
+  :root {
+    --background: 237 66% 30%;
+    --foreground: 0 0% 0%;
+    --primary: 235 86% 65%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 144 84% 57%;
+    --secondary-foreground: 0 0% 0%;
+    --accent: 237 66% 30%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 206 9% 15%;
+    --muted-foreground: 0 0% 0%;
+    --border: 206 9% 15%;
+    --radius: 12px;
+  }
+}

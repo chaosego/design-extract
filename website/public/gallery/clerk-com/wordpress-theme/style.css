@@ -1,0 +1,33 @@
+/*
+Theme Name: designlang extracted theme
+Theme URI: https://github.com/Manavarya09/design-extract
+Description: Block theme generated from https://clerk.com by designlang v7.0.0
+Version: 1.0.0
+Author: designlang
+License: MIT
+Text Domain: designlang-theme
+*/
+
+:root {
+  --action-primary: #6c47ff;
+  --action-secondary: #1cc4ff;
+  --surface-default: #f7f7f8;
+  --text-body: #000000;
+  --spacing-s0: 1px;
+  --spacing-s1: 46px;
+  --spacing-s2: 56px;
+  --spacing-s3: 76px;
+  --spacing-s4: 94px;
+  --spacing-s5: 128px;
+  --spacing-s6: 140px;
+  --spacing-s7: 151px;
+  --spacing-s8: 158px;
+  --spacing-s9: 167px;
+  --spacing-s10: 172px;
+  --spacing-s11: 192px;
+  --spacing-s12: 220px;
+  --spacing-s13: 259px;
+  --spacing-s14: 272px;
+  --spacing-s15: 302px;
+  --spacing-s16: 320px;
+}

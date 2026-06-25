@@ -1,0 +1,19 @@
+/* shadcn/ui Theme — extracted from https://retool.com */
+/* Paste into your globals.css */
+
+@layer base {
+  :root {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 100%;
+    --primary: 70 23% 90%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 212 59% 57%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 75 22% 96%;
+    --accent-foreground: 0 0% 0%;
+    --muted: 33 9% 24%;
+    --muted-foreground: 0 0% 8%;
+    --border: 35 5% 52%;
+    --radius: 8px;
+  }
+}

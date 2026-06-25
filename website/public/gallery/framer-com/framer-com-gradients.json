@@ -1,0 +1,108 @@
+{
+  "$schema": "https://designlang.app/schemas/gradients.json",
+  "source": "https://framer.com",
+  "generated": "2026-06-25T08:25:38.710Z",
+  "count": 6,
+  "gradients": [
+    {
+      "raw": "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%)",
+      "type": "linear",
+      "direction": "90deg",
+      "stops": [
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": "0%"
+        },
+        {
+          "color": "rgb(0, 0, 0)",
+          "position": "100%"
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(90deg, rgb(230, 243, 255) 0%, rgb(0, 153, 255) 72.274%, rgb(0, 102, 255) 99.5706%)",
+      "type": "linear",
+      "direction": "90deg",
+      "stops": [
+        {
+          "color": "rgb(230, 243, 255)",
+          "position": "0%"
+        },
+        {
+          "color": "rgb(0, 153, 255)",
+          "position": "72.274%"
+        },
+        {
+          "color": "rgb(0, 102, 255)",
+          "position": "99.5706%"
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 96.7656%)",
+      "type": "linear",
+      "direction": "90deg",
+      "stops": [
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": "0%"
+        },
+        {
+          "color": "rgb(0, 0, 0)",
+          "position": "96.7656%"
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(173deg, rgb(255, 255, 255) 32%, rgba(0, 0, 0, 0.1) 74%)",
+      "type": "linear",
+      "direction": "173deg",
+      "stops": [
+        {
+          "color": "rgb(255, 255, 255)",
+          "position": "32%"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0.1)",
+          "position": "74%"
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(90deg, rgba(0, 153, 255, 0.1) 0%, rgba(28, 28, 28, 0.5) 61%)",
+      "type": "linear",
+      "direction": "90deg",
+      "stops": [
+        {
+          "color": "rgba(0, 153, 255, 0.1)",
+          "position": "0%"
+        },
+        {
+          "color": "rgba(28, 28, 28, 0.5)",
+          "position": "61%"
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%)",
+      "type": "linear",
+      "direction": "270deg",
+      "stops": [
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": "0%"
+        },
+        {
+          "color": "rgb(0, 0, 0)",
+          "position": "100%"
+        }
+      ],
+      "classification": "brand"
+    }
+  ]
+}

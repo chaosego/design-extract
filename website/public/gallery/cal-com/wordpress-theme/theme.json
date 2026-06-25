@@ -1,0 +1,171 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "action-primary",
+          "color": "#0000ee",
+          "name": "Action Primary"
+        },
+        {
+          "slug": "action-secondary",
+          "color": "#0099ff",
+          "name": "Action Secondary"
+        },
+        {
+          "slug": "surface-default",
+          "color": "#f4f4f4",
+          "name": "Surface Default"
+        },
+        {
+          "slug": "text-body",
+          "color": "#000000",
+          "name": "Text Body"
+        }
+      ]
+    },
+    "typography": {
+      "fontSizes": [
+        {
+          "slug": "h1",
+          "size": "64px",
+          "name": "h1"
+        },
+        {
+          "slug": "h2",
+          "size": "48px",
+          "name": "h2"
+        },
+        {
+          "slug": "p",
+          "size": "24px",
+          "name": "p"
+        },
+        {
+          "slug": "p",
+          "size": "20px",
+          "name": "p"
+        },
+        {
+          "slug": "h3",
+          "size": "18px",
+          "name": "h3"
+        },
+        {
+          "slug": "html",
+          "size": "16px",
+          "name": "html"
+        },
+        {
+          "slug": "p",
+          "size": "14px",
+          "name": "p"
+        },
+        {
+          "slug": "body",
+          "size": "12px",
+          "name": "body"
+        },
+        {
+          "slug": "p",
+          "size": "10px",
+          "name": "p"
+        },
+        {
+          "slug": "p",
+          "size": "9.71px",
+          "name": "p"
+        },
+        {
+          "slug": "p",
+          "size": "8px",
+          "name": "p"
+        }
+      ],
+      "fontFamilies": [
+        {
+          "slug": "inter",
+          "fontFamily": "Inter, sans-serif",
+          "name": "Inter"
+        },
+        {
+          "slug": "cal-sans-ui-variable-light",
+          "fontFamily": "Cal Sans UI Variable Light, sans-serif",
+          "name": "Cal Sans UI Variable Light"
+        },
+        {
+          "slug": "times",
+          "fontFamily": "Times, sans-serif",
+          "name": "Times"
+        },
+        {
+          "slug": "cal-sans",
+          "fontFamily": "Cal Sans, sans-serif",
+          "name": "Cal Sans"
+        },
+        {
+          "slug": "matter-regular",
+          "fontFamily": "Matter Regular, sans-serif",
+          "name": "Matter Regular"
+        },
+        {
+          "slug": "matter-medium",
+          "fontFamily": "Matter Medium, sans-serif",
+          "name": "Matter Medium"
+        },
+        {
+          "slug": "matter-semibold",
+          "fontFamily": "Matter SemiBold, sans-serif",
+          "name": "Matter SemiBold"
+        },
+        {
+          "slug": "roboto-mono",
+          "fontFamily": "Roboto Mono, sans-serif",
+          "name": "Roboto Mono"
+        },
+        {
+          "slug": "customv2cal-sans-ui-regular",
+          "fontFamily": "CUSTOMV2;Cal Sans UI Regular, sans-serif",
+          "name": "CUSTOMV2;Cal Sans UI Regular"
+        }
+      ]
+    },
+    "spacing": {
+      "spacingSizes": [
+        {
+          "slug": "s0",
+          "size": "1px",
+          "name": "S0"
+        },
+        {
+          "slug": "s1",
+          "size": "40px",
+          "name": "S1"
+        },
+        {
+          "slug": "s2",
+          "size": "48px",
+          "name": "S2"
+        },
+        {
+          "slug": "s3",
+          "size": "80px",
+          "name": "S3"
+        },
+        {
+          "slug": "s4",
+          "size": "96px",
+          "name": "S4"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--surface-default, #f4f4f4)",
+      "text": "var(--wp--preset--color--text-body, #000000)"
+    }
+  }
+}

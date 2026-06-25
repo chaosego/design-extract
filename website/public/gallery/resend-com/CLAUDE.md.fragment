@@ -1,0 +1,37 @@
+## Design system (via designlang)
+
+Source: https://resend.com
+Extracted by designlang v7.0.0 on 2026-06-25T08:26:02.698Z
+
+## Semantic tokens (use these)
+- color.action.primary: #d6ebfd
+- color.surface.default: #000000
+- color.text.body: #ffffff
+- radius.control: 4px
+- typography.body.fontFamily: inter
+
+## Regions
+- nav
+- cta
+- content
+- hero
+- nav
+- footer
+- testimonials
+- hero
+- content
+- pricing
+- nav
+- sidebar
+- hero
+- features
+- testimonials
+- cta
+- footer
+- content
+
+## How to use
+- Prefer `semantic.*` tokens over `primitive.*`.
+- Never invent new tokens or hex values; reuse the ones above.
+- When a value is missing, pick the closest existing semantic token and flag the gap.
+- Reference tokens by their dotted path (e.g. `semantic.color.action.primary`).

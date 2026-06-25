@@ -1,0 +1,20 @@
+/*
+Theme Name: designlang extracted theme
+Theme URI: https://github.com/Manavarya09/design-extract
+Description: Block theme generated from https://replit.com by designlang v7.0.0
+Version: 1.0.0
+Author: designlang
+License: MIT
+Text Domain: designlang-theme
+*/
+
+:root {
+  --action-primary: #0051c3;
+  --action-secondary: #de5052;
+  --surface-default: #ffffff;
+  --text-body: #000000;
+  --spacing-s0: 3px;
+  --spacing-s1: 23px;
+  --spacing-s2: 53px;
+  --spacing-s3: 160px;
+}

@@ -1,0 +1,1054 @@
+{
+  "colors": {
+    "all": [
+      {
+        "hex": "#ffffff",
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 100
+        },
+        "count": 3650,
+        "contexts": [
+          "text",
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#d4d4d4",
+        "rgb": {
+          "r": 212,
+          "g": 212,
+          "b": 212,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 83
+        },
+        "count": 675,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#e1e4e8",
+        "rgb": {
+          "r": 225,
+          "g": 228,
+          "b": 232,
+          "a": 1
+        },
+        "hsl": {
+          "h": 214,
+          "s": 13,
+          "l": 90
+        },
+        "count": 622,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#f97583",
+        "rgb": {
+          "r": 249,
+          "g": 117,
+          "b": 131,
+          "a": 1
+        },
+        "hsl": {
+          "h": 354,
+          "s": 92,
+          "l": 72
+        },
+        "count": 296,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#9ecbff",
+        "rgb": {
+          "r": 158,
+          "g": 203,
+          "b": 255,
+          "a": 1
+        },
+        "hsl": {
+          "h": 212,
+          "s": 100,
+          "l": 81
+        },
+        "count": 220,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#6a5fc1",
+        "rgb": {
+          "r": 106,
+          "g": 95,
+          "b": 193,
+          "a": 1
+        },
+        "hsl": {
+          "h": 247,
+          "s": 44,
+          "l": 56
+        },
+        "count": 179,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#b392f0",
+        "rgb": {
+          "r": 179,
+          "g": 146,
+          "b": 240,
+          "a": 1
+        },
+        "hsl": {
+          "h": 261,
+          "s": 76,
+          "l": 76
+        },
+        "count": 170,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#150f23",
+        "rgb": {
+          "r": 21,
+          "g": 15,
+          "b": 35,
+          "a": 1
+        },
+        "hsl": {
+          "h": 258,
+          "s": 40,
+          "l": 10
+        },
+        "count": 164,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#79b8ff",
+        "rgb": {
+          "r": 121,
+          "g": 184,
+          "b": 255,
+          "a": 1
+        },
+        "hsl": {
+          "h": 212,
+          "s": 100,
+          "l": 74
+        },
+        "count": 146,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#6a737d",
+        "rgb": {
+          "r": 106,
+          "g": 115,
+          "b": 125,
+          "a": 1
+        },
+        "hsl": {
+          "h": 212,
+          "s": 8,
+          "l": 45
+        },
+        "count": 144,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#000000",
+        "rgb": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 0
+        },
+        "count": 120,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#4e2a9a",
+        "rgb": {
+          "r": 78,
+          "g": 42,
+          "b": 154,
+          "a": 1
+        },
+        "hsl": {
+          "h": 259,
+          "s": 57,
+          "l": 38
+        },
+        "count": 92,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#85e89d",
+        "rgb": {
+          "r": 133,
+          "g": 232,
+          "b": 157,
+          "a": 1
+        },
+        "hsl": {
+          "h": 135,
+          "s": 68,
+          "l": 72
+        },
+        "count": 36,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#1f1633",
+        "rgb": {
+          "r": 31,
+          "g": 22,
+          "b": 51,
+          "a": 1
+        },
+        "hsl": {
+          "h": 259,
+          "s": 40,
+          "l": 14
+        },
+        "count": 34,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#fd44b0",
+        "rgb": {
+          "r": 253,
+          "g": 68,
+          "b": 176,
+          "a": 1
+        },
+        "hsl": {
+          "h": 325,
+          "s": 98,
+          "l": 63
+        },
+        "count": 24,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#c2ef4e",
+        "rgb": {
+          "r": 194,
+          "g": 239,
+          "b": 78,
+          "a": 1
+        },
+        "hsl": {
+          "h": 77,
+          "s": 83,
+          "l": 62
+        },
+        "count": 22,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#dbedff",
+        "rgb": {
+          "r": 219,
+          "g": 237,
+          "b": 255,
+          "a": 1
+        },
+        "hsl": {
+          "h": 210,
+          "s": 100,
+          "l": 93
+        },
+        "count": 16,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#1a1a1a",
+        "rgb": {
+          "r": 26,
+          "g": 26,
+          "b": 26,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 10
+        },
+        "count": 9,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#efefef",
+        "rgb": {
+          "r": 239,
+          "g": 239,
+          "b": 239,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 94
+        },
+        "count": 6,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#7553ff",
+        "rgb": {
+          "r": 117,
+          "g": 83,
+          "b": 255,
+          "a": 1
+        },
+        "hsl": {
+          "h": 252,
+          "s": 100,
+          "l": 66
+        },
+        "count": 6,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#ffab70",
+        "rgb": {
+          "r": 255,
+          "g": 171,
+          "b": 112,
+          "a": 1
+        },
+        "hsl": {
+          "h": 25,
+          "s": 100,
+          "l": 72
+        },
+        "count": 6,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#362d59",
+        "rgb": {
+          "r": 54,
+          "g": 45,
+          "b": 89,
+          "a": 1
+        },
+        "hsl": {
+          "h": 252,
+          "s": 33,
+          "l": 26
+        },
+        "count": 5,
+        "contexts": [
+          "border",
+          "text"
+        ]
+      },
+      {
+        "hex": "#090d16",
+        "rgb": {
+          "r": 9,
+          "g": 13,
+          "b": 22,
+          "a": 1
+        },
+        "hsl": {
+          "h": 222,
+          "s": 42,
+          "l": 6
+        },
+        "count": 2,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#2d2340",
+        "rgb": {
+          "r": 45,
+          "g": 35,
+          "b": 64,
+          "a": 1
+        },
+        "hsl": {
+          "h": 261,
+          "s": 29,
+          "l": 19
+        },
+        "count": 2,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#422082",
+        "rgb": {
+          "r": 66,
+          "g": 32,
+          "b": 130,
+          "a": 1
+        },
+        "hsl": {
+          "h": 261,
+          "s": 60,
+          "l": 32
+        },
+        "count": 2,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#fdaeb7",
+        "rgb": {
+          "r": 253,
+          "g": 174,
+          "b": 183,
+          "a": 1
+        },
+        "hsl": {
+          "h": 353,
+          "s": 95,
+          "l": 84
+        },
+        "count": 2,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#79628c",
+        "rgb": {
+          "r": 121,
+          "g": 98,
+          "b": 140,
+          "a": 1
+        },
+        "hsl": {
+          "h": 273,
+          "s": 18,
+          "l": 47
+        },
+        "count": 1,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#584674",
+        "rgb": {
+          "r": 88,
+          "g": 70,
+          "b": 116,
+          "a": 1
+        },
+        "hsl": {
+          "h": 263,
+          "s": 25,
+          "l": 36
+        },
+        "count": 1,
+        "contexts": [
+          "border"
+        ]
+      },
+      {
+        "hex": "#c1c1c1",
+        "rgb": {
+          "r": 193,
+          "g": 193,
+          "b": 193,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 76
+        },
+        "count": 1,
+        "contexts": [
+          "border"
+        ]
+      }
+    ]
+  },
+  "regions": [
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 72
+      },
+      "heading": " Solutions ",
+      "buttonCount": 19,
+      "cardCount": 265,
+      "className": "sticky top-0 z-50 transition-all duration-200 bg-rich-black"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 96,
+        "y": 0,
+        "w": 1088,
+        "h": 72
+      },
+      "heading": " Solutions ",
+      "buttonCount": 19,
+      "cardCount": 264,
+      "className": "flex flex-row flex-wrap items-center justify-center w-full py-4 xl:flex-nowrap text-white"
+    },
+    {
+      "role": "testimonials",
+      "tag": "main",
+      "bounds": {
+        "x": 0,
+        "y": 72,
+        "w": 1280,
+        "h": 7901.28125
+      },
+      "heading": "Code breaks, fix it faster",
+      "buttonCount": 50,
+      "cardCount": 118,
+      "className": "transition-colors duration-200 bg-rich-black"
+    },
+    {
+      "role": "testimonials",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 72,
+        "w": 1280,
+        "h": 1041.890625
+      },
+      "heading": "Code breaks, fix it faster",
+      "buttonCount": 0,
+      "cardCount": 3,
+      "className": "relative overflow-x-clip z-0 pb-4 lg:pb-16  "
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 1113.890625,
+        "w": 1280,
+        "h": 672.109375
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 66,
+      "className": "relative overflow-x-clip z-0 pt-4 lg:pt-16 pb-4 lg:pb-16  "
+    },
+    {
+      "role": "testimonials",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 1786,
+        "w": 1280,
+        "h": 946.84375
+      },
+      "heading": "Developer first.\nAlways.",
+      "buttonCount": 2,
+      "cardCount": 15,
+      "className": "relative overflow-x-clip z-0 pb-4 lg:pb-16  "
+    },
+    {
+      "role": "features",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 2732.84375,
+        "w": 1280,
+        "h": 999.09375
+      },
+      "heading": "Everything’s\nconnected",
+      "buttonCount": 3,
+      "cardCount": 5,
+      "className": "relative overflow-x-clip z-0 pb-4 lg:pb-16  "
+    },
+    {
+      "role": "features",
+      "tag": "section",
+      "bounds": {
+        "x": 96,
+        "y": 2732.84375,
+        "w": 1088,
+        "h": 807.09375
+      },
+      "heading": "Everything’s\nconnected",
+      "buttonCount": 3,
+      "cardCount": 5,
+      "className": "w-full p-0 border-0 bg-transparent"
+    },
+    {
+      "role": "features",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 3731.9375,
+        "w": 1280,
+        "h": 989.3125
+      },
+      "heading": "Debugging needs context— \nwith or without AI",
+      "buttonCount": 3,
+      "cardCount": 5,
+      "className": "relative overflow-x-clip z-0 pb-4 lg:pb-16  "
+    },
+    {
+      "role": "features",
+      "tag": "section",
+      "bounds": {
+        "x": 96,
+        "y": 3731.9375,
+        "w": 1088,
+        "h": 797.3125
+      },
+      "heading": "Debugging needs context— \nwith or without AI",
+      "buttonCount": 3,
+      "cardCount": 5,
+      "className": "w-full p-0 border-0 bg-transparent"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 4721.25,
+        "w": 1280,
+        "h": 655.40625
+      },
+      "heading": "Loved by developers\nworldwide",
+      "buttonCount": 0,
+      "cardCount": 13,
+      "className": "relative overflow-x-clip z-0 pb-4 lg:pb-16  "
+    },
+    {
+      "role": "testimonials",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 5376.65625,
+        "w": 1280,
+        "h": 834.34375
+      },
+      "heading": "Get started\nin minutes",
+      "buttonCount": 41,
+      "cardCount": 1,
+      "className": "relative overflow-x-clip z-0 pb-4 lg:pb-16  "
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 6211,
+        "w": 1280,
+        "h": 602.84375
+      },
+      "heading": "Built to be secure,\nDesigned to not get in your way",
+      "buttonCount": 0,
+      "cardCount": 6,
+      "className": "relative overflow-x-clip z-0 pb-4 lg:pb-16  "
+    },
+    {
+      "role": "cta",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 6813.84375,
+        "w": 1280,
+        "h": 461.34375
+      },
+      "heading": "Get monthly product updates \nfrom our newsletter",
+      "buttonCount": 1,
+      "cardCount": 2,
+      "className": "relative overflow-x-clip z-0   "
+    },
+    {
+      "role": "pricing",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 7435.1875,
+        "w": 1280,
+        "h": 538.09375
+      },
+      "heading": "Fix It",
+      "buttonCount": 0,
+      "cardCount": 2,
+      "className": "relative overflow-x-clip z-0 pt-4 lg:pt-16 pb-4 lg:pb-16 text-white overflow-hidden "
+    },
+    {
+      "role": "footer",
+      "tag": "footer",
+      "bounds": {
+        "x": 0,
+        "y": 7973.28125,
+        "w": 1280,
+        "h": 743
+      },
+      "heading": "Company",
+      "buttonCount": 0,
+      "cardCount": 68,
+      "className": "relative z-10 bg-rich-black"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 7973.28125,
+        "w": 1280,
+        "h": 727
+      },
+      "heading": "Company",
+      "buttonCount": 0,
+      "cardCount": 68,
+      "className": "relative overflow-x-clip z-[10]   "
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 96,
+        "y": 7973.28125,
+        "w": 1088,
+        "h": 592
+      },
+      "heading": "Company",
+      "buttonCount": 0,
+      "cardCount": 58,
+      "className": null
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 96,
+        "y": 8615.78125,
+        "w": 329.296875,
+        "h": 18
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 1,
+      "className": null
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 1016,
+        "y": 8604.78125,
+        "w": 168,
+        "h": 24
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 5,
+      "className": null
+    }
+  ],
+  "componentClusters": [
+    {
+      "kind": "button",
+      "structuralHash": "button>span>div",
+      "instanceCount": 3,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "12px 16px 12px 16px",
+            "borderRadius": "8px",
+            "border": "2px solid rgba(0, 0, 0, 0)",
+            "fontSize": "14px",
+            "fontWeight": "500"
+          },
+          "instanceCount": 3
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>span",
+      "instanceCount": 7,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "0px 0px 0px 16px",
+            "borderRadius": "0px",
+            "border": "0px none rgb(255, 255, 255)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 6
+        },
+        {
+          "css": {
+            "background": "rgb(255, 255, 255)",
+            "color": "rgb(31, 22, 51)",
+            "padding": "12px 16px 12px 16px",
+            "borderRadius": "8px",
+            "border": "0px none rgb(31, 22, 51)",
+            "fontSize": "14px",
+            "fontWeight": "500"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>svg",
+      "instanceCount": 41,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(21, 15, 35)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "0px none rgb(255, 255, 255)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 41
+        }
+      ]
+    },
+    {
+      "kind": "input",
+      "structuralHash": "input",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(255, 255, 255)",
+            "color": "rgb(31, 22, 51)",
+            "padding": "8px 12px 8px 12px",
+            "borderRadius": "6px",
+            "border": "1px solid rgb(207, 207, 219)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    }
+  ],
+  "accessibility": {
+    "remediation": []
+  },
+  "cssHealth": {
+    "sheets": [
+      {
+        "url": "https://sentry.io/_astro/Layout.CTuWOC2S.css",
+        "totalBytes": 161367,
+        "usedBytes": 131260,
+        "unusedBytes": 30107,
+        "unusedPercent": 19
+      },
+      {
+        "url": "https://sentry.io/_astro/marketo-forms-content-layer.DIvQ-Wei.css",
+        "totalBytes": 21990,
+        "usedBytes": 4377,
+        "unusedBytes": 17613,
+        "unusedPercent": 80
+      },
+      {
+        "url": "https://sentry.io/_astro/AnimatedLogoGrid.BMaqGsss.css",
+        "totalBytes": 5394,
+        "usedBytes": 2951,
+        "unusedBytes": 2443,
+        "unusedPercent": 45
+      },
+      {
+        "url": "https://sentry.io/welcome/",
+        "totalBytes": 1265,
+        "usedBytes": 0,
+        "unusedBytes": 1265,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://sentry.io/welcome/",
+        "totalBytes": 5222,
+        "usedBytes": 2983,
+        "unusedBytes": 2239,
+        "unusedPercent": 43
+      },
+      {
+        "url": "https://sentry.io/welcome/",
+        "totalBytes": 8011,
+        "usedBytes": 3413,
+        "unusedBytes": 4598,
+        "unusedPercent": 57
+      },
+      {
+        "url": "https://sentry.io/welcome/",
+        "totalBytes": 29,
+        "usedBytes": 24,
+        "unusedBytes": 5,
+        "unusedPercent": 17
+      },
+      {
+        "url": "https://sentry.io/welcome/",
+        "totalBytes": 29,
+        "usedBytes": 24,
+        "unusedBytes": 5,
+        "unusedPercent": 17
+      },
+      {
+        "url": "https://sentry.io/welcome/",
+        "totalBytes": 29,
+        "usedBytes": 0,
+        "unusedBytes": 29,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://sentry.io/welcome/",
+        "totalBytes": 59,
+        "usedBytes": 59,
+        "unusedBytes": 0,
+        "unusedPercent": 0
+      },
+      {
+        "url": "https://sentry.io/welcome/",
+        "totalBytes": 29,
+        "usedBytes": 0,
+        "unusedBytes": 29,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LdQHE0eAAAAAG9v3SYa7KNTHbwICjsM3WxQr-3H&co=aHR0cHM6Ly9zZW50cnkuaW86NDQz&hl=en&v=MerVUtRoajKEbP7pLiGXkL28&size=invisible&anchor-ms=20000&execute-ms=30000&cb=6mfyncl75hv",
+        "totalBytes": 16160,
+        "usedBytes": 0,
+        "unusedBytes": 16160,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.gstatic.com/recaptcha/releases/MerVUtRoajKEbP7pLiGXkL28/styles__ltr.css",
+        "totalBytes": 82857,
+        "usedBytes": 3349,
+        "unusedBytes": 79508,
+        "unusedPercent": 96
+      }
+    ],
+    "totalBytes": 302441,
+    "usedBytes": 148440,
+    "unusedBytes": 154001,
+    "unusedPercent": 51,
+    "importantCount": 141,
+    "duplicates": 3354,
+    "vendorPrefixes": {
+      "webkit": 270,
+      "moz": 11,
+      "ms": 11,
+      "o": 0
+    },
+    "keyframes": [],
+    "specificity": {
+      "max": [
+        2,
+        7,
+        4
+      ],
+      "average": [
+        0.05,
+        1.78,
+        0.18
+      ],
+      "count": 2994
+    },
+    "issues": [
+      "141 !important rules",
+      "3354 duplicate declarations",
+      "51% unused CSS"
+    ]
+  }
+}

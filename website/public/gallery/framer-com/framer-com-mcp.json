@@ -1,0 +1,918 @@
+{
+  "colors": {
+    "all": [
+      {
+        "hex": "#000000",
+        "rgb": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 0
+        },
+        "count": 5598,
+        "contexts": [
+          "text",
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#0000ee",
+        "rgb": {
+          "r": 0,
+          "g": 0,
+          "b": 238,
+          "a": 1
+        },
+        "hsl": {
+          "h": 240,
+          "s": 100,
+          "l": 47
+        },
+        "count": 746,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#ffffff",
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 100
+        },
+        "count": 622,
+        "contexts": [
+          "text",
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#999999",
+        "rgb": {
+          "r": 153,
+          "g": 153,
+          "b": 153,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 60
+        },
+        "count": 370,
+        "contexts": [
+          "text",
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#242424",
+        "rgb": {
+          "r": 36,
+          "g": 36,
+          "b": 36,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 14
+        },
+        "count": 75,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#0099ff",
+        "rgb": {
+          "r": 0,
+          "g": 153,
+          "b": 255,
+          "a": 1
+        },
+        "hsl": {
+          "h": 204,
+          "s": 100,
+          "l": 50
+        },
+        "count": 56,
+        "contexts": [
+          "background",
+          "border",
+          "text"
+        ]
+      },
+      {
+        "hex": "#666666",
+        "rgb": {
+          "r": 102,
+          "g": 102,
+          "b": 102,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 40
+        },
+        "count": 54,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#111111",
+        "rgb": {
+          "r": 17,
+          "g": 17,
+          "b": 17,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 7
+        },
+        "count": 30,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#00bb88",
+        "rgb": {
+          "r": 0,
+          "g": 187,
+          "b": 136,
+          "a": 0.1
+        },
+        "hsl": {
+          "h": 164,
+          "s": 100,
+          "l": 37
+        },
+        "count": 30,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#cccccc",
+        "rgb": {
+          "r": 204,
+          "g": 204,
+          "b": 204,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 80
+        },
+        "count": 24,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#303030",
+        "rgb": {
+          "r": 48,
+          "g": 48,
+          "b": 48,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 19
+        },
+        "count": 11,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#d67a5c",
+        "rgb": {
+          "r": 214,
+          "g": 122,
+          "b": 92,
+          "a": 1
+        },
+        "hsl": {
+          "h": 15,
+          "s": 60,
+          "l": 60
+        },
+        "count": 10,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#9869fd",
+        "rgb": {
+          "r": 152,
+          "g": 105,
+          "b": 253,
+          "a": 1
+        },
+        "hsl": {
+          "h": 259,
+          "s": 97,
+          "l": 70
+        },
+        "count": 5,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#4cd963",
+        "rgb": {
+          "r": 76,
+          "g": 217,
+          "b": 99,
+          "a": 1
+        },
+        "hsl": {
+          "h": 130,
+          "s": 65,
+          "l": 57
+        },
+        "count": 4,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#878787",
+        "rgb": {
+          "r": 135,
+          "g": 135,
+          "b": 135,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 53
+        },
+        "count": 3,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#444444",
+        "rgb": {
+          "r": 68,
+          "g": 68,
+          "b": 68,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 27
+        },
+        "count": 2,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#8856ff",
+        "rgb": {
+          "r": 136,
+          "g": 86,
+          "b": 255,
+          "a": 1
+        },
+        "hsl": {
+          "h": 258,
+          "s": 100,
+          "l": 67
+        },
+        "count": 2,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#3a92fd",
+        "rgb": {
+          "r": 58,
+          "g": 146,
+          "b": 253,
+          "a": 1
+        },
+        "hsl": {
+          "h": 213,
+          "s": 98,
+          "l": 61
+        },
+        "count": 2,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#ff0022",
+        "rgb": {
+          "r": 255,
+          "g": 0,
+          "b": 34,
+          "a": 1
+        },
+        "hsl": {
+          "h": 352,
+          "s": 100,
+          "l": 50
+        },
+        "count": 1,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#ffbb00",
+        "rgb": {
+          "r": 255,
+          "g": 187,
+          "b": 0,
+          "a": 1
+        },
+        "hsl": {
+          "h": 44,
+          "s": 100,
+          "l": 50
+        },
+        "count": 1,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#0066ff",
+        "rgb": {
+          "r": 0,
+          "g": 102,
+          "b": 255,
+          "a": 1
+        },
+        "hsl": {
+          "h": 216,
+          "s": 100,
+          "l": 50
+        },
+        "count": 1,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#1a1a1a",
+        "rgb": {
+          "r": 26,
+          "g": 26,
+          "b": 26,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 10
+        },
+        "count": 1,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#eeeeee",
+        "rgb": {
+          "r": 238,
+          "g": 238,
+          "b": 238,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 93
+        },
+        "count": 1,
+        "contexts": [
+          "background"
+        ]
+      }
+    ]
+  },
+  "regions": [
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 64
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "framer-Tu9oV framer-lVtr9 framer-140pdlc framer-v-140pdlc"
+    },
+    {
+      "role": "pricing",
+      "tag": "main",
+      "bounds": {
+        "x": 0,
+        "y": 64,
+        "w": 1280,
+        "h": 9587.65625
+      },
+      "heading": "Framer is the AI website builder for standout sites",
+      "buttonCount": 6,
+      "cardCount": 19,
+      "className": "framer-1xjqbme"
+    },
+    {
+      "role": "hero",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 64,
+        "w": 1280,
+        "h": 1127
+      },
+      "heading": "Framer is the AI website builder for standout sites",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "framer-os8nm6"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 0,
+        "y": 64,
+        "w": 1280,
+        "h": 327
+      },
+      "heading": "Framer is the AI website builder for standout sites",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "framer-1l5t0i2"
+    },
+    {
+      "role": "testimonials",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 1191,
+        "w": 1280,
+        "h": 1348.40625
+      },
+      "heading": "Shipped with Framer",
+      "buttonCount": 0,
+      "cardCount": 12,
+      "className": "framer-1d2612y"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 40,
+        "y": 1391,
+        "w": 1200,
+        "h": 48.40625
+      },
+      "heading": "Shipped with Framer",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "framer-elqo2t"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 2539.40625,
+        "w": 1280,
+        "h": 3196.8125
+      },
+      "heading": "Agents that work alongside you, not instead of you",
+      "buttonCount": 1,
+      "cardCount": 0,
+      "className": "framer-p36991"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 40,
+        "y": 2699.40625,
+        "w": 1200,
+        "h": 96.8125
+      },
+      "heading": "Agents that work alongside you, not instead of you",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "framer-bc5yxf"
+    },
+    {
+      "role": "testimonials",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 5736.21875,
+        "w": 1280,
+        "h": 1806.8125
+      },
+      "heading": "Not just vibes, a full platform",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "framer-7ubwi2"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 40,
+        "y": 5856.21875,
+        "w": 1200,
+        "h": 96.8125
+      },
+      "heading": "Not just vibes, a full platform",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "framer-13ina09"
+    },
+    {
+      "role": "hero",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 7543.03125,
+        "w": 1280,
+        "h": 1216.8125
+      },
+      "heading": "Built on a community that isn’t going anywhere",
+      "buttonCount": 5,
+      "cardCount": 1,
+      "className": "framer-126qlmq"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 40,
+        "y": 7663.03125,
+        "w": 1200,
+        "h": 96.8125
+      },
+      "heading": "Built on a community that isn’t going anywhere",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "framer-1cdr843"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 8759.84375,
+        "w": 1280,
+        "h": 891.8125
+      },
+      "heading": "Trusted by teams shipping big sites",
+      "buttonCount": 0,
+      "cardCount": 6,
+      "className": "framer-rqnlak"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 40,
+        "y": 8879.84375,
+        "w": 1200,
+        "h": 96.8125
+      },
+      "heading": "Trusted by teams shipping big sites",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "framer-arx6eg"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 40,
+        "y": 9790.859375,
+        "w": 1200,
+        "h": 185
+      },
+      "heading": "Get started with Framer",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "framer-fd1hfd"
+    },
+    {
+      "role": "footer",
+      "tag": "footer",
+      "bounds": {
+        "x": 20,
+        "y": 10523.859375,
+        "w": 1240,
+        "h": 593
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 57,
+      "className": "framer-JEqwa framer-jJ0eh framer-3wgpx framer-v-3wgpx"
+    }
+  ],
+  "componentClusters": [
+    {
+      "kind": "input",
+      "structuralHash": "textarea",
+      "instanceCount": 2,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "0px solid rgba(0, 0, 0, 0)",
+            "fontSize": "12px",
+            "fontWeight": "500"
+          },
+          "instanceCount": 2
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(0, 102, 255)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "0px none rgb(255, 255, 255)",
+            "fontSize": "16px",
+            "fontWeight": "500"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>div",
+      "instanceCount": 4,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(34, 34, 34, 0.8)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "0px 2px 0px 0px",
+            "borderRadius": "8px",
+            "border": "0px outset rgb(0, 0, 0)",
+            "fontSize": "12px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 2
+        },
+        {
+          "css": {
+            "background": "rgb(255, 255, 255)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "0px 10px 0px 10px",
+            "borderRadius": "8px",
+            "border": "0px outset rgb(0, 0, 0)",
+            "fontSize": "12px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 2
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>div>div>div",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(34, 34, 34, 0.8)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "5px 5px 5px 5px",
+            "borderRadius": "8px",
+            "border": "0px outset rgb(0, 0, 0)",
+            "fontSize": "12px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "input",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(238, 238, 238)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "10px 10px 10px 10px",
+            "borderRadius": "8px",
+            "border": "0px none rgb(0, 0, 0)",
+            "fontSize": "14px",
+            "fontWeight": "600"
+          },
+          "instanceCount": 1
+        }
+      ]
+    }
+  ],
+  "accessibility": {
+    "remediation": []
+  },
+  "cssHealth": {
+    "sheets": [
+      {
+        "url": "https://www.framer.com/",
+        "totalBytes": 90,
+        "usedBytes": 90,
+        "unusedBytes": 0,
+        "unusedPercent": 0
+      },
+      {
+        "url": "https://www.framer.com/",
+        "totalBytes": 439211,
+        "usedBytes": 273498,
+        "unusedBytes": 165713,
+        "unusedPercent": 38
+      },
+      {
+        "url": "https://www.framer.com/",
+        "totalBytes": 91,
+        "usedBytes": 91,
+        "unusedBytes": 0,
+        "unusedPercent": 0
+      },
+      {
+        "url": "https://www.framer.com/",
+        "totalBytes": 448,
+        "usedBytes": 0,
+        "unusedBytes": 448,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.framer.com/",
+        "totalBytes": 106659,
+        "usedBytes": 0,
+        "unusedBytes": 106659,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.framer.com/",
+        "totalBytes": 439,
+        "usedBytes": 0,
+        "unusedBytes": 439,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.framer.com/",
+        "totalBytes": 439,
+        "usedBytes": 0,
+        "unusedBytes": 439,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.framer.com/",
+        "totalBytes": 130,
+        "usedBytes": 130,
+        "unusedBytes": 0,
+        "unusedPercent": 0
+      },
+      {
+        "url": "https://www.framer.com/",
+        "totalBytes": 133,
+        "usedBytes": 133,
+        "unusedBytes": 0,
+        "unusedPercent": 0
+      },
+      {
+        "url": "https://www.framer.com/",
+        "totalBytes": 750,
+        "usedBytes": 592,
+        "unusedBytes": 158,
+        "unusedPercent": 21
+      },
+      {
+        "url": "https://accounts.google.com/gsi/style",
+        "totalBytes": 696,
+        "usedBytes": 0,
+        "unusedBytes": 696,
+        "unusedPercent": 100
+      }
+    ],
+    "totalBytes": 549086,
+    "usedBytes": 274534,
+    "unusedBytes": 274552,
+    "unusedPercent": 50,
+    "importantCount": 16,
+    "duplicates": 12508,
+    "vendorPrefixes": {
+      "webkit": 211,
+      "moz": 2,
+      "ms": 0,
+      "o": 0
+    },
+    "keyframes": [
+      {
+        "name": "ghostFlow",
+        "steps": 3
+      },
+      {
+        "name": "doubleSlow",
+        "steps": 7
+      },
+      {
+        "name": "danceSpark",
+        "steps": 3
+      },
+      {
+        "name": "ghostFlow",
+        "steps": 3
+      },
+      {
+        "name": "doubleSlow",
+        "steps": 7
+      },
+      {
+        "name": "danceSpark",
+        "steps": 3
+      }
+    ],
+    "specificity": {
+      "max": [
+        1,
+        5,
+        4
+      ],
+      "average": [
+        0,
+        2.08,
+        0.15
+      ],
+      "count": 3399
+    },
+    "issues": [
+      "16 !important rules",
+      "12508 duplicate declarations",
+      "50% unused CSS"
+    ]
+  }
+}

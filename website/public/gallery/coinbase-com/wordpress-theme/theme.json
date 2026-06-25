@@ -1,0 +1,76 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "action-primary",
+          "color": "#0000ee",
+          "name": "Action Primary"
+        },
+        {
+          "slug": "text-body",
+          "color": "#313131",
+          "name": "Text Body"
+        }
+      ]
+    },
+    "typography": {
+      "fontSizes": [
+        {
+          "slug": "h1",
+          "size": "40px",
+          "name": "h1"
+        },
+        {
+          "slug": "h2",
+          "size": "24px",
+          "name": "h2"
+        },
+        {
+          "slug": "html",
+          "size": "16px",
+          "name": "html"
+        },
+        {
+          "slug": "input",
+          "size": "13.3333px",
+          "name": "input"
+        },
+        {
+          "slug": "div",
+          "size": "12px",
+          "name": "div"
+        }
+      ],
+      "fontFamilies": [
+        {
+          "slug": "arial",
+          "fontFamily": "Arial, sans-serif",
+          "name": "Arial"
+        }
+      ]
+    },
+    "spacing": {
+      "spacingSizes": [
+        {
+          "slug": "s0",
+          "size": "8px",
+          "name": "S0"
+        },
+        {
+          "slug": "s1",
+          "size": "128px",
+          "name": "S1"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--surface-default, #ffffff)",
+      "text": "var(--wp--preset--color--text-body, #313131)"
+    }
+  }
+}

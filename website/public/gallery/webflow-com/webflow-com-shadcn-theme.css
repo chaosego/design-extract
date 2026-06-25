@@ -1,0 +1,19 @@
+/* shadcn/ui Theme — extracted from https://webflow.com */
+/* Paste into your globals.css */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --primary: 216 92% 52%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 216 100% 71%;
+    --secondary-foreground: 0 0% 0%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 0 0% 21%;
+    --muted-foreground: 0 0% 3%;
+    --border: 0 0% 94%;
+    --radius: 6px;
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "$metadata": {
+    "generator": "designlang",
+    "version": "7.0.0",
+    "spec": "https://design-tokens.github.io/community-group/format/",
+    "source": "https://cal.com",
+    "generatedAt": "2026-06-25T08:26:30.283Z"
+  },
+  "primitive": {
+    "color": {
+      "brand": {
+        "primary": {
+          "$value": "#0000ee",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "#0099ff",
+          "$type": "color"
+        }
+      },
+      "neutral": {
+        "n100": {
+          "$value": "#000000",
+          "$type": "color"
+        },
+        "n200": {
+          "$value": "#242424",
+          "$type": "color"
+        },
+        "n300": {
+          "$value": "#898989",
+          "$type": "color"
+        },
+        "n400": {
+          "$value": "#e5e7eb",
+          "$type": "color"
+        },
+        "n500": {
+          "$value": "#ffffff",
+          "$type": "color"
+        },
+        "n600": {
+          "$value": "#111111",
+          "$type": "color"
+        },
+        "n700": {
+          "$value": "#f4f4f4",
+          "$type": "color"
+        },
+        "n800": {
+          "$value": "#374151",
+          "$type": "color"
+        },
+        "n900": {
+          "$value": "#d3d3d3",
+          "$type": "color"
+        },
+        "n1000": {
+          "$value": "#808080",
+          "$type": "color"
+        },
+        "n1100": {
+          "$value": "#4c5a70",
+          "$type": "color"
+        },
+        "n1200": {
+          "$value": "#6b7280",
+          "$type": "color"
+        },
+        "n1300": {
+          "$value": "#9ca3af",
+          "$type": "color"
+        },
+        "n1400": {
+          "$value": "#767676",
+          "$type": "color"
+        }
+      },
+      "background": {
+        "bg0": {
+          "$value": "#f4f4f4",
+          "$type": "color"
+        },
+        "bg1": {
+          "$value": "#ffffff",
+          "$type": "color"
+        },
+        "bg2": {
+          "$value": "#f8f9fa",
+          "$type": "color"
+        }
+      },
+      "text": {
+        "text0": {
+          "$value": "#000000",
+          "$type": "color"
+        },
+        "text1": {
+          "$value": "#ffffff",
+          "$type": "color"
+        },
+        "text2": {
+          "$value": "#0000ee",
+          "$type": "color"
+        },
+        "text3": {
+          "$value": "#292929",
+          "$type": "color"
+        },
+        "text4": {
+          "$value": "#111111",
+          "$type": "color"
+        },
+        "text5": {
+          "$value": "#242424",
+          "$type": "color"
+        },
+        "text6": {
+          "$value": "#898989",
+          "$type": "color"
+        },
+        "text7": {
+          "$value": "#101010",
+          "$type": "color"
+        },
+        "text8": {
+          "$value": "#6b7280",
+          "$type": "color"
+        },
+        "text9": {
+          "$value": "#9ca3af",
+          "$type": "color"
+        }
+      }
+    },
+    "spacing": {
+      "s0": {
+        "$value": "1px",
+        "$type": "dimension"
+      },
+      "s1": {
+        "$value": "40px",
+        "$type": "dimension"
+      },
+      "s2": {
+        "$value": "48px",
+        "$type": "dimension"
+      },
+      "s3": {
+        "$value": "80px",
+        "$type": "dimension"
+      },
+      "s4": {
+        "$value": "96px",
+        "$type": "dimension"
+      }
+    },
+    "radius": {
+      "r0": {
+        "$value": "2px",
+        "$type": "dimension"
+      },
+      "r1": {
+        "$value": "6px",
+        "$type": "dimension"
+      },
+      "r2": {
+        "$value": "10px",
+        "$type": "dimension"
+      },
+      "r3": {
+        "$value": "16px",
+        "$type": "dimension"
+      },
+      "r4": {
+        "$value": "29px",
+        "$type": "dimension"
+      },
+      "r5": {
+        "$value": "40px",
+        "$type": "dimension"
+      },
+      "r6": {
+        "$value": "100px",
+        "$type": "dimension"
+      },
+      "r7": {
+        "$value": "120px",
+        "$type": "dimension"
+      },
+      "r8": {
+        "$value": "1000px",
+        "$type": "dimension"
+      },
+      "r9": {
+        "$value": "1250px",
+        "$type": "dimension"
+      },
+      "r10": {
+        "$value": "9999px",
+        "$type": "dimension"
+      }
+    },
+    "shadow": {
+      "sh0": {
+        "$value": "rgba(255, 255, 255, 0.15) 0px 2px 0px 0px inset",
+        "$type": "shadow"
+      },
+      "sh1": {
+        "$value": "rgb(255, 255, 255) 0px 2px 0px 0px inset",
+        "$type": "shadow"
+      },
+      "sh2": {
+        "$value": "rgba(0, 0, 0, 0.1) 0px 0.693878px 2.08163px 0px, rgba(0, 0, 0, 0.06) 0px 0px 1.38776px 0px",
+        "$type": "shadow"
+      },
+      "sh3": {
+        "$value": "rgba(0, 0, 0, 0.16) 0px 1px 1.9px 0px inset",
+        "$type": "shadow"
+      },
+      "sh4": {
+        "$value": "rgba(0, 0, 0, 0) 0px 1px 3px 0px, rgba(0, 0, 0, 0) 0px 0px 2px 0px",
+        "$type": "shadow"
+      },
+      "sh5": {
+        "$value": "rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 0px 2px 0px",
+        "$type": "shadow"
+      },
+      "sh6": {
+        "$value": "rgba(36, 36, 36, 0.7) 0px 1px 5px -4px, rgba(36, 36, 36, 0.05) 0px 4px 8px 0px",
+        "$type": "shadow"
+      },
+      "sh7": {
+        "$value": "rgba(19, 19, 22, 0.7) 0px 1px 5px -4px, rgba(34, 42, 53, 0.1) 0px 0px 0px 1px, rgba(34, 42, 53, 0.05) 0px 4px 8px 0px",
+        "$type": "shadow"
+      },
+      "sh8": {
+        "$value": "rgba(19, 19, 22, 0.7) 0px 1px 5px -4px, rgba(34, 42, 53, 0.08) 0px 0px 0px 1px, rgba(34, 42, 53, 0.05) 0px 4px 8px 0px",
+        "$type": "shadow"
+      },
+      "sh9": {
+        "$value": "rgba(34, 42, 53, 0.05) 0px 4px 8px 0px",
+        "$type": "shadow"
+      },
+      "sh10": {
+        "$value": "rgba(0, 0, 0, 0.15) 0px 4px 12px 0px",
+        "$type": "shadow"
+      }
+    },
+    "fontFamily": {
+      "f0": {
+        "$value": "Inter",
+        "$type": "fontFamily"
+      },
+      "f1": {
+        "$value": "Cal Sans UI Variable Light",
+        "$type": "fontFamily"
+      },
+      "f2": {
+        "$value": "Times",
+        "$type": "fontFamily"
+      },
+      "f3": {
+        "$value": "Cal Sans",
+        "$type": "fontFamily"
+      },
+      "f4": {
+        "$value": "Matter Regular",
+        "$type": "fontFamily"
+      },
+      "f5": {
+        "$value": "Matter Medium",
+        "$type": "fontFamily"
+      },
+      "f6": {
+        "$value": "Matter SemiBold",
+        "$type": "fontFamily"
+      },
+      "f7": {
+        "$value": "Roboto Mono",
+        "$type": "fontFamily"
+      },
+      "f8": {
+        "$value": "CUSTOMV2;Cal Sans UI Regular",
+        "$type": "fontFamily"
+      }
+    }
+  },
+  "semantic": {
+    "color": {
+      "action": {
+        "primary": {
+          "$value": "{primitive.color.brand.primary}",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "{primitive.color.brand.secondary}",
+          "$type": "color"
+        }
+      },
+      "surface": {
+        "default": {
+          "$value": "{primitive.color.background.bg0}",
+          "$type": "color"
+        }
+      },
+      "text": {
+        "body": {
+          "$value": "{primitive.color.text.text0}",
+          "$type": "color"
+        }
+      }
+    },
+    "typography": {
+      "body": {
+        "$value": {
+          "fontFamily": "Inter",
+          "fontSize": "64px",
+          "fontWeight": "600",
+          "lineHeight": "70.4px"
+        },
+        "$type": "typography"
+      }
+    },
+    "radius": {
+      "control": {
+        "$value": "{primitive.radius.r0}",
+        "$type": "dimension"
+      }
+    },
+    "shadow": {
+      "elevated": {
+        "$value": "{primitive.shadow.sh0}",
+        "$type": "shadow"
+      }
+    }
+  }
+}

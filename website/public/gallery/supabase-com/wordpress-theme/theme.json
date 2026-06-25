@@ -1,0 +1,146 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "action-primary",
+          "color": "#72e3ad",
+          "name": "Action Primary"
+        },
+        {
+          "slug": "action-secondary",
+          "color": "#00bb68",
+          "name": "Action Secondary"
+        },
+        {
+          "slug": "surface-default",
+          "color": "#fcfcfc",
+          "name": "Surface Default"
+        },
+        {
+          "slug": "text-body",
+          "color": "#000000",
+          "name": "Text Body"
+        }
+      ]
+    },
+    "typography": {
+      "fontSizes": [
+        {
+          "slug": "h1",
+          "size": "72px",
+          "name": "h1"
+        },
+        {
+          "slug": "div",
+          "size": "36px",
+          "name": "div"
+        },
+        {
+          "slug": "p",
+          "size": "24px",
+          "name": "p"
+        },
+        {
+          "slug": "p",
+          "size": "18px",
+          "name": "p"
+        },
+        {
+          "slug": "html",
+          "size": "16px",
+          "name": "html"
+        },
+        {
+          "slug": "li",
+          "size": "14px",
+          "name": "li"
+        },
+        {
+          "slug": "a",
+          "size": "12px",
+          "name": "a"
+        }
+      ],
+      "fontFamilies": [
+        {
+          "slug": "circular",
+          "fontFamily": "Circular, sans-serif",
+          "name": "Circular"
+        },
+        {
+          "slug": "source-code-pro",
+          "fontFamily": "Source Code Pro, sans-serif",
+          "name": "Source Code Pro"
+        }
+      ]
+    },
+    "spacing": {
+      "spacingSizes": [
+        {
+          "slug": "s0",
+          "size": "1px",
+          "name": "S0"
+        },
+        {
+          "slug": "s1",
+          "size": "40px",
+          "name": "S1"
+        },
+        {
+          "slug": "s2",
+          "size": "48px",
+          "name": "S2"
+        },
+        {
+          "slug": "s3",
+          "size": "64px",
+          "name": "S3"
+        },
+        {
+          "slug": "s4",
+          "size": "90px",
+          "name": "S4"
+        },
+        {
+          "slug": "s5",
+          "size": "112px",
+          "name": "S5"
+        },
+        {
+          "slug": "s6",
+          "size": "128px",
+          "name": "S6"
+        },
+        {
+          "slug": "s7",
+          "size": "157px",
+          "name": "S7"
+        },
+        {
+          "slug": "s8",
+          "size": "208px",
+          "name": "S8"
+        },
+        {
+          "slug": "s9",
+          "size": "246px",
+          "name": "S9"
+        },
+        {
+          "slug": "s10",
+          "size": "304px",
+          "name": "S10"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--surface-default, #fcfcfc)",
+      "text": "var(--wp--preset--color--text-body, #000000)"
+    }
+  }
+}

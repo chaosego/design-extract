@@ -124,7 +124,7 @@ function ExtractSection() {
           <p className="dx-section-tag">Paste a URL. The real browser opens and reads the design system, live.</p>
         </header>
         <div className="dx-stage">
-          <Theatre autoStart="stripe.com" />
+          <Theatre autoStart="stripe.com" redirectOnSubmit />
         </div>
       </div>
     </section>

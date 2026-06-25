@@ -1,0 +1,554 @@
+{
+  "$metadata": {
+    "generator": "designlang",
+    "version": "7.0.0",
+    "spec": "https://design-tokens.github.io/community-group/format/",
+    "source": "https://clerk.com",
+    "generatedAt": "2026-06-25T08:26:23.976Z"
+  },
+  "primitive": {
+    "color": {
+      "brand": {
+        "primary": {
+          "$value": "#6c47ff",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "#1cc4ff",
+          "$type": "color"
+        }
+      },
+      "neutral": {
+        "n100": {
+          "$value": "#d9d9de",
+          "$type": "color"
+        },
+        "n200": {
+          "$value": "#000000",
+          "$type": "color"
+        },
+        "n300": {
+          "$value": "#ffffff",
+          "$type": "color"
+        },
+        "n400": {
+          "$value": "#131316",
+          "$type": "color"
+        },
+        "n500": {
+          "$value": "#747686",
+          "$type": "color"
+        },
+        "n600": {
+          "$value": "#5e5f6e",
+          "$type": "color"
+        },
+        "n700": {
+          "$value": "#2f3037",
+          "$type": "color"
+        },
+        "n800": {
+          "$value": "#9394a1",
+          "$type": "color"
+        },
+        "n900": {
+          "$value": "#696a78",
+          "$type": "color"
+        },
+        "n1000": {
+          "$value": "#eeeef0",
+          "$type": "color"
+        },
+        "n1100": {
+          "$value": "#212126",
+          "$type": "color"
+        },
+        "n1200": {
+          "$value": "#42434d",
+          "$type": "color"
+        },
+        "n1300": {
+          "$value": "#b7b8c2",
+          "$type": "color"
+        },
+        "n1400": {
+          "$value": "#4a4c5b",
+          "$type": "color"
+        }
+      },
+      "background": {
+        "bg0": {
+          "$value": "#f7f7f8",
+          "$type": "color"
+        },
+        "bg1": {
+          "$value": "#f8f8f8",
+          "$type": "color"
+        },
+        "bg2": {
+          "$value": "#131316",
+          "$type": "color"
+        },
+        "bg3": {
+          "$value": "#ffffff",
+          "$type": "color"
+        },
+        "bg4": {
+          "$value": "#212126",
+          "$type": "color"
+        },
+        "bg5": {
+          "$value": "#2d2e3d",
+          "$type": "color"
+        },
+        "bg6": {
+          "$value": "#29292e",
+          "$type": "color"
+        },
+        "bg7": {
+          "$value": "#25252a",
+          "$type": "color"
+        },
+        "bg8": {
+          "$value": "#2f3037",
+          "$type": "color"
+        }
+      },
+      "text": {
+        "text0": {
+          "$value": "#000000",
+          "$type": "color"
+        },
+        "text1": {
+          "$value": "#ffffff",
+          "$type": "color"
+        },
+        "text2": {
+          "$value": "#131316",
+          "$type": "color"
+        },
+        "text3": {
+          "$value": "#747686",
+          "$type": "color"
+        },
+        "text4": {
+          "$value": "#5e5f6e",
+          "$type": "color"
+        },
+        "text5": {
+          "$value": "#212126",
+          "$type": "color"
+        },
+        "text6": {
+          "$value": "#6c47ff",
+          "$type": "color"
+        },
+        "text7": {
+          "$value": "#9394a1",
+          "$type": "color"
+        },
+        "text8": {
+          "$value": "#696a78",
+          "$type": "color"
+        },
+        "text9": {
+          "$value": "#42434d",
+          "$type": "color"
+        }
+      }
+    },
+    "spacing": {
+      "s0": {
+        "$value": "1px",
+        "$type": "dimension"
+      },
+      "s1": {
+        "$value": "46px",
+        "$type": "dimension"
+      },
+      "s2": {
+        "$value": "56px",
+        "$type": "dimension"
+      },
+      "s3": {
+        "$value": "76px",
+        "$type": "dimension"
+      },
+      "s4": {
+        "$value": "94px",
+        "$type": "dimension"
+      },
+      "s5": {
+        "$value": "128px",
+        "$type": "dimension"
+      },
+      "s6": {
+        "$value": "140px",
+        "$type": "dimension"
+      },
+      "s7": {
+        "$value": "151px",
+        "$type": "dimension"
+      },
+      "s8": {
+        "$value": "158px",
+        "$type": "dimension"
+      },
+      "s9": {
+        "$value": "167px",
+        "$type": "dimension"
+      },
+      "s10": {
+        "$value": "172px",
+        "$type": "dimension"
+      },
+      "s11": {
+        "$value": "192px",
+        "$type": "dimension"
+      },
+      "s12": {
+        "$value": "220px",
+        "$type": "dimension"
+      },
+      "s13": {
+        "$value": "259px",
+        "$type": "dimension"
+      },
+      "s14": {
+        "$value": "272px",
+        "$type": "dimension"
+      },
+      "s15": {
+        "$value": "302px",
+        "$type": "dimension"
+      },
+      "s16": {
+        "$value": "320px",
+        "$type": "dimension"
+      }
+    },
+    "radius": {
+      "r0": {
+        "$value": "2px",
+        "$type": "dimension"
+      },
+      "r1": {
+        "$value": "5px",
+        "$type": "dimension"
+      },
+      "r2": {
+        "$value": "8px",
+        "$type": "dimension"
+      },
+      "r3": {
+        "$value": "12px",
+        "$type": "dimension"
+      },
+      "r4": {
+        "$value": "16px",
+        "$type": "dimension"
+      },
+      "r5": {
+        "$value": "38px",
+        "$type": "dimension"
+      },
+      "r6": {
+        "$value": "44px",
+        "$type": "dimension"
+      },
+      "r7": {
+        "$value": "50px",
+        "$type": "dimension"
+      }
+    },
+    "shadow": {
+      "sh0": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(66, 67, 77) 0px 0px 0px 0.5px, oklab(0.999994 0.0000455678 0.0000200868 / 0.07) 0px 1px 0px 0px inset, oklab(0.249859 0.00254738 -0.00901626 / 0.2) 0px 1px 3px 0px",
+        "$type": "shadow"
+      },
+      "sh1": {
+        "$value": "rgba(255, 255, 255, 0.9) 0px 0px 0px 0.5px inset, rgba(19, 19, 22, 0.15) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.04) 0px 2px 3px 0px, rgba(34, 42, 53, 0.04) 0px 4px 6px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px",
+        "$type": "shadow"
+      },
+      "sh2": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0.08) 0px 2px 3px -1px, oklab(0.188081 0.0016512 -0.00579907 / 0.18) 0px 0px 0px 0.5px, oklab(0.999994 0.0000455678 0.0000200868 / 0.1) 0px 1px 0px 0px inset",
+        "$type": "shadow"
+      },
+      "sh3": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(108, 71, 255) 0px 0px 0px 0.5px, oklab(0.999994 0.0000455678 0.0000200868 / 0.07) 0px 1px 0px 0px inset, oklab(0.249859 0.00254738 -0.00901626 / 0.2) 0px 1px 3px 0px",
+        "$type": "shadow"
+      },
+      "sh4": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0.08) 0px 2px 3px -1px, oklab(0.188081 0.0016512 -0.00579907 / 0.1) 0px 0px 0px 0.5px, oklab(0.999994 0.0000455678 0.0000200868 / 0.1) 0px 1px 0px 0px inset",
+        "$type": "shadow"
+      },
+      "sh5": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px -9px 11px -10px, rgba(0, 0, 0, 0.05) 0px -0.25px 0px 0.25px",
+        "$type": "shadow"
+      },
+      "sh6": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(147, 148, 161) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "$type": "shadow"
+      },
+      "sh7": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.188081 0.0016512 -0.00579907 / 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.08) 0px 5px 15px 0px, rgba(25, 28, 33, 0.2) 0px 15px 35px -5px",
+        "$type": "shadow"
+      },
+      "sh8": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0.04) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "$type": "shadow"
+      },
+      "sh9": {
+        "$value": "rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(0, 0, 0, 0.08) 0px 5px 15px 0px, rgba(47, 48, 55, 0.2) 0px 15px 35px -5px, rgba(34, 42, 53, 0.04) 0px 4px 6px 0px",
+        "$type": "shadow"
+      },
+      "sh10": {
+        "$value": "rgb(217, 217, 222) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px, rgba(0, 0, 0, 0.08) 0px 0px 2px 0px",
+        "$type": "shadow"
+      },
+      "sh11": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px, rgba(0, 0, 0, 0.02) 0px 1px 0px 0px, rgba(0, 0, 0, 0.08) 0px 2px 3px -1px",
+        "$type": "shadow"
+      },
+      "sh12": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px 16px 36px -6px, rgba(0, 0, 0, 0.08) 0px 8px 16px -3px",
+        "$type": "shadow"
+      },
+      "sh13": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(0, 0, 0, 0.06) 0px 0.82px 1.64px 0px, rgba(0, 0, 0, 0.08) 0px 0px 1.64px 0px",
+        "$type": "shadow"
+      },
+      "sh14": {
+        "$value": "rgba(0, 0, 0, 0.11) 0px 0px 0px 1px, rgba(0, 0, 0, 0.07) 0px 0px 1px 0px",
+        "$type": "shadow"
+      },
+      "sh15": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.11) 0px 0px 0px 1px, rgba(0, 0, 0, 0.07) 0px 0px 1px 0px",
+        "$type": "shadow"
+      },
+      "sh16": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px, rgba(0, 0, 0, 0.08) 0px 0px 2px 0px",
+        "$type": "shadow"
+      },
+      "sh17": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 0.82px, rgba(0, 0, 0, 0.08) 0px 0px 1.64px 0px, rgba(0, 0, 0, 0.06) 0px 0.82px 1.64px 0px",
+        "$type": "shadow"
+      },
+      "sh18": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(238, 238, 240) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 2px 0px -1px",
+        "$type": "shadow"
+      },
+      "sh19": {
+        "$value": "rgba(0, 0, 0, 0.28) 0px 0px 0px 1px, rgba(0, 0, 0, 0.28) 0px 0px 1px 0px",
+        "$type": "shadow"
+      },
+      "sh20": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(217, 217, 222) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px, rgba(0, 0, 0, 0.08) 0px 0px 2px 0px",
+        "$type": "shadow"
+      },
+      "sh21": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "$type": "shadow"
+      },
+      "sh22": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.999994 0.0000455678 0.0000200868 / 0.025) 0px 1px 0px 0px inset, oklab(0.999994 0.0000455678 0.0000200868 / 0.025) 0px 0px 0px 1px inset",
+        "$type": "shadow"
+      },
+      "sh23": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.188081 0.0016512 -0.00579907 / 0.5) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "$type": "shadow"
+      },
+      "sh24": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.25) 0px 1px 2px 0px",
+        "$type": "shadow"
+      },
+      "sh25": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.999994 0.0000455678 0.0000200868 / 0.03) 0px 1px 0px 0px",
+        "$type": "shadow"
+      },
+      "sh26": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0.5) 0px 2px 12px 0px",
+        "$type": "shadow"
+      },
+      "sh27": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.05) 0px 1px 1px 0px inset, rgba(0, 0, 0, 0.2) 0px 2px 13px 0px, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px",
+        "$type": "shadow"
+      },
+      "sh28": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0.75) 0px 0px 0px 2px inset",
+        "$type": "shadow"
+      },
+      "sh29": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.999994 0.0000455678 0.0000200868 / 0.05) 0px 1px 0px 0px",
+        "$type": "shadow"
+      },
+      "sh30": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.999994 0.0000455678 0.0000200868 / 0.1) 0px 1px 0px 0px inset",
+        "$type": "shadow"
+      },
+      "sh31": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(39, 39, 45) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "$type": "shadow"
+      },
+      "sh32": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px",
+        "$type": "shadow"
+      },
+      "sh33": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.999994 0.0000455678 0.0000200868 / 0.05) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "$type": "shadow"
+      },
+      "sh34": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(84.5189 -31.4667 -23.9754 / 0.08) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "$type": "shadow"
+      },
+      "sh35": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.999994 0.0000455678 0.0000200868 / 0.07) 0px 0px 0px 1px, rgba(0, 0, 0, 0.15) 0px 4px 4px 0px",
+        "$type": "shadow"
+      },
+      "sh36": {
+        "$value": "rgba(239, 68, 68, 0.12) 0px 0px 0px 1px inset, rgba(239, 68, 68, 0.12) 0px 0px 10px 2px",
+        "$type": "shadow"
+      },
+      "sh37": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0.05) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "$type": "shadow"
+      },
+      "sh38": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.999994 0.0000455678 0.0000200868 / 0.15) 0px 0px 1px 0px inset",
+        "$type": "shadow"
+      },
+      "sh39": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.999994 0.0000455678 0.0000200868 / 0.08) 0px 1px 0px 0px inset",
+        "$type": "shadow"
+      },
+      "sh40": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.999994 0.0000455678 0.0000200868 / 0.02) 0px 1px 0px 0px, oklab(0.999994 0.0000455678 0.0000200868 / 0.06) 0px -1px 0px 0px, oklab(0.999994 0.0000455678 0.0000200868 / 0.02) 0px -2px 4px 0px, oklab(0 0 0 / 0.2) 0px 1px 1px 0px inset",
+        "$type": "shadow"
+      },
+      "sh41": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.999994 0.0000455678 0.0000200868 / 0.08) 2.5px -2.5px 0px -2px inset",
+        "$type": "shadow"
+      },
+      "sh42": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.999994 0.0000455678 0.0000200868 / 0.08) -2.5px 2.5px 0px -2px inset",
+        "$type": "shadow"
+      },
+      "sh43": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0.2) 0px 0px 0px 1px, oklab(0 0 0 / 0.1) 0px 4px 6px -1px, oklab(0 0 0 / 0.1) 0px 2px 4px -2px",
+        "$type": "shadow"
+      },
+      "sh44": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.809096 -0.102602 -0.0875665 / 0.1) 0px 0px 6px 3px",
+        "$type": "shadow"
+      },
+      "sh45": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.06) 0px 1px 0px 0px, rgba(0, 0, 0, 0.15) 0px 2px 5px 0px inset",
+        "$type": "shadow"
+      },
+      "sh46": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(107, 231, 255, 0.3) 0px 0px 9px 0px",
+        "$type": "shadow"
+      },
+      "sh47": {
+        "$value": "rgba(255, 255, 255, 0.05) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.4) 0px 2px 5px 0px",
+        "$type": "shadow"
+      },
+      "sh48": {
+        "$value": "rgba(255, 255, 255, 0.05) 0px 1px 0px 0px",
+        "$type": "shadow"
+      },
+      "sh49": {
+        "$value": "rgba(255, 255, 255, 0.05) 0px 1px 0px 0px inset",
+        "$type": "shadow"
+      },
+      "sh50": {
+        "$value": "rgba(0, 0, 0, 0.24) 0px 1px 1px 0px, rgba(0, 0, 0, 0.2) 0px 2px 3px 0px, rgba(255, 255, 255, 0.07) 0px 1px 1px 0px inset, rgb(47, 48, 55) 0px 0px 0px 1px",
+        "$type": "shadow"
+      },
+      "sh51": {
+        "$value": "rgba(255, 255, 255, 0.05) 0px 1px 1px 0px inset, rgba(0, 0, 0, 0.2) 0px 2px 13px 0px, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px, rgba(19, 19, 22, 0.5) 0px 0px 0px 3px",
+        "$type": "shadow"
+      },
+      "sh52": {
+        "$value": "rgba(0, 0, 0, 0.3) 0px 0px 3px 1px",
+        "$type": "shadow"
+      },
+      "sh53": {
+        "$value": "rgba(0, 0, 0, 0.25) 0px 1px 2px 0px, rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset",
+        "$type": "shadow"
+      },
+      "sh54": {
+        "$value": "rgba(107, 231, 255, 0.3) 0px 0px 8px 1px, rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset",
+        "$type": "shadow"
+      },
+      "sh55": {
+        "$value": "rgba(19, 19, 22, 0.6) 0px 6px 12px 0px, rgba(255, 255, 255, 0.03) 0px 1px 0px 0px inset",
+        "$type": "shadow"
+      },
+      "sh56": {
+        "$value": "rgba(0, 0, 0, 0.16) 0px 10px 19px 4px, rgba(255, 255, 255, 0.04) 0px -10px 16px -4px, rgba(255, 255, 255, 0.01) 0px 0px 0px 1px, rgba(255, 255, 255, 0.02) 0px 1px 0px 0px",
+        "$type": "shadow"
+      }
+    },
+    "fontFamily": {
+      "f0": {
+        "$value": "geistNumbers",
+        "$type": "fontFamily"
+      },
+      "f1": {
+        "$value": "soehneMono",
+        "$type": "fontFamily"
+      }
+    }
+  },
+  "semantic": {
+    "color": {
+      "action": {
+        "primary": {
+          "$value": "{primitive.color.brand.primary}",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "{primitive.color.brand.secondary}",
+          "$type": "color"
+        }
+      },
+      "surface": {
+        "default": {
+          "$value": "{primitive.color.background.bg0}",
+          "$type": "color"
+        }
+      },
+      "text": {
+        "body": {
+          "$value": "{primitive.color.text.text0}",
+          "$type": "color"
+        }
+      }
+    },
+    "typography": {
+      "body": {
+        "$value": {
+          "fontFamily": "geistNumbers",
+          "fontSize": "64px",
+          "fontWeight": "700",
+          "lineHeight": "72px"
+        },
+        "$type": "typography"
+      }
+    },
+    "radius": {
+      "control": {
+        "$value": "{primitive.radius.r0}",
+        "$type": "dimension"
+      }
+    },
+    "shadow": {
+      "elevated": {
+        "$value": "{primitive.shadow.sh0}",
+        "$type": "shadow"
+      }
+    }
+  }
+}

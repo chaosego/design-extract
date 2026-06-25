@@ -115,5 +115,213 @@
       "#d97757",
       "#141413"
     ]
+  },
+  "netflix-com": {
+    "primary": "#e50914",
+    "bg": "#000000",
+    "fg": "#000000",
+    "palette": [
+      "#e50914",
+      "#468254"
+    ]
+  },
+  "raycast-com": {
+    "primary": "#ff6363",
+    "bg": "#07080a",
+    "fg": "#ffffff",
+    "palette": [
+      "#ff6363",
+      "#56c2ff"
+    ]
+  },
+  "supabase-com": {
+    "primary": "#72e3ad",
+    "bg": "#fcfcfc",
+    "fg": "#000000",
+    "palette": [
+      "#72e3ad",
+      "#a9f1ca"
+    ]
+  },
+  "framer-com": {
+    "primary": "#0066ff",
+    "bg": "#000000",
+    "fg": "#000000",
+    "palette": [
+      "#0066ff",
+      "#0099ff"
+    ]
+  },
+  "resend-com": {
+    "primary": "#d6ebfd",
+    "bg": "#000000",
+    "fg": "#ffffff",
+    "palette": [
+      "#d6ebfd",
+      "#44ffa4"
+    ]
+  },
+  "clerk-com": {
+    "primary": "#6c47ff",
+    "bg": "#f7f7f8",
+    "fg": "#000000",
+    "palette": [
+      "#6c47ff",
+      "#5de3ff"
+    ]
+  },
+  "cal-com": {
+    "primary": "#0000ee",
+    "bg": "#f4f4f4",
+    "fg": "#000000",
+    "palette": [
+      "#0000ee",
+      "#d6ecfe"
+    ]
+  },
+  "discord-com": {
+    "primary": "#5865f2",
+    "bg": "#1a2081",
+    "fg": "#000000",
+    "palette": [
+      "#5865f2",
+      "#1a2081"
+    ]
+  },
+  "duolingo-com": {
+    "primary": "#d7ffb8",
+    "bg": "#ffffff",
+    "fg": "#000000",
+    "palette": [
+      "#d7ffb8",
+      "#ddf4ff"
+    ]
+  },
+  "coinbase-com": {
+    "primary": "#0000ee",
+    "bg": "#ffffff",
+    "fg": "#313131",
+    "palette": [
+      "#0000ee"
+    ]
+  },
+  "loom-com": {
+    "primary": "#1868db",
+    "bg": "#ffffff",
+    "fg": "#000000",
+    "palette": [
+      "#1868db",
+      "#e9f2fe"
+    ]
+  },
+  "webflow-com": {
+    "primary": "#146ef5",
+    "bg": "#ffffff",
+    "fg": "#000000",
+    "palette": [
+      "#146ef5",
+      "#3b82f6"
+    ]
+  },
+  "postman-com": {
+    "primary": "#e05320",
+    "bg": "#ffffff",
+    "fg": "#000000",
+    "palette": [
+      "#e05320",
+      "#ff6c37"
+    ]
+  },
+  "replit-com": {
+    "primary": "#0051c3",
+    "bg": "#ffffff",
+    "fg": "#000000",
+    "palette": [
+      "#0051c3",
+      "#521010"
+    ]
+  },
+  "railway-app": {
+    "primary": "#59497a",
+    "bg": "#13111c",
+    "fg": "#ffffff",
+    "palette": [
+      "#59497a",
+      "#1f132a"
+    ]
+  },
+  "render-com": {
+    "primary": "#8a05ff",
+    "bg": "#ffffff",
+    "fg": "#000000",
+    "palette": [
+      "#8a05ff",
+      "#e0f4ff"
+    ]
+  },
+  "mintlify-com": {
+    "primary": "#faf8f5",
+    "bg": "#f9f6f3",
+    "fg": "#000000",
+    "palette": [
+      "#faf8f5",
+      "#ff7a59"
+    ]
+  },
+  "posthog-com": {
+    "primary": "#e1d7c2",
+    "bg": "#e5e7e0",
+    "fg": "#000000",
+    "palette": [
+      "#e1d7c2",
+      "#eeefe9"
+    ]
+  },
+  "sentry-io": {
+    "primary": "#150f23",
+    "bg": "#1f1633",
+    "fg": "#000000",
+    "palette": [
+      "#150f23",
+      "#2d2340"
+    ]
+  },
+  "perplexity-ai": {
+    "primary": "#0000ee",
+    "bg": "#ffffff",
+    "fg": "#313131",
+    "palette": [
+      "#0000ee"
+    ]
+  },
+  "ramp-com": {
+    "primary": "#000000",
+    "bg": "#ffffff",
+    "fg": "#000000",
+    "palette": []
+  },
+  "retool-com": {
+    "primary": "#e9ebdf",
+    "bg": "#151515",
+    "fg": "#ffffff",
+    "palette": [
+      "#e9ebdf",
+      "#f7f8f4"
+    ]
+  },
+  "planetscale-com": {
+    "primary": "#f2b600",
+    "bg": "#fafafa",
+    "fg": "#414141",
+    "palette": [
+      "#f2b600",
+      "#0b6ec5"
+    ]
+  },
+  "v0-dev": {
+    "primary": "#d2d2d2",
+    "bg": "#f4f4f4",
+    "fg": "#000000",
+    "palette": []
   }
 }

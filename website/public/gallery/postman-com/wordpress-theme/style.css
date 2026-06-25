@@ -1,0 +1,27 @@
+/*
+Theme Name: designlang extracted theme
+Theme URI: https://github.com/Manavarya09/design-extract
+Description: Block theme generated from https://postman.com by designlang v7.0.0
+Version: 1.0.0
+Author: designlang
+License: MIT
+Text Domain: designlang-theme
+*/
+
+:root {
+  --action-primary: #e05320;
+  --action-secondary: #007bff;
+  --surface-default: #ffffff;
+  --text-body: #000000;
+  --spacing-s0: 1px;
+  --spacing-s1: 20px;
+  --spacing-s2: 24px;
+  --spacing-s3: 40px;
+  --spacing-s4: 50px;
+  --spacing-s5: 60px;
+  --spacing-s6: 64px;
+  --spacing-s7: 80px;
+  --spacing-s8: 120px;
+  --spacing-s9: 224px;
+  --spacing-s10: 252px;
+}

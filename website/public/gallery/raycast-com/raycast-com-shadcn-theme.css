@@ -1,0 +1,19 @@
+/* shadcn/ui Theme — extracted from https://raycast.com */
+/* Paste into your globals.css */
+
+@layer base {
+  :root {
+    --background: 220 18% 3%;
+    --foreground: 0 0% 100%;
+    --primary: 0 100% 69%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 201 100% 77%;
+    --secondary-foreground: 0 0% 0%;
+    --accent: 202 100% 67%;
+    --accent-foreground: 0 0% 0%;
+    --muted: 220 8% 7%;
+    --muted-foreground: 0 0% 100%;
+    --border: 0 0% 90%;
+    --radius: 8px;
+  }
+}

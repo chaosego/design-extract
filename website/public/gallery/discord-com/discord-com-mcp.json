@@ -1,0 +1,733 @@
+{
+  "colors": {
+    "all": [
+      {
+        "hex": "#000000",
+        "rgb": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 0
+        },
+        "count": 1456,
+        "contexts": [
+          "text",
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#ffffff",
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 100
+        },
+        "count": 814,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#5865f2",
+        "rgb": {
+          "r": 88,
+          "g": 101,
+          "b": 242,
+          "a": 1
+        },
+        "hsl": {
+          "h": 235,
+          "s": 86,
+          "l": 65
+        },
+        "count": 35,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#333333",
+        "rgb": {
+          "r": 51,
+          "g": 51,
+          "b": 51,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 20
+        },
+        "count": 24,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#23272a",
+        "rgb": {
+          "r": 35,
+          "g": 39,
+          "b": 42,
+          "a": 1
+        },
+        "hsl": {
+          "h": 206,
+          "s": 9,
+          "l": 15
+        },
+        "count": 10,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#1a2081",
+        "rgb": {
+          "r": 26,
+          "g": 32,
+          "b": 129,
+          "a": 1
+        },
+        "hsl": {
+          "h": 237,
+          "s": 66,
+          "l": 30
+        },
+        "count": 1,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#35ed7e",
+        "rgb": {
+          "r": 53,
+          "g": 237,
+          "b": 126,
+          "a": 1
+        },
+        "hsl": {
+          "h": 144,
+          "s": 84,
+          "l": 57
+        },
+        "count": 1,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#19175c",
+        "rgb": {
+          "r": 25,
+          "g": 23,
+          "b": 92,
+          "a": 1
+        },
+        "hsl": {
+          "h": 242,
+          "s": 60,
+          "l": 23
+        },
+        "count": 1,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#5b62c7",
+        "rgb": {
+          "r": 91,
+          "g": 98,
+          "b": 199,
+          "a": 1
+        },
+        "hsl": {
+          "h": 236,
+          "s": 49,
+          "l": 57
+        },
+        "count": 1,
+        "contexts": [
+          "background"
+        ]
+      }
+    ]
+  },
+  "regions": [
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 80
+      },
+      "heading": null,
+      "buttonCount": 8,
+      "cardCount": 18,
+      "className": "nav"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "nav_dd_list is-safety w-dropdown-list"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "nav_dd_list is-safety w-dropdown-list"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "nav_dd_list is-safety w-dropdown-list"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "nav_dd_list is-safety w-dropdown-list"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "nav_dd_list is-safety w-dropdown-list"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "nav_dd_list is-safety w-dropdown-list"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "nav_dd_list is-burger w-dropdown-list"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "nav_dd_list is-burger w-dropdown-list"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "nav_dd_list is-burger w-dropdown-list"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "nav_dd_list is-burger w-dropdown-list"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "nav_dd_list is-burger w-dropdown-list"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "nav_dd_list is-burger w-dropdown-list"
+    },
+    {
+      "role": "pricing",
+      "tag": "main",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 7925.359375
+      },
+      "heading": "GROUP CHAT THAT’S ALL FUN & GAMES",
+      "buttonCount": 5,
+      "cardCount": 62,
+      "className": "main-wrapper overflow-hidden _2025"
+    },
+    {
+      "role": "sidebar",
+      "tag": "aside",
+      "bounds": {
+        "x": 100,
+        "y": 632,
+        "w": 1080,
+        "h": 80
+      },
+      "heading": null,
+      "buttonCount": 2,
+      "cardCount": 0,
+      "className": null
+    },
+    {
+      "role": "footer",
+      "tag": "footer",
+      "bounds": {
+        "x": 248,
+        "y": 7223.984375,
+        "w": 0,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "image-robot1 image-robot lottie"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 62,
+      "className": "dropdown-language-list-wr w-dropdown-list"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 446.65625,
+        "y": 7450.359375,
+        "w": 183.328125,
+        "h": 132
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "dropdown-list-footer w-dropdown-list"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 649.984375,
+        "y": 7450.359375,
+        "w": 183.34375,
+        "h": 132
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "dropdown-list-footer w-dropdown-list"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 853.328125,
+        "y": 7450.359375,
+        "w": 183.328125,
+        "h": 312
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "dropdown-list-footer w-dropdown-list"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 1056.65625,
+        "y": 7450.359375,
+        "w": 183.328125,
+        "h": 240
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "dropdown-list-footer w-dropdown-list"
+    }
+  ],
+  "componentClusters": [
+    {
+      "kind": "button",
+      "structuralHash": "div>a>a",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "0px none rgb(0, 0, 0)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "a",
+      "instanceCount": 2,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(255, 255, 255)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "10px 16px 10px 16px",
+            "borderRadius": "16px",
+            "border": "0px none rgb(0, 0, 0)",
+            "fontSize": "16px",
+            "fontWeight": "500"
+          },
+          "instanceCount": 2
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "a>svg",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(255, 255, 255)",
+            "color": "rgb(35, 39, 42)",
+            "padding": "15px 24px 15px 24px",
+            "borderRadius": "12px",
+            "border": "0px none rgb(35, 39, 42)",
+            "fontSize": "18px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(88, 101, 242)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "16.7px 24px 16.7px 24px",
+            "borderRadius": "12px",
+            "border": "0px none rgb(255, 255, 255)",
+            "fontSize": "18px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "div>a",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "0px none rgb(0, 0, 0)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    }
+  ],
+  "accessibility": {
+    "remediation": []
+  },
+  "cssHealth": {
+    "sheets": [
+      {
+        "url": "https://discord.com/",
+        "totalBytes": 758,
+        "usedBytes": 49,
+        "unusedBytes": 709,
+        "unusedPercent": 94
+      },
+      {
+        "url": "https://discord.com/",
+        "totalBytes": 791,
+        "usedBytes": 0,
+        "unusedBytes": 791,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://discord.com/",
+        "totalBytes": 4285,
+        "usedBytes": 251,
+        "unusedBytes": 4034,
+        "unusedPercent": 94
+      },
+      {
+        "url": "https://discord.com/",
+        "totalBytes": 585,
+        "usedBytes": 523,
+        "unusedBytes": 62,
+        "unusedPercent": 11
+      },
+      {
+        "url": "https://discord.com/",
+        "totalBytes": 667,
+        "usedBytes": 0,
+        "unusedBytes": 667,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://discord.com/",
+        "totalBytes": 90,
+        "usedBytes": 0,
+        "unusedBytes": 90,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://discord.com/",
+        "totalBytes": 283,
+        "usedBytes": 280,
+        "unusedBytes": 3,
+        "unusedPercent": 1
+      },
+      {
+        "url": "https://discord.com/",
+        "totalBytes": 156,
+        "usedBytes": 154,
+        "unusedBytes": 2,
+        "unusedPercent": 1
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/css/discord-2022.shared.81e341b40.min.css",
+        "totalBytes": 2524845,
+        "usedBytes": 50271,
+        "unusedBytes": 2474574,
+        "unusedPercent": 98
+      },
+      {
+        "url": "https://discord.com/",
+        "totalBytes": 1431,
+        "usedBytes": 667,
+        "unusedBytes": 764,
+        "unusedPercent": 53
+      },
+      {
+        "url": "https://discord.com/",
+        "totalBytes": 4440,
+        "usedBytes": 285,
+        "unusedBytes": 4155,
+        "unusedPercent": 94
+      },
+      {
+        "url": "https://discord.com/",
+        "totalBytes": 20480,
+        "usedBytes": 10518,
+        "unusedBytes": 9962,
+        "unusedPercent": 49
+      },
+      {
+        "url": "https://discord.com/",
+        "totalBytes": 753,
+        "usedBytes": 129,
+        "unusedBytes": 624,
+        "unusedPercent": 83
+      },
+      {
+        "url": "https://discord.com/",
+        "totalBytes": 6909,
+        "usedBytes": 34,
+        "unusedBytes": 6875,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://discord.com/",
+        "totalBytes": 50,
+        "usedBytes": 47,
+        "unusedBytes": 3,
+        "unusedPercent": 6
+      },
+      {
+        "url": "https://discord.com/",
+        "totalBytes": 5034,
+        "usedBytes": 0,
+        "unusedBytes": 5034,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://discord.com/",
+        "totalBytes": 1755,
+        "usedBytes": 0,
+        "unusedBytes": 1755,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://discord.com/w/assets/be7e18b1b5cc11791c4b182d807c210cb368d228/styles.css",
+        "totalBytes": 729879,
+        "usedBytes": 229987,
+        "unusedBytes": 499892,
+        "unusedPercent": 68
+      }
+    ],
+    "totalBytes": 3303191,
+    "usedBytes": 293195,
+    "unusedBytes": 3009996,
+    "unusedPercent": 91,
+    "importantCount": 181,
+    "duplicates": 68526,
+    "vendorPrefixes": {
+      "webkit": 509,
+      "moz": 22,
+      "ms": 72,
+      "o": 0
+    },
+    "keyframes": [],
+    "specificity": {
+      "max": [
+        1,
+        7,
+        48
+      ],
+      "average": [
+        0.11,
+        1.74,
+        0.03
+      ],
+      "count": 36511
+    },
+    "issues": [
+      "181 !important rules",
+      "68526 duplicate declarations",
+      "91% unused CSS"
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+/*
+Theme Name: designlang extracted theme
+Theme URI: https://github.com/Manavarya09/design-extract
+Description: Block theme generated from https://discord.com by designlang v7.0.0
+Version: 1.0.0
+Author: designlang
+License: MIT
+Text Domain: designlang-theme
+*/
+
+:root {
+  --action-primary: #5865f2;
+  --action-secondary: #35ed7e;
+  --surface-default: #1a2081;
+  --text-body: #000000;
+  --spacing-s0: 1px;
+  --spacing-s1: 24px;
+  --spacing-s2: 29px;
+  --spacing-s3: 35px;
+  --spacing-s4: 48px;
+  --spacing-s5: 52px;
+  --spacing-s6: 56px;
+  --spacing-s7: 60px;
+  --spacing-s8: 64px;
+  --spacing-s9: 73px;
+  --spacing-s10: 76px;
+  --spacing-s11: 80px;
+  --spacing-s12: 96px;
+  --spacing-s13: 106px;
+  --spacing-s14: 125px;
+  --spacing-s15: 128px;
+  --spacing-s16: 134px;
+  --spacing-s17: 143px;
+  --spacing-s18: 154px;
+  --spacing-s19: 157px;
+  --spacing-s20: 160px;
+  --spacing-s21: 174px;
+  --spacing-s22: 185px;
+  --spacing-s23: 194px;
+  --spacing-s24: 197px;
+  --spacing-s25: 221px;
+  --spacing-s26: 235px;
+  --spacing-s27: 256px;
+  --spacing-s28: 293px;
+  --spacing-s29: 413px;
+  --spacing-s30: 426px;
+  --spacing-s31: 432px;
+  --spacing-s32: 445px;
+}

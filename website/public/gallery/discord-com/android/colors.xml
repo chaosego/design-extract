@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="action_primary">#FF5865F2</color>
+    <color name="action_secondary">#FF35ED7E</color>
+    <color name="surface_default">#FF1A2081</color>
+    <color name="text_body">#FF000000</color>
+    <color name="brand_primary">#FF5865F2</color>
+    <color name="brand_secondary">#FF35ED7E</color>
+    <color name="neutral_n100">#FF000000</color>
+    <color name="neutral_n200">#FFFFFFFF</color>
+    <color name="neutral_n300">#FF333333</color>
+    <color name="neutral_n400">#FF23272A</color>
+    <color name="background_bg0">#FF1A2081</color>
+    <color name="background_bg1">#FF000000</color>
+    <color name="text_text0">#FF000000</color>
+    <color name="text_text1">#FF333333</color>
+    <color name="text_text2">#FFFFFFFF</color>
+    <color name="text_text3">#FF23272A</color>
+    <color name="text_text4">#FF5865F2</color>
+</resources>

@@ -1,0 +1,576 @@
+{
+  "$schema": "https://designlang.app/schemas/gradients.json",
+  "source": "https://clerk.com",
+  "generated": "2026-06-25T08:26:24.061Z",
+  "count": 31,
+  "gradients": [
+    {
+      "raw": "linear-gradient(rgba(19, 19, 22, 0) 45%, rgba(19, 19, 22, 0.03) 55%)",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "rgba(19, 19, 22, 0)",
+          "position": "45%"
+        },
+        {
+          "color": "rgba(19, 19, 22, 0.03)",
+          "position": "55%"
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "radial-gradient(154.86% 76.83% at 50% 22.26%, color(srgb 0.968627 0.968627 0.972549 / 0.4) 8.98%, rgb(247, 247, 248) 45.99%)",
+      "type": "radial",
+      "direction": null,
+      "stops": [
+        {
+          "color": "154.86% 76.83% at 50%",
+          "position": "22.26%"
+        },
+        {
+          "color": "color(srgb 0.968627 0.968627 0.972549 / 0.4)",
+          "position": "8.98%"
+        },
+        {
+          "color": "rgb(247, 247, 248)",
+          "position": "45.99%"
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "linear-gradient(to right in oklab, rgba(255, 255, 255, 0.24) 0%, rgb(255, 255, 255) 100%)",
+      "type": "linear",
+      "direction": "to right in oklab",
+      "stops": [
+        {
+          "color": "rgba(255, 255, 255, 0.24)",
+          "position": "0%"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "position": "100%"
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(oklab(0.999994 0.0000455678 0.0000200868 / 0.1) 0%, rgba(0, 0, 0, 0) 100%)",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+          "position": "0%"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": "100%"
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(to right in oklab, rgb(255, 255, 255) 0%, rgba(240, 235, 255, 0.5) 100%)",
+      "type": "linear",
+      "direction": "to right in oklab",
+      "stops": [
+        {
+          "color": "rgb(255, 255, 255)",
+          "position": "0%"
+        },
+        {
+          "color": "rgba(240, 235, 255, 0.5)",
+          "position": "100%"
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(rgba(58, 212, 253, 0.08) 0%, rgba(98, 72, 246, 0.15) 50.73%)",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "rgba(58, 212, 253, 0.08)",
+          "position": "0%"
+        },
+        {
+          "color": "rgba(98, 72, 246, 0.15)",
+          "position": "50.73%"
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "radial-gradient(79.87% 92.91% at 81.25% 12.5%, rgb(255, 255, 255) 0%, rgb(25, 25, 27) 100%)",
+      "type": "radial",
+      "direction": null,
+      "stops": [
+        {
+          "color": "79.87% 92.91% at 81.25%",
+          "position": "12.5%"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "position": "0%"
+        },
+        {
+          "color": "rgb(25, 25, 27)",
+          "position": "100%"
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "linear-gradient(to right bottom, oklab(0.999994 0.0000455678 0.0000200868 / 0.05) 0%, rgba(0, 0, 0, 0) 65%)",
+      "type": "linear",
+      "direction": "to right bottom",
+      "stops": [
+        {
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+          "position": "0%"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": "65%"
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "radial-gradient(50% 100% at 50% 0%, color(srgb 0 0 0 / 0), color(srgb 0.129412 0.129412 0.14902 / 0.68) 61.5%, rgb(33, 33, 38))",
+      "type": "radial",
+      "direction": null,
+      "stops": [
+        {
+          "color": "5",
+          "position": "0%"
+        },
+        {
+          "color": "color(srgb 0 0 0 / 0)",
+          "position": null
+        },
+        {
+          "color": "color(srgb 0.129412 0.129412 0.14902 / 0.68)",
+          "position": "61.5%"
+        },
+        {
+          "color": "rgb(33, 33, 38)",
+          "position": null
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "linear-gradient(to right top, oklab(0 0 0 / 0) 0%, oklab(0 0 0 / 0) 50%, oklab(0.999994 0.0000455678 0.0000200868 / 0.1) 100%)",
+      "type": "linear",
+      "direction": "to right top",
+      "stops": [
+        {
+          "color": "oklab(0 0 0 / 0)",
+          "position": "0%"
+        },
+        {
+          "color": "oklab(0 0 0 / 0)",
+          "position": "50%"
+        },
+        {
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+          "position": "100%"
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "linear-gradient(to right top, lab(84.5189 -31.4667 -23.9754 / 0.2) 0%, lab(0 0 0 / 0) 50%, lab(0 0 0 / 0) 100%)",
+      "type": "linear",
+      "direction": "to right top",
+      "stops": [
+        {
+          "color": "lab(84.5189 -31.4667 -23.9754 / 0.2)",
+          "position": "0%"
+        },
+        {
+          "color": "lab(0 0 0 / 0)",
+          "position": "50%"
+        },
+        {
+          "color": "lab(0 0 0 / 0)",
+          "position": "100%"
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "linear-gradient(in oklab, rgb(39, 39, 45) 0%, rgb(55, 56, 64) 100%)",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "in oklab",
+          "position": null
+        },
+        {
+          "color": "rgb(39, 39, 45)",
+          "position": "0%"
+        },
+        {
+          "color": "rgb(55, 56, 64)",
+          "position": "100%"
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "linear-gradient(to right bottom, oklab(0 0 0 / 0) 30%, oklab(0.952604 -0.0417787 -0.0206957 / 0.7) 50%, oklab(0 0 0 / 0) 70%)",
+      "type": "linear",
+      "direction": "to right bottom",
+      "stops": [
+        {
+          "color": "oklab(0 0 0 / 0)",
+          "position": "30%"
+        },
+        {
+          "color": "oklab(0.952604 -0.0417787 -0.0206957 / 0.7)",
+          "position": "50%"
+        },
+        {
+          "color": "oklab(0 0 0 / 0)",
+          "position": "70%"
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "linear-gradient(oklab(0.999994 0.0000455678 0.0000200868 / 0.15) 0%, rgba(0, 0, 0, 0) 100%)",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.15)",
+          "position": "0%"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": "100%"
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(to left, oklab(0.999994 0.0000455678 0.0000200868 / 0.08) 0%, rgba(0, 0, 0, 0) 100%)",
+      "type": "linear",
+      "direction": "to left",
+      "stops": [
+        {
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.08)",
+          "position": "0%"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": "100%"
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(in oklab, rgb(94, 95, 110) 65%, rgb(66, 67, 77) 100%)",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "in oklab",
+          "position": null
+        },
+        {
+          "color": "rgb(94, 95, 110)",
+          "position": "65%"
+        },
+        {
+          "color": "rgb(66, 67, 77)",
+          "position": "100%"
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "radial-gradient(97.14% 100% at 50% 0%, rgba(33, 33, 38, 0) 42.04%, rgb(33, 33, 38) 89.82%)",
+      "type": "radial",
+      "direction": null,
+      "stops": [
+        {
+          "color": "97.14% 10",
+          "position": "0%"
+        },
+        {
+          "color": "rgba(33, 33, 38, 0)",
+          "position": "42.04%"
+        },
+        {
+          "color": "rgb(33, 33, 38)",
+          "position": "89.82%"
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "linear-gradient(oklab(0.999994 0.0000455678 0.0000200868 / 0.05) 0%, rgba(0, 0, 0, 0) 67%)",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+          "position": "0%"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": "67%"
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(to right bottom, oklab(0.999994 0.0000455678 0.0000200868 / 0.05) 0%, rgba(0, 0, 0, 0) 64%)",
+      "type": "linear",
+      "direction": "to right bottom",
+      "stops": [
+        {
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+          "position": "0%"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": "64%"
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "radial-gradient(111.72% 100% at 50% 0%, rgba(118, 237, 255, 0.2), rgba(118, 237, 255, 0) 53.91%)",
+      "type": "radial",
+      "direction": null,
+      "stops": [
+        {
+          "color": "111.72% 10",
+          "position": "0%"
+        },
+        {
+          "color": "rgba(118, 237, 255, 0.2)",
+          "position": null
+        },
+        {
+          "color": "rgba(118, 237, 255, 0)",
+          "position": "53.91%"
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "linear-gradient(to right bottom, oklab(0 0 0 / 0) 35%, oklab(0.999994 0.0000455678 0.0000200868 / 0.25) 50%, oklab(0 0 0 / 0) 65%)",
+      "type": "linear",
+      "direction": "to right bottom",
+      "stops": [
+        {
+          "color": "oklab(0 0 0 / 0)",
+          "position": "35%"
+        },
+        {
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.25)",
+          "position": "50%"
+        },
+        {
+          "color": "oklab(0 0 0 / 0)",
+          "position": "65%"
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "radial-gradient(circle at 50% 22px, rgba(33, 33, 38, 0), rgb(33, 33, 38))",
+      "type": "radial",
+      "direction": "circle at 50% 22px",
+      "stops": [
+        {
+          "color": "rgba(33, 33, 38, 0)",
+          "position": null
+        },
+        {
+          "color": "rgb(33, 33, 38)",
+          "position": null
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 67.19%)",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "rgba(255, 255, 255, 0.05)",
+          "position": "0%"
+        },
+        {
+          "color": "rgba(255, 255, 255, 0)",
+          "position": "67.19%"
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "radial-gradient(circle at 50% 0%, rgba(114, 233, 255, 0.2), rgba(114, 233, 255, 0))",
+      "type": "radial",
+      "direction": "circle at 50% 0%",
+      "stops": [
+        {
+          "color": "rgba(114, 233, 255, 0.2)",
+          "position": null
+        },
+        {
+          "color": "rgba(114, 233, 255, 0)",
+          "position": null
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(to top in oklab, rgb(33, 33, 38) 0%, rgba(0, 0, 0, 0) 100%)",
+      "type": "linear",
+      "direction": "to top in oklab",
+      "stops": [
+        {
+          "color": "rgb(33, 33, 38)",
+          "position": "0%"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": "100%"
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "radial-gradient(172px 152px, rgba(33, 33, 38, 0), rgb(33, 33, 38))",
+      "type": "radial",
+      "direction": null,
+      "stops": [
+        {
+          "color": "172px",
+          "position": "152px"
+        },
+        {
+          "color": "rgba(33, 33, 38, 0)",
+          "position": null
+        },
+        {
+          "color": "rgb(33, 33, 38)",
+          "position": null
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "radial-gradient(98.23% 104.12% at 50% -4.12%, rgba(255, 255, 255, 0.05) 6.12%, rgba(255, 255, 255, 0) 55.4%)",
+      "type": "radial",
+      "direction": null,
+      "stops": [
+        {
+          "color": "98.23% 10",
+          "position": "4.12%"
+        },
+        {
+          "color": "rgba(255, 255, 255, 0.05)",
+          "position": "6.12%"
+        },
+        {
+          "color": "rgba(255, 255, 255, 0)",
+          "position": "55.4%"
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "linear-gradient(in oklab, rgb(47, 48, 55) 0%, rgb(39, 39, 45) 100%)",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "in oklab",
+          "position": null
+        },
+        {
+          "color": "rgb(47, 48, 55)",
+          "position": "0%"
+        },
+        {
+          "color": "rgb(39, 39, 45)",
+          "position": "100%"
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "linear-gradient(rgb(39, 39, 45) 0%, oklab(0.310988 0.00201792 -0.012381 / 0.5) 100%)",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "rgb(39, 39, 45)",
+          "position": "0%"
+        },
+        {
+          "color": "oklab(0.310988 0.00201792 -0.012381 / 0.5)",
+          "position": "100%"
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "repeating-radial-gradient(oklab(0 0 0 / 0.2) 2px, rgba(0, 0, 0, 0) 4px)",
+      "type": "repeating-radial",
+      "direction": null,
+      "stops": [
+        {
+          "color": "oklab(0 0 0 / 0.2)",
+          "position": "2px"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": "4px"
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(90deg, rgba(0, 0, 0, 0), oklab(0.999994 0.0000455678 0.0000200868 / 0.5) 30%, rgb(255, 255, 255), oklab(0.999994 0.0000455678 0.0000200868 / 0.5) 70%, rgba(0, 0, 0, 0))",
+      "type": "linear",
+      "direction": "90deg",
+      "stops": [
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": null
+        },
+        {
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+          "position": "30%"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "position": null
+        },
+        {
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+          "position": "70%"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": null
+        }
+      ],
+      "classification": "complex"
+    }
+  ]
+}

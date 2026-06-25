@@ -1,0 +1,276 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "action-primary",
+          "color": "#146ef5",
+          "name": "Action Primary"
+        },
+        {
+          "slug": "action-secondary",
+          "color": "#6ca7ff",
+          "name": "Action Secondary"
+        },
+        {
+          "slug": "surface-default",
+          "color": "#ffffff",
+          "name": "Surface Default"
+        },
+        {
+          "slug": "text-body",
+          "color": "#000000",
+          "name": "Text Body"
+        }
+      ]
+    },
+    "typography": {
+      "fontSizes": [
+        {
+          "slug": "h1",
+          "size": "74.8571px",
+          "name": "h1"
+        },
+        {
+          "slug": "h2",
+          "size": "52.5714px",
+          "name": "h2"
+        },
+        {
+          "slug": "a",
+          "size": "42.0571px",
+          "name": "a"
+        },
+        {
+          "slug": "div",
+          "size": "38.2857px",
+          "name": "div"
+        },
+        {
+          "slug": "div",
+          "size": "30.8571px",
+          "name": "div"
+        },
+        {
+          "slug": "h2",
+          "size": "30.5714px",
+          "name": "h2"
+        },
+        {
+          "slug": "a",
+          "size": "28.1143px",
+          "name": "a"
+        },
+        {
+          "slug": "div",
+          "size": "24px",
+          "name": "div"
+        },
+        {
+          "slug": "h2",
+          "size": "23.4286px",
+          "name": "h2"
+        },
+        {
+          "slug": "div",
+          "size": "20px",
+          "name": "div"
+        },
+        {
+          "slug": "h2",
+          "size": "19.7143px",
+          "name": "h2"
+        },
+        {
+          "slug": "div",
+          "size": "19.6571px",
+          "name": "div"
+        },
+        {
+          "slug": "div",
+          "size": "19.4286px",
+          "name": "div"
+        },
+        {
+          "slug": "html",
+          "size": "16px",
+          "name": "html"
+        },
+        {
+          "slug": "div",
+          "size": "15px",
+          "name": "div"
+        },
+        {
+          "slug": "button",
+          "size": "14.8448px",
+          "name": "button"
+        },
+        {
+          "slug": "a",
+          "size": "14px",
+          "name": "a"
+        },
+        {
+          "slug": "a",
+          "size": "13px",
+          "name": "a"
+        },
+        {
+          "slug": "div",
+          "size": "12.8px",
+          "name": "div"
+        },
+        {
+          "slug": "a",
+          "size": "12px",
+          "name": "a"
+        },
+        {
+          "slug": "span",
+          "size": "10px",
+          "name": "span"
+        }
+      ],
+      "fontFamilies": [
+        {
+          "slug": "wf-visual-sans-variable",
+          "fontFamily": "WF Visual Sans Variable, sans-serif",
+          "name": "WF Visual Sans Variable"
+        },
+        {
+          "slug": "wfvisualsans-mono",
+          "fontFamily": "WFVisualSans-Mono, sans-serif",
+          "name": "WFVisualSans-Mono"
+        },
+        {
+          "slug": "times",
+          "fontFamily": "Times, sans-serif",
+          "name": "Times"
+        }
+      ]
+    },
+    "spacing": {
+      "spacingSizes": [
+        {
+          "slug": "s0",
+          "size": "1px",
+          "name": "S0"
+        },
+        {
+          "slug": "s1",
+          "size": "23px",
+          "name": "S1"
+        },
+        {
+          "slug": "s2",
+          "size": "31px",
+          "name": "S2"
+        },
+        {
+          "slug": "s3",
+          "size": "37px",
+          "name": "S3"
+        },
+        {
+          "slug": "s4",
+          "size": "40px",
+          "name": "S4"
+        },
+        {
+          "slug": "s5",
+          "size": "46px",
+          "name": "S5"
+        },
+        {
+          "slug": "s6",
+          "size": "56px",
+          "name": "S6"
+        },
+        {
+          "slug": "s7",
+          "size": "64px",
+          "name": "S7"
+        },
+        {
+          "slug": "s8",
+          "size": "73px",
+          "name": "S8"
+        },
+        {
+          "slug": "s9",
+          "size": "80px",
+          "name": "S9"
+        },
+        {
+          "slug": "s10",
+          "size": "88px",
+          "name": "S10"
+        },
+        {
+          "slug": "s11",
+          "size": "91px",
+          "name": "S11"
+        },
+        {
+          "slug": "s12",
+          "size": "99px",
+          "name": "S12"
+        },
+        {
+          "slug": "s13",
+          "size": "111px",
+          "name": "S13"
+        },
+        {
+          "slug": "s14",
+          "size": "184px",
+          "name": "S14"
+        },
+        {
+          "slug": "s15",
+          "size": "192px",
+          "name": "S15"
+        },
+        {
+          "slug": "s16",
+          "size": "197px",
+          "name": "S16"
+        },
+        {
+          "slug": "s17",
+          "size": "215px",
+          "name": "S17"
+        },
+        {
+          "slug": "s18",
+          "size": "229px",
+          "name": "S18"
+        },
+        {
+          "slug": "s19",
+          "size": "248px",
+          "name": "S19"
+        },
+        {
+          "slug": "s20",
+          "size": "252px",
+          "name": "S20"
+        },
+        {
+          "slug": "s21",
+          "size": "380px",
+          "name": "S21"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--surface-default, #ffffff)",
+      "text": "var(--wp--preset--color--text-body, #000000)"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+/*
+Theme Name: designlang extracted theme
+Theme URI: https://github.com/Manavarya09/design-extract
+Description: Block theme generated from https://render.com by designlang v7.0.0
+Version: 1.0.0
+Author: designlang
+License: MIT
+Text Domain: designlang-theme
+*/
+
+:root {
+  --action-primary: #8a05ff;
+  --action-secondary: #e7dbff;
+  --surface-default: #ffffff;
+  --text-body: #000000;
+  --spacing-s0: 1px;
+  --spacing-s1: 48px;
+  --spacing-s2: 56px;
+  --spacing-s3: 72px;
+  --spacing-s4: 80px;
+  --spacing-s5: 86px;
+  --spacing-s6: 120px;
+  --spacing-s7: 160px;
+  --spacing-s8: 166px;
+  --spacing-s9: 201px;
+  --spacing-s10: 213px;
+  --spacing-s11: 270px;
+  --spacing-s12: 287px;
+  --spacing-s13: 295px;
+  --spacing-s14: 305px;
+  --spacing-s15: 312px;
+  --spacing-s16: 323px;
+  --spacing-s17: 460px;
+  --spacing-s18: 467px;
+  --spacing-s19: 481px;
+}

@@ -27,16 +27,19 @@ a real headless Chromium open the page and read its whole design system, live.
   - Pure, tested core: `theatre-reducer.js`, `reel.js`, `screencast.js`,
     `theatre.js`. UI: `BrowserStage`, `SystemRail`, `StageTicker`, `Theatre`;
     `prefers-reduced-motion` safe.
-- **Homepage hero + `/watch`.** The "try it" hero is now the Theatre (autoplaying
-  a flagship reel). A dedicated `/watch` page — built for recording/sharing —
-  takes `?u=<url>`, runs live, and has its own OG card. Permalinks gain a
-  "▶ watch it extract" link.
-- **Gallery 13 → 37.** 24 more recognizable sites (Supabase, Raycast, Framer,
-  Resend, Clerk, Cal, Discord, Netflix, Duolingo, Coinbase, Loom, Webflow,
-  Postman, Replit, Railway, Render, Mintlify, PostHog, Sentry, Perplexity, Ramp,
-  Retool, PlanetScale, v0), each graded on a **real** `designlang` run. New
-  industry-tag filter, grade sort, per-card grade pills, and "▶ watch live"
-  links into the Theatre.
+- **Homepage hero + big `/watch`.** The "try it" hero autoplays a flagship reel;
+  submitting your own URL opens the dedicated, **full-screen `/watch`** page that
+  runs the live read big — and **below the stage shows every file it extracted**
+  (DTCG tokens, Tailwind, Figma variables, shadcn, CSS vars, brand book, motion,
+  voice…) in a browseable viewer with a one-click `.zip`. `/watch` takes
+  `?u=<url>` and has its own OG card; permalinks gain a "▶ watch it extract" link.
+- **Gallery 13 → 37, all with real brand books.** 24 more recognizable sites
+  (Supabase, Raycast, Framer, Resend, Clerk, Cal, Discord, Netflix, Duolingo,
+  Coinbase, Loom, Webflow, Postman, Replit, Railway, Render, Mintlify, PostHog,
+  Sentry, Perplexity, Ramp, Retool, PlanetScale, v0), each **extracted for real**
+  — every card opens a full pre-rendered brand book (same 30+ artefacts as the
+  original 13), graded on a real run. New industry-tag filter, grade sort,
+  per-card grade pills, and a "▶ watch" link into the Theatre.
 
 ## [12.24.0] — 2026-06-22
 

@@ -1,0 +1,426 @@
+{
+  "colors": {
+    "all": [
+      {
+        "hex": "#414141",
+        "rgb": {
+          "r": 65,
+          "g": 65,
+          "b": 65,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 25
+        },
+        "count": 986,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#0b6ec5",
+        "rgb": {
+          "r": 11,
+          "g": 110,
+          "b": 197,
+          "a": 1
+        },
+        "hsl": {
+          "h": 208,
+          "s": 89,
+          "l": 41
+        },
+        "count": 76,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#c1c1c1",
+        "rgb": {
+          "r": 193,
+          "g": 193,
+          "b": 193,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 76
+        },
+        "count": 25,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#737373",
+        "rgb": {
+          "r": 115,
+          "g": 115,
+          "b": 115,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 45
+        },
+        "count": 16,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#ffffff",
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 100
+        },
+        "count": 14,
+        "contexts": [
+          "background",
+          "text"
+        ]
+      },
+      {
+        "hex": "#000000",
+        "rgb": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 0
+        },
+        "count": 10,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#111111",
+        "rgb": {
+          "r": 17,
+          "g": 17,
+          "b": 17,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 7
+        },
+        "count": 3,
+        "contexts": [
+          "background",
+          "text"
+        ]
+      },
+      {
+        "hex": "#f35815",
+        "rgb": {
+          "r": 243,
+          "g": 88,
+          "b": 21,
+          "a": 1
+        },
+        "hsl": {
+          "h": 18,
+          "s": 90,
+          "l": 52
+        },
+        "count": 2,
+        "contexts": [
+          "background",
+          "border"
+        ]
+      },
+      {
+        "hex": "#f2b600",
+        "rgb": {
+          "r": 242,
+          "g": 182,
+          "b": 0,
+          "a": 1
+        },
+        "hsl": {
+          "h": 45,
+          "s": 100,
+          "l": 47
+        },
+        "count": 1,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#ebebeb",
+        "rgb": {
+          "r": 235,
+          "g": 235,
+          "b": 235,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 92
+        },
+        "count": 1,
+        "contexts": [
+          "background"
+        ]
+      }
+    ]
+  },
+  "regions": [
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 0,
+        "y": 72,
+        "w": 1280,
+        "h": 32
+      },
+      "heading": null,
+      "buttonCount": 5,
+      "cardCount": 22,
+      "className": "relative mb-6 mt-4 bg-primary"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 96,
+        "y": 76,
+        "w": 553.71875,
+        "h": 24
+      },
+      "heading": null,
+      "buttonCount": 2,
+      "cardCount": 9,
+      "className": "hidden items-center lg:flex"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 2,
+      "cardCount": 9,
+      "className": "dashed-box mt-1 p-3"
+    },
+    {
+      "role": "content",
+      "tag": "main",
+      "bounds": {
+        "x": 0,
+        "y": 152,
+        "w": 1280,
+        "h": 5768.671875
+      },
+      "heading": "The world’s fastest and most scalable cloud databases",
+      "buttonCount": 3,
+      "cardCount": 80,
+      "className": "container mb-6 max-w-7xl px-3 sm:px-5 lg:px-12"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 96,
+        "y": 152,
+        "w": 1088,
+        "h": 5768.671875
+      },
+      "heading": "The world’s fastest and most scalable cloud databases",
+      "buttonCount": 3,
+      "cardCount": 80,
+      "className": null
+    },
+    {
+      "role": "footer",
+      "tag": "footer",
+      "bounds": {
+        "x": 0,
+        "y": 6048.671875,
+        "w": 1280,
+        "h": 384
+      },
+      "heading": "Company",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "mb-6 mt-10 px-3 sm:px-5 container max-w-7xl"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 96,
+        "y": 6048.671875,
+        "w": 1088,
+        "h": 240
+      },
+      "heading": "Company",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "grid grid-cols-1 text-left sm:grid-cols-2 lg:grid-cols-5 lg:mx-7"
+    }
+  ],
+  "componentClusters": [
+    {
+      "kind": "button",
+      "structuralHash": "a",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(243, 88, 21)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "0px 8px 0px 8px",
+            "borderRadius": "0px",
+            "border": "0px solid rgb(65, 65, 65)",
+            "fontSize": "16px",
+            "fontWeight": "600"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>span",
+      "instanceCount": 2,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(65, 65, 65)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "0px solid rgb(65, 65, 65)",
+            "fontSize": "16px",
+            "fontWeight": "600"
+          },
+          "instanceCount": 2
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button",
+      "instanceCount": 3,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(17, 17, 17)",
+            "color": "rgb(250, 250, 250)",
+            "padding": "16px 0px 16px 0px",
+            "borderRadius": "0px",
+            "border": "0px solid rgb(65, 65, 65)",
+            "fontSize": "16px",
+            "fontWeight": "600"
+          },
+          "instanceCount": 1
+        },
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(65, 65, 65)",
+            "padding": "16px 0px 16px 0px",
+            "borderRadius": "0px",
+            "border": "0px 0px 0px 1px solid rgb(65, 65, 65)",
+            "fontSize": "16px",
+            "fontWeight": "600"
+          },
+          "instanceCount": 2
+        }
+      ]
+    }
+  ],
+  "accessibility": {
+    "remediation": [
+      {
+        "fg": "#ffffff",
+        "bg": "#f35815",
+        "ratio": 3.38,
+        "rule": "AA-normal",
+        "suggestion": {
+          "replace": "fg",
+          "color": "#000000",
+          "newRatio": 6.22
+        }
+      }
+    ]
+  },
+  "cssHealth": {
+    "sheets": [
+      {
+        "url": "https://planetscale.com/",
+        "totalBytes": 618,
+        "usedBytes": 0,
+        "unusedBytes": 618,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://planetscale.com/assets/styles-DDHeOiXV.css",
+        "totalBytes": 78504,
+        "usedBytes": 15708,
+        "unusedBytes": 62796,
+        "unusedPercent": 80
+      }
+    ],
+    "totalBytes": 79122,
+    "usedBytes": 15708,
+    "unusedBytes": 63414,
+    "unusedPercent": 80,
+    "importantCount": 35,
+    "duplicates": 1046,
+    "vendorPrefixes": {
+      "webkit": 48,
+      "moz": 33,
+      "ms": 4,
+      "o": 4
+    },
+    "keyframes": [],
+    "specificity": {
+      "max": [
+        0,
+        6,
+        6
+      ],
+      "average": [
+        0,
+        1.37,
+        0.43
+      ],
+      "count": 1061
+    },
+    "issues": [
+      "35 !important rules",
+      "1046 duplicate declarations",
+      "80% unused CSS"
+    ]
+  }
+}

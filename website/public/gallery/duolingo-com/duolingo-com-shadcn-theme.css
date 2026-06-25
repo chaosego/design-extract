@@ -1,0 +1,19 @@
+/* shadcn/ui Theme — extracted from https://duolingo.com */
+/* Paste into your globals.css */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --primary: 94 100% 86%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 240 100% 47%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 199 100% 93%;
+    --accent-foreground: 0 0% 0%;
+    --muted: 0 0% 76%;
+    --muted-foreground: 0 0% 24%;
+    --border: 0 0% 69%;
+    --radius: 2px;
+  }
+}

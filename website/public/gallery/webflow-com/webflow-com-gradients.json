@@ -1,0 +1,188 @@
+{
+  "$schema": "https://designlang.app/schemas/gradients.json",
+  "source": "https://webflow.com",
+  "generated": "2026-06-25T08:28:55.785Z",
+  "count": 10,
+  "gradients": [
+    {
+      "raw": "linear-gradient(90deg, rgb(255, 255, 255) 30%, rgba(0, 0, 0, 0))",
+      "type": "linear",
+      "direction": "90deg",
+      "stops": [
+        {
+          "color": "rgb(255, 255, 255)",
+          "position": "30%"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": null
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(90deg, rgb(8, 8, 8) 30%, rgba(0, 0, 0, 0))",
+      "type": "linear",
+      "direction": "90deg",
+      "stops": [
+        {
+          "color": "rgb(8, 8, 8)",
+          "position": "30%"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": null
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(rgb(255, 255, 255) 0%, color(srgb 1 1 1 / 0.85) 30%, color(srgb 1 1 1 / 0.4) 65%, color(srgb 1 1 1 / 0.1) 90%, rgba(0, 0, 0, 0) 100%)",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "rgb(255, 255, 255)",
+          "position": "0%"
+        },
+        {
+          "color": "color(srgb 1 1 1 / 0.85)",
+          "position": "30%"
+        },
+        {
+          "color": "color(srgb 1 1 1 / 0.4)",
+          "position": "65%"
+        },
+        {
+          "color": "color(srgb 1 1 1 / 0.1)",
+          "position": "90%"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": "100%"
+        }
+      ],
+      "classification": "complex"
+    },
+    {
+      "raw": "linear-gradient(color(srgb 1 1 1 / 0.6), color(srgb 1 1 1 / 0.33))",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "color(srgb 1 1 1 / 0.6)",
+          "position": null
+        },
+        {
+          "color": "color(srgb 1 1 1 / 0.33)",
+          "position": null
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(rgb(8, 8, 8), rgb(8, 8, 8))",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "rgb(8, 8, 8)",
+          "position": null
+        },
+        {
+          "color": "rgb(8, 8, 8)",
+          "position": null
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255))",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "rgb(255, 255, 255)",
+          "position": null
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "position": null
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(rgba(255, 255, 255, 0.16), rgba(0, 0, 0, 0.25) 59%, rgba(0, 0, 0, 0.5))",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "rgba(255, 255, 255, 0.16)",
+          "position": null
+        },
+        {
+          "color": "rgba(0, 0, 0, 0.25)",
+          "position": "59%"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0.5)",
+          "position": null
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "radial-gradient(circle farthest-side at 0% 0%, rgb(202, 177, 255) 5%, rgb(20, 110, 245) 10%, rgb(8, 8, 8) 20%)",
+      "type": "radial",
+      "direction": "circle farthest-side at 0% 0%",
+      "stops": [
+        {
+          "color": "rgb(202, 177, 255)",
+          "position": "5%"
+        },
+        {
+          "color": "rgb(20, 110, 245)",
+          "position": "10%"
+        },
+        {
+          "color": "rgb(8, 8, 8)",
+          "position": "20%"
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "linear-gradient(170deg, color(srgb 0.0313726 0.0313726 0.0313726 / 0.7), color(srgb 0.0313726 0.0313726 0.0313726 / 0.05) 75%)",
+      "type": "linear",
+      "direction": "170deg",
+      "stops": [
+        {
+          "color": "color(srgb 0.0313726 0.0313726 0.0313726 / 0.7)",
+          "position": null
+        },
+        {
+          "color": "color(srgb 0.0313726 0.0313726 0.0313726 / 0.05)",
+          "position": "75%"
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(rgba(0, 0, 0, 0) 10%, rgb(8, 8, 8))",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": "10%"
+        },
+        {
+          "color": "rgb(8, 8, 8)",
+          "position": null
+        }
+      ],
+      "classification": "brand"
+    }
+  ]
+}

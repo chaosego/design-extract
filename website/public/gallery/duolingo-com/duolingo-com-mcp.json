@@ -1,0 +1,753 @@
+{
+  "colors": {
+    "all": [
+      {
+        "hex": "#3c3c3c",
+        "rgb": {
+          "r": 60,
+          "g": 60,
+          "b": 60,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 24
+        },
+        "count": 7859,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#777777",
+        "rgb": {
+          "r": 119,
+          "g": 119,
+          "b": 119,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 47
+        },
+        "count": 268,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#000000",
+        "rgb": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 0
+        },
+        "count": 214,
+        "contexts": [
+          "text",
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#a5ed6e",
+        "rgb": {
+          "r": 165,
+          "g": 237,
+          "b": 110,
+          "a": 1
+        },
+        "hsl": {
+          "h": 94,
+          "s": 78,
+          "l": 68
+        },
+        "count": 129,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#4b4b4b",
+        "rgb": {
+          "r": 75,
+          "g": 75,
+          "b": 75,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 29
+        },
+        "count": 34,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#58cc02",
+        "rgb": {
+          "r": 88,
+          "g": 204,
+          "b": 2,
+          "a": 1
+        },
+        "hsl": {
+          "h": 94,
+          "s": 98,
+          "l": 40
+        },
+        "count": 24,
+        "contexts": [
+          "text",
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#afafaf",
+        "rgb": {
+          "r": 175,
+          "g": 175,
+          "b": 175,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 69
+        },
+        "count": 14,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#1cb0f6",
+        "rgb": {
+          "r": 28,
+          "g": 176,
+          "b": 246,
+          "a": 1
+        },
+        "hsl": {
+          "h": 199,
+          "s": 92,
+          "l": 54
+        },
+        "count": 14,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#d7ffb8",
+        "rgb": {
+          "r": 215,
+          "g": 255,
+          "b": 184,
+          "a": 1
+        },
+        "hsl": {
+          "h": 94,
+          "s": 100,
+          "l": 86
+        },
+        "count": 14,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#ffffff",
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 100
+        },
+        "count": 9,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#0000ee",
+        "rgb": {
+          "r": 0,
+          "g": 0,
+          "b": 238,
+          "a": 1
+        },
+        "hsl": {
+          "h": 240,
+          "s": 100,
+          "l": 47
+        },
+        "count": 4,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#000437",
+        "rgb": {
+          "r": 0,
+          "g": 4,
+          "b": 55,
+          "a": 1
+        },
+        "hsl": {
+          "h": 236,
+          "s": 100,
+          "l": 11
+        },
+        "count": 3,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#042c60",
+        "rgb": {
+          "r": 4,
+          "g": 44,
+          "b": 96,
+          "a": 1
+        },
+        "hsl": {
+          "h": 214,
+          "s": 92,
+          "l": 20
+        },
+        "count": 2,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#e5e5e5",
+        "rgb": {
+          "r": 229,
+          "g": 229,
+          "b": 229,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 90
+        },
+        "count": 1,
+        "contexts": [
+          "border"
+        ]
+      },
+      {
+        "hex": "#ddf4ff",
+        "rgb": {
+          "r": 221,
+          "g": 244,
+          "b": 255,
+          "a": 1
+        },
+        "hsl": {
+          "h": 199,
+          "s": 100,
+          "l": 93
+        },
+        "count": 1,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#100f3e",
+        "rgb": {
+          "r": 16,
+          "g": 15,
+          "b": 62,
+          "a": 1
+        },
+        "hsl": {
+          "h": 241,
+          "s": 61,
+          "l": 15
+        },
+        "count": 1,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#808080",
+        "rgb": {
+          "r": 128,
+          "g": 128,
+          "b": 128,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 50
+        },
+        "count": 1,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#c1c1c1",
+        "rgb": {
+          "r": 193,
+          "g": 193,
+          "b": 193,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 76
+        },
+        "count": 1,
+        "contexts": [
+          "border"
+        ]
+      }
+    ]
+  },
+  "regions": [
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 800
+      },
+      "heading": "The free, fun, and effective way to learn a language!",
+      "buttonCount": 2,
+      "cardCount": 42,
+      "className": "_39290"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 146,
+        "y": 0,
+        "w": 988,
+        "h": 70
+      },
+      "heading": null,
+      "buttonCount": 1,
+      "cardCount": 0,
+      "className": "lZqWH"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 95,
+        "y": 723,
+        "w": 1090,
+        "h": 74
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 42,
+      "className": "zU2RQ _3isJn"
+    },
+    {
+      "role": "pricing",
+      "tag": "main",
+      "bounds": {
+        "x": 0,
+        "y": 800,
+        "w": 1280,
+        "h": 7074.1875
+      },
+      "heading": "free. fun. effective.",
+      "buttonCount": 1,
+      "cardCount": 0,
+      "className": null
+    },
+    {
+      "role": "pricing",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 800,
+        "w": 1280,
+        "h": 2312
+      },
+      "heading": "free. fun. effective.",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "uU0-M"
+    },
+    {
+      "role": "pricing",
+      "tag": "section",
+      "bounds": {
+        "x": 146,
+        "y": 896,
+        "w": 988,
+        "h": 530
+      },
+      "heading": "free. fun. effective.",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "_3k9io"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 146,
+        "y": 1426,
+        "w": 988,
+        "h": 530
+      },
+      "heading": "backed by science",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "_36L7f _3k9io"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 146,
+        "y": 1956,
+        "w": 988,
+        "h": 530
+      },
+      "heading": "stay motivated",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "_3k9io"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 146,
+        "y": 2486,
+        "w": 988,
+        "h": 530
+      },
+      "heading": "personalized learning",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "_36L7f _3k9io"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 3112,
+        "w": 1280,
+        "h": 1288.9375
+      },
+      "heading": "learn anytime, anywhere",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "Gijhh"
+    },
+    {
+      "role": "pricing",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 4400.9375,
+        "w": 1280,
+        "h": 900
+      },
+      "heading": null,
+      "buttonCount": 1,
+      "cardCount": 0,
+      "className": "LlPOq"
+    },
+    {
+      "role": "pricing",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 5300.9375,
+        "w": 1280,
+        "h": 1782
+      },
+      "heading": "duolingo english test",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "_3dG3I"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 146,
+        "y": 5396.9375,
+        "w": 988,
+        "h": 530
+      },
+      "heading": "duolingo english test",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "_3k9io"
+    },
+    {
+      "role": "pricing",
+      "tag": "section",
+      "bounds": {
+        "x": 146,
+        "y": 5926.9375,
+        "w": 988,
+        "h": 530
+      },
+      "heading": "duolingo for schools",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "_36L7f _3k9io"
+    },
+    {
+      "role": "pricing",
+      "tag": "section",
+      "bounds": {
+        "x": 146,
+        "y": 6456.9375,
+        "w": 988,
+        "h": 530
+      },
+      "heading": "duolingo abc",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "_3k9io"
+    },
+    {
+      "role": "cta",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 7082.9375,
+        "w": 1280,
+        "h": 791.25
+      },
+      "heading": "learn a language with duolingo",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "F71XF"
+    },
+    {
+      "role": "footer",
+      "tag": "footer",
+      "bounds": {
+        "x": 0,
+        "y": 7874.1875,
+        "w": 1280,
+        "h": 791.1875
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 64,
+      "className": "_1nNuk"
+    }
+  ],
+  "componentClusters": [
+    {
+      "kind": "button",
+      "structuralHash": "button>span>img",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(175, 175, 175)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "0px none rgb(175, 175, 175)",
+            "fontSize": "15px",
+            "fontWeight": "700"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>span",
+      "instanceCount": 2,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(28, 176, 246)",
+            "padding": "0px 16px 0px 16px",
+            "borderRadius": "12px",
+            "border": "2px 2px 4px solid rgba(0, 0, 0, 0)",
+            "fontSize": "15px",
+            "fontWeight": "700"
+          },
+          "instanceCount": 1
+        },
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 4, 55)",
+            "padding": "0px 16px 0px 16px",
+            "borderRadius": "12px",
+            "border": "0px 0px 4px solid rgba(0, 0, 0, 0)",
+            "fontSize": "15px",
+            "fontWeight": "700"
+          },
+          "instanceCount": 1
+        }
+      ]
+    }
+  ],
+  "accessibility": {
+    "remediation": []
+  },
+  "cssHealth": {
+    "sheets": [
+      {
+        "url": "https://d35aaqx5ub95lt.cloudfront.net/css/9951-1ae9d7a9.css",
+        "totalBytes": 58869,
+        "usedBytes": 4761,
+        "unusedBytes": 54108,
+        "unusedPercent": 92
+      },
+      {
+        "url": "https://d35aaqx5ub95lt.cloudfront.net/css/app-cf8d2293.css",
+        "totalBytes": 85902,
+        "usedBytes": 15203,
+        "unusedBytes": 70699,
+        "unusedPercent": 82
+      },
+      {
+        "url": "https://d35aaqx5ub95lt.cloudfront.net/css/4800-10f90769.css",
+        "totalBytes": 2612,
+        "usedBytes": 0,
+        "unusedBytes": 2612,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://d35aaqx5ub95lt.cloudfront.net/css/1118-605e4df6.css",
+        "totalBytes": 3733,
+        "usedBytes": 0,
+        "unusedBytes": 3733,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://d35aaqx5ub95lt.cloudfront.net/css/8186-605e4df6.css",
+        "totalBytes": 3733,
+        "usedBytes": 0,
+        "unusedBytes": 3733,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://d35aaqx5ub95lt.cloudfront.net/css/2231-ee667168.css",
+        "totalBytes": 3766,
+        "usedBytes": 0,
+        "unusedBytes": 3766,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://d35aaqx5ub95lt.cloudfront.net/css/9071-d035f2e5.css",
+        "totalBytes": 21125,
+        "usedBytes": 0,
+        "unusedBytes": 21125,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://d35aaqx5ub95lt.cloudfront.net/css/7459-1decc858.css",
+        "totalBytes": 12179,
+        "usedBytes": 2018,
+        "unusedBytes": 10161,
+        "unusedPercent": 83
+      },
+      {
+        "url": "https://www.gstatic.com/recaptcha/releases/MerVUtRoajKEbP7pLiGXkL28/styles__ltr.css",
+        "totalBytes": 82857,
+        "usedBytes": 2987,
+        "unusedBytes": 79870,
+        "unusedPercent": 96
+      },
+      {
+        "url": "https://www.recaptcha.net/recaptcha/enterprise/anchor?ar=1&k=6LcLOdsjAAAAAFfwGusLLnnn492SOGhsCh-uEAvI&co=aHR0cHM6Ly93d3cuZHVvbGluZ28uY29tOjQ0Mw..&hl=en&v=MerVUtRoajKEbP7pLiGXkL28&size=invisible&anchor-ms=20000&execute-ms=30000&cb=6vuc95vz98sb",
+        "totalBytes": 16160,
+        "usedBytes": 0,
+        "unusedBytes": 16160,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://accounts.google.com/gsi/style",
+        "totalBytes": 696,
+        "usedBytes": 0,
+        "unusedBytes": 696,
+        "unusedPercent": 100
+      }
+    ],
+    "totalBytes": 291632,
+    "usedBytes": 24969,
+    "unusedBytes": 266663,
+    "unusedPercent": 91,
+    "importantCount": 70,
+    "duplicates": 3676,
+    "vendorPrefixes": {
+      "webkit": 214,
+      "moz": 74,
+      "ms": 10,
+      "o": 6
+    },
+    "keyframes": [],
+    "specificity": {
+      "max": [
+        1,
+        7,
+        5
+      ],
+      "average": [
+        0.01,
+        1.65,
+        0.13
+      ],
+      "count": 2625
+    },
+    "issues": [
+      "70 !important rules",
+      "3676 duplicate declarations",
+      "91% unused CSS"
+    ]
+  }
+}
