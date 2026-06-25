@@ -2,6 +2,7 @@ import { chromium } from 'playwright';
 import { mkdirSync } from 'fs';
 import { join } from 'path';
 import { extractMediaDarkColors } from './extractors/dark-mode-pair.js';
+import { startScreencast } from './screencast.js';
 
 const MAX_ELEMENTS = 5000;
 
@@ -29,6 +30,8 @@ export async function crawlPage(url, options = {}) {
     selector,
     channel,
     wsEndpoint,  // Remote browser (e.g. Browserless). When set, skips local launch.
+    onScreencastFrame,  // Theatre: opt-in live frame sink. When set, a throttled
+    screencastOpts,     // CDP screencast streams what the page paints during load.
   } = options;
 
   const launchArgs = [
@@ -79,6 +82,19 @@ export async function crawlPage(url, options = {}) {
     }
     const page = await context.newPage();
 
+    // Theatre (opt-in): tap what Chromium paints and stream it to the caller as
+    // throttled JPEG frames. Best-effort — a screencast that won't start must
+    // never break the extraction, so it's wrapped and degrades to silence.
+    let screencast = null;
+    if (typeof onScreencastFrame === 'function') {
+      try {
+        const cdp = await context.newCDPSession(page);
+        screencast = await startScreencast(cdp, onScreencastFrame, screencastOpts || {});
+      } catch {
+        screencast = null;
+      }
+    }
+
     // Start CSS coverage for css-health audit. Not supported on all targets —
     // fail gracefully and set empty coverage if the API is unavailable.
     let cssCoverageAvailable = true;
@@ -126,6 +142,14 @@ export async function crawlPage(url, options = {}) {
     lightData.cssCoverage = cssCoverage;
     if (interactState) lightData.interactState = interactState;
     if (motionRuntimeObs) lightData.motionRuntime = motionRuntimeObs;
+
+    // The visually interesting window (load + auto-interact) is done — stop the
+    // cast before any multipage navigation or dark-mode context swap, which
+    // would just stream confusing reloads.
+    if (screencast) {
+      try { await screencast.stop(); } catch { /* already stopped */ }
+      screencast = null;
+    }
 
     // Component screenshots
     let componentScreenshots = {};
