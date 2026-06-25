@@ -80,6 +80,9 @@ export default function PermalinkViewer({ hash, url, title, summary, files }) {
           >
             {shareCopied ? 'Link copied' : 'Copy permalink'}
           </button>
+          <a className="cta" href={`/watch?u=${encodeURIComponent(url)}`} style={{ background: 'transparent', color: 'var(--ink)', border: '1px solid var(--ink)', boxShadow: 'none', borderBottom: 'none' }}>
+            ▶ Watch it extract
+          </a>
           <a className="cta" href="/" style={{ background: 'transparent', color: 'var(--ink)', border: '1px solid var(--ink)', boxShadow: 'none', borderBottom: 'none' }}>
             Extract another →
           </a>
